@@ -112,18 +112,18 @@
   daovoice('update');
   </script>
 
-  <meta name="description" content="###问题：使用MJRefresh上拉加载的时候，页面出现抖现象，不能忍！！！ ###原因：Self-Sizing在iOS11之前是默认关闭的，但是iOS11是默认开启的，所以estimated高度默认值从iOS11之前的0改变为UITableViewAutomaticDimension。 ###办法：把Self-Sizing关了就行了： 123self.tableView.estimatedRo">
+  <meta name="description" content="问题使用MJRefresh上拉加载的时候，页面出现抖现象，不能忍！！！ 原因：Self-Sizing在iOS11之前是默认关闭的，但是iOS11是默认开启的，所以estimated高度默认值从iOS11之前的0改变为UITableViewAutomaticDimension。 办法：把Self-Sizing关了就行了： 123self.tableView.estimatedRowHeight =">
 <meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MJRefresh上拉刷新导致页面抖动的问题">
 <meta property="og:url" content="http://yoursite.com/2019/07/01/MJRefresh上拉刷新导致页面抖动的问题/index.html">
 <meta property="og:site_name" content="Liuda6">
-<meta property="og:description" content="###问题：使用MJRefresh上拉加载的时候，页面出现抖现象，不能忍！！！ ###原因：Self-Sizing在iOS11之前是默认关闭的，但是iOS11是默认开启的，所以estimated高度默认值从iOS11之前的0改变为UITableViewAutomaticDimension。 ###办法：把Self-Sizing关了就行了： 123self.tableView.estimatedRo">
+<meta property="og:description" content="问题使用MJRefresh上拉加载的时候，页面出现抖现象，不能忍！！！ 原因：Self-Sizing在iOS11之前是默认关闭的，但是iOS11是默认开启的，所以estimated高度默认值从iOS11之前的0改变为UITableViewAutomaticDimension。 办法：把Self-Sizing关了就行了： 123self.tableView.estimatedRowHeight =">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-01T10:18:51.416Z">
+<meta property="og:updated_time" content="2019-07-01T10:25:23.891Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MJRefresh上拉刷新导致页面抖动的问题">
-<meta name="twitter:description" content="###问题：使用MJRefresh上拉加载的时候，页面出现抖现象，不能忍！！！ ###原因：Self-Sizing在iOS11之前是默认关闭的，但是iOS11是默认开启的，所以estimated高度默认值从iOS11之前的0改变为UITableViewAutomaticDimension。 ###办法：把Self-Sizing关了就行了： 123self.tableView.estimatedRo">
+<meta name="twitter:description" content="问题使用MJRefresh上拉加载的时候，页面出现抖现象，不能忍！！！ 原因：Self-Sizing在iOS11之前是默认关闭的，但是iOS11是默认开启的，所以estimated高度默认值从iOS11之前的0改变为UITableViewAutomaticDimension。 办法：把Self-Sizing关了就行了： 123self.tableView.estimatedRowHeight =">
 
 
 
@@ -435,7 +435,7 @@
                 
               
 
-              <time title="创建时间：2019-07-01 17:31:08 / 修改时间：18:18:51" itemprop="dateCreated datePublished" datetime="2019-07-01T17:31:08+08:00">2019-07-01</time>
+              <time title="创建时间：2019-07-01 17:31:08 / 修改时间：18:25:23" itemprop="dateCreated datePublished" datetime="2019-07-01T17:31:08+08:00">2019-07-01</time>
             
 
             
@@ -512,15 +512,15 @@
       
 
       
-        <p>###问题：<br>使用MJRefresh上拉加载的时候，页面出现抖现象，不能忍！！！</p>
-<p>###原因：<br>Self-Sizing在iOS11之前是默认关闭的，但是iOS11是默认开启的，所以estimated高度默认值从iOS11之前的0改变为UITableViewAutomaticDimension。</p>
-<p>###办法：<br>把Self-Sizing关了就行了：</p>
+        <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>使用MJRefresh上拉加载的时候，页面出现抖现象，不能忍！！！</p>
+<h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><p>Self-Sizing在iOS11之前是默认关闭的，但是iOS11是默认开启的，所以estimated高度默认值从iOS11之前的0改变为UITableViewAutomaticDimension。</p>
+<h3 id="办法："><a href="#办法：" class="headerlink" title="办法："></a>办法：</h3><p>把Self-Sizing关了就行了：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">self.tableView.estimatedRowHeight = 0;</span><br><span class="line">self.tableView.estimatedSectionHeaderHeight = 0;</span><br><span class="line">self.tableView.estimatedSectionFooterHeight = 0;</span><br></pre></td></tr></table></figure>
 
-<p>######$\color{red}{但是，我又想使用自动布局怎么办呢？}$<br>把这句在加上：</p>
+<h6 id="color-red-但是，我又想使用自动布局怎么办呢？"><a href="#color-red-但是，我又想使用自动布局怎么办呢？" class="headerlink" title="$\color{red}{但是，我又想使用自动布局怎么办呢？}$"></a>$\color{red}{但是，我又想使用自动布局怎么办呢？}$</h6><p>把这句在加上：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.ctableView.estimatedRowHeight = [UIScreen mainScreen].bounds.size.height</span><br></pre></td></tr></table></figure>
 
-<p>###bonus：<br>可以使用Method Swizzling更便捷的修改系统方法，比如：self.tableView.estimatedRowHeight = 0，实在不想一行行的粘贴复制，怎么做呢？<br>新建一个tableView的Category，然后：</p>
+<h3 id="bonus："><a href="#bonus：" class="headerlink" title="bonus："></a>bonus：</h3><p>可以使用Method Swizzling更便捷的修改系统方法，比如：self.tableView.estimatedRowHeight = 0，实在不想一行行的粘贴复制，怎么做呢？<br>新建一个tableView的Category，然后：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">+ (void)load</span><br><span class="line">&#123;</span><br><span class="line">    static dispatch_once_t onceToken;</span><br><span class="line">    dispatch_once(&amp;onceToken, ^&#123;</span><br><span class="line">        Class class = [self class];</span><br><span class="line">        SEL originalSel = @selector(initWithFrame:style:);</span><br><span class="line">        SEL mySel = @selector(zz_initWithFrame:style:);</span><br><span class="line">        Method originalMethod = class_getInstanceMethod(class, originalSel);</span><br><span class="line">        Method mySwizzledMethod = class_getInstanceMethod(class, mySel);</span><br><span class="line">        BOOL didAddMethod = class_addMethod(class, originalSel, method_getImplementation(mySwizzledMethod),method_getTypeEncoding(mySwizzledMethod));</span><br><span class="line">        if (didAddMethod) &#123;</span><br><span class="line">            class_replaceMethod(class,mySel,method_getImplementation(originalMethod),method_getTypeEncoding(originalMethod));</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            method_exchangeImplementations(originalMethod, mySwizzledMethod);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">- (instancetype)zz_initWithFrame:(CGRect)frame style:(UITableViewStyle)style</span><br><span class="line">&#123;</span><br><span class="line">    [self zz_initWithFrame:frame style:style];</span><br><span class="line">    self.estimatedSectionHeaderHeight = 0;</span><br><span class="line">    self.estimatedSectionFooterHeight = 0;</span><br><span class="line">    return self;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -618,8 +618,18 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+        
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -705,6 +715,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原因："><span class="nav-number">2.</span> <span class="nav-text">原因：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#办法："><span class="nav-number">3.</span> <span class="nav-text">办法：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#color-red-但是，我又想使用自动布局怎么办呢？"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">$\color{red}{但是，我又想使用自动布局怎么办呢？}$</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#bonus："><span class="nav-number">4.</span> <span class="nav-text">bonus：</span></a></li></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
