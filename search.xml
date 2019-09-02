@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[设置View的阴影]]></title>
+    <url>%2F2019%2F07%2F01%2F%E8%AE%BE%E7%BD%AEView%E7%9A%84%E9%98%B4%E5%BD%B1%2F</url>
+    <content type="text"><![CDATA[12345678910111213141516171819202122232425UIView *shadowView = [[UIView alloc] init]; shadowView.frame = CGRectMake(100, 100, 100, 100); shadowView.center = self.view.center; shadowView.backgroundColor = [UIColor whiteColor]; //设置阴影颜色 shadowView.layer.shadowColor = [UIColor colorWithRed:114.0/255.0 green:133.0/255.0 blue:152.0/255.0 alpha:1.0].CGColor; //设置阴影的透明度 shadowView.layer.shadowOpacity = 0.1f; //设置阴影的偏移 shadowView.layer.shadowOffset = CGSizeMake(30.0f, 10.0f); //设置阴影半径 shadowView.layer.shadowRadius = 15.0f; //设置渲染内容被缓存 shadowView.layer.shouldRasterize = YES; //超出父视图部分是否显示 shadowView.layer.masksToBounds = NO; shadowView.layer.borderWidth = 0.0; shadowView.layer.opaque = 0.10; shadowView.layer.cornerRadius = 3.0; //栅格化处理 shadowView.layer.rasterizationScale = [[UIScreen mainScreen]scale]; //正常矩形 UIBezierPath *path = [UIBezierPath bezierPathWithRect:shadowView.bounds]; shadowView.layer.shadowPath = path.CGPath; [self.view addSubview:shadowView];]]></content>
+      <categories>
+        <category>关于技术</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MJRefresh上拉刷新导致页面抖动的问题]]></title>
     <url>%2F2019%2F07%2F01%2FMJRefresh%E4%B8%8A%E6%8B%89%E5%88%B7%E6%96%B0%E5%AF%BC%E8%87%B4%E9%A1%B5%E9%9D%A2%E6%8A%96%E5%8A%A8%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[问题使用MJRefresh上拉加载的时候，页面出现抖现象，不能忍！！！ 原因：Self-Sizing在iOS11之前是默认关闭的，但是iOS11是默认开启的，所以estimated高度默认值从iOS11之前的0改变为UITableViewAutomaticDimension。 办法：把Self-Sizing关了就行了： 123self.tableView.estimatedRowHeight = 0;self.tableView.estimatedSectionHeaderHeight = 0;self.tableView.estimatedSectionFooterHeight = 0; 但是，我又想使用自动布局怎么办呢？把这句在加上： 1self.ctableView.estimatedRowHeight = [UIScreen mainScreen].bounds.size.height bonus：可以使用Method Swizzling更便捷的修改系统方法，比如：self.tableView.estimatedRowHeight = 0，实在不想一行行的粘贴复制，怎么做呢？新建一个tableView的Category，然后： 123456789101112131415161718192021222324+ (void)load&#123; static dispatch_once_t onceToken; dispatch_once(&amp;onceToken, ^&#123; Class class = [self class]; SEL originalSel = @selector(initWithFrame:style:); SEL mySel = @selector(zz_initWithFrame:style:); Method originalMethod = class_getInstanceMethod(class, originalSel); Method mySwizzledMethod = class_getInstanceMethod(class, mySel); BOOL didAddMethod = class_addMethod(class, originalSel, method_getImplementation(mySwizzledMethod),method_getTypeEncoding(mySwizzledMethod)); if (didAddMethod) &#123; class_replaceMethod(class,mySel,method_getImplementation(originalMethod),method_getTypeEncoding(originalMethod)); &#125; else &#123; method_exchangeImplementations(originalMethod, mySwizzledMethod); &#125; &#125;);&#125;- (instancetype)zz_initWithFrame:(CGRect)frame style:(UITableViewStyle)style&#123; [self zz_initWithFrame:frame style:style]; self.estimatedSectionHeaderHeight = 0; self.estimatedSectionFooterHeight = 0; return self;&#125;]]></content>
