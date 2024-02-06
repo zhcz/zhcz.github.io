@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>临帖宝</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-02-06T08:29:51.303Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>zhanghao</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>诗词文</title>
+    <link href="http://example.com/posts/39972.html"/>
+    <id>http://example.com/posts/39972.html</id>
+    <published>2024-02-06T07:25:30.000Z</published>
+    <updated>2024-02-06T08:29:51.303Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="../poem/index.html">10万+首诗词文</a><br><a href="../poem/poem_sentence.html">名句</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;../poem/index.html&quot;&gt;10万+首诗词文&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;../poem/poem_sentence.html&quot;&gt;名句&lt;/a&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="诗词文" scheme="http://example.com/categories/%E8%AF%97%E8%AF%8D%E6%96%87/"/>
+    
+    
+    <category term="诗词文" scheme="http://example.com/tags/%E8%AF%97%E8%AF%8D%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的2023</title>
+    <link href="http://example.com/posts/50955.html"/>
+    <id>http://example.com/posts/50955.html</id>
+    <published>2024-02-02T08:35:18.000Z</published>
+    <updated>2024-02-04T03:04:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这一年大概是我前半生收获最多的一年<br>真实、平凡、普通、琐碎……</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这一年大概是我前半生收获最多的一年&lt;br&gt;真实、平凡、普通、琐碎……&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="文章" scheme="http://example.com/categories/%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="文章" scheme="http://example.com/tags/%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SwiftUI学习笔记—点击View事件</title>
+    <link href="http://example.com/posts/17440.html"/>
+    <id>http://example.com/posts/17440.html</id>
+    <published>2024-01-11T06:58:21.000Z</published>
+    <updated>2024-01-18T07:01:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">struct ContentView: View &#123;</span><br><span class="line">    var body: some View &#123;</span><br><span class="line">        VStack &#123;</span><br><span class="line">            Text(&quot;Hello, World!&quot;)</span><br><span class="line">            Text(&quot;Second Text&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">        .onTapGesture &#123;</span><br><span class="line">            print(&quot;Tapped on the view&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>上面这个代码，View上面有两个Text，我想要添加一个点击View的事件，按上面的写法，onTapGesture只有点击Text的时候有效，Text并没有充满View，想要点击View的其他空白区域也有效，将可点击区域扩大到整个VStack的矩形区域即可，如下👇</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">struct ContentView: View &#123;</span><br><span class="line">    var body: some View &#123;</span><br><span class="line">        VStack &#123;</span><br><span class="line">            Text(&quot;Hello, World!&quot;)</span><br><span class="line">            Text(&quot;Second Text&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">         .contentShape(Rectangle()) // 将可点击区域扩大到整个VStack的矩形区域</span><br><span class="line">        .onTapGesture &#123;</span><br><span class="line">            // 在这里处理点击事件</span><br><span class="line">            print(&quot;Tapped on the view&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span c</summary>
+      
+    
+    
+    
+    <category term="SwiftUI" scheme="http://example.com/categories/SwiftUI/"/>
+    
+    
+    <category term="SwiftUI" scheme="http://example.com/tags/SwiftUI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在线小游戏</title>
+    <link href="http://example.com/posts/61638.html"/>
+    <id>http://example.com/posts/61638.html</id>
+    <published>2024-01-03T08:39:50.000Z</published>
+    <updated>2024-01-03T09:15:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>消磨时间的小游戏，把球停在有颜色区域<br><a href="https://looptap.veeapp.co/">looptap</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;消磨时间的小游戏，把球停在有颜色区域&lt;br&gt;&lt;a href=&quot;https://looptap.veeapp.co/&quot;&gt;looptap&lt;/a&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="游戏" scheme="http://example.com/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="游戏" scheme="http://example.com/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2024-每日分享</title>
+    <link href="http://example.com/posts/57655.html"/>
+    <id>http://example.com/posts/57655.html</id>
+    <published>2024-01-03T01:31:58.000Z</published>
+    <updated>2024-01-31T03:18:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1月31日"><a href="#1月31日" class="headerlink" title="1月31日"></a>1月31日</h1><p><a href="https://github.com/astrofox-io/astrofox?tab=readme-ov-file">Astrofox</a> 是一个动态图形程序，可让您将音频转换为精彩的视频。</p><p><a href="https://imgpilot.com/">imgpilot</a> (<a href="https://imgpilot.lintiebao.cn/">备</a>) 利用实时潜在一致性模型的强大功能将草稿变成令人惊叹的艺术作品</p><p><a href="https://tryemoji.lintiebao.cn/">tryemoji</a> 通过 AI 将表情符号变成令人惊叹的艺术品</p><p><a href="https://pixelate-beta.vercel.app/">Pixelate</a>（<a href="https://pixelate.lintiebao.cn/">备</a>） 是一个图像编辑器，用便签创建令人惊叹的像素艺术壁画</p><h2 id="1月26日"><a href="#1月26日" class="headerlink" title="1月26日"></a>1月26日</h2><p>极简风笔记，所有信息都使用 HTML5 本地存储在本地持久化<br><a href="https://zenpen.lintiebao.cn/">ZenPen</a></p><p>一个简约清爽的打字练习网站<br><a href="https://typing.yasinchan.com/">Typing</a></p><h2 id="1月3日"><a href="#1月3日" class="headerlink" title="1月3日"></a>1月3日</h2><p>Jan 是 ChatGPT 的开源替代品，可在您的计算机上 100% 离线运行<br><a href="https://github.com/janhq/jan">Jan</a></p><p>Pile 是一款用于反思日记的桌面应用程序。它关乎简单性，将数据保持在本地，并通过 AI 增强您的日记体验。<br><a href="https://github.com/UdaraJay/Pile">Pile</a></p><p>阻止 Mac 进入睡眠状态，防止休眠<br><a href="https://github.com/newmarcel/KeepingYouAwake">KeepingYouAwake</a></p><p>开发人员专用的暂存器<br><a href="https://github.com/heyman/heynote">heynote</a></p><p>Olive 是一款适用于 Windows、macOS 和 Linux 的免费非线性视频编辑器<br><a href="https://github.com/olive-editor/olive">olive</a></p><p>消磨时间的小游戏，把球停在有颜色区域<br><a href="https://looptap.veeapp.co/">looptap</a></p><p>搜集了 580 多个 Linux 命令<br><a href="https://linux-command.lintiebao.cn/">linux-command</a></p><p>魔塔是由阿里达摩院开源的 MaaS 平台，它为开发者提供了模型体验、推理、训练、部署和应用的一站式服务，相当于国内版的 Hugging Face<br><a href="https://github.com/modelscope/modelscope">魔塔</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1月31日&quot;&gt;&lt;a href=&quot;#1月31日&quot; class=&quot;headerlink&quot; title=&quot;1月31日&quot;&gt;&lt;/a&gt;1月31日&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/astrofox-io/astrofox?tab=readm</summary>
+      
+    
+    
+    
+    <category term="素材" scheme="http://example.com/categories/%E7%B4%A0%E6%9D%90/"/>
+    
+    
+    <category term="每日分享" scheme="http://example.com/tags/%E6%AF%8F%E6%97%A5%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年歌单</title>
+    <link href="http://example.com/posts/48622.html"/>
+    <id>http://example.com/posts/48622.html</id>
+    <published>2023-12-20T08:51:37.000Z</published>
+    <updated>2023-12-26T06:28:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://file.lintiebao.cn/Okak4qgCfMx470x8N0hneJXNViJu1VUG/2023_songs.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://file.lintiebao.cn/Okak4qgCfMx470x8N0hneJXNViJu1VUG/2023_songs.jpg&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="歌单" scheme="http://example.com/categories/%E6%AD%8C%E5%8D%95/"/>
+    
+    
+    <category term="歌单" scheme="http://example.com/tags/%E6%AD%8C%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>那些有趣有用的网站</title>
+    <link href="http://example.com/posts/60424.html"/>
+    <id>http://example.com/posts/60424.html</id>
+    <published>2023-10-23T09:33:40.000Z</published>
+    <updated>2023-10-24T06:39:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、<code>网站</code> <code>IP</code> 查找任何IPv4地址、IPv6地址、网站、域或子域<br><a href="https://www.ipaddress.com/">Ipaddress</a></p><p>2、<code>emoji</code> <code>图标</code> 轻松浏览并保存超过30,000个独特的表情符号混搭<br><a href="https://emojikitchen.dev/">Emojikitchen</a></p><p>3、<code>emoji</code> <code>图标</code> Fluent Emoji<br><a href="https://fluentemoji.com/">Fluent Emoji</a></p><p>4、<code>emoji</code> <code>图标</code> 该网站允许自动和快速地创建：wow：表情符号，在Slack上经常愉快地使用<br><a href="https://wowemoji.dev/">Wowemoji</a></p><p>5、<code>emoji</code> <code>图标</code> 下载png&#x2F;jpeg&#x2F;svg格式的emoji表情<br><a href="https://downloademoji.dev/">Downloademoji</a></p><p>6、<code>CSS</code> CSS阴影调色板生成器<br><a href="https://www.joshwcomeau.com/shadow-palette/">Joshwcomeau</a></p><p>7、<code>CSS</code> 让设计师和开发人员更容易导出漂亮的SVG<br><a href="https://www.shapedivider.app/">Shapedivider</a></p><p>8、<code>CSS</code> Animista 是一个CSS动画库，您可以在其中使用一系列现成的CSS动画并仅下载您将使用的动画<br><a href="https://animista.net/play/basic/rotate-scale">Animista</a></p><p>9、<code>CSS</code> 借助CSS3 border-radius属性构建有机外观形状的视觉生成器<br><a href="https://9elements.github.io/fancy-border-radius/">FANCY-BORDER-RADIUS</a></p><p>10、<code>CSS</code> 使用CSS剪辑路径塑造您的网站<br><a href="https://bennettfeely.com/clippy/">CSS clip-path maker</a></p><p>11、<code>图像生成</code> 使用此工具可以创建线性、径向和圆锥形渐变背景。 导出为CSS、SVG、PNG和JPEG，以便在您的网站、社交媒体或壁纸上使用<br><a href="https://doodad.dev/gradient-generator/">渐变生成器 — 创建 CSS、SVG 和 PNG 颜色渐变</a></p><p>12、<code>图像生成</code> 字符生成字符字工具<br><a href="https://magiconch.com/fontfont/">字符字生成器</a></p><p>13、<code>图像生成</code> <code>CSS</code> CSS精灵生成器<br><a href="https://www.toptal.com/developers/css/sprite-generator/">CSS精灵生成器</a></p><p>14、<code>图像生成</code> <code>SVG</code> 波浪生成器<br><a href="https://getwaves.io/">Make some waves</a></p><p>15、<code>图像生成</code> <code>SVG</code> 生成各种好看的背景图，导出SVG、PNG格式 ⭐️⭐️⭐️⭐️⭐️<br><a href="https://app.haikei.app/">Haikei</a></p><p>16、<code>图像生成</code> ColorFu是人们可以使用文字、颜色、图案和图像制作独特的壁纸来表达他们的感受或想法的地方 ⭐️⭐️⭐️⭐️<br><a href="https://pearmini.github.io/colorfu/#/">ColorFu</a></p><p>17、<code>图像生成</code> 生成手写体，只支持英文<br><a href="https://www.calligrapher.ai/">Calligrapher</a></p><p>18、<code>图像生成</code> Trianglify.io 是一种生成低多边形三角形图案的工具，可用作壁纸和网站资源。<br><a href="https://trianglify.io/">Trianglify</a></p><p>19、<code>图像生成</code> 所见即所得的梗图生成器<br><a href="https://x.magiconch.com/">梗图生成器</a></p><p>20、<code>图像生成</code> 将你的代码变成好看的图像。 从一系列语法颜色中进行选择，隐藏或显示背景，以及在深色和浅色窗口之间切换 ⭐️⭐️⭐️⭐️⭐️<br><a href="https://www.ray.so/">代码生成好看的背景</a></p><p>21、<code>图像生成</code> 九宫格切图工具 ⭐️⭐️⭐️<br><a href="https://v.magiconch.com/sns-image">九宫格切图</a></p><p>22、<code>图片处理</code> 美图秀秀线上图片美化工具、人像美容、添加文字、抠图软件、拼图、批量处理图片大小、证件照换底色、图片压缩等好用的功能，还有海报设计、平面设计、广告设计、贴纸素材、边框等丰富的内容 ⭐️⭐️⭐️⭐️⭐️<br><a href="https://pc.meitu.com/">美图秀秀</a></p><p>23、<code>图片处理</code> 图片做旧工具，图片爆浆工具，让图片看起来就是上古时代的东西<br><a href="https://magiconch.com/patina/">图片做旧工具</a></p><p>24、<code>图片处理</code><br><a href="https://lab.magiconch.com/one-last-image/">One Last Image</a></p><p>25、<code>图片格式</code> 将您的文件转换成任意格式<br><a href="https://convertio.co/zh/">文件转换器</a></p><p>26、<code>图片格式</code> icon生成器，png转ico<br><a href="https://www.aconvert.com/cn/icon/png-to-ico/">icon生成器</a></p><p>27、<code>图片压缩</code> 智能WebP、PNG和JPEG压缩 ⭐️⭐️⭐️⭐️⭐️<br><a href="https://tinypng.com/">Tinypng</a></p><p>28、<code>抠图</code> 让图片背景消除<br><a href="https://www.remove.bg/zh">RemoveBg</a></p><p>29、<code>图片放大</code> 使用AI图像放大器放大和增強图像<br><a href="https://imglarger.com/zh-tw">Imglarger</a></p><p>30、<code>图片处理</code> Squoosh是终极图像优化器，可让您在浏览器中使用不同的编解码器压缩和比较图像。<br><a href="https://squoosh.app/">Squoosh</a></p><p>31、<code>图片处理</code> 将图片转为Base64<br><a href="https://image-to-base64.gutianhuang.red/">图片Base64</a></p><p>32、<code>图片资源</code> 网站404页面无版权插图<br><a href="https://error404.fun/">无版权插图</a></p><p>33、<code>图片资源</code> 一个极简的百度图片搜索工具！<br><a href="https://lab.magiconch.com/baidu-images/">百度图像搜索极简版</a></p><p>34、<code>格式转换</code> 支持几乎所有的音频、视频、文档、电子书、档案、图像、电子表格和演示格式。此外，您无需下载任何软件即可使用我们的在线工具<br><a href="https://cloudconvert.com/">Cloudconvert</a></p><p>35、<code>英语</code> 为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件<br><a href="https://qwerty.kaiyi.cool/">Qwerty Learner</a></p><p>36、<code>图表</code> 在线白板，让写作变得简单<br><a href="https://excalidraw.com/">Excalidraw</a></p><p>37、<code>图表</code> 绘制线条和形状、编写文本、预览并导出为PowerPoint格式。<br><a href="https://webdemo.myscript.com/views/diagram/">Diagram</a></p><p>38、<code>编程</code> 简单的函数绘图。<br><a href="https://graphtoy.com/">Graphtoy</a></p><p>39、<code>3D</code> glTF模型预览工具<br><a href="https://gltf-viewer.donmccurdy.com/">gltf-viewer</a></p><p>40、<code>3D</code> 一个免费的开源 Web 解决方案，可直接在浏览器中可视化和探索 3D 模型。 支持的文件格式：obj、3ds、stl、ply、gltf、glb、off、3dm、fbx、dae、wrl、3mf、brep、step、iges、fcstd、ifc、bim<br><a href="https://3dviewer.net/">3dviewer</a></p><p>41、<code>音乐</code> 自由钢琴(AutoPiano)是利用HTML5技术开发的在线钢琴应用，致力于为钢琴爱好者、音乐爱好者提供一个优雅、简洁的平台，在学习工作之余可以在线弹钢琴，享受音乐、生活的美好。自由钢琴支持自动演奏和手动演奏，简单易学，快来试试吧~<br><a href="https://www.autopiano.cn/">AutoPiano</a></p><p>42、<code>游戏</code> 俄罗斯方块似的消除游戏<br><a href="https://magiconch.com/mix-eupho/">合成北宇治</a></p><p>43、<code>游戏</code> 多人在线你画我猜<br><a href="https://enazo.cn/">绘谜</a></p><p>44、<code>游戏</code> 在浏览器中体验无尽的驾驶禅意<br><a href="https://slowroads.io/">Slowroads</a></p><p>45、<code>游戏</code> 一款简单的消除游戏<br><a href="https://sheep-fucking-sheep.gutianhuang.red/">sheep-fucking-sheep</a></p><p>46、<code>游戏</code> 高品质的斯诺克游戏<br><a href="http://www.heyzxz.me/pcol/">斯诺克</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1、&lt;code&gt;网站&lt;/code&gt; &lt;code&gt;IP&lt;/code&gt; 查找任何IPv4地址、IPv6地址、网站、域或子域&lt;br&gt;&lt;a href=&quot;https://www.ipaddress.com/&quot;&gt;Ipaddress&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2、&lt;code&gt;emoji&lt;/c</summary>
+      
+    
+    
+    
+    <category term="网站" scheme="http://example.com/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="网站" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js13kGames参赛优秀作品</title>
+    <link href="http://example.com/posts/31404.html"/>
+    <id>http://example.com/posts/31404.html</id>
+    <published>2023-10-18T01:06:34.000Z</published>
+    <updated>2023-10-18T01:44:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、Space-Huggers-太空拥抱者"><a href="#1、Space-Huggers-太空拥抱者" class="headerlink" title="1、Space Huggers 太空拥抱者"></a><a href="https://js13kgames.com/games/space-huggers/index.html">1、Space Huggers 太空拥抱者</a></h3><p><a href="https://github.com/KilledByAPixel/SpaceHuggers">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-huggers-2.mp4?_=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="2、Space-Block-Invaders-太空方块入侵者"><a href="#2、Space-Block-Invaders-太空方块入侵者" class="headerlink" title="2、Space Block Invaders 太空方块入侵者"></a><a href="https://js13kgames.com/games/space-block-invaders/index.html">2、Space Block Invaders 太空方块入侵者</a></h3><p><a href="https://github.com/nicklaslof/space-block-invaders">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-block-invaders-no-lb.mp4?_=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="3、Q1K3"><a href="#3、Q1K3" class="headerlink" title="3、Q1K3"></a><a href="https://github.blog/wp-content/uploads/2021/09/q13k-no-lb.mp4?_=3">3、Q1K3</a></h3><p><a href="https://github.com/phoboslab/q1k3">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/q13k-no-lb.mp4?_=3" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="4、The-Adventures-of-Captain-Callisto-卡利斯托船长的历险记"><a href="#4、The-Adventures-of-Captain-Callisto-卡利斯托船长的历险记" class="headerlink" title="4、The Adventures of Captain Callisto 卡利斯托船长的历险记"></a><a href="https://js13kgames.com/games/the-adventures-of-captain-callisto/index.html">4、The Adventures of Captain Callisto 卡利斯托船长的历险记</a></h3><p><a href="https://github.com/codyebberson/js13k-callisto">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/adventure-of-captain-callisto.mp4?_=4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="5、Hit-the-space-击中空间"><a href="#5、Hit-the-space-击中空间" class="headerlink" title="5、Hit the space! 击中空间"></a><a href="https://js13kgames.com/games/hit-the-space/index.html">5、Hit the space! 击中空间</a></h3><p><a href="https://github.com/Kimbatt/js13k-2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/hit-the-space.mp4?_=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="6、Black-Hole-Square-黑洞广场"><a href="#6、Black-Hole-Square-黑洞广场" class="headerlink" title="6、Black Hole Square 黑洞广场"></a><a href="https://js13kgames.com/games/black-hole-square/index.html">6、Black Hole Square 黑洞广场</a></h3><p><a href="https://github.com/Quinten/black-hole-square">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/black-hole-square.mp4?_=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="7、Tenacity-韧性"><a href="#7、Tenacity-韧性" class="headerlink" title="7、Tenacity 韧性"></a><a href="https://js13kgames.com/games/tenacity/index.html">7、Tenacity 韧性</a></h3><p><a href="https://github.com/GregPeck/tenacity">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/tenacity.mp4?_=7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="8、Safe-Space-安全空间"><a href="#8、Safe-Space-安全空间" class="headerlink" title="8、Safe Space 安全空间"></a><a href="https://js13kgames.com/games/safe-space/index.html">8、Safe Space 安全空间</a></h3><p><a href="https://github.com/ericdrowell/SafeSpace">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/safe-space-no-lb.mp4?_=8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="9、Galaxy-Rider-银河骑士"><a href="#9、Galaxy-Rider-银河骑士" class="headerlink" title="9、Galaxy Rider 银河骑士"></a><a href="https://js13kgames.com/games/galaxy-rider/index.html">9、Galaxy Rider 银河骑士</a></h3><p><a href="https://github.com/jaburns/js13k2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/galaxy-rider-1.mp4?_=9" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="10、Beat-Rocks-击败岩石"><a href="#10、Beat-Rocks-击败岩石" class="headerlink" title="10、Beat Rocks 击败岩石"></a><a href="https://js13kgames.com/games/beat-rocks/index.html">10、Beat Rocks 击败岩石</a></h3><p><a href="https://github.com/Kos/js13k-2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/asteroids-rhythm.mp4?_=10" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="11、PACKABUNCHAS-帕卡本查斯"><a href="#11、PACKABUNCHAS-帕卡本查斯" class="headerlink" title="11、PACKABUNCHAS 帕卡本查斯"></a><a href="https://js13kgames.com/games/packabunchas/index.html">11、PACKABUNCHAS 帕卡本查斯</a></h3><p><a href="https://github.com/MattiaFortunati/packabunchas">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/10/packa-bunchas.mp4?_=11" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="12、Space-Garden-太空花园"><a href="#12、Space-Garden-太空花园" class="headerlink" title="12、Space Garden 太空花园"></a><a href="https://js13kgames.com/games/space-garden/index.html">12、Space Garden 太空花园</a></h3><p><a href="https://github.com/Rybar/JS13k2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-garden-2.mp4?_=12" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="13、The-Maze-of-Space-Goblins-太空妖精迷宫"><a href="#13、The-Maze-of-Space-Goblins-太空妖精迷宫" class="headerlink" title="13、The Maze of Space Goblins 太空妖精迷宫"></a><a href="https://js13kgames.com/games/the-maze-of-space-goblins/index.html">13、The Maze of Space Goblins 太空妖精迷宫</a></h3><p><a href="https://github.com/jani-nykanen/the-maze-of-space-goblins">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-goblin.mp4?_=13" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id=""><a href="#" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="-1"><a href="#-1" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="-2"><a href="#-2" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="-3"><a href="#-3" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p><a href="https://js13kgames.com/entries/2023">更多…</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;1、Space-Huggers-太空拥抱者&quot;&gt;&lt;a href=&quot;#1、Space-Huggers-太空拥抱者&quot; class=&quot;headerlink&quot; title=&quot;1、Space Huggers 太空拥抱者&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://js13kg</summary>
+      
+    
+    
+    
+    <category term="js13kGames" scheme="http://example.com/categories/js13kGames/"/>
+    
+    
+    <category term="js13kGames" scheme="http://example.com/tags/js13kGames/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS13K 2022 获奖者 🏆</title>
+    <link href="http://example.com/posts/54091.html"/>
+    <id>http://example.com/posts/54091.html</id>
+    <published>2023-10-17T08:11:17.000Z</published>
+    <updated>2023-10-17T09:54:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、Dante-但丁"><a href="#1、Dante-但丁" class="headerlink" title="1、Dante 但丁"></a><a href="https://js13kgames.com/games/dante/index.html">1、Dante 但丁</a></h3><p><a href="https://github.com/SalvatorePreviti/js13k-2022">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/dante.png?resize=1024,512?w=1600"></p><h3 id="2、Dying-Dreams-垂死的梦想"><a href="#2、Dying-Dreams-垂死的梦想" class="headerlink" title="2、Dying Dreams 垂死的梦想"></a><a href="https://js13kgames.com/games/dying-dreams/index.html">2、Dying Dreams 垂死的梦想</a></h3><p><a href="https://github.com/jani-nykanen/dying-dreams">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/dying-dreams.png?resize=1024,512?w=1600"></p><h3 id="3、Norman-the-Necromancer-死灵法师诺"><a href="#3、Norman-the-Necromancer-死灵法师诺" class="headerlink" title="3、Norman the Necromancer 死灵法师诺"></a><a href="https://js13kgames.com/games/norman-the-necromancer/index.html">3、Norman the Necromancer 死灵法师诺</a></h3><p><a href="https://github.com/danprince/norman-the-necromancer">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/normal-the-necromancer.png?resize=1024,512?w=1600"></p><h3 id="4、Soul-Jumper-灵魂跳跃者"><a href="#4、Soul-Jumper-灵魂跳跃者" class="headerlink" title="4、Soul Jumper 灵魂跳跃者"></a><a href="https://js13kgames.com/games/soul-jumper/index.html">4、Soul Jumper 灵魂跳跃者</a></h3><p><a href="https://github.com/tyler6699/js13k2022">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/soul-jumper.png?resize=1024,512?w=1600"></p><h3 id="5、The-Neatness-整洁"><a href="#5、The-Neatness-整洁" class="headerlink" title="5、The Neatness 整洁"></a><a href="https://js13kgames.com/games/the-neatness/index.html">5、The Neatness 整洁</a></h3><p><a href="https://github.com/mvasilkov/neatness2022">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/the-neatness.png?resize=1024,512?w=1600"></p><h3 id="6、Charon-Jr-小卡戎"><a href="#6、Charon-Jr-小卡戎" class="headerlink" title="6、Charon Jr. 小卡戎"></a><a href="https://js13kgames.com/games/charon-jr/index.html">6、Charon Jr. 小卡戎</a></h3><p><a href="https://github.com/roblouie/charon-jr">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/charon-jnr.png?resize=1024,512?w=1600"></p><h3 id="7、13"><a href="#7、13" class="headerlink" title="7、13"></a><a href="https://grtc.herokuapp.com/">7、13</a></h3><p><a href="https://github.com/eliasku/13">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/13.png?resize=1024,512?w=1600"></p><h3 id="8、Soul-Surf-灵魂冲浪"><a href="#8、Soul-Surf-灵魂冲浪" class="headerlink" title="8、Soul Surf 灵魂冲浪"></a><a href="https://js13kgames.com/games/soul-surf/index.html">8、Soul Surf 灵魂冲浪</a></h3><p><a href="https://github.com/verybomb/soulsurf-js13k">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/soul-surf.png?resize=1024,512?w=1600"></p><h3 id="9、Infernal-Throne-地狱王座"><a href="#9、Infernal-Throne-地狱王座" class="headerlink" title="9、Infernal Throne 地狱王座"></a><a href="https://js13kgames.com/games/infernal-throne/index.html">9、Infernal Throne 地狱王座</a></h3><p><a href="https://github.com/arikwex/infernal-sigil">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/infernal-throne.png?resize=1024,512?w=1600"></p><h3 id="10、DEAD-AGAIN-又死了"><a href="#10、DEAD-AGAIN-又死了" class="headerlink" title="10、DEAD AGAIN 又死了"></a><a href="https://js13kgames.com/games/dead-again/index.html">10、DEAD AGAIN 又死了</a></h3><p><a href="https://github.com/sanojian/js13k_2022">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/dead-again.png?resize=1024,512?w=1600"></p><h3 id="11、Tindeath-锡死亡"><a href="#11、Tindeath-锡死亡" class="headerlink" title="11、Tindeath 锡死亡"></a><a href="https://js13kgames.com/games/tindeath/index.html">11、Tindeath 锡死亡</a></h3><p><a href="https://github.com/jonathan-vallet/js13k-2022">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/tin-death.png?resize=1024,512?w=1600"></p><h3 id="12、The-Raising-Fighting-Spirits-提升斗志"><a href="#12、The-Raising-Fighting-Spirits-提升斗志" class="headerlink" title="12、The Raising Fighting Spirits 提升斗志"></a><a href="https://js13kgames.com/games/the-raising-fighting-spirits/index.html">12、The Raising Fighting Spirits 提升斗志</a></h3><p><a href="https://github.com/IgorFIE/theraisingfightingspirits">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/the-raising-fighting-spirits.png?resize=1024,512?w=1600"></p><h3 id="13、Enchanted-Dungeon-魔法地牢"><a href="#13、Enchanted-Dungeon-魔法地牢" class="headerlink" title="13、Enchanted Dungeon 魔法地牢"></a><a href="https://js13kgames.com/games/enchanted-dungeon/index.html">13、Enchanted Dungeon 魔法地牢</a></h3><p><a href="https://github.com/malec-palec/death-game">github</a><br><img src="https://github.blog/wp-content/uploads/2022/10/enchanted-dungeon.png?resize=1024,512?w=1600"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;1、Dante-但丁&quot;&gt;&lt;a href=&quot;#1、Dante-但丁&quot; class=&quot;headerlink&quot; title=&quot;1、Dante 但丁&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://js13kgames.com/games/dante/index.html&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="js13kGames" scheme="http://example.com/categories/js13kGames/"/>
+    
+    
+    <category term="js13kGames" scheme="http://example.com/tags/js13kGames/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS13K 2023 获奖者 🏆</title>
+    <link href="http://example.com/posts/17290.html"/>
+    <id>http://example.com/posts/17290.html</id>
+    <published>2023-10-17T07:02:37.000Z</published>
+    <updated>2023-10-17T09:54:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="js13kGames-是一年一度的在线游戏开发竞赛，挑战参赛者仅使用-13-KB-的-JavaScript-创建主题-HTML5-游戏，比赛鼓励在小文件大小的限制下进行创造力、优化和创新，从而产生各种独特且引人入胜的游戏，下面是获奖项目："><a href="#js13kGames-是一年一度的在线游戏开发竞赛，挑战参赛者仅使用-13-KB-的-JavaScript-创建主题-HTML5-游戏，比赛鼓励在小文件大小的限制下进行创造力、优化和创新，从而产生各种独特且引人入胜的游戏，下面是获奖项目：" class="headerlink" title="js13kGames 是一年一度的在线游戏开发竞赛，挑战参赛者仅使用 13 KB 的 JavaScript 创建主题 HTML5 游戏，比赛鼓励在小文件大小的限制下进行创造力、优化和创新，从而产生各种独特且引人入胜的游戏，下面是获奖项目："></a>js13kGames 是一年一度的在线游戏开发竞赛，挑战参赛者仅使用 13 KB 的 JavaScript 创建主题 HTML5 游戏，比赛鼓励在小文件大小的限制下进行创造力、优化和创新，从而产生各种独特且引人入胜的游戏，下面是获奖项目：</h3><h3 id="1、Path-to-Glory-荣耀之路"><a href="#1、Path-to-Glory-荣耀之路" class="headerlink" title="1、Path to Glory 荣耀之路"></a><a href="https://js13kgames.com/games/path-to-glory/index.html">1、Path to Glory 荣耀之路</a></h3><p><a href="https://github.com/remvst/knight">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Path-to-Glory.png?resize=1000,750?w=1000"></p><h3 id="2、Merlin-vs-Alfonso-梅林-vs-阿方索"><a href="#2、Merlin-vs-Alfonso-梅林-vs-阿方索" class="headerlink" title="2、Merlin vs Alfonso 梅林 vs 阿方索"></a><a href="https://js13kgames.com/games/merlin-vs-alfonso/index.html">2、Merlin vs Alfonso 梅林 vs 阿方索</a></h3><p><a href="https://github.com/merlinvsalfonso/merlingame">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Merlin-vs-Alfonso.png?resize=1000,750?w=1000"></p><h3 id="3、Casual-Crusade-休闲十字军东征"><a href="#3、Casual-Crusade-休闲十字军东征" class="headerlink" title="3、Casual Crusade 休闲十字军东征"></a><a href="https://js13kgames.com/games/casual-crusade/index.html">3、Casual Crusade 休闲十字军东征</a></h3><p><a href="https://github.blog/wp-content/uploads/2023/10/Casual-Crusade.png?resize=1000,750?w=1000">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Casual-Crusade.png?resize=1000,750?w=1000"></p><h3 id="4、Tiny-Yurts-小蒙古包"><a href="#4、Tiny-Yurts-小蒙古包" class="headerlink" title="4、Tiny Yurts 小蒙古包"></a><a href="https://js13kgames.com/games/tiny-yurts/index.html">4、Tiny Yurts 小蒙古包</a></h3><p><a href="https://github.com/burntcustard/tiny-yurts">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Tiny-Yurts.png?resize=1000,750?w=1000"></p><h3 id="5、UPYRI-乌比里"><a href="#5、UPYRI-乌比里" class="headerlink" title="5、UPYRI 乌比里"></a><a href="https://js13kgames.com/games/upyri/index.html">5、UPYRI 乌比里</a></h3><p><a href="https://github.com/roblouie/upyri">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Upyri.png?resize=1000,750?w=1000"></p><h3 id="6、CASTLE-🏰-ESCAPE-2023-城堡🏰逃生"><a href="#6、CASTLE-🏰-ESCAPE-2023-城堡🏰逃生" class="headerlink" title="6、CASTLE 🏰 ESCAPE (2023)城堡🏰逃生"></a><a href="https://js13kgames.com/games/castle-escape-2023/index.html">6、CASTLE 🏰 ESCAPE (2023)城堡🏰逃生</a></h3><p><a href="https://github.com/xem/js13k23">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Castle-%F0%9F%8F%B0-Escape-2023.png?w=1000"></p><h3 id="7、Super-Castle-Game-超级城堡游戏"><a href="#7、Super-Castle-Game-超级城堡游戏" class="headerlink" title="7、Super Castle Game 超级城堡游戏"></a><a href="https://js13kgames.com/games/super-castle-game/index.html">7、Super Castle Game 超级城堡游戏</a></h3><p><a href="https://github.com/mvasilkov/super2023">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Super-Castle-Game.png?resize=1000,750?w=1000"></p><h3 id="8、FEAST-NIGHT-盛宴之夜"><a href="#8、FEAST-NIGHT-盛宴之夜" class="headerlink" title="8、FEAST NIGHT 盛宴之夜"></a><a href="https://js13kgames.com/games/feast-night/index.html">8、FEAST NIGHT 盛宴之夜</a></h3><p><a href="https://github.com/wololoa/js13k2023">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/FEAST-NIGHT-.png?resize=1000,750?w=1000"></p><h3 id="9、Knight-Dreams-骑士梦"><a href="#9、Knight-Dreams-骑士梦" class="headerlink" title="9、Knight Dreams 骑士梦"></a><a href="https://js13kgames.com/games/knight-dreams/index.html">9、Knight Dreams 骑士梦</a></h3><p><a href="https://github.com/jani-nykanen/knight-dreams">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Knight-Dreams.png?resize=1000,750?w=1000"></p><h3 id="10、Robin-of-Thirteensley-十三斯利的罗宾"><a href="#10、Robin-of-Thirteensley-十三斯利的罗宾" class="headerlink" title="10、Robin of Thirteensley 十三斯利的罗宾"></a><a href="https://js13kgames.com/games/robin-of-thirteensley/index.html">10、Robin of Thirteensley 十三斯利的罗宾</a></h3><p><a href="https://github.com/csubagio/js13k-robin/tree/master">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Robin-of-Thirteensley.png?resize=1000,750?w=1000"></p><h3 id="11、Fort-Knight-奈特堡"><a href="#11、Fort-Knight-奈特堡" class="headerlink" title="11、Fort Knight 奈特堡"></a><a href="https://js13kgames.com/games/fort-knight/index.html">11、Fort Knight 奈特堡</a></h3><p><a href="https://github.com/tyler6699/js13k2023">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/Fort-Knight.png?resize=1000,750?w=1000"></p><h3 id="12、The-Terror-of-Mongolia-蒙古的恐怖"><a href="#12、The-Terror-of-Mongolia-蒙古的恐怖" class="headerlink" title="12、The Terror of Mongolia 蒙古的恐怖"></a><a href="https://js13kgames.com/games/the-terror-of-mongolia/index.html">12、The Terror of Mongolia 蒙古的恐怖</a></h3><p><a href="https://github.com/jacklehamster/khan-js13k/">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/The-Terror-of-Mongolia.png?resize=1000,750?w=1000"></p><h3 id="13、WitchCup1276-女巫杯1276"><a href="#13、WitchCup1276-女巫杯1276" class="headerlink" title="13、WitchCup1276 女巫杯1276"></a><a href="https://js13kgames.com/games/witchcup1276/index.html">13、WitchCup1276 女巫杯1276</a></h3><p><a href="https://github.com/DerBenniBanni/js13k2023_witch_racing">github</a><br><img src="https://github.blog/wp-content/uploads/2023/10/WitchCup1276.png?resize=1000,750?w=1000"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;js13kGames-是一年一度的在线游戏开发竞赛，挑战参赛者仅使用-13-KB-的-JavaScript-创建主题-HTML5-游戏，比赛鼓励在小文件大小的限制下进行创造力、优化和创新，从而产生各种独特且引人入胜的游戏，下面是获奖项目：&quot;&gt;&lt;a href=&quot;#j</summary>
+      
+    
+    
+    
+    <category term="js13kGames" scheme="http://example.com/categories/js13kGames/"/>
+    
+    
+    <category term="js13kGames" scheme="http://example.com/tags/js13kGames/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>白噪音</title>
+    <link href="http://example.com/posts/47513.html"/>
+    <id>http://example.com/posts/47513.html</id>
+    <published>2023-10-12T02:27:00.000Z</published>
+    <updated>2023-11-30T01:12:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>森林 <a href="https://www.tree.fm/forest/28">森林的声音</a><br>海洋 <a href="https://virtocean.com/#">virtocean</a><br>自然 <a href="https://earth.fm/">earth</a><br>四季 <a href="https://rainyscope.com/">rainyscope</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;森林 &lt;a href=&quot;https://www.tree.fm/forest/28&quot;&gt;森林的声音&lt;/a&gt;&lt;br&gt;海洋 &lt;a href=&quot;https://virtocean.com/#&quot;&gt;virtocean&lt;/a&gt;&lt;br&gt;自然 &lt;a href=&quot;https://earth.f</summary>
+      
+    
+    
+    
+    <category term="白噪音" scheme="http://example.com/categories/%E7%99%BD%E5%99%AA%E9%9F%B3/"/>
+    
+    
+    <category term="-白噪音" scheme="http://example.com/tags/%E7%99%BD%E5%99%AA%E9%9F%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Language Code Table</title>
+    <link href="http://example.com/posts/undefined.html"/>
+    <id>http://example.com/posts/undefined.html</id>
+    <published>2023-09-26T02:36:47.000Z</published>
+    <updated>2023-09-26T02:39:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Language Code Table</title></head><body><p align="center"><b><font face="Tahoma">ISO Language Code Table</font></b></p><table border="1" width="100%" cellspacing="0" cellpadding="5" style="border-collapse: collapse" bordercolor="#C0C0C0"><tr><td bgcolor="#CDECFE">Code</td><td bgcolor="#CDECFE">Name</td></tr><tr><td>af</td><td>Afrikaans</td></tr><tr><td>af-ZA</td><td>Afrikaans (South Africa)</td></tr><tr><td>ar</td><td>Arabic</td></tr><tr><td>ar-AE</td><td>Arabic (U.A.E.)</td></tr><tr><td>ar-BH</td><td>Arabic (Bahrain)</td></tr><tr><td>ar-DZ</td><td>Arabic (Algeria)</td></tr><tr><td>ar-EG</td><td>Arabic (Egypt)</td></tr><tr><td>ar-IQ</td><td>Arabic (Iraq)</td></tr><tr><td>ar-JO</td><td>Arabic (Jordan)</td></tr><tr><td>ar-KW</td><td>Arabic (Kuwait)</td></tr><tr><td>ar-LB</td><td>Arabic (Lebanon)</td></tr><tr><td>ar-LY</td><td>Arabic (Libya)</td></tr><tr><td>ar-MA</td><td>Arabic (Morocco)</td></tr><tr><td>ar-OM</td><td>Arabic (Oman)</td></tr><tr><td>ar-QA</td><td>Arabic (Qatar)</td></tr><tr><td>ar-SA</td><td>Arabic (Saudi Arabia)</td></tr><tr><td>ar-SY</td><td>Arabic (Syria)</td></tr><tr><td>ar-TN</td><td>Arabic (Tunisia)</td></tr><tr><td>ar-YE</td><td>Arabic (Yemen)</td></tr><tr><td>az</td><td>Azeri (Latin)</td></tr><tr><td>az-AZ</td><td>Azeri (Latin) (Azerbaijan)</td></tr><tr><td>az-AZ</td><td>Azeri (Cyrillic) (Azerbaijan)</td></tr><tr><td>be</td><td>Belarusian</td></tr><tr><td>be-BY</td><td>Belarusian (Belarus)</td></tr><tr><td>bg</td><td>Bulgarian</td></tr><tr><td>bg-BG</td><td>Bulgarian (Bulgaria)</td></tr><tr><td>bs-BA</td><td>Bosnian (Bosnia and Herzegovina)</td></tr><tr><td>ca</td><td>Catalan</td></tr><tr><td>ca-ES</td><td>Catalan (Spain)</td></tr><tr><td>cs</td><td>Czech</td></tr><tr><td>cs-CZ</td><td>Czech (Czech Republic)</td></tr><tr><td>cy</td><td>Welsh</td></tr><tr><td>cy-GB</td><td>Welsh (United Kingdom)</td></tr><tr><td>da</td><td>Danish</td></tr><tr><td>da-DK</td><td>Danish (Denmark)</td></tr><tr><td>de</td><td>German</td></tr><tr><td>de-AT</td><td>German (Austria)</td></tr><tr><td>de-CH</td><td>German (Switzerland)</td></tr><tr><td>de-DE</td><td>German (Germany)</td></tr><tr><td>de-LI</td><td>German (Liechtenstein)</td></tr><tr><td>de-LU</td><td>German (Luxembourg)</td></tr><tr><td>dv</td><td>Divehi</td></tr><tr><td>dv-MV</td><td>Divehi (Maldives)</td></tr><tr><td>el</td><td>Greek</td></tr><tr><td>el-GR</td><td>Greek (Greece)</td></tr><tr><td>en</td><td>English</td></tr><tr><td>en-AU</td><td>English (Australia)</td></tr><tr><td>en-BZ</td><td>English (Belize)</td></tr><tr><td>en-CA</td><td>English (Canada)</td></tr><tr><td>en-CB</td><td>English (Caribbean)</td></tr><tr><td>en-GB</td><td>English (United Kingdom)</td></tr><tr><td>en-IE</td><td>English (Ireland)</td></tr><tr><td>en-JM</td><td>English (Jamaica)</td></tr><tr><td>en-NZ</td><td>English (New Zealand)</td></tr><tr><td>en-PH</td><td>English (Republic of the Philippines)</td></tr><tr><td>en-TT</td><td>English (Trinidad and Tobago)</td></tr><tr><td>en-US</td><td>English (United States)</td></tr><tr><td>en-ZA</td><td>English (South Africa)</td></tr><tr><td>en-ZW</td><td>English (Zimbabwe)</td></tr><tr><td>eo</td><td>Esperanto</td></tr><tr><td>es</td><td>Spanish</td></tr><tr><td>es-AR</td><td>Spanish (Argentina)</td></tr><tr><td>es-BO</td><td>Spanish (Bolivia)</td></tr><tr><td>es-CL</td><td>Spanish (Chile)</td></tr><tr><td>es-CO</td><td>Spanish (Colombia)</td></tr><tr><td>es-CR</td><td>Spanish (Costa Rica)</td></tr><tr><td>es-DO</td><td>Spanish (Dominican Republic)</td></tr><tr><td>es-EC</td><td>Spanish (Ecuador)</td></tr><tr><td>es-ES</td><td>Spanish (Castilian)</td></tr><tr><td>es-ES</td><td>Spanish (Spain)</td></tr><tr><td>es-GT</td><td>Spanish (Guatemala)</td></tr><tr><td>es-HN</td><td>Spanish (Honduras)</td></tr><tr><td>es-MX</td><td>Spanish (Mexico)</td></tr><tr><td>es-NI</td><td>Spanish (Nicaragua)</td></tr><tr><td>es-PA</td><td>Spanish (Panama)</td></tr><tr><td>es-PE</td><td>Spanish (Peru)</td></tr><tr><td>es-PR</td><td>Spanish (Puerto Rico)</td></tr><tr><td>es-PY</td><td>Spanish (Paraguay)</td></tr><tr><td>es-SV</td><td>Spanish (El Salvador)</td></tr><tr><td>es-UY</td><td>Spanish (Uruguay)</td></tr><tr><td>es-VE</td><td>Spanish (Venezuela)</td></tr><tr><td>et</td><td>Estonian</td></tr><tr><td>et-EE</td><td>Estonian (Estonia)</td></tr><tr><td>eu</td><td>Basque</td></tr><tr><td>eu-ES</td><td>Basque (Spain)</td></tr><tr><td>fa</td><td>Farsi</td></tr><tr><td>fa-IR</td><td>Farsi (Iran)</td></tr><tr><td>fi</td><td>Finnish</td></tr><tr><td>fi-FI</td><td>Finnish (Finland)</td></tr><tr><td>fo</td><td>Faroese</td></tr><tr><td>fo-FO</td><td>Faroese (Faroe Islands)</td></tr><tr><td>fr</td><td>French</td></tr><tr><td>fr-BE</td><td>French (Belgium)</td></tr><tr><td>fr-CA</td><td>French (Canada)</td></tr><tr><td>fr-CH</td><td>French (Switzerland)</td></tr><tr><td>fr-FR</td><td>French (France)</td></tr><tr><td>fr-LU</td><td>French (Luxembourg)</td></tr><tr><td>fr-MC</td><td>French (Principality of Monaco)</td></tr><tr><td>gl</td><td>Galician</td></tr><tr><td>gl-ES</td><td>Galician (Spain)</td></tr><tr><td>gu</td><td>Gujarati</td></tr><tr><td>gu-IN</td><td>Gujarati (India)</td></tr><tr><td>he</td><td>Hebrew</td></tr><tr><td>he-IL</td><td>Hebrew (Israel)</td></tr><tr><td>hi</td><td>Hindi</td></tr><tr><td>hi-IN</td><td>Hindi (India)</td></tr><tr><td>hr</td><td>Croatian</td></tr><tr><td>hr-BA</td><td>Croatian (Bosnia and Herzegovina)</td></tr><tr><td>hr-HR</td><td>Croatian (Croatia)</td></tr><tr><td>hu</td><td>Hungarian</td></tr><tr><td>hu-HU</td><td>Hungarian (Hungary)</td></tr><tr><td>hy</td><td>Armenian</td></tr><tr><td>hy-AM</td><td>Armenian (Armenia)</td></tr><tr><td>id</td><td>Indonesian</td></tr><tr><td>id-ID</td><td>Indonesian (Indonesia)</td></tr><tr><td>is</td><td>Icelandic</td></tr><tr><td>is-IS</td><td>Icelandic (Iceland)</td></tr><tr><td>it</td><td>Italian</td></tr><tr><td>it-CH</td><td>Italian (Switzerland)</td></tr><tr><td>it-IT</td><td>Italian (Italy)</td></tr><tr><td>ja</td><td>Japanese</td></tr><tr><td>ja-JP</td><td>Japanese (Japan)</td></tr><tr><td>ka</td><td>Georgian</td></tr><tr><td>ka-GE</td><td>Georgian (Georgia)</td></tr><tr><td>kk</td><td>Kazakh</td></tr><tr><td>kk-KZ</td><td>Kazakh (Kazakhstan)</td></tr><tr><td>kn</td><td>Kannada</td></tr><tr><td>kn-IN</td><td>Kannada (India)</td></tr><tr><td>ko</td><td>Korean</td></tr><tr><td>ko-KR</td><td>Korean (Korea)</td></tr><tr><td>kok</td><td>Konkani</td></tr><tr><td>kok-IN</td><td>Konkani (India)</td></tr><tr><td>ky</td><td>Kyrgyz</td></tr><tr><td>ky-KG</td><td>Kyrgyz (Kyrgyzstan)</td></tr><tr><td>lt</td><td>Lithuanian</td></tr><tr><td>lt-LT</td><td>Lithuanian (Lithuania)</td></tr><tr><td>lv</td><td>Latvian</td></tr><tr><td>lv-LV</td><td>Latvian (Latvia)</td></tr><tr><td>mi</td><td>Maori</td></tr><tr><td>mi-NZ</td><td>Maori (New Zealand)</td></tr><tr><td>mk</td><td>FYRO Macedonian</td></tr><tr><td>mk-MK</td><td>FYRO Macedonian (Former Yugoslav Republic of Macedonia)</td></tr><tr><td>mn</td><td>Mongolian</td></tr><tr><td>mn-MN</td><td>Mongolian (Mongolia)</td></tr><tr><td>mr</td><td>Marathi</td></tr><tr><td>mr-IN</td><td>Marathi (India)</td></tr><tr><td>ms</td><td>Malay</td></tr><tr><td>ms-BN</td><td>Malay (Brunei Darussalam)</td></tr><tr><td>ms-MY</td><td>Malay (Malaysia)</td></tr><tr><td>mt</td><td>Maltese</td></tr><tr><td>mt-MT</td><td>Maltese (Malta)</td></tr><tr><td>nb</td><td>Norwegian (Bokm?l)</td></tr><tr><td>nb-NO</td><td>Norwegian (Bokm?l) (Norway)</td></tr><tr><td>nl</td><td>Dutch</td></tr><tr><td>nl-BE</td><td>Dutch (Belgium)</td></tr><tr><td>nl-NL</td><td>Dutch (Netherlands)</td></tr><tr><td>nn-NO</td><td>Norwegian (Nynorsk) (Norway)</td></tr><tr><td>ns</td><td>Northern Sotho</td></tr><tr><td>ns-ZA</td><td>Northern Sotho (South Africa)</td></tr><tr><td>pa</td><td>Punjabi</td></tr><tr><td>pa-IN</td><td>Punjabi (India)</td></tr><tr><td>pl</td><td>Polish</td></tr><tr><td>pl-PL</td><td>Polish (Poland)</td></tr><tr><td>ps</td><td>Pashto</td></tr><tr><td>ps-AR</td><td>Pashto (Afghanistan)</td></tr><tr><td>pt</td><td>Portuguese</td></tr><tr><td>pt-BR</td><td>Portuguese (Brazil)</td></tr><tr><td>pt-PT</td><td>Portuguese (Portugal)</td></tr><tr><td>qu</td><td>Quechua</td></tr><tr><td>qu-BO</td><td>Quechua (Bolivia)</td></tr><tr><td>qu-EC</td><td>Quechua (Ecuador)</td></tr><tr><td>qu-PE</td><td>Quechua (Peru)</td></tr><tr><td>ro</td><td>Romanian</td></tr><tr><td>ro-RO</td><td>Romanian (Romania)</td></tr><tr><td>ru</td><td>Russian</td></tr><tr><td>ru-RU</td><td>Russian (Russia)</td></tr><tr><td>sa</td><td>Sanskrit</td></tr><tr><td>sa-IN</td><td>Sanskrit (India)</td></tr><tr><td>se</td><td>Sami (Northern)</td></tr><tr><td>se-FI</td><td>Sami (Northern) (Finland)</td></tr><tr><td>se-FI</td><td>Sami (Skolt) (Finland)</td></tr><tr><td>se-FI</td><td>Sami (Inari) (Finland)</td></tr><tr><td>se-NO</td><td>Sami (Northern) (Norway)</td></tr><tr><td>se-NO</td><td>Sami (Lule) (Norway)</td></tr><tr><td>se-NO</td><td>Sami (Southern) (Norway)</td></tr><tr><td>se-SE</td><td>Sami (Northern) (Sweden)</td></tr><tr><td>se-SE</td><td>Sami (Lule) (Sweden)</td></tr><tr><td>se-SE</td><td>Sami (Southern) (Sweden)</td></tr><tr><td>sk</td><td>Slovak</td></tr><tr><td>sk-SK</td><td>Slovak (Slovakia)</td></tr><tr><td>sl</td><td>Slovenian</td></tr><tr><td>sl-SI</td><td>Slovenian (Slovenia)</td></tr><tr><td>sq</td><td>Albanian</td></tr><tr><td>sq-AL</td><td>Albanian (Albania)</td></tr><tr><td>sr-BA</td><td>Serbian (Latin) (Bosnia and Herzegovina)</td></tr><tr><td>sr-BA</td><td>Serbian (Cyrillic) (Bosnia and Herzegovina)</td></tr><tr><td>sr-SP</td><td>Serbian (Latin) (Serbia and Montenegro)</td></tr><tr><td>sr-SP</td><td>Serbian (Cyrillic) (Serbia and Montenegro)</td></tr><tr><td>sv</td><td>Swedish</td></tr><tr><td>sv-FI</td><td>Swedish (Finland)</td></tr><tr><td>sv-SE</td><td>Swedish (Sweden)</td></tr><tr><td>sw</td><td>Swahili</td></tr><tr><td>sw-KE</td><td>Swahili (Kenya)</td></tr><tr><td>syr</td><td>Syriac</td></tr><tr><td>syr-SY</td><td>Syriac (Syria)</td></tr><tr><td>ta</td><td>Tamil</td></tr><tr><td>ta-IN</td><td>Tamil (India)</td></tr><tr><td>te</td><td>Telugu</td></tr><tr><td>te-IN</td><td>Telugu (India)</td></tr><tr><td>th</td><td>Thai</td></tr><tr><td>th-TH</td><td>Thai (Thailand)</td></tr><tr><td>tl</td><td>Tagalog</td></tr><tr><td>tl-PH</td><td>Tagalog (Philippines)</td></tr><tr><td>tn</td><td>Tswana</td></tr><tr><td>tn-ZA</td><td>Tswana (South Africa)</td></tr><tr><td>tr</td><td>Turkish</td></tr><tr><td>tr-TR</td><td>Turkish (Turkey)</td></tr><tr><td>tt</td><td>Tatar</td></tr><tr><td>tt-RU</td><td>Tatar (Russia)</td></tr><tr><td>ts</td><td>Tsonga</td></tr><tr><td>uk</td><td>Ukrainian</td></tr><tr><td>uk-UA</td><td>Ukrainian (Ukraine)</td></tr><tr><td>ur</td><td>Urdu</td></tr><tr><td>ur-PK</td><td>Urdu (Islamic Republic of Pakistan)</td></tr><tr><td>uz</td><td>Uzbek (Latin)</td></tr><tr><td>uz-UZ</td><td>Uzbek (Latin) (Uzbekistan)</td></tr><tr><td>uz-UZ</td><td>Uzbek (Cyrillic) (Uzbekistan)</td></tr><tr><td>vi</td><td>Vietnamese</td></tr><tr><td>vi-VN</td><td>Vietnamese (Viet Nam)</td></tr><tr><td>xh</td><td>Xhosa</td></tr><tr><td>xh-ZA</td><td>Xhosa (South Africa)</td></tr><tr><td>zh</td><td>Chinese</td></tr><tr><td>zh-CN</td><td>Chinese (S)</td></tr><tr><td>zh-HK</td><td>Chinese (Hong Kong)</td></tr><tr><td>zh-MO</td><td>Chinese (Macau)</td></tr><tr><td>zh-SG</td><td>Chinese (Singapore)</td></tr><tr><td>zh-TW</td><td>Chinese (T)</td></tr><tr><td>zu</td><td>Zulu</td></tr><tr><td>zu-ZA</td><td>Zulu (South Africa)</td></tr></table></body></html>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+&lt;title&gt;Language Code Table&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;p al</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>编程工具</title>
+    <link href="http://example.com/posts/5588.html"/>
+    <id>http://example.com/posts/5588.html</id>
+    <published>2023-08-23T01:34:18.000Z</published>
+    <updated>2023-11-15T07:01:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://it-tools.tech/">开发者工具合集</a></p><p>云代码编辑器<br><a href="https://gitpod.io/">gitpod</a></p><p>T3MPL 是通用网站编辑器和静态网站生成器合二为一。要创建网站，您只需要一个浏览器。选择一个网站模板并通过 T3MPL 编辑器进行编辑。将最终网站导出到.zip文件并将其上传到服务器。此外，您可以使用 T3MPL 服务器并直接在服务器上编辑您的页面。<br><a href="https://t3mpl.n4no.com/">T3MPL</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://it-tools.tech/&quot;&gt;开发者工具合集&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;云代码编辑器&lt;br&gt;&lt;a href=&quot;https://gitpod.io/&quot;&gt;gitpod&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;T3MPL 是通用网站编辑器和静态网站生成器合二为一。要</summary>
+      
+    
+    
+    
+    <category term="编程工具" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="编程工具" scheme="http://example.com/tags/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解压网站合集</title>
+    <link href="http://example.com/posts/47663.html"/>
+    <id>http://example.com/posts/47663.html</id>
+    <published>2023-08-09T06:06:34.000Z</published>
+    <updated>2023-10-12T05:57:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、<a href="https://lintiebao.com/posts/29005.html">GraphSynth</a><br>2、<a href="https://lintiebao.com/posts/44556.html">Clock</a><br>3、<a href="https://lintiebao.com/posts/22440.html">Bubbles</a><br>4、<a href="https://lintiebao.com/posts/17825.html">Cloth</a><br>5、<a href="https://lintiebao.com/posts/7749.html">Fireworks</a><br>6、<a href="https://lintiebao.com/posts/16431.html">字节跳动</a><br>7、<a href="https://lintiebao.com/posts/17811.html">在线游戏合集</a><br>8、<a href="https://lintiebao.com/posts/50279.html">无限马</a><br>9、<a href="https://lintiebao.com/posts/58321.html">时钟</a><br>10、<a href="https://lintiebao.com/posts/38771.html">捏脸怪</a><br>11、<a href="https://lintiebao.com/posts/30896.html">魔方</a><br>12、<a href="https://lintiebao.com/posts/53356.html">空白格</a><br>13、<a href="https://lintiebao.com/posts/24337.html">考拉</a><br>14、<a href="https://lintiebao.com/posts/6572.html">盖楼</a><br>15、<a href="https://lintiebao.com/posts/56502.html">俄罗斯方块</a><br>16、<a href="https://lintiebao.com/posts/47944.html">初音</a><br>17、<a href="https://lintiebao.com/posts/21470.html">Checkbox</a><br>18、<a href="https://lintiebao.com/posts/46398.html">Runner</a><br>19、<a href="https://wwwtyro.github.io/Astray/">迷宫</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1、&lt;a href=&quot;https://lintiebao.com/posts/29005.html&quot;&gt;GraphSynth&lt;/a&gt;&lt;br&gt;2、&lt;a href=&quot;https://lintiebao.com/posts/44556.html&quot;&gt;Clock&lt;/a&gt;&lt;br&gt;3、&lt;a</summary>
+      
+    
+    
+    
+    <category term="解压网站" scheme="http://example.com/categories/%E8%A7%A3%E5%8E%8B%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="解压网站" scheme="http://example.com/tags/%E8%A7%A3%E5%8E%8B%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>异体字整理</title>
+    <link href="http://example.com/posts/53029.html"/>
+    <id>http://example.com/posts/53029.html</id>
+    <published>2023-07-28T02:28:53.000Z</published>
+    <updated>2024-02-06T07:24:25.551Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="../poem/yitizi.html">查询</a></p><p>Ａ【an ao 】</p><p>an 　庵【庵】　暗【晻暗】　案【桉】　鞍【鞌】　<br>ao 　鳌【鼇】</p><p>Ｂ【bai ban bang bao bei ben beng bi bian biao bie bing bo bu 】</p><p>bai　 柏【栢】　稗【粺】<br>ban　 坂【岅】<br>bang　幇【帮】　膀【髈】　榜【牓】<br>bao　 刨【铇鑤】褓【緥】　褒【襃】<br>bei　 背【揹】　备【俻】　悖【誖】　杯【桮杯】<br>ben　 奔【犇逩】<br>beng　绷【绷】<br>bi　　痹【痹】　逼【偪】　毙【獘】　秘【秘】　弊【獘】　秕【粃】<br>bian　遍【徧】<br>biao　膘【臕】<br>bie　 鳖【鼈】<br>bing　并【并　并　竝】　冰【氷】　禀【禀】<br>bo　　钵【钵盋】博【愽】　驳【駮】　<br>bu　　布【布】</p><p>Ｃ【cai can cao ce cha chan chang che chen cheng chi chou chu chuan chuang chui chun ci cong cou cu cuan cui cun cuo 】</p><p>cai 　 踩【跴】　采【采采】　睬【倸】　彩【彩】<br>can　 参【叅】　惭【慙】<br>cao　 操【撡】　草【艸】<br>ce　　册【册】　厕【厕】　策【䇲】<br>cha　 插【揷】 查【查】察【詧】<br>chan　铲【刬　铲】<br>chang 尝【尝甞】<br>che 　扯【撦】<br>chen　嗔【瞋】　趁【趂】<br>cheng 乘【乗椉】 塍【堘】 撑【撑】　澄【澂】<br>chi　 耻【耻】　敕【勅𠡠翅【翄】 痴【癡痴　吃【喫吃<br>chou　仇【雠讐】 绸【紬䌷瞅【矁】　酬【詶　酧　醻】<br>chu　 厨【廚厨　蹰【躕蹰橱【櫉】　鋤锄耡鉏】<br>chuan 船【舩】<br>chuang創创剏 剙】　床【牀床　窗【牎牕窓窻】<br>chui　捶【搥】　棰【箠】　錘锤鎚锤<br>chun　蠢【惷】　春【旾】　淳【湻】　莼【蓴莼　唇【脣唇　醇【醕】<br>ci　　辭辞辤】　糍【餈糍　鷀鹚鶿鹚<br>cong　勿【怱　悤】　葱【蔥葱<br>cou　 凑【湊凑<br>cu　　蹴【蹵】　粗【麤　觕】<br>cuan　篡【簒】<br>cui　 脆【脃】 悴【顇】<br>cun 　村【邨】<br>cuo　 銼锉剉】</p><p>Ｄ【dai dan dang dao de deng di diao die ding dou du dun duo 】</p><p>dai　 呆【獃呆騃𫘤玳【瑇】<br>dan　 淡【澹】　啖【啗　噉】　耽【躭】<br>dang　擋【挡】　蕩【荡】荡dao　 搗【捣】捣de　　德【惪】<br>deng　凳【櫈】<br>di　　抵【牴　觝】　堤【隄】　蒂【蔕】<br>diao　雕【彫鵰雕雕】雕吊 【弔】吊die　 蝶【蜨】　叠【曡 疊】叠喋【啑】<br>ding　碇【矴　椗】<br>dou　 兜【兠】　鬥【斗　鬬】　豆【荳】<br>du　　睹【覩】　妒【妬】<br>dun　 遁【遯】　墩【墪】<br>duo 　朵【朶】　垛【垜】　跺【跥】</p><p>Ｅ【e】</p><p>e　　 額【额】　扼【搤】　萼【蕚】　峨【峩】　鹅【鵝　鹅】　婀【娿】　<br>　　　厄【戹　阨】　鳄【鱷】鳄腭【齶】腭訛【讹】</p><p>Ｆ【fa fan fang fei fen feng fu 】</p><p>fa　　罰【罚】　筏【栰】　法【灋】　珐【琺】珐fan　 繁【緐】　翻【飜繙】 帆【颿】　泛【汎　泛】泛fang　仿【倣　彷　髣】<br>fei　 痱【疿】 廢 废癈】<br>fen　 氛【雰】<br>feng　峰【峯】峰fu　　俯【頫　𫖯　佛【彿　髴佛　婦【媍妇　附【坿】　麩【粰麸</p><p>Ｇ【ga gai gan gang gao ge gen geng gong gou gu gua guai guan gui guo 】</p><p>ga　　戛【戞】　　　嘎【嘠】<br>gai　 丐【匃　匄】　概【槩】<br>gan　 贛【灨赣贑】　𫎬稈】　杆秆桿】　乾杆乹　干】　幹【榦】干g干ng　杠【槓】　　杠扛【摃】　肛【疘】<br>gao　 皋【皐　臯】　槁【槀】　糕【餻】　稿【稾】<br>ge　　胳【肐　髂】　阁【閤】　歌合謌】　個【箇】个g个n　 亘【亙】<br>g亘ng　粳【秔　梗】　耕【畊】　鲠【骾】<br>gong　躬【躳】<br>gou　 够【夠】　　够鈎【鉤】钩構钩搆】构gu　　雇【僱】　　雇菇【菰】　鼓【皷】<br>gua　 挂【掛】<br>g挂ai　怪【恠】<br>guan　管【筦】　　　館【舘】馆罐馆鑵】<br>gui　 规【槼】　　椝瑰【瓌】<br>guo　 果【菓】　　　椁【槨】</p><p>椁【han hao he heng hou hu hua huan huang hui hun huo 】</p><p>han　 函【圅】　悍【猂】　焊【銲　釬】　捍【扞】<br>hao　 嗥【噑　獆】　皓【皜　暠】　蚝【蠔】<br>h蚝　　呵【訶】　盍诃盇】　和【咊　龢】<br>heng　恒【恆】<br>h恒ng　哄【閧　鬨】<br>h哄u　 糇【餱】<br>h糇　　呼【嘑　虖　謼】　糊【餬】　胡糊衚】<br>h胡a　 話【諙】话嘩【譁】哗花哗蘤　芲】<br>huan　獾【貛】　歡【懽　欢】<br>huang 恍【怳】<br>hui 　毁【譭燬】　毁毁蜖蛕痐蚘】　輝【煇暉辉　𪸩晖】　汇【汇廽】回徽【幑】<br>hun　 混【溷】　昏【昬】<br>huo 　禍【旤】<br>祸【ji jia jian jiang jiao jie jin jing jiong jiu ju juan jue jun 】</p><p>ji　　鶏【雞】　楫【鸡】　績【勣】　绩【𪟝蹟】<br>　迹　迹【朞】　賫【賷　齎】赍jia赍 假【叚】　夾【裌　袷】夹jian　箋【椾　牋】笺劍【劒】　鑒剑鑑鍳】　鉴【鉴】　奸缄姦】<br>　　　奸【鹻】　碱碱堿】　剪【翦】　减【減】　繭【蠒减<br>j茧ang 繮【韁】　僵缰殭缰　奬【獎僵<br>j奖a奖　僥【儌　徼】侥叫【呌】　剿【勦】　脚【腳】<br>jie脚 秸【稭】　届【屆】　階【堦届　潔阶絜】　劫洁刼　刦】<br>　　　杰【傑】<br>jin杰 斤【觔】　晋【晉】<br>jin晋　阱【穽】　徑【逕】　凈径淨迳　脛净踁净<br>j胫ong 炯【烱】　迥【逈】<br>jiu　 韭【韮】　救【捄】　糾【糺】　揪纠揫𫄙厩【廏　廐】<br>ju　　巨【鉅】　矩【榘】巨局【侷跼矩　舉【擧局<br>ju举n　狷【獧】　眷【睠】　倦【勌】<br>jue　 橛【橜】　撅【噘】　决【決】<br>jun　决俊【儁】　浚【濬】俊隽【雋】<br>Ｋ【ka隽 kan kang kao ke ken keng kou ku kuai kuan kuang kui kun kuo】</p><p>kai　 慨【嘅】<br>kan　 刊【栞】　瞰【矙】　侃【偘】　坎【埳】<br>kang　糠【穅粇】炕【匟】<br>kao　 考【攷】<br>ke　　咳【欬】　疴【痾】　剋【尅】疴ke克　 肯【肎】<br>keng　坑【阬】<br>kou　 叩【敂】　扣【釦】<br>ku　　扣【袴】<br>ku裤i　膾【鱠】<br>ku脍n鲙款【欵】<br>kuang 况【況】　礦【鑛】况誑【矿】<br>ku诳　诓饋【餽】　愧【馈】　窺【闚】<br>ku窥　 昆【崑崐】捆【綑】昆坤【堃】捆kuo　 闊【濶】<br>  阔Ｌ【la lai lan lang lei leng li lian liang lin ling liu long lu lü lüe lun luo 】</p><p>la　　辣【辢】　臘【臈】<br>la腊　 賴【頼】<br>la赖　 懶【嬾】　婪【懒】<br>lang　螂【蜋】　琅【瑯】<br>lei　 泪【涙】<br>leng　棱【稜】　楞【愣】棱li　　厘【釐】　裏【裡】厘歷【里厯里曆【历】　莅【历蒞历犁【犂】<br>莅　　狸【貍】　梨【棃】　隸【隷】　藜【隶】　栗【凓慄】璃【琍瓈】栗　　　荔【茘】<br>lian　廉【亷】　鐮【鎌】　奩【镰匲镰煉【奁】　斂【炼】炼li敛ng 梁【樑】　凉【涼】梁lin　凉麟【麐】　吝【恡】　鄰【隣】　淋【邻】　磷【燐粦】<br>ling　菱【蓤】<br>liu　 留【畱】　琉【瑠璢】瘤【癅】柳【桺栁】<br>long　弄【衖挵】<br>lu　　櫓【艪艣樐】碌橹磟】𫇛剹勠】爐【鑪】<br>lü　炉緑𬬻】<br>lüe　绿略【畧】<br>lun　 侖【崘崙】<br>luo仑 裸仑躶臝】　騾【驘】　</p><p>Ｍ骡ma mai mang mao mei mi mian miao mie min mo mu 】</p><p>ma　　駡【罵傌】麻【蔴】骂蟆骂㐷】<br>mai　 脉【衇脈】<br>mang　虻脉蝱】<br>mao　 冒【冐】　卯【夘茆】猫【貓】　牦【犛氂】<br>猫ei　 牦牦楳槑】<br>mi　　幂【冪】　眯【瞇】　覓幂覔】<br>mian觅綿【緜】<br>miao绵渺【淼】　妙【玅】<br>mie　 咩【哶】<br>min　 泯【冺】<br>mo　　饃【饝】　謨【謩】馍mu　　谟【幙】　畝【畮畆畝】</p><p>亩【na亩nai nan nao ni nian niang niao nie ning nong nü nuan nen nuo 】</p><p>na　　拿【挐拏】<br>nai　 奶【嬭妳】乃【廼迺】<br>nan　 楠【枏柟】<br>nao　 鬧【閙】<br>ni　　闹【蜺】　你【妳】　昵【暱】　擬【儗】<br>nian拟拈【撚】　念【唸】　粘【黏】　年念秊】<br>niang 娘【孃】<br>niao　裊娘嫋嬝褭】<br>ni袅　袅嚙【囓齧】捏【揑】啮孽【啮】<br>ning　寧【寕甯】<br>non宁　農宁辳】<br>nü　　农【衂】<br>nuan　暖【煖煗】<br>nen　 嫩【嫰】<br>nuo　 糯【穤稬】挪【挼】</p><p>Ｐ【pao pei peng pi piao ping po pu 】</p><p>pao　 疱【皰】　炮【砲礮】<br>疱ei　 胚𪿫】<br>peng　碰【踫掽】<br>pi　　毗【毘】　匹【疋】<br>piao　飄【飃】<br>ping　飘【凴】　瓶【缾】<br>凭o　　迫【廹】<br>pu　　鋪【舖】</p><p>Ｑ【q铺 qian qiang qiao qie qin qiu qu quan que qun 】</p><p>qi　　戚【慼慽】啓【啟唘】棋【戚碁】启【启】凄【淒棋】旗【旂栖<br>　　凄凄【棄】旗【憇】<br>qia弃　鉛【鈆】　潜【潛】　铅【𫓪<br>qia潜g 强【強彊】襁【繦】　牆【墻强　檣【艢】　羌墙羗墙　槍樯鎗】<br>qiao　憔枪顦癄】蹺【蹻】　峭【陗】　蕎跷荍𫏋qin　 勤【荞】　琴【琹】　撳【搇】<br>qiu　 丘【揿邱】虬【虯】　鳅【鰌】　秋【秌穐虬球【毬】䲡qu　　驅【駈】<br>que　 榷【驱】　却【郤】<br>qun　 群【羣】</p><p>Ｒ【ran r群o ren rong ruan rui ruo 】</p><p>ran　 冉【冄】　髯【髥】<br>rao　 繞【遶】<br>ren　 韌【绕、靱】飪【餁】衽【韧】妊【袵】饪rong　冗【宂】　絨【羢毧】熔【鎔】　融【绒】<br>ruan镕蠕【蝡】　軟【輭】<br>rui　 蕊【软橤蘂】睿【叡】<br>ruo　 箬【蒻】</p><p>Ｓ【sai san sang se shan shao she shen sheng shi shu si sou su sui sun suo 】</p><p>sai　 腮【顋】<br>san　 傘【繖】<br>sang　桑【伞】<br>se　　澀【濇澁】<br>shan　鱔涩鱓】　删【刪】　姗【鳝】　栅【柵】删膳【饍】姗膻【羶羴栅<br>shao　筲【蕱膻<br>she　 蛇【虵】<br>shen　慎【昚】　參【葠蓡】<br>sheng 参【昇陞】剩【賸】<br>shi　升升【蝨】　是【昰】　尸【屍】虱濕【溼】　謚【諡】尸實【湿】湿　　谥时谥旹】实視【眡眎】柿【柹】<br>sh视　 倏【儵倐】庶【庻】　竪【豎】　漱【潄】　疏【竖】竖薯【藷】<br>si　　飼【飤】　𫉄禩】　厮【廝饲　俟【竢】　似【佀】<br>厮ou　 搜【蒐】<br>su　　溯【泝遡】訴搜愬】　蘇【蘓甦】溯溯u诉　 歲【苏】<br>苏un　 笋【筍岁　岁【飱】<br>suo　 笋【鎻】　飧【簑】　挲【挱锁</p><p>Ｔ【t蓑 tan挲tang tao teng ti tiao tong tou tu tui tun tuo 】</p><p>ta　　塔【墖】　拓【搨】　它【牠】<br>tan　 嘆【歎】　罎【壜罈】袒【襢叹<br>叹an坛　坛坛蹚】　糖【餹】<br>tao　 掏【搯】　縧【縚絛】<br>teng　藤【绦】<br>绦i　　剃【鬀薙】啼【嗁】　蹄【蹏】<br>tiao　眺【覜】<br>tong　筒【筩】　同【衕仝】峒【峝】<br>tou　 同【媮】<br>tu　　兔【兎】<br>tui　 腿【骽】　頹【穨】<br>tun　 臀【臋颓<br>tuo　 馱【駄】　托【託】　駝【駞驮　拖【拕】<br>托<br>Ｗ驼w𫘞wan wang wei wen weng wu 】</p><p>wa　　蛙【鼃】　襪【韈韤】<br>wan　 挽【輓袜　浣【澣】　玩【翫】　碗挽椀盌】<br>wang　玩【亾】　望【朢】　往【徃】<br>wei　 喂【餧餵】猬【蝟】<br>wen　 吻𫗪喂　蚊【猬蟁】<br>weng　瓮【罋甕】<br>wu　　污【汙汚】塢【隖瓮　忤【啎】</p><p>污【x坞 xia xian xiang xiao xie xin xing xiong xiu xu xuan xue xun】</p><p>xi　　嘻【譆】　溪【谿】　晰【晳皙】席【𫍻　熙【熈煕】戲【戯】<br>xia席 厦【廈】　狭戏陿】<br>xian　銜【啣厦】弦【絃】　仙【僊】　鲜衔鱻尠尟】閑【弦】嫻【嫺】<br>　　　綫【缐】闲籼闲秈娴<br>娴iang 线【亯】　餉【籼】　嚮【曏】　厢【廂】<br>x饷a𫗵笑【向】向效【傚効厢<br>xie　 脅【脇】　邪【衺】　蟹【蠏】　燮【胁】　蝎【蠍】　泄【洩】<br>　　　紲【絏】　鞋蝎鞵】　携泄攜擕】<br>x绁n　 欣【訢】<br>xin携　幸【倖】<br>xion䜣 汹【洶】　凶【兇幸　胸【胷】<br>xiu　汹修【脩】凶綉【繍】　銹【鏽】<br>xu　　修【敘绣】勖【勗锈　锈【卹賉】婿【壻】叙xuan　喧【諠】恤楦【楥】　萱【萲蕿藼蘐】璇【璿】<br>xue　 靴【鞾】<br>xun　璇熏【燻薰】徇【狥】𫖇【勲】　塤【壎】　熏【廵】</p><p>Ｙ勋ya y埙n埙yang yao ye yi yin ying yong you yu yuan yue yun 】</p><p>ya　　鴉【鵶】　丫【枒椏】<br>yan　咽【嚥鸦　焰【燄】　胭桠臙】　宴【讌驗】咽　　　艷【豓豔】驗【騐】　烟䜩验菸】岩【巖艳巗】艳【验】鼹【鼴】<br>烟烟　贗【岩】𪨷【醃】　雁【鴈鼹　檐【簷】赝y赝ng　揚腌敭颺】<br>yao　 檐【殀】　淆【殽扬　耀飏燿】　窑【窯窰】肴【餚】　咬【齩】<br>　　　拗【抝窑<br>ye　肴野【埜壄𫜪【亱】　燁【爗嘩】<br>yi　　翳【瞖】　异【異】　烨【吚哗　移【迻】<br>yin　 因【异】　殷【慇】　淫【滛婬】喑【瘖】　堙【陻】　陰【隂】<br>　　　吟【唫】　蔭【廕】　姻【阴】<br>ying　罌【甖】　荫【荫】　鶯【鷪】<br>yong　罂【詠】　颖【颕】　莺【惥慂】　雍【雝】<br>y咏u　 游涌遊】<br>yu　　于【於】　欲【慾】　愈【瘉游】鬱【鬰欝】<br>y于an　冤欲寃】　猿【愈蝯郁<br>yue　 岳【嶽】<br>yun　 韵【韻】</p><p>Ｚ【za 岳ai zan za韵g zao zha zhai zhan zhang zhao zhe　zhen zhi zhong zhou zhu zhuan zhuang zhuo zi zong　zuan zui】</p><p>za　　匝【帀】　雜【襍】<br>zai　 灾【災烖菑】<br>zan杂 咱【偺喒】簪【簮】　灾【讚賛】<br>zang　葬【塟】<br>zao　赞唣赞唕】　皂【皁】　噪【譟】　糟【蹧】<br>zha　 咤【皂】　札【噪劄】榨【搾】　閘【牐】　扎【咤紮】<br>zhai　寨【砦】闸齋【亝】<br>zh扎n　氈【氊】　盞【琖醆】斋【霑】　占【佔】　毡【嶃】<br>盏hang 獐沾麞】<br>z占ao　棹【櫂】　照【炤】<br>zhe　 哲【喆】　浙【淛】　謫【讁】　輒【輙】<br>zhen　鴆【酖】　谪【珎】　辄【碪】　針【鍼】　鸩【遉】<br>zhi　 侄【妷姪】针【针】　侦【巵】　栀【梔】　祇【衹秖】帙【袟袠】<br>　　　稚【稺栀】跖【蹠】　志【誌】　址【阯】<br>zhong 冢跖塚】　衆志眾】<br>zhou　咒【呪】　帚【冢】　众【众】<br>zhu　 箸【筯】　伫【佇竚】煮【周】　注【註】　猪【豬】<br>zh伫𥩟 磚【塼甎】專【注】　饌【猪】　撰【譔】<br>z砖uang专【粧】<br>馔huo　斫【斮斲斵】桌【槕】<br>妆i　　姊【姉】　眦【眥】　資【貲】<br>zong　偬【傯】　棕【椶眦　粽资糉赀　鬃【騌騣鬉】踪【偬】<br>zuan　纂【粽】　鑽【骔】　樽【罇踪<br>zui　 罪【辠】钻</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;../poem/yitizi.html&quot;&gt;查询&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ａ【an ao 】&lt;/p&gt;
+&lt;p&gt;an 　庵【庵】　暗【晻暗】　案【桉】　鞍【鞌】　&lt;br&gt;ao 　鳌【鼇】&lt;/p&gt;
+&lt;p&gt;Ｂ【bai ban bang bao bei ben beng</summary>
+      
+    
+    
+    
+    <category term="书法" scheme="http://example.com/categories/%E4%B9%A6%E6%B3%95/"/>
+    
+    
+    <category term="书法" scheme="http://example.com/tags/%E4%B9%A6%E6%B3%95/"/>
+    
+    <category term="异体字" scheme="http://example.com/tags/%E5%BC%82%E4%BD%93%E5%AD%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Midjourney StableDiffusion关键词网站</title>
+    <link href="http://example.com/posts/16033.html"/>
+    <id>http://example.com/posts/16033.html</id>
+    <published>2023-06-09T02:54:05.000Z</published>
+    <updated>2023-06-12T06:31:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://tag.hotiq.cn/">SD关键词</a><br><a href="https://ki6j1b0d92h.feishu.cn/wiki/YJuyw7rT0iq8IMkKhZZcZ5IinNh?table=tblxxdXNmcvo2Mbw&view=vew4EGyNq7">AI工具聚合</a><br><a href="https://www.explainthis.io/zh-hant/ai-toolkit">AI工具聚合hexo</a></p><p><a href="https://prompthero.com/">PromptHero</a>是一款免费的关键词搜索引擎，它能够提供按模型搜索，包括Stable Diffusion、Midjourney、Dell-E等文本-图像模型,风格类型涵盖了肖像、二次元、时尚、摄影等AI图片，且输出的图像品质极高。</p><p><a href="https://arthub.ai/">Arthub.ai</a>是一个连接顶级社区艺术家和设计师的网站，你可以按照不同的图像类型搜索并查看生成的AI绘画，包括建筑、时尚、珠宝、LOGO、插画、三维等等。</p><p><a href="https://search.krea.ai/">KREA</a>又一款不错的AI网站，极简的网页设计让不由自主的点击进去，这个站点收藏了数百万张Stable Diffusion生成的实例，同样支持关键词检索功能。</p><p><a href="https://lexica.art/">lexica</a>的AI图片风格倾向于色彩浓厚、饱和度极高的插画，喜欢色彩丰富画面的朋友可以参考作为创作灵感。</p><p><a href="https://replicate.com/">REPLICATE</a>这个网站同样也可以自动生成关键词，不过这个相比其他的话，有点不一样，或者说这是他的特色功能，要想拿到关键词，只需要上传你想要的相关图片素材，它就可以根据图片自动描述对应关键词，让你去mid里面操作~</p><p><a href="https://promptomania.com/">promptoMANIA</a>一款编写智能AI绘画关键词的在线生成工具，提供多种智能AI绘画工具(Midjourney、Stable Diffusion、DreamStudio等)的关键词文本描述模板。</p><p><a href="https://prompt.noonshot.com/">MidJourney提示助手</a>一款专门针对Midjourney的关键词提示网站，没其他了，就这么直接，没有任何作品展示，就是简单关键词提示！</p><p><a href="https://www.midlibrary.io/">midlibrary</a>Midlibrary它提供了大量的艺术家风格列表，包括 2078 种Midjourney AI 的流派、艺术运动、技巧和艺术家风格。涵盖了插画、摄影、电影、雕像、版画等多个行业，同时也给我们提供了大量的风格参考。</p><p><a href="http://navo.top/UjMjiq">navo</a>这个网站收录了很多关键词和风格，而且还有效果预览方便挑选，这里就不啰嗦了，没有操作难度，你能进得去便看的明白！</p><table data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal"><tbody><tr><td>风格</td><td>说明</td></tr><tr><td>Tradition Chinese Ink Painting</td><td>东方山水画</td></tr><tr><td>Japanese Ukiyo-e</td><td>浮世绘</td></tr><tr><td>Japanese comics/manga</td><td>日本漫画风格</td></tr><tr><td>stock illustration style</td><td>童话故事书插图风格</td></tr><tr><td>CGSociety</td><td>梦工厂动西风格</td></tr><tr><td>DreamWorks Pictures</td><td>梦工厂影业</td></tr><tr><td>Pixar</td><td>皮克斯</td></tr><tr><td>Fashion</td><td>时尚</td></tr><tr><td>poster of japanese graphic design</td><td>日本海报风格</td></tr><tr><td>90s video game</td><td>90年代电视游戏</td></tr><tr><td>french art</td><td>法国艺术</td></tr><tr><td>Bauhaus</td><td>包豪斯</td></tr><tr><td>Anime</td><td>日本动画片</td></tr><tr><td>ドット絵 and Pixel Art</td><td>像素画</td></tr><tr><td>Vintage</td><td>古典风，18-19世纪</td></tr><tr><td>Pulp Noir</td><td>黑白电影时期</td></tr><tr><td>Country style</td><td>乡村风格</td></tr><tr><td>Abstract</td><td>抽象风</td></tr><tr><td>risograph</td><td>riso印刷风</td></tr><tr><td>Graphic</td><td>设计风</td></tr><tr><td>ink render</td><td>墨水渲染</td></tr><tr><td>Ethnic Art</td><td>民族艺术</td></tr><tr><td>retro dark vintage</td><td>复古 黑暗</td></tr><tr><td>Tradition Chinese Ink Painting style</td><td>国风</td></tr><tr><td>Steampunk</td><td>蒸汽朋克</td></tr><tr><td>film photography</td><td>电影摄影风格</td></tr><tr><td>concept art</td><td>概念艺术</td></tr><tr><td>montage</td><td>剪辑</td></tr><tr><td>full details</td><td>充满细节</td></tr><tr><td>Gothic gloomy</td><td>哥特式黑暗</td></tr><tr><td>realism</td><td>写实主义</td></tr><tr><td>black and white</td><td>黑白</td></tr><tr><td>Unity Creations</td><td>统一创作</td></tr><tr><td>Baroque</td><td>巴洛克时期</td></tr><tr><td>Impressionism</td><td>印象派</td></tr><tr><td>Art Nouveau</td><td>新艺术风格</td></tr><tr><td>Rococo</td><td>新艺术</td></tr></tbody></table><table data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal"><tbody><tr><td>风格</td><td>说明</td></tr><tr><td>Renaissance</td><td>文艺复兴</td></tr><tr><td>Fauvism</td><td>野兽派</td></tr><tr><td>Cubism</td><td>立体派</td></tr><tr><td>Abstract Art</td><td>抽象表现主义</td></tr><tr><td>Surrealism</td><td>超现实主义</td></tr><tr><td>OP Art /Optical Art</td><td>欧普艺术/光效应艺术</td></tr><tr><td>Victorian</td><td>维多利亚时代</td></tr><tr><td>futuristic</td><td>未来主义</td></tr><tr><td>Minimalist</td><td>极简主义</td></tr><tr><td>brutalist</td><td>粗犷主义</td></tr><tr><td>Constructivist</td><td>建构主义</td></tr><tr><td>botw</td><td>旷野之息</td></tr><tr><td>Warframe</td><td>星际战甲</td></tr><tr><td>Pokémon</td><td>宝可梦</td></tr><tr><td>APEX</td><td>Apex英雄</td></tr><tr><td>The Elder Scrolls</td><td>上古卷轴</td></tr><tr><td>From Software</td><td>魂系游戏</td></tr><tr><td>Detroit: Become Human</td><td>底特律:变人</td></tr><tr><td>AFK Arena</td><td>剑与远征</td></tr><tr><td>cookierun kingdom and 쿠키런</td><td>跑跑姜饼人</td></tr><tr><td>League of legends</td><td>英雄联盟</td></tr><tr><td>jojo's bizarre adventure</td><td>Jolo的奇妙冒险</td></tr><tr><td>Makoto Shinkai</td><td>新海诚</td></tr><tr><td>Soejima Shigenori</td><td>副岛成记</td></tr><tr><td>Yamada Akihiro</td><td>山田章博</td></tr><tr><td>Munashichi</td><td>六七质</td></tr><tr><td>Watercolor children's illustration</td><td>水彩儿童插画</td></tr><tr><td>Ghibli Studio</td><td>吉卜力风格</td></tr><tr><td>Stained glass window</td><td>彩色玻璃窗</td></tr><tr><td>ink illustration</td><td>水墨插图</td></tr><tr><td>Miyazaki Hayao style</td><td>宫崎骏风格</td></tr><tr><td>Vincent Van Gogh</td><td>梵高</td></tr><tr><td>Leonardo Da Vinci</td><td>达芬奇</td></tr><tr><td>manga</td><td>漫画</td></tr><tr><td>pointillism</td><td>点彩派</td></tr><tr><td>Claude Monet</td><td>克劳德莫奈</td></tr><tr><td>quilted art</td><td>绗缝艺术</td></tr></tbody></table><table data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal"><tbody><tr><td>风格</td><td>说明</td></tr><tr><td>Renaissance</td><td>文艺复兴</td></tr><tr><td>Fauvism</td><td>野兽派</td></tr><tr><td>Cubism</td><td>立体派</td></tr><tr><td>Abstract Art</td><td>抽象表现主义</td></tr><tr><td>Surrealism</td><td>超现实主义</td></tr><tr><td>OP Art /Optical Art</td><td>欧普艺术/光效应艺术</td></tr><tr><td>Victorian</td><td>维多利亚时代</td></tr><tr><td>futuristic</td><td>未来主义</td></tr><tr><td>Minimalist</td><td>极简主义</td></tr><tr><td>brutalist</td><td>粗犷主义</td></tr><tr><td>Constructivist</td><td>建构主义</td></tr><tr><td>botw</td><td>旷野之息</td></tr><tr><td>Warframe</td><td>星际战甲</td></tr><tr><td>Pokémon</td><td>宝可梦</td></tr><tr><td>APEX</td><td>Apex英雄</td></tr><tr><td>The Elder Scrolls</td><td>上古卷轴</td></tr><tr><td>From Software</td><td>魂系游戏</td></tr><tr><td>Detroit: Become Human</td><td>底特律:变人</td></tr><tr><td>AFK Arena</td><td>剑与远征</td></tr><tr><td>cookierun kingdom and 쿠키런</td><td>跑跑姜饼人</td></tr><tr><td>League of legends</td><td>英雄联盟</td></tr><tr><td>jojo's bizarre adventure</td><td>Jolo的奇妙冒险</td></tr><tr><td>Makoto Shinkai</td><td>新海诚</td></tr><tr><td>Soejima Shigenori</td><td>副岛成记</td></tr><tr><td>Yamada Akihiro</td><td>山田章博</td></tr><tr><td>Munashichi</td><td>六七质</td></tr><tr><td>Watercolor children's illustration</td><td>水彩儿童插画</td></tr><tr><td>Ghibli Studio</td><td>吉卜力风格</td></tr><tr><td>Stained glass window</td><td>彩色玻璃窗</td></tr><tr><td>ink illustration</td><td>水墨插图</td></tr><tr><td>Miyazaki Hayao style</td><td>宫崎骏风格</td></tr><tr><td>Vincent Van Gogh</td><td>梵高</td></tr><tr><td>Leonardo Da Vinci</td><td>达芬奇</td></tr><tr><td>manga</td><td>漫画</td></tr><tr><td>pointillism</td><td>点彩派</td></tr><tr><td>Claude Monet</td><td>克劳德莫奈</td></tr><tr><td>quilted art</td><td>绗缝艺术</td></tr></tbody></table><table data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal"><tbody><tr><td>风格</td><td>说明</td></tr><tr><td>partial anatomy</td><td>局部解剖</td></tr><tr><td>color ink on paper</td><td>彩墨纸本</td></tr><tr><td>doodle</td><td>涂鸦</td></tr><tr><td>Voynich manuscript</td><td>伏尼契手稿</td></tr><tr><td>book page</td><td>书页</td></tr><tr><td>realistic</td><td>真实的</td></tr><tr><td>3D</td><td>3D风格</td></tr><tr><td>sophisticated</td><td>复杂的</td></tr><tr><td>photoreal</td><td>真实感</td></tr><tr><td>national geographic</td><td>国家地理</td></tr><tr><td>hyperrealism</td><td>超写实主义</td></tr><tr><td>cinematic</td><td>电影般的</td></tr><tr><td>architectural sketching</td><td>建筑素描</td></tr><tr><td>symmetrical portrait</td><td>对称肖像</td></tr><tr><td>clear facial features</td><td>清晰的面部特征</td></tr><tr><td>interior design</td><td>室内设计</td></tr><tr><td>weapon design</td><td>武器设计</td></tr><tr><td>subsurface scattering</td><td>次表面散射</td></tr><tr><td>Game scene graph</td><td>游戏场景图</td></tr><tr><td>character concept art</td><td>角色概念艺术</td></tr><tr><td>精度</td><td>说明</td></tr><tr><td>high detail</td><td>高细节</td></tr><tr><td>hyper quality</td><td>高品质</td></tr><tr><td>high resolution</td><td>高分辨率</td></tr><tr><td>FHD,1080P,2K,4K,8K</td><td>全高清.1080P,2K,4K,8K</td></tr><tr><td>8k smooth</td><td>8k流畅</td></tr><tr><td>视角</td><td>说明</td></tr><tr><td>A bird's-eye view,aerial view</td><td>乌瞰图</td></tr><tr><td>Top view</td><td>顶视園</td></tr><tr><td>tilt-shift</td><td>倾斜移位</td></tr><tr><td>satellite view</td><td>卫星视图</td></tr><tr><td>Bottom view</td><td>底视图</td></tr><tr><td>front, side, rear view</td><td>前视图、侧视图、后视图</td></tr><tr><td>product view</td><td>产品视图</td></tr><tr><td>extreme closeup view</td><td>极端特写视图</td></tr><tr><td>look up</td><td>仰视</td></tr><tr><td>first-person view</td><td>第一人称视角</td></tr></tbody></table><table data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal"><tbody><tr><td>视角</td><td>说明</td></tr><tr><td>isometric view</td><td>等距视图</td></tr><tr><td>closeup view</td><td>特写视图</td></tr><tr><td>high angle view</td><td>高角度视图</td></tr><tr><td>microscopic view</td><td>微观</td></tr><tr><td>super side angle</td><td>超侧角</td></tr><tr><td>third-person perspective</td><td>第三人称视角</td></tr><tr><td>Aerial view</td><td>鸟瞰图</td></tr><tr><td>two-point perspective</td><td>两点透视</td></tr><tr><td>Three-point perspective</td><td>三点透视</td></tr><tr><td>portrait</td><td>肖像</td></tr><tr><td>Elevation perspective</td><td>立面透视</td></tr><tr><td>ultra wide shot</td><td>超广角镜头</td></tr><tr><td>headshot</td><td>爆头</td></tr><tr><td>a cross-section view of (a walnut)</td><td>(核桃)的横截面图</td></tr><tr><td>cinematic shot</td><td>电影镜头</td></tr><tr><td>in focus</td><td>焦点对准</td></tr><tr><td>depth of field (dof)</td><td>景深(dof)</td></tr><tr><td>Wide- angle view</td><td>广角镜头</td></tr><tr><td>canon 5d,1fujifilm xt100,Sony alpha</td><td>相机型号 焦段 光圈</td></tr><tr><td>Close-Up(CU)</td><td>特写</td></tr><tr><td>Medium Close-Up(MCU)</td><td>中特写</td></tr><tr><td>Medium Shot(MS)</td><td>中景</td></tr><tr><td>Medium Long Shot(MLS)</td><td>中远暴</td></tr><tr><td>Long Shot(LS)</td><td>远景</td></tr><tr><td>over the shoulder shot</td><td>过肩景</td></tr><tr><td>loose shot</td><td>松散景</td></tr><tr><td>tight shot</td><td>近距离景</td></tr><tr><td>two shot(2S), three shot(3S), group shot(GS)</td><td>两景(25)、三景(3S)、 群景(GS)</td></tr><tr><td>scenery shot</td><td>风景照</td></tr><tr><td>bokeh</td><td>背景虚化</td></tr><tr><td>foreground</td><td>前景</td></tr><tr><td>background</td><td>背景</td></tr><tr><td>Detail Shot(ECU)</td><td>细节镜头(ECU)</td></tr><tr><td>Face Shot (VCU)</td><td>面部拍摄(VCU)</td></tr><tr><td>Knee Shot(KS)</td><td>膝景(KS)</td></tr><tr><td>Full Length Shot(FLS)</td><td>全身照(FLS)</td></tr><tr><td>Detail Shot(ECU)</td><td>大特写</td></tr></tbody></table><table data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal"><tbody><tr><td>视角</td><td>说明</td></tr><tr><td>Chest Shot(MCU)</td><td>陶部以上</td></tr><tr><td>Waist Shot(WS)</td><td>腰部以上</td></tr><tr><td>Knee Shot(KS)</td><td>膝盖以上</td></tr><tr><td>Full Length Shot(FLS)</td><td>全身</td></tr><tr><td>Long Shot(LS)</td><td>人占3/4</td></tr><tr><td>Extra Long Shot(ELS)</td><td>人在远方</td></tr><tr><td>Big Close-Up(BCU)</td><td>头部以上</td></tr><tr><td>Face Shot (VCU)</td><td>脸部特写</td></tr><tr><td>渲染</td><td>说明</td></tr><tr><td>Unreal Engine</td><td>虚幻引擎</td></tr><tr><td>octane render</td><td>OC渲染</td></tr><tr><td>Maxon Cinema 4D</td><td>渲染</td></tr><tr><td>architectural visualisation</td><td>建筑渲染</td></tr><tr><td>Corona Render</td><td>室内渣染</td></tr><tr><td>Quixel Megascans Render</td><td>真实感</td></tr><tr><td>V-Ray</td><td>V射线</td></tr><tr><td>光照</td><td>说明</td></tr><tr><td>volumetric lighting</td><td>体积照明</td></tr><tr><td>cold light</td><td>冷光</td></tr><tr><td>mood lighting</td><td>情绪照明</td></tr><tr><td>bright</td><td>明亮的</td></tr><tr><td>Soft illuminaotion/ soft lights</td><td>柔和的照明/柔光</td></tr><tr><td>fluorescent lighting</td><td>荧光灯</td></tr><tr><td>rays of shimmering light/ morning light</td><td>微光/晨光</td></tr><tr><td>Crepuscular Ray</td><td>黄昏射线</td></tr><tr><td>outer space view</td><td>外太空观</td></tr><tr><td>cinematic lighting/ Dramatic lighting</td><td>电影灯光/戏剧灯光</td></tr><tr><td>bisexual lighting</td><td>双性照明</td></tr><tr><td>Rembrandt Lighting</td><td>伦勃朗照明</td></tr><tr><td>Split Lighting</td><td>分体照明</td></tr><tr><td>front lighting</td><td>前灯</td></tr><tr><td>Back lighting</td><td>背光照明</td></tr><tr><td>clean background trending</td><td>干净的背景趋势</td></tr><tr><td>rim lights</td><td>边缘灯</td></tr><tr><td>global illuminations</td><td>全局照明</td></tr><tr><td>neon cold lighting</td><td>霓虹灯冷光</td></tr><tr><td>hard lighting</td><td>强光</td></tr></tbody></table><table data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal"><tbody><tr><td>场景</td><td>说明</td></tr><tr><td>dystopia,anti-utopia</td><td>反乌托邦</td></tr><tr><td>fantasy</td><td>幻想</td></tr><tr><td>classroom</td><td>教室</td></tr><tr><td>whimsically</td><td>异想天开</td></tr><tr><td>bedroom</td><td>卧室</td></tr><tr><td>forest</td><td>森林</td></tr><tr><td>ruins</td><td>废墟</td></tr><tr><td>city</td><td>城市</td></tr><tr><td>deserted city buildings</td><td>废弃城市建筑群</td></tr><tr><td>near future city</td><td>近未来都市</td></tr><tr><td>street scenery</td><td>街景</td></tr><tr><td>Alchemy Laboratory</td><td>炼金室</td></tr><tr><td>universe I cosmos</td><td>宇宙</td></tr><tr><td>rain</td><td>雨天</td></tr><tr><td>In the morning mist</td><td>在晨雾中</td></tr><tr><td>full of sunlight</td><td>充满阳光</td></tr><tr><td>galaxy</td><td>银河</td></tr><tr><td>dungeon</td><td>黑暗地牢</td></tr><tr><td>nebula</td><td>星云</td></tr><tr><td>mad max</td><td>疯狂麦斯沙地风格</td></tr><tr><td>Hanging Gardens of Babylon</td><td>巴比伦空中花园</td></tr><tr><td>meadow</td><td>草原草地</td></tr><tr><td>overgrown nature</td><td>杂草丛生的</td></tr><tr><td>post apocalyptic</td><td>后启示录、末日后</td></tr><tr><td>Castle in the Sky</td><td>天空之城</td></tr><tr><td>媒介</td><td>说明</td></tr><tr><td>illustration</td><td>插画</td></tr><tr><td>Vector</td><td>向量图</td></tr><tr><td>oil painting</td><td>油画</td></tr><tr><td>photography</td><td>摄影</td></tr><tr><td>watercolor</td><td>水彩</td></tr><tr><td>sketch</td><td>素描</td></tr><tr><td>ink painting</td><td>雕塑</td></tr><tr><td>sculpture</td><td>水墨画</td></tr><tr><td>Blockprint</td><td>印刷版画</td></tr><tr><td>Lino cut</td><td>利诺剪裁</td></tr><tr><td>manuscript</td><td>手稿</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://tag.hotiq.cn/&quot;&gt;SD关键词&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://ki6j1b0d92h.feishu.cn/wiki/YJuyw7rT0iq8IMkKhZZcZ5IinNh?table=tblxxdXNmcvo2M</summary>
+      
+    
+    
+    
+    <category term="AI" scheme="http://example.com/categories/AI/"/>
+    
+    
+    <category term="Midjourney Stable Diffusion" scheme="http://example.com/tags/Midjourney-Stable-Diffusion/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>免费ChatGPT站点</title>
+    <link href="http://example.com/posts/59356.html"/>
+    <id>http://example.com/posts/59356.html</id>
+    <published>2023-05-11T03:35:45.000Z</published>
+    <updated>2023-05-11T03:36:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/xx025/carrot">https://github.com/xx025/carrot</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/xx025/carrot&quot;&gt;https://github.com/xx025/carrot&lt;/a&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="http://example.com/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="http://example.com/tags/ChatGPT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于苹果CEO蒂姆库克</title>
+    <link href="http://example.com/posts/19618.html"/>
+    <id>http://example.com/posts/19618.html</id>
+    <published>2023-04-11T09:12:52.000Z</published>
+    <updated>2023-04-20T08:52:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="蒂姆库克是如何进入科技行业的？"><a href="#蒂姆库克是如何进入科技行业的？" class="headerlink" title="蒂姆库克是如何进入科技行业的？"></a>蒂姆库克是如何进入科技行业的？</h2><pre><code>蒂姆库克 1960 年出生于阿拉巴马州。他在一个小镇长大，是家里第一个上大学的人。库克就读于奥本大学并获得工业工程学位。蒂姆·库克 (Tim Cook) 于1982年加入IBM，担任制造规划师，开始涉足科技行业。他在IBM的职位上迅速晋升，并于1994年晋升为北美执行副总裁。 1998年，库克离开IBM，加入康柏电脑公司，担任全球物流副总裁，同年，库克被史蒂夫·乔布斯招入苹果公司。 在苹果公司，库克最初负责全球运营，他很快成为乔布斯最信任的副手之一，并于2005年晋升为首席运营官，作为首席运营官，库克负责苹果公司的日常运营，他负责监督公司的制造、供应链和销售。 他还在iPhone和iPad等新产品的开发中发挥了关键作用。2011年，史蒂夫·乔布斯 (Steve Jobs) 去世，库克被任命为苹果公司 CEO，库克继续带领苹果走向成功。公司在他的领导下发布了几款新产品，包括Apple Watch和AirPods，苹果公司也成为了世界上最有价值的公司之一。</code></pre><h2 id="他与史蒂夫·乔布斯的关系如何？"><a href="#他与史蒂夫·乔布斯的关系如何？" class="headerlink" title="他与史蒂夫·乔布斯的关系如何？"></a>他与史蒂夫·乔布斯的关系如何？</h2><p>   蒂姆库克和史蒂夫乔布斯有着密切而富有成效的工作关系。 乔布斯对库克的智慧、职业道德和对细节的关注印象深刻。 他也很欣赏库克愿意挑战他。 就库克而言，他钦佩乔布斯的远见和创造力。他也很尊重乔布斯敢于冒险的精神。两人密切合作多年，彼此产生了深深的尊重。乔布斯曾这样评价库克：“他是我的得力助手，是公司最有才华的高管”，库克曾这样评价乔布斯：“他是一位伟大的导师和好朋友”。2011 年乔布斯去世后，库克成为苹果 CEO，他继续发扬乔布斯的精神，带领公司取得更大的成功。<br>   乔布斯曾说过，库克是“唯一能告诉我鞋子出了什么问题的人”。尽管性格不同，但乔布斯和库克对彼此有着深深的尊重。乔布斯曾说库克是“世界上最好的运营人员”，而库克也曾说乔布斯是“我见过的最聪明的人之一”。乔布斯和库克之间的关系是商业史上最成功CEO-COO 关系之一，这两个人能够共同创建世界上最成功的公司之一。</p><h2 id="他在担任-Apple-CEO-期间取得了哪些重要成就？"><a href="#他在担任-Apple-CEO-期间取得了哪些重要成就？" class="headerlink" title="他在担任 Apple CEO 期间取得了哪些重要成就？"></a>他在担任 Apple CEO 期间取得了哪些重要成就？</h2><pre><code>他见证了Apple产品和服务的持续成功，在库克的领导下，苹果发布了几款新产品，包括iPhone X、iPad Pro和Apple Watch。该公司还继续成为智能手机市场的领导者，并扩大了产品线，包括可穿戴设备和家用电器等新品类。他让Apple变得更加环保，在库克的领导下，苹果成为世界上最环保的公司之一，该公司承诺在其运营中使用100%的可再生能源，并使其产品更加节能。他让 Apple 变得更加多元化和包容，在库克的领导下，苹果在员工队伍多元化以及产品和服务更具包容性方面取得了进展，该公司还公开反对歧视，并努力为所有员工创造一个更加温馨的工作场所。他让苹果变得更加透明，在库克的领导下，苹果在其运营和环境影响方面变得更加透明，公司还发布了更多有关其产品和服务的信息，并使客户更容易回收旧设备。他让苹果公司赚得更多。在库克的领导下，苹果成为全球最赚钱的公司之一，公司收入大幅增长，股价创历史新高。总的来说，蒂姆库克是一位成功的苹果CEO，他监督了公司产品和服务的持续成功，并使Apple变得更加环保、多样化、包容、透明和盈利。</code></pre><h2 id="作为首席执行官，他面临哪些挑战？"><a href="#作为首席执行官，他面临哪些挑战？" class="headerlink" title="作为首席执行官，他面临哪些挑战？"></a>作为首席执行官，他面临哪些挑战？</h2><pre><code>智能手机市场放缓，智能手机市场近年来一直在放缓，这给苹果的销售带来了压力。库克通过多样化苹果产品线和投资可穿戴设备和服务等新的增长领域来应对这一挑战。1、竞争加剧    苹果面临来自三星、华为和小米等竞争对手的日益激烈的竞争。这些公司正在提供具有类似功能的低价设备，并且正在抢占苹果的市场份额。库克通过投资创新和扩大Apple的营销力度来应对这一挑战。2、地缘政治挑战    苹果一直受到地缘政治挑战的影响，例如中美之间的贸易战。 这些挑战使 Apple 更难制造其产品并在某些市场上销售它们。 库克通过多元化 Apple 的制造基地以及与政府合作解决贸易争端来应对这些挑战。3、监管审查    近年来，苹果一直是监管审查的对象，世界各国政府一直在调查Apple违反反垄断法、数据隐私问题和其他问题。库克通过与政府合作解决他们的担忧并提高Apple商业行为的透明度来应对这一挑战。</code></pre><h2 id="他对苹果的未来有何看法？"><a href="#他对苹果的未来有何看法？" class="headerlink" title="他对苹果的未来有何看法？"></a>他对苹果的未来有何看法？</h2><pre><code> 蒂姆库克对苹果的未来持乐观态度，他相信公司拥有坚实的基础，并有能力在未来几年继续发展并取得成功。 库克曾表示，他相信苹果将继续创新，并将继续创造人们喜爱的产品和服务，他还表示，他相信苹果将继续成为科技行业的领导者，并将继续对世界产生积极影响。 以下是库克认为苹果未来增长的一些关键领域：   1、可穿戴设备和健康：Apple 凭借其 Apple Watch 一直是可穿戴设备市场的领导者。 库克认为，苹果将在这一领域不断创新，最终会创造出一款可以监测人的各个方面健康状况的可穿戴设备。   2、服务：Apple 一直在大力投资其服务业务，其中包括 Apple Music、Apple Pay 和 iCloud。 库克相信这项业务将继续增长，最终将成为苹果的主要收入来源。   3、汽车：多年来一直有传言称苹果公司正在研发电动汽车。 库克曾表示，他对这个项目的潜力感到兴奋，他相信苹果可以制造出一款伟大的汽车。   4、AR/VR：库克曾表示，他对增强现实和虚拟现实的潜力感到兴奋。 他相信这些技术有可能彻底改变我们与周围世界互动的方式。 库克相信苹果在未来几年将继续成为一家成功的公司。 他相信公司拥有合适的人才、合适的产品和正确的战略，才能继续发展并取得成功。</code></pre><h2 id="关于他的家庭"><a href="#关于他的家庭" class="headerlink" title="关于他的家庭"></a>关于他的家庭</h2><pre><code>库克的父母是唐纳德和杰拉尔丁库克。 唐纳德是一名造船厂工人，杰拉尔丁在一家药房工作。 库克有两个兄弟，分别叫达伦和格雷格。库克没有结婚，也没有孩子。 他曾表示对结婚生子的想法持开放态度，但目前还没有找到合适的人选。</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;蒂姆库克是如何进入科技行业的？&quot;&gt;&lt;a href=&quot;#蒂姆库克是如何进入科技行业的？&quot; class=&quot;headerlink&quot; title=&quot;蒂姆库克是如何进入科技行业的？&quot;&gt;&lt;/a&gt;蒂姆库克是如何进入科技行业的？&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;蒂姆库克 1960 </summary>
+      
+    
+    
+    
+    <category term="文章" scheme="http://example.com/categories/%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="人物专辑" scheme="http://example.com/tags/%E4%BA%BA%E7%89%A9%E4%B8%93%E8%BE%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023-每日分享</title>
+    <link href="http://example.com/posts/22141.html"/>
+    <id>http://example.com/posts/22141.html</id>
+    <published>2023-04-11T05:46:25.000Z</published>
+    <updated>2024-02-02T01:21:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><svg viewBox="0 0 36 36" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" width="60" height="60"><title>Sarah Winnemucca</title><mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="#FFFFFF"></rect></mask><g mask="url(#mask__beam)"><rect width="36" height="36" fill="#56413e"></rect><rect x="0" y="0" width="36" height="36" transform="translate(3 5) rotate(301 18 18) scale(1.1)" fill="#ffa590" rx="36"></rect><g transform="translate(-5 3) rotate(-1 18 18)"><path d="M13,20 a1,0.75 0 0,0 10,0" fill="#000000"></path><rect x="13" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect><rect x="21" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect></g></g></svg></p><h2 id="12月29日"><a href="#12月29日" class="headerlink" title="12月29日"></a>12月29日</h2><p><a href="https://makesense.ai/">免费使用在线工具标记照片</a></p><h2 id="12月27日"><a href="#12月27日" class="headerlink" title="12月27日"></a>12月27日</h2><p><a href="https://audio.worthsee.com/">音频格式转换</a></p><h2 id="12月26日"><a href="#12月26日" class="headerlink" title="12月26日"></a>12月26日</h2><p>10万+PNG图片素材免费下载，透明背景图片，无需抠图<br><a href="https://www.pngdirs.com/">pngdirs</a></p><p><a href="https://incredibox.lintiebao.cn/">incredibox</a></p><p><a href="https://seraph.reveriestudios.online/games/index.html">300+在线游戏合集</a></p><h2 id="12月25日"><a href="#12月25日" class="headerlink" title="12月25日"></a>12月25日</h2><p>使用 AI 将您的草图变成精致的图像<br><a href="https://scribblediffusion.com/">scribblediffusion</a></p><p>一架能回应你的钢琴<br><a href="https://experiments.withgoogle.com/ai/ai-duet/view/">一架能回应你的钢琴</a></p><h2 id="12月22日"><a href="#12月22日" class="headerlink" title="12月22日"></a>12月22日</h2><p><a href="https://gemini.lintiebao.cn/">GeminiChat</a></p><p>XCole 千⾔万象是⼀款集 AI 绘图、AI ⽂字、AI 写作等功能于⼀体的综合性 AI 创作平台。体验智能 AI 创作的乐趣，尽在千⾔万象。<br><a href="https://www.xcole.cn/home">XCole</a></p><h2 id="12月21日"><a href="#12月21日" class="headerlink" title="12月21日"></a>12月21日</h2><p><a href="https://drawmote.app/">在屏幕上平滑的绘制</a></p><h2 id="12月20日"><a href="#12月20日" class="headerlink" title="12月20日"></a>12月20日</h2><p>Gemini 是 Google 最大、功能最强大的 AI 模型，从头开始构建多模态——跨文本、图像、视频、音频和代码无缝推理。<br><a href="https://googlegemini.co/">Gemini</a></p><p>无论你输入什么，这个人工智能都会唱歌<br><a href="https://www.riffusion.com/">riffusion</a></p><h2 id="12月4日"><a href="#12月4日" class="headerlink" title="12月4日"></a>12月4日</h2><p>一秒出图<br><a href="https://sdxlturbo.ai/">AI文生图</a></p><h2 id="11月30日"><a href="#11月30日" class="headerlink" title="11月30日"></a>11月30日</h2><p><a href="https://www.tree.fm/forest/28">森林的声音</a></p><h2 id="11月28日"><a href="#11月28日" class="headerlink" title="11月28日"></a>11月28日</h2><p><a href="https://white-noise-sound.com/">免费白噪音</a></p><h2 id="11月24日"><a href="#11月24日" class="headerlink" title="11月24日"></a>11月24日</h2><p>免费，有广告<br><a href="https://www.photopea.com/">在线ps</a></p><h2 id="11月17日"><a href="#11月17日" class="headerlink" title="11月17日"></a>11月17日</h2><p><a href="https://cutout.aiwave.cc/">AI一键抠图</a></p><h2 id="11月15日"><a href="#11月15日" class="headerlink" title="11月15日"></a>11月15日</h2><p><a href="https://airandomimage.art/">AI生成美女</a></p><h2 id="11月7日"><a href="#11月7日" class="headerlink" title="11月7日"></a>11月7日</h2><p>PDF压缩，减小PDF文件的尺寸，但同时保持最佳质量。优化您的PDF文件<br><a href="https://www.ilovepdf.com/zh-cn/compress_pdf">PDF压缩</a><br><img src="http://lc-ynman7xo.cn-n1.lcfile.com/AFUzMzknwn55i9oTsnSGKAOob3YRd8Ld/ilovepdf.png"></p><h2 id="10月26日"><a href="#10月26日" class="headerlink" title="10月26日"></a>10月26日</h2><p><a href="https://ip.im/">IP归属地查询</a><br><a href="https://text.is/">在线Markdown</a></p><h2 id="10月23日"><a href="#10月23日" class="headerlink" title="10月23日"></a>10月23日</h2><p><a href="https://rohkife.domcloud.io/">免费AI文生图</a></p><h2 id="10月18"><a href="#10月18" class="headerlink" title="10月18"></a>10月18</h2><p><a href="https://design.penpot.app/">圆形设计</a></p><h2 id="10月16日"><a href="#10月16日" class="headerlink" title="10月16日"></a>10月16日</h2><p>一键打印数学题，语文描红字帖等<a href="https://www.dayin.page/">习题打印</a></p><h2 id="10月12日"><a href="#10月12日" class="headerlink" title="10月12日"></a>10月12日</h2><p><a href="https://neal.fun/">创意有趣的汇总</a><br><a href="https://zh.wikihow.com/">生活指南</a><br><a href="https://www.crazygames.com/">在线小游戏汇总</a></p><h2 id="10月11日"><a href="#10月11日" class="headerlink" title="10月11日"></a>10月11日</h2><p>创意好看的壁纸们<br><a href="https://in.pinterest.com/">pinterest</a></p><h2 id="10月9日"><a href="#10月9日" class="headerlink" title="10月9日"></a>10月9日</h2><p>10w+高品质矢量图标<br><a href="https://yesicon.app/">yesicon</a></p><h2 id="9月13日"><a href="#9月13日" class="headerlink" title="9月13日"></a>9月13日</h2><p><a href="https://llava.hliu.cc/">AI图片分析引擎</a><br>语言理解：我可以理解用户输入的自然语言文本，并尽力为用户提供相关信息或建议。<br>生成：我可以生成自然语言文本，包括回复、摘要、概述等。<br>翻译：我可以翻译文本从一种语言到另一种语言，以便用户更好地理解和沟通。<br>搜索：我可以帮助用户搜索特定主题或信息，并提供相关的结果和建议。<br>提供建议：我可以为用户提供建议，包括解决问题、做出决策、选择最佳方案等。</p><h2 id="9月11日"><a href="#9月11日" class="headerlink" title="9月11日"></a>9月11日</h2><p><a href="https://www.shots.so/">生成好看的背景</a>，截图套壳，各种手机型号尺寸</p><h2 id="9月4日"><a href="#9月4日" class="headerlink" title="9月4日"></a>9月4日</h2><p><a href="https://qrcode.gitapp.cn/">二维码生成工具</a></p><h2 id="8月22日"><a href="#8月22日" class="headerlink" title="8月22日"></a>8月22日</h2><p>制作好看的壁纸，使用文字，颜色，图案和图像制作独特的壁纸<br><a href="https://pearmini.github.io/colorfu/#/">colorful</a><br>不一样的PPT制作方式<br><a href="https://gossip.ink/">gossip</a><br>为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件,内置了常用的 CET-4 、CET-6 、GMAT 、GRE 、IELTS 、SAT 、TOEFL 、考研英语、专业四级英语、专业八级英语，方便用户在记忆单词时，同时记忆读音与音标。<br><a href="https://qwerty.kaiyi.cool/">kaiyi</a><br>制作app商店截图<br><a href="https://studio.app-mockup.com/">screenshot</a></p><h2 id="8月17日"><a href="#8月17日" class="headerlink" title="8月17日"></a>8月17日</h2><p>好看的背景图片生成器<br><a href="https://picyard.ubout.in/">背景图片生成器</a><br>老报纸，人民日报、参考消息、人民画报<br><a href="https://reader.jojokanbao.cn/">看报纸</a></p><h2 id="8月16日"><a href="#8月16日" class="headerlink" title="8月16日"></a>8月16日</h2><p><a href="https://api.94speed.com/web/">百度网盘解析</a></p><h2 id="8月15日"><a href="#8月15日" class="headerlink" title="8月15日"></a>8月15日</h2><p>在线ps，免登录，无广告<br><a href="https://ps.gitapp.cn/">在线ps</a></p><h2 id="8月9日"><a href="#8月9日" class="headerlink" title="8月9日"></a>8月9日</h2><p>AI绘画，有免费额度<br><a href="https://app.leonardo.ai/">leonardo</a></p><h2 id="7月31日"><a href="#7月31日" class="headerlink" title="7月31日"></a>7月31日</h2><p><a href="https://clipdrop.co/stable-doodle">在几秒钟内将您的涂鸦转换为真实图像</a><br><a href="https://fulltime.ai/spaces/">体验HuggingFace空间GPU上运行的项目</a></p><h2 id="5月15日"><a href="#5月15日" class="headerlink" title="5月15日"></a>5月15日</h2><p><a href="https://podcast.adobe.com/enhance">去噪音</a><br> Adobe 出品的免费 AI 去除音频背景噪音工具，使音频具有专业录音室的音质。使用需登陆 Adobe 账号，支持 MP3 和 WAV，上传最大 1GB，时长最多 1 小时。</p><h2 id="5月06日"><a href="#5月06日" class="headerlink" title="5月06日"></a>5月06日</h2><p><a href="http://www.hi138.com/">免费论文下载</a></p><h2 id="5月04日"><a href="#5月04日" class="headerlink" title="5月04日"></a>5月04日</h2><p><a href="https://www.pptsupermarket.com/ppts">PPT免费下载</a></p><h2 id="4月21日"><a href="#4月21日" class="headerlink" title="4月21日"></a>4月21日</h2><p><a href="https://bgmcat.com/home">免费的背景音乐生成工具</a></p><h2 id="4月18日"><a href="#4月18日" class="headerlink" title="4月18日"></a>4月18日</h2><p><a href="https://taira-komori.jpn.org/freesoundcn.html">免费音效下载</a></p><h2 id="4月12日"><a href="#4月12日" class="headerlink" title="4月12日"></a>4月12日</h2><p><a href="https://moonvy.com/apps/ops/">SD，MJ提词器</a></p><p><a href="https://iradesign.io/gallery/illustrations">Ira Design,插画</a></p><h2 id="4月11日"><a href="#4月11日" class="headerlink" title="4月11日"></a>4月11日</h2><p><a href="https://yqnn.github.io/svg-path-editor/">svg-path在线编辑器</a></p><p>Method Draw 是一个基于 Web 的矢量绘图应用程序。 Method Draw 的目的是提供简单易用的 SVG 编辑器体验。它有意去除了一些功能，例如图层和线帽&#x2F;角，以换取更简单和愉快的体验。如果您正在寻找更完整的矢量编辑开源解决方案，请查看 SVG Edit。<br><a href="http://editor.method.ac/">Method Draw</a></p><p>4000+免费icon<br><a href="https://tabler-icons.io/">https://tabler-icons.io</a></p><p>面向设计师、开发人员和其他所有人的开源表情符号！<br><a href="https://openmoji.org/library/">https://openmoji.org/library/</a></p><p>Simply beautiful open source icons<br><a href="https://feathericons.com/">https://feathericons.com</a></p><p>7000 多个 Material Design 图标<br><a href="https://pictogrammers.com/library/mdi/">https://pictogrammers.com/library/mdi/</a></p><p>所有国家的国旗svg格式<br><a href="https://flagicons.lipis.dev/">https://flagicons.lipis.dev</a></p><p>700 多个纯 CSS、SVG 和 Figma UI 图标在 SVG Sprite、styled-components、NPM 和 API 中可用<br><a href="https://css.gg/app">https://css.gg/app</a></p><p>IconPark提供了超过2000个高质量图标，并且提供了一个界面来帮你定制图标。与使用各种SVG源文件来达到换肤效果的方案不同的是，我们实现了一种创新性的技术， 通过改变一个SVG文件的属性来变换出多种主题。并且支持跨平台导出多种图标代码库，方便您在代码中以组件的形式按需引用，比如 react-icons, vue-icons and svg-icons. 所以不管您是设计师还是开发者，都可以在您的项目中去使用IconPark.<br><a href="https://iconpark.oceanengine.com/official">IconPark</a></p><p>免费、高质量、开源图标库，包含 1,800 多个图标。 随心所欲地包含它们——SVG、SVG sprite 或网络字体。<br><a href="https://icons.getbootstrap.com/">https://icons.getbootstrap.com</a></p><p>svg格式的logo合计<br><a href="https://svgporn.com/">https://svgporn.com</a></p><p>一个开源图标库，拥有 1300 多个图标，支持 React、React Native、Flutter、CSS、Figma 和 Framer。<br><a href="https://iconoir.com/">iconoir</a></p><p>CoreUI 免费图标 - 高级设计的免费图标集，带有 SVG、Webfont 和光栅格式的标记<br><a href="https://coreui.io/icons/all/">CoreUI</a></p><p>一个简单、一致的开源图标集，旨在用于各种数字产品。<br><a href="https://icons.mono.company/">mono</a></p><p>1000 多个像素完美的 svg 图标<br><a href="https://antonreshetov.github.io/vue-unicons/">unicons </a></p><h2 id="3月04日"><a href="#3月04日" class="headerlink" title="3月04日"></a>3月04日</h2><p>PDF合并、PDF拆分、PDF提取页面、PDF删除页面、Word转PDF、Excel转PDF、PPT转PDF、PDF转Word、PDF转图片、PDF旋转、PDF排序、PDF压缩、PDF加页码、PDF加水印、PDF修改元数据<br>证件照换底色、图片压缩、图片尺寸调整、图片Base64编码、二维码制作、拼字幕、宫格拼图、九宫格切图、拼长图、图片加水印、图片格式转换、<br><a href="https://imgtool.net/image2pdf/">图片转pdf</a></p><h2 id="2月20日"><a href="#2月20日" class="headerlink" title="2月20日"></a>2月20日</h2><p>精选创意导航<br><a href="https://creativemass.cn/#/">https://creativemass.cn/#/</a></p><p>pdf免费工具<br><a href="https://www.ilovepdf.com/zh-cn/jpg_to_pdf">https://www.ilovepdf.com/zh-cn/jpg_to_pdf</a></p><h2 id="2月15日"><a href="#2月15日" class="headerlink" title="2月15日"></a>2月15日</h2><p>阿里云盘资源搜索<br><a href="https://www.upyunso.com/">https://www.upyunso.com</a></p><p>阿里云盘资源汇总<br><a href="https://docs.qq.com/doc/DVEh5VUhWUnNMZXVz?&amp;u=d43561cae16845f3b3f00ccbefdf5f35">https://docs.qq.com/doc/DVEh5VUhWUnNMZXVz?&amp;u=d43561cae16845f3b3f00ccbefdf5f35</a></p><p>免费开源的 Windows 程序与游戏卸载器，快速删除大量不需要的应用程序，甚至是便携或未注册的程序与游戏，并且能自动扫描残留文件、注册表遗留内容等。<br><a href="https://www.bcuninstaller.com/">https://www.bcuninstaller.com</a></p><p>免费图床，国内速度尚可，可临时分享图片用。<br><a href="https://imger.nl/">imger</a>  <a href="https://locimg.com/">locimg</a>  <a href="http://upvuimages.l-api.com/">upvuimages</a></p><h2 id="1月20日"><a href="#1月20日" class="headerlink" title="1月20日"></a>1月20日</h2><p>提供了照片修复 &#x2F; 抠图 &#x2F; 增强 demo 演示，可免费使用<br><a href="https://arc.tencent.com/zh/ai-demos/faceRestoration">https://arc.tencent.com/zh/ai-demos/faceRestoration</a></p><p>线上工具箱，目前所有功能免费<br><a href="https://tool.browser.qq.com/">https://tool.browser.qq.com/</a></p><p>中国高校外语慕课平台<br><a href="https://umoocs.unipus.cn/">https://umoocs.unipus.cn/</a></p><p>在线 GIF 动图制作工具，简单好用、灵活快速的动图制作体验。视频转 GIF、多图合成 GIF、GIF 动图编辑、GIF 裁剪、GIF 压缩、GIF 调速<br><a href="https://tt0.top/?ref=iui">https://tt0.top/?ref=iui</a></p><p>人工智能生成画作，可免费使用，生成的图片版权属于你<br><a href="https://6pen.art/">https://6pen.art/</a></p><p>基于 alist 搭建的阿里云盘资源聚合，在线播放速度快<br><a href="http://alist.xiaoya.pro/?iui.su">http://alist.xiaoya.pro/?iui.su</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;svg viewBox=&quot;0 0 36 36&quot; fill=&quot;none&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;60&quot; height=&quot;60&quot;&gt;&lt;title&gt;Sarah Winnemucca&lt;/title&gt;</summary>
+      
+    
+    
+    
+    <category term="素材" scheme="http://example.com/categories/%E7%B4%A0%E6%9D%90/"/>
+    
+    
+    <category term="每日分享" scheme="http://example.com/tags/%E6%AF%8F%E6%97%A5%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Xcode更新到14.3之后报错，提示‘File not found’Applications...lib/arc/libarclite_iphoneos.a</title>
+    <link href="http://example.com/posts/62953.html"/>
+    <id>http://example.com/posts/62953.html</id>
+    <published>2023-04-10T08:55:04.000Z</published>
+    <updated>2023-04-20T08:40:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Xcode更新到14.3之后，运行项目报错：<br>File not found: &#x2F;Applications&#x2F;Xcode.app&#x2F;Contents&#x2F;Developer&#x2F;Toolchains&#x2F;XcodeDefault.xctoolchain&#x2F;usr&#x2F;lib&#x2F;arc&#x2F;libarclite_iphoneos.a<br><img src="https://picogo-1257295947.cos.ap-beijing.myqcloud.com/iOS/%E6%88%AA%E5%B1%8F2023-04-10%2016.46.56-thumb.png"></p><p>解决方案：<br>修改一下报错的target的版本号<br><img src="https://picogo-1257295947.cos.ap-beijing.myqcloud.com/iOS/%E6%88%AA%E5%B1%8F2023-04-10%2016.56.11-thumb.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Xcode更新到14.3之后，运行项目报错：&lt;br&gt;File not found: &amp;#x2F;Applications&amp;#x2F;Xcode.app&amp;#x2F;Contents&amp;#x2F;Developer&amp;#x2F;Toolchains&amp;#x2F;XcodeDefaul</summary>
+      
+    
+    
+    
+    <category term="iOS" scheme="http://example.com/categories/iOS/"/>
+    
+    
+    <category term="文章" scheme="http://example.com/tags/%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="iOS" scheme="http://example.com/tags/iOS/"/>
+    
+  </entry>
+  
+</feed>
