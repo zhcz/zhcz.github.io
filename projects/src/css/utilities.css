@@ -170,6 +170,16 @@ h2::selection {
   background: url(../assets/project/yitizi.webp) center center/cover;
 }
 
+/* Project 8 */
+.card:nth-child(8) {
+  background: url(../assets/project/gemeni.webp) center center/cover;
+}
+
+/* Project 9 */
+.card:nth-child(9) {
+  background: url(../assets/project/qita.webp) center center/cover;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .header-container {
