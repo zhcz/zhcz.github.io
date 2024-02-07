@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-06T08:29:51.303Z</updated>
+  <updated>2024-02-07T09:35:26.498Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,15 +21,14 @@
     <link href="http://example.com/posts/39972.html"/>
     <id>http://example.com/posts/39972.html</id>
     <published>2024-02-06T07:25:30.000Z</published>
-    <updated>2024-02-06T08:29:51.303Z</updated>
+    <updated>2024-02-07T09:35:26.498Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="../poem/index.html">10万+首诗词文</a><br><a href="../poem/poem_sentence.html">名句</a></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="../poem/index.html">10万+首诗词文</a><br><a href="../poem/famousSentences.html">名句</a><br><a href="../poem/springCouplet.html">7000+春联</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;../poem/index.html&quot;&gt;10万+首诗词文&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;../poem/poem_sentence.html&quot;&gt;名句&lt;/a&gt;&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;../poem/index.html&quot;&gt;10万+首诗词文&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;../poem/famousSentences.html&quot;&gt;名句&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;../poem/springCouplet.html&quot;&gt;7000+春</summary>
       
     
     
