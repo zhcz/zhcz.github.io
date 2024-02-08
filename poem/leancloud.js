@@ -116,6 +116,7 @@ function requestData(currentPage,pageSize,keyword,callback) {
           var author = document.createElement('div');
           author.classList.add('poem-author');
           author.textContent = fromData;
+
           card.appendChild(title);
           card.appendChild(author);
           poemList.appendChild(card);
@@ -145,8 +146,9 @@ function requestData(currentPage,pageSize,keyword,callback) {
     query.find().then(function(results) {
       // 处理查询结果
         var poemList = document.getElementById('poem-list');
-      
+        console.log('获取到的数据为--==：',results);
         results.forEach(function(object) {
+          
           // 将数据展示在 HTML 页面上
           var shangData = object.get('shang');
           var xiaData = object.get('xia');
@@ -179,3 +181,76 @@ function requestData(currentPage,pageSize,keyword,callback) {
       callback();
     });
   }
+
+  function requestZitie(currentPage,pageSize,keyword,callback) {
+    const first = new AV.Query("pdf");
+    first.contains("author", keyword);
+    const second = new AV.Query("pdf");
+    second.contains("name", keyword);
+    
+    const query = AV.Query.or(first,second);
+    query.limit(pageSize);
+    query.descending("createdAt");
+    query.skip((currentPage-1)*pageSize);
+    // 查询数据
+    query.find().then(function(results) {
+      var poemList = document.getElementById('poem-list');
+
+      results.forEach(function(object) {
+          
+          // 将数据展示在 HTML 页面上
+          var authorData = object.get('author');
+          var nameData = object.get('name');
+
+          var card = document.createElement('div');
+          card.classList.add('poem-card');
+
+
+          var container = document.createElement('div');
+          container.classList.add('poem-container');
+      
+
+          var wrapper = document.createElement('div');
+          wrapper.classList.add('image-wrapper');
+          
+
+          var imgurl = object.get('cover')
+          var decodedUrl = decodeURIComponent(imgurl);
+          var img = document.createElement('img');
+          img.src = decodedUrl;
+          img.classList.add('poem-cover');
+
+          var name = document.createElement('div');
+          name.classList.add('poem-content');
+          name.textContent = nameData;
+
+          var author = document.createElement('div');
+          author.classList.add('poem-author');
+          author.textContent = authorData;
+
+          card.appendChild(name);
+          card.appendChild(author);
+          container.appendChild(wrapper);
+          wrapper.appendChild(img)
+          container.appendChild(card);
+          poemList.appendChild(container);
+          // 为诗词卡片添加点击事件
+          card.addEventListener('click', function() {
+            window.open(object.get('url'), '_blank');
+          });
+      });
+
+      callback(results);
+
+      
+      
+    }).catch(function(error) {
+      // 处理错误
+      // console.error('Error while fetching data:', error);
+      // callback();
+    });
+  }
+
+  
+
+  
