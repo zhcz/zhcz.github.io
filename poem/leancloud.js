@@ -32,6 +32,7 @@ function requestData(currentPage,pageSize,keyword,callback) {
           var remarkData = object.get('remark');
           var translationData = object.get('translation');
           var shangxiData = object.get('shangxi');
+          
 
           var card = document.createElement('div');
           card.classList.add('poem-card');
@@ -58,19 +59,19 @@ function requestData(currentPage,pageSize,keyword,callback) {
           // 在这里处理点击事件，例如跳转到诗词的详情页
           // window.location.href = 'poem-details.html?title=' + encodeURIComponent(titleData);
 
-          localStorage.setItem('selectedPoemTitle', titleData);
-          localStorage.setItem('selectedPoemAuthor', writerData);
-          localStorage.setItem('selectedPoemContent', contentData);
-          localStorage.setItem('selectedPoemRemark', remarkData);
-          localStorage.setItem('selectedPoemTranslation', translationData);
-          localStorage.setItem('selectedPoemShangxi', shangxiData);
-          localStorage.setItem('selectedPoemDynasty', dynastyData);
+            localStorage.setItem('selectedPoemTitle', titleData);
+            localStorage.setItem('selectedPoemAuthor', writerData);
+            localStorage.setItem('selectedPoemContent', contentData);
+            localStorage.setItem('selectedPoemRemark', remarkData);
+            localStorage.setItem('selectedPoemTranslation', translationData);
+            localStorage.setItem('selectedPoemShangxi', shangxiData);
+            localStorage.setItem('selectedPoemDynasty', dynastyData);
+            
 
-          // 跳转到详情页
-          window.location.href = 'poem-details.html';
+            // 跳转到详情页
+            window.location.href = 'poem-details.html';
         });
-       
-      
+        
       });
       callback();
     }).catch(function(error) {
@@ -183,11 +184,10 @@ function requestData(currentPage,pageSize,keyword,callback) {
   }
 
   function requestZitie(currentPage,pageSize,keyword,callback) {
-    const first = new AV.Query("pdf");
+    const first = new AV.Query("zitie_pdf2");
     first.contains("author", keyword);
-    const second = new AV.Query("pdf");
+    const second = new AV.Query("zitie_pdf2");
     second.contains("name", keyword);
-    
     const query = AV.Query.or(first,second);
     query.limit(pageSize);
     query.descending("createdAt");
@@ -197,10 +197,11 @@ function requestData(currentPage,pageSize,keyword,callback) {
       var poemList = document.getElementById('poem-list');
 
       results.forEach(function(object) {
-          
+          var describeData = object.get('describe');
           // 将数据展示在 HTML 页面上
           var authorData = object.get('author');
           var nameData = object.get('name');
+          var describeData = object.get('describe');
 
           var card = document.createElement('div');
           card.classList.add('poem-card');
@@ -236,7 +237,18 @@ function requestData(currentPage,pageSize,keyword,callback) {
           poemList.appendChild(container);
           // 为诗词卡片添加点击事件
           card.addEventListener('click', function() {
-            window.open(object.get('url'), '_blank');
+
+            localStorage.setItem('selectedZitieCover', imgurl);
+            localStorage.setItem('selectedZitieAuthor', authorData);
+            localStorage.setItem('selectedZitieName', nameData);
+            localStorage.setItem('selectedZitieDescribe', describeData);
+
+            window.location.href = 'zitie_detail.html';
+
+            // window.open(object.get('url'), '_blank');
+
+
+
           });
       });
 

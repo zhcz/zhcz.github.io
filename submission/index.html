@@ -39,15 +39,15 @@
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="Document                       body {       font-family: Arial, sans-serif;     }     label {       cursor: default;       color: #808080;       font-size: 15px;     }     form">
+    <meta name="description" content="Document                            body {       font-family: Arial, sans-serif;     }     label {       cursor: default;       color: #808080;       font-size: 15px;     }">
 <meta property="og:type" content="website">
 <meta property="og:title" content="投稿">
 <meta property="og:url" content="http://example.com/submission/index.html">
 <meta property="og:site_name" content="临帖宝">
-<meta property="og:description" content="Document                       body {       font-family: Arial, sans-serif;     }     label {       cursor: default;       color: #808080;       font-size: 15px;     }     form">
+<meta property="og:description" content="Document                            body {       font-family: Arial, sans-serif;     }     label {       cursor: default;       color: #808080;       font-size: 15px;     }">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-01-31T07:31:28.000Z">
-<meta property="article:modified_time" content="2024-02-07T08:51:15.106Z">
+<meta property="article:modified_time" content="2024-02-19T06:24:11.272Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -194,7 +194,7 @@
         </svg>
     </a>
     <div class="toc-menus" id="toc-menus">
-        <div class="toc-title">文章目录</div>
+        <div class="toc-title">Article Directory</div>
         
     </div>
 
@@ -202,7 +202,8 @@
 <article class="post post__with-toc content-card">
     <div class="post__header"></div>
     <div class="post__content">
-        <div style="text-align: center;">
+        
+<div style="text-align: center;">
 <span id="element"></span>
 </div>
 
@@ -215,7 +216,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="//code.bdstatic.com/npm/leancloud-storage@4.13.2/dist/av-min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <!-- <script src="sparticles.min.js"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
@@ -305,35 +307,44 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+    #tip {
+      padding: 10px;
+      opacity: 0.8; /* 初始时将数据的透明度设置为0，隐藏数据 */
+      /* transition: opacity 0.5s ease; 添加过渡动画效果 */
+      text-align: center;
+    }
 
-<p>  </style></p>
+  </style>
 <body>
-          <form id="myForm">
-      <div class="mb-3">
-        <label for="nickname" class="form-label">昵称</label>
-        <input type="text" class="form-control" id="nickname" oninput="validateForm()">
-      </div>
-      <div class="mb-3">
-        <label for="contact" class="form-label">联系方式</label>
-        <input type="text" class="form-control" id="contact" oninput="validateForm()">
-      </div>
-      <div class="mb-3">
-        <label for="submission" class="form-label">提交内容</label>
-        <textarea class="form-control" id="submission" rows="3" oninput="validateForm()"></textarea>
-      </div>
-      <button type="button" class="btn btn-primary" onclick="submitForm()" disabled>
-    <span class="btn-text">提交</span>
-    <span class="loader"></span>
-  </button>
-  </button>
-    </form>
+    <div id="tip">将好用和好玩的任何东西分享给大家！</div>
+    <div id="tip">你的投稿如若被采纳，将被发布在“每日分享”中！</div>
+    <form id="myForm">
+            <div class="mb-3">
+              <label for="nickname" class="form-label">昵称</label>
+              <input type="text" class="form-control" id="nickname" oninput="validateForm()">
+            </div>
+            
+            <div class="mb-3">
+              <label for="contact" class="form-label">联系方式</label>
+              <input type="text" class="form-control" id="contact" oninput="validateForm()">
+            </div>
+
+            <div class="mb-3">
+              <label for="submission" class="form-label">提交内容</label>
+              <textarea class="form-control" id="submission" rows="3" oninput="validateForm()"></textarea>
+            </div>
+
+          <button type="button" class="btn btn-primary" onclick="submitForm()" disabled>
+          <span class="btn-text">提交</span>
+          <span class="loader"></span>
+
+          </button>
+          </button>
+     </form>
+    
 
   <script>
-    
-    var typed = new Typed('#element', {
-            strings: ['将好用和好玩的任何东西分享给大家！你的投稿如若被采纳，将被发布在“每日分享”中！'],
-            typeSpeed: 80,
-        });
+
 
     function validateForm() {
       const nickname = document.getElementById('nickname').value;
@@ -405,7 +416,7 @@
 </html>
     </div>
      
-    <div class="post-footer__meta"><p>更新于 2024-02-07</p></div> 
+    <div class="post-footer__meta"><p>updated at 2024-02-19</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 
@@ -414,7 +425,7 @@
 
     <div class="post__comments post__with-toc content-card" id="comment">
         
-    <h4>评论</h4>
+    <h4>Comments</h4>
     
     
     
@@ -439,7 +450,7 @@
 
             <footer class="footer">
      
-    <a href="#" class="button" id="b2t" aria-label="回到顶部" title="回到顶部">
+    <a href="#" class="button" id="b2t" aria-label="Back to Top" title="Back to Top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
             <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
         </svg>

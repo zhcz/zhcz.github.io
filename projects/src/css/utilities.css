@@ -111,6 +111,7 @@ h2::selection {
   border-radius: 5px;
   transition: 0.4s ease-in-out;
   cursor: pointer;
+  opacity: 0.8;
   /* border-radius: 15%; */
 }
 
@@ -152,31 +153,36 @@ h2::selection {
 
 /* Project 4 */
 .card:nth-child(4) {
-  background: url(../assets/project/poem_500-500.webp) center center/cover;
+  background: url(../assets/project/zitie.webp) center center/cover;
 }
 
 /* Project 5 */
 .card:nth-child(5) {
-  background: url(../assets/project/mingju.webp) center center/cover;
+  background: url(../assets/project/poem_500-500.webp) center center/cover;
 }
 
 /* Project 6 */
 .card:nth-child(6) {
-  background: url(../assets/project/springCouplet.webp) center center/cover;
+  background: url(../assets/project/mingju.webp) center center/cover;
 }
 
 /* Project 7 */
 .card:nth-child(7) {
-  background: url(../assets/project/yitizi.webp) center center/cover;
+  background: url(../assets/project/springCouplet.webp) center center/cover;
 }
 
 /* Project 8 */
 .card:nth-child(8) {
-  background: url(../assets/project/gemeni.webp) center center/cover;
+  background: url(../assets/project/yitizi.webp) center center/cover;
 }
 
 /* Project 9 */
 .card:nth-child(9) {
+  background: url(../assets/project/gemeni.webp) center center/cover;
+}
+
+/* Project 10 */
+.card:nth-child(10) {
   background: url(../assets/project/qita.webp) center center/cover;
 }
 
