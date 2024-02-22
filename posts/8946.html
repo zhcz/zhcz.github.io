@@ -199,7 +199,7 @@
         </svg>
     </a>
     <div class="toc-menus" id="toc-menus">
-        <div class="toc-title">文章目錄</div>
+        <div class="toc-title">Article Directory</div>
         <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E7%BA%BF%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">在线图片压缩工具汇总：</span></a></li></ol>
     </div>
 
@@ -222,7 +222,7 @@
 
     </div>
      
-    <div class="post-footer__meta"><p>更新於 2023-04-20</p></div> 
+    <div class="post-footer__meta"><p>updated at 2023-04-20</p></div> 
     <div class="post-entry__tags"><a href="/tags/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9/" class="post-tags__link button"># 图片压缩</a></div> 
 </article>
 
@@ -236,7 +236,7 @@
                     </div>
                     <div>
                         <div class="nav__label">
-                            上一篇
+                            Previous Post
                         </div>
                         <div class="nav__title">
                             开发者工具
@@ -250,7 +250,7 @@
                 <a href="/posts/21510.html" class="nav__link">
                     <div>
                         <div class="nav__label">
-                            下一篇
+                            Next Post
                         </div>
                         <div class="nav__title">
                             头像生成器
@@ -268,7 +268,7 @@
 
     <div class="post__comments post__with-toc content-card" id="comment">
         
-    <h4>評論</h4>
+    <h4>Comments</h4>
     
     
     
@@ -293,7 +293,7 @@
 
             <footer class="footer">
      
-    <a href="#" class="button" id="b2t" aria-label="回到頂部" title="回到頂部">
+    <a href="#" class="button" id="b2t" aria-label="Back to Top" title="Back to Top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
             <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
         </svg>
@@ -514,6 +514,41 @@
 
  
 
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('false'),
+            auto_fancybox = Boolean('true')
+        if (auto_fancybox) {
+            $(".post__content").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
  
 
  

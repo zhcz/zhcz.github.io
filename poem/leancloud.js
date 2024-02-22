@@ -1,13 +1,12 @@
 
 src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"
 function initLeanCloud() {
-  
   const appId = "ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz";
   const appKey = "bJozAX2UEPCNqmriHhTiceIc";
   const serverURL = "https://api.lintiebao.cn";
   AV.init({ appId, appKey, serverURL });
 }
-
+ 
 function requestData(currentPage,pageSize,keyword,callback) {
     const first = new AV.Query("guwen");
     first.contains("writer", keyword);
@@ -264,5 +263,37 @@ function requestData(currentPage,pageSize,keyword,callback) {
   }
 
   
-
+  function requestZitie_today(currentPage,pageSize,keyword,callback) {
+    const first = new AV.Query("zitie");
+    first.contains("author", keyword);
+    const second = new AV.Query("zitie");
+    second.contains("name", keyword);
+    const query = AV.Query.or(first,second);
+    query.limit(pageSize);
+    query.descending("createdAt");
+    query.skip((currentPage-1)*pageSize);
+    // 查询数据
+    query.find().then(function(results) {
+      callback(results);
+    }).catch(function(error) {
+      // 处理错误
+      // console.error('Error while fetching data:', error);
+      // callback();
+    });
+  }
   
+  function requestZitie_today_imgs(currentPage,pageSize,zitieId,callback) {
+    const query = new AV.Query("zitieImg");
+    query.equalTo("zitieId", zitieId);
+    query.limit(pageSize);
+    // query.descending("createdAt");
+    query.skip((currentPage-1)*pageSize);
+    // 查询数据
+    query.find().then(function(results) {
+      callback(results);
+    }).catch(function(error) {
+      // 处理错误
+      // console.error('Error while fetching data:', error);
+      // callback();
+    });
+  }

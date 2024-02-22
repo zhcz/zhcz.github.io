@@ -54,3 +54,16 @@
     text-align: right;
     color: var(--main-color);
   }
+  #moreButton {
+    background-image: url('jiazaigengduo.png');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+ }
+ #buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+ }
