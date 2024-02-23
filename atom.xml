@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-21T03:11:52.743Z</updated>
+  <updated>2024-02-23T07:15:59.416Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/posts/116.html"/>
     <id>http://example.com/posts/116.html</id>
     <published>2024-02-08T01:37:59.000Z</published>
-    <updated>2024-02-21T03:11:52.743Z</updated>
+    <updated>2024-02-23T07:15:59.416Z</updated>
     
     <content type="html"><![CDATA[<p><a href="../poem/zitie_today/zitie_today.html">今日字帖</a><br><a href="../poem/zitie.html">名家字帖</a></p>]]></content>
     
