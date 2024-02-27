@@ -1,299 +1,73 @@
+ var _0x208b4e=_0x5218;function _0x5218(_0x81161d,_0x30be19){var _0x49000e=_0x4900();return _0x5218=function(_0x52184c,_0x466102){_0x52184c=_0x52184c-0x10d;var _0x376631=_0x49000e[_0x52184c];return _0x376631;},_0x5218(_0x81161d,_0x30be19);}(function(_0x1071fd,_0x984ba8){var _0x3e82da=_0x5218,_0x4bba1b=_0x1071fd();while(!![]){try{var _0x3e09c1=-parseInt(_0x3e82da(0x150))/0x1*(-parseInt(_0x3e82da(0x118))/0x2)+-parseInt(_0x3e82da(0x11c))/0x3+parseInt(_0x3e82da(0x123))/0x4+parseInt(_0x3e82da(0x12f))/0x5*(-parseInt(_0x3e82da(0x125))/0x6)+parseInt(_0x3e82da(0x135))/0x7+-parseInt(_0x3e82da(0x14a))/0x8+parseInt(_0x3e82da(0x158))/0x9;if(_0x3e09c1===_0x984ba8)break;else _0x4bba1b['push'](_0x4bba1b['shift']());}catch(_0x5348ba){_0x4bba1b['push'](_0x4bba1b['shift']());}}}(_0x4900,0x9ef0f),src=_0x208b4e(0x134));function initLeanCloud(){var _0x50ede1=_0x208b4e;const _0x5e88dc=_0x50ede1(0x132),_0x5bcd45='bJozAX2UEPCNqmriHhTiceIc',_0x88a0d5='https://api.lintiebao.cn';AV[_0x50ede1(0x111)]({'appId':_0x5e88dc,'appKey':_0x5bcd45,'serverURL':_0x88a0d5});}function _0x4900(){var _0x2cf83a=['classList','content','innerHTML','zitieId','poem-title','author','title','from','name','createdAt','writer','forEach','log','poem-list','selectedPoemShangxi','selectedZitieCover','shangxi','selectedPoemTranslation','find','4621744bEHWkl','selectedZitieName','catch','equalTo','poem-content','cover','1019607vlprWj','selectedPoemContent','div','poem-details.html','add','translation','selectedPoemDynasty','limit','3361140rlPYBb','selectedPoemRemark','addEventListener','Error\x20while\x20fetching\x20data:','dynasty','textContent','poem-author','init','selectedZitieAuthor','shang','location','href','selectedPoemTitle','remark','2vReuBV','sentence','获取到的数据为--==：','contains','2241693iKDMsr','then','get','xia','click','createElement','zitie_detail.html','2429104nFKxOG','img','6BmvIRd','descending','poem-card','skip','src','appendChild','zitie_pdf2','poem-cover','image-wrapper','setItem','6305345tqnydz','Query','getElementById','ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz','guwen','https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js','8656886AkGQXu','SpringCouplets'];_0x4900=function(){return _0x2cf83a;};return _0x4900();}function requestData(_0x255f42,_0x173dc8,_0xe8795f,_0x2ace62){var _0xd57417=_0x208b4e;const _0x34b00e=new AV['Query'](_0xd57417(0x133));_0x34b00e[_0xd57417(0x11b)](_0xd57417(0x141),_0xe8795f);const _0x2037de=new AV[(_0xd57417(0x130))](_0xd57417(0x133));_0x2037de[_0xd57417(0x11b)](_0xd57417(0x138),_0xe8795f);const _0x54d5ba=new AV[(_0xd57417(0x130))](_0xd57417(0x133));_0x54d5ba['contains'](_0xd57417(0x13d),_0xe8795f);const _0x55a802=AV[_0xd57417(0x130)]['or'](_0x34b00e,_0x2037de,_0x54d5ba);_0x55a802['limit'](_0x173dc8),_0x55a802[_0xd57417(0x128)]((_0x255f42-0x1)*_0x173dc8),_0x55a802[_0xd57417(0x149)]()[_0xd57417(0x11d)](function(_0x297c69){var _0x3e26b4=_0xd57417,_0x445c5f=document['getElementById']('poem-list');_0x297c69[_0x3e26b4(0x142)](function(_0x5aa889){var _0x249887=_0x3e26b4,_0x4751f6=_0x5aa889['get']('content'),_0x580bac=_0x5aa889['get'](_0x249887(0x13d)),_0x4b88a2=_0x5aa889[_0x249887(0x11e)](_0x249887(0x141)),_0x2d3d1d=_0x5aa889[_0x249887(0x11e)](_0x249887(0x10e)),_0x5acb7c=_0x5aa889[_0x249887(0x11e)](_0x249887(0x117)),_0x5e25d7=_0x5aa889[_0x249887(0x11e)](_0x249887(0x155)),_0xba2961=_0x5aa889[_0x249887(0x11e)](_0x249887(0x147)),_0x2ec138=document[_0x249887(0x121)](_0x249887(0x152));_0x2ec138[_0x249887(0x137)][_0x249887(0x154)](_0x249887(0x127));var _0x5c85f9=document['createElement']('h5');_0x5c85f9[_0x249887(0x137)][_0x249887(0x154)]('poem-title'),_0x5c85f9[_0x249887(0x10f)]=_0x580bac;var _0x92aa3c=document[_0x249887(0x121)](_0x249887(0x152));_0x92aa3c[_0x249887(0x137)][_0x249887(0x154)](_0x249887(0x110)),_0x92aa3c['textContent']=_0x2d3d1d+'\x20·\x20'+_0x4b88a2;var _0x33ffc3=document[_0x249887(0x121)](_0x249887(0x152));_0x33ffc3[_0x249887(0x137)]['add']('poem-content'),_0x33ffc3[_0x249887(0x10f)]=_0x4751f6,_0x2ec138[_0x249887(0x12a)](_0x5c85f9),_0x2ec138[_0x249887(0x12a)](_0x92aa3c),_0x2ec138['appendChild'](_0x33ffc3),_0x445c5f['appendChild'](_0x2ec138),_0x2ec138['addEventListener'](_0x249887(0x120),function(){var _0x478f36=_0x249887;localStorage[_0x478f36(0x12e)](_0x478f36(0x116),_0x580bac),localStorage[_0x478f36(0x12e)]('selectedPoemAuthor',_0x4b88a2),localStorage[_0x478f36(0x12e)](_0x478f36(0x151),_0x4751f6),localStorage[_0x478f36(0x12e)](_0x478f36(0x159),_0x5acb7c),localStorage[_0x478f36(0x12e)](_0x478f36(0x148),_0x5e25d7),localStorage[_0x478f36(0x12e)](_0x478f36(0x145),_0xba2961),localStorage['setItem'](_0x478f36(0x156),_0x2d3d1d),window[_0x478f36(0x114)][_0x478f36(0x115)]=_0x478f36(0x153);});}),_0x2ace62();})[_0xd57417(0x14c)](function(_0x2c591a){var _0x3e1177=_0xd57417;console['error'](_0x3e1177(0x10d),_0x2c591a),_0x2ace62();});}function clean(){var _0xdabc4b=_0x208b4e,_0x8f22c8=document[_0xdabc4b(0x131)]('poem-list');_0x8f22c8[_0xdabc4b(0x139)]='';}function requestFamousSentences(_0x564474,_0x558b9e,_0x36e73f,_0x161db5){var _0xe1a235=_0x208b4e;const _0x2e821d=new AV['Query'](_0xe1a235(0x119));_0x2e821d['contains'](_0xe1a235(0x13e),_0x36e73f);const _0x541847=new AV['Query'](_0xe1a235(0x119));_0x541847[_0xe1a235(0x11b)](_0xe1a235(0x13f),_0x36e73f);const _0x54f320=AV['Query']['or'](_0x2e821d,_0x541847);_0x54f320[_0xe1a235(0x157)](_0x558b9e),_0x54f320[_0xe1a235(0x128)]((_0x564474-0x1)*_0x558b9e),_0x54f320[_0xe1a235(0x149)]()[_0xe1a235(0x11d)](function(_0x12b16f){var _0x513e0e=_0xe1a235,_0x215e09=document['getElementById'](_0x513e0e(0x144));_0x12b16f['forEach'](function(_0x4c04db){var _0x1bd0ea=_0x513e0e,_0x1e0835=_0x4c04db[_0x1bd0ea(0x11e)](_0x1bd0ea(0x13e)),_0x285066=_0x4c04db['get']('name');console[_0x1bd0ea(0x143)](_0x1e0835,_0x285066);var _0x2b85d7=document[_0x1bd0ea(0x121)](_0x1bd0ea(0x152));_0x2b85d7['classList'][_0x1bd0ea(0x154)]('poem-card');var _0x5bb42e=document[_0x1bd0ea(0x121)]('h5');_0x5bb42e[_0x1bd0ea(0x137)]['add'](_0x1bd0ea(0x13b)),_0x5bb42e[_0x1bd0ea(0x10f)]=_0x285066;var _0x1b277a=document['createElement'](_0x1bd0ea(0x152));_0x1b277a[_0x1bd0ea(0x137)][_0x1bd0ea(0x154)](_0x1bd0ea(0x110)),_0x1b277a[_0x1bd0ea(0x10f)]=_0x1e0835,_0x2b85d7[_0x1bd0ea(0x12a)](_0x5bb42e),_0x2b85d7[_0x1bd0ea(0x12a)](_0x1b277a),_0x215e09[_0x1bd0ea(0x12a)](_0x2b85d7),_0x2b85d7['addEventListener'](_0x1bd0ea(0x120),function(){});}),_0x161db5();})[_0xe1a235(0x14c)](function(_0x3628bc){_0x161db5();});}function requestSpringCouplet(_0x2370de,_0x3a744a,_0x2978cb,_0x2c3bf5){var _0x3092b2=_0x208b4e;const _0xd85e5d=new AV[(_0x3092b2(0x130))](_0x3092b2(0x136));_0xd85e5d[_0x3092b2(0x11b)](_0x3092b2(0x113),_0x2978cb);const _0x6a842c=new AV[(_0x3092b2(0x130))](_0x3092b2(0x136));_0x6a842c['contains'](_0x3092b2(0x11f),_0x2978cb);const _0x8956de=AV[_0x3092b2(0x130)]['or'](_0xd85e5d,_0x6a842c);_0x8956de[_0x3092b2(0x157)](_0x3a744a),_0x8956de['skip']((_0x2370de-0x1)*_0x3a744a),_0x8956de[_0x3092b2(0x149)]()[_0x3092b2(0x11d)](function(_0x21adff){var _0x141d71=_0x3092b2,_0x15c379=document[_0x141d71(0x131)](_0x141d71(0x144));console[_0x141d71(0x143)](_0x141d71(0x11a),_0x21adff),_0x21adff[_0x141d71(0x142)](function(_0x71e528){var _0xe017cc=_0x141d71,_0x5d8437=_0x71e528[_0xe017cc(0x11e)]('shang'),_0x558679=_0x71e528[_0xe017cc(0x11e)](_0xe017cc(0x11f));console[_0xe017cc(0x143)](_0x5d8437,_0x558679);var _0x33b3b8=document[_0xe017cc(0x121)]('div');_0x33b3b8[_0xe017cc(0x137)][_0xe017cc(0x154)](_0xe017cc(0x127));var _0x1c9eab=document[_0xe017cc(0x121)]('h5');_0x1c9eab['classList']['add']('poem-title'),_0x1c9eab['textContent']=_0x5d8437;var _0x54d3bd=document[_0xe017cc(0x121)]('h5');_0x54d3bd[_0xe017cc(0x137)][_0xe017cc(0x154)](_0xe017cc(0x13b)),_0x54d3bd[_0xe017cc(0x10f)]=_0x558679,_0x33b3b8[_0xe017cc(0x12a)](_0x1c9eab),_0x33b3b8[_0xe017cc(0x12a)](_0x54d3bd),_0x15c379[_0xe017cc(0x12a)](_0x33b3b8),_0x33b3b8[_0xe017cc(0x15a)](_0xe017cc(0x120),function(){});}),_0x2c3bf5();})[_0x3092b2(0x14c)](function(_0x7dedbf){_0x2c3bf5();});}function requestZitie(_0x55894d,_0x402cba,_0xdfb90e,_0xde91f2){var _0x530c7a=_0x208b4e;const _0x38a808=new AV[(_0x530c7a(0x130))](_0x530c7a(0x12b));_0x38a808[_0x530c7a(0x11b)](_0x530c7a(0x13c),_0xdfb90e);const _0x25729d=new AV[(_0x530c7a(0x130))](_0x530c7a(0x12b));_0x25729d[_0x530c7a(0x11b)](_0x530c7a(0x13f),_0xdfb90e);const _0x4ccd57=AV[_0x530c7a(0x130)]['or'](_0x38a808,_0x25729d);_0x4ccd57[_0x530c7a(0x157)](_0x402cba),_0x4ccd57[_0x530c7a(0x126)](_0x530c7a(0x140)),_0x4ccd57[_0x530c7a(0x128)]((_0x55894d-0x1)*_0x402cba),_0x4ccd57[_0x530c7a(0x149)]()['then'](function(_0x122445){var _0x154f1e=_0x530c7a,_0x550a42=document[_0x154f1e(0x131)]('poem-list');_0x122445[_0x154f1e(0x142)](function(_0x322a64){var _0x29523a=_0x154f1e,_0x82df2f=_0x322a64[_0x29523a(0x11e)]('describe'),_0x857d01=_0x322a64[_0x29523a(0x11e)](_0x29523a(0x13c)),_0x52bb40=_0x322a64[_0x29523a(0x11e)](_0x29523a(0x13f)),_0x82df2f=_0x322a64['get']('describe'),_0x4624ad=document[_0x29523a(0x121)](_0x29523a(0x152));_0x4624ad[_0x29523a(0x137)][_0x29523a(0x154)](_0x29523a(0x127));var _0xca1607=document[_0x29523a(0x121)](_0x29523a(0x152));_0xca1607[_0x29523a(0x137)][_0x29523a(0x154)]('poem-container');var _0x448c72=document[_0x29523a(0x121)](_0x29523a(0x152));_0x448c72[_0x29523a(0x137)][_0x29523a(0x154)](_0x29523a(0x12d));var _0x322c9a=_0x322a64[_0x29523a(0x11e)](_0x29523a(0x14f)),_0x4e3d04=decodeURIComponent(_0x322c9a),_0x9dc31d=document['createElement'](_0x29523a(0x124));_0x9dc31d[_0x29523a(0x129)]=_0x4e3d04,_0x9dc31d['classList'][_0x29523a(0x154)](_0x29523a(0x12c));var _0x1a28cb=document[_0x29523a(0x121)](_0x29523a(0x152));_0x1a28cb[_0x29523a(0x137)][_0x29523a(0x154)](_0x29523a(0x14e)),_0x1a28cb['textContent']=_0x52bb40;var _0x4d2fda=document[_0x29523a(0x121)](_0x29523a(0x152));_0x4d2fda['classList']['add'](_0x29523a(0x110)),_0x4d2fda[_0x29523a(0x10f)]=_0x857d01,_0x4624ad[_0x29523a(0x12a)](_0x1a28cb),_0x4624ad['appendChild'](_0x4d2fda),_0xca1607[_0x29523a(0x12a)](_0x448c72),_0x448c72[_0x29523a(0x12a)](_0x9dc31d),_0xca1607['appendChild'](_0x4624ad),_0x550a42[_0x29523a(0x12a)](_0xca1607),_0x4624ad[_0x29523a(0x15a)](_0x29523a(0x120),function(){var _0x5772ea=_0x29523a;localStorage[_0x5772ea(0x12e)](_0x5772ea(0x146),_0x322c9a),localStorage[_0x5772ea(0x12e)](_0x5772ea(0x112),_0x857d01),localStorage['setItem'](_0x5772ea(0x14b),_0x52bb40),localStorage[_0x5772ea(0x12e)]('selectedZitieDescribe',_0x82df2f),window[_0x5772ea(0x114)]['href']=_0x5772ea(0x122);});}),_0xde91f2(_0x122445);})[_0x530c7a(0x14c)](function(_0x275be3){});}function requestZitie_today(_0x3f62c9,_0x4316a0,_0x3ca693,_0x19e9a){var _0x121825=_0x208b4e;const _0x161c4c=new AV[(_0x121825(0x130))]('zitie');_0x161c4c[_0x121825(0x11b)]('author',_0x3ca693);const _0x4f4016=new AV['Query']('zitie');_0x4f4016[_0x121825(0x11b)](_0x121825(0x13f),_0x3ca693);const _0x414174=AV['Query']['or'](_0x161c4c,_0x4f4016);_0x414174[_0x121825(0x157)](_0x4316a0),_0x414174[_0x121825(0x126)](_0x121825(0x140)),_0x414174[_0x121825(0x128)]((_0x3f62c9-0x1)*_0x4316a0),_0x414174[_0x121825(0x149)]()[_0x121825(0x11d)](function(_0x1a8d63){_0x19e9a(_0x1a8d63);})[_0x121825(0x14c)](function(_0x410c4d){});}function requestZitie_today_imgs(_0x5c9a02,_0x564755,_0x40594d,_0x98fb13){var _0x155c8b=_0x208b4e;const _0x570d3f=new AV[(_0x155c8b(0x130))]('zitieImg');_0x570d3f[_0x155c8b(0x14d)](_0x155c8b(0x13a),_0x40594d),_0x570d3f[_0x155c8b(0x157)](_0x564755),_0x570d3f[_0x155c8b(0x128)]((_0x5c9a02-0x1)*_0x564755),_0x570d3f['find']()[_0x155c8b(0x11d)](function(_0x170c05){_0x98fb13(_0x170c05);})[_0x155c8b(0x14c)](function(_0x43d259){});}
 
-src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"
-function initLeanCloud() {
-  const appId = "ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz";
-  const appKey = "bJozAX2UEPCNqmriHhTiceIc";
-  const serverURL = "https://api.lintiebao.cn";
-  AV.init({ appId, appKey, serverURL });
+
+ function beginrunning() {
+    var debugflag = false;
+    endebug(false, function () {
+    document.write('检测到非法调试, 请关闭调试终端后刷新本页面重试!');
+    document.write("<br/>");
+    document.write("Welcome for People, Not Welcome for Machine!");
+    debugflag = true;
+    });
+    if (!debugflag && !window.navigator.webdriver) {
+    loadTab();
+    }
+ }
+ function endebug(off, code) {
+    if (!off) { !
+        function(e) {
+            function n(e) {
+                function n() {
+                    return u
+                }
+                function o() {
+                    window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized ? t("on") : (a = "off", console.log(d), console.clear(), t(a))
+                }
+                function t(e) {
+                    u !== e && (u = e, "function" == typeof c.onchange && c.onchange(e))
+                }
+                function r() {
+                    l || (l = !0, window.removeEventListener("resize", o), clearInterval(f))
+                }
+                "function" == typeof e && (e = {
+                    onchange: e
+                });
+                var i = (e = e || {}).delay || 500,
+                c = {};
+                c.onchange = e.onchange;
+                var a, d = new Image;
+                d.__defineGetter__("id",
+                function() {
+                    a = "on"
+                });
+                var u = "unknown";
+                c.getStatus = n;
+                var f = setInterval(o, i);
+                window.addEventListener("resize", o);
+                var l;
+                return c.free = r,
+                c
+            }
+            var o = o || {};
+            o.create = n,
+            "function" == typeof define ? (define.amd || define.cmd) && define(function() {
+                return o
+            }) : "undefined" != typeof module && module.exports ? module.exports = o: window.jdetects = o
+        } (),
+        jdetects.create(function(e) {
+            var a = 0;
+            var n = setInterval(function() {
+                if ("on" == e) {
+                    setTimeout(function() {
+                        if (a == 0) {
+                            a = 1;
+                            setTimeout(code)
+                        }
+                    },
+                    200)
+                }
+            },
+            100)
+        })
+    }
 }
- 
-function requestData(currentPage,pageSize,keyword,callback) {
-    const first = new AV.Query("guwen");
-    first.contains("writer", keyword);
-    const second = new AV.Query("guwen");
-    second.contains("content", keyword);
-    const third = new AV.Query("guwen");
-    third.contains("title", keyword);
-    const query = AV.Query.or(first,second,third);
-    query.limit(pageSize);
-    query.skip((currentPage-1)*pageSize);
-    // 查询数据
-    query.find().then(function(results) {
-      // 处理查询结果
-        var poemList = document.getElementById('poem-list');
-      
-        results.forEach(function(object) {
-          // 将数据展示在 HTML 页面上
-          var contentData = object.get('content');
-          var titleData = object.get('title');
-          var writerData = object.get('writer');
-          var dynastyData = object.get('dynasty');
-          var remarkData = object.get('remark');
-          var translationData = object.get('translation');
-          var shangxiData = object.get('shangxi');
-          
-
-          var card = document.createElement('div');
-          card.classList.add('poem-card');
-
-          var title = document.createElement('h5');
-          title.classList.add('poem-title');
-          title.textContent = titleData;
-
-          var author = document.createElement('div');
-          author.classList.add('poem-author');
-          author.textContent = dynastyData + ' · ' + writerData;
-
-          var content = document.createElement('div');
-          content.classList.add('poem-content');
-          content.textContent = contentData;
-
-          card.appendChild(title);
-          card.appendChild(author);
-          card.appendChild(content);
-          poemList.appendChild(card);
-
-          // 为诗词卡片添加点击事件
-          card.addEventListener('click', function() {
-          // 在这里处理点击事件，例如跳转到诗词的详情页
-          // window.location.href = 'poem-details.html?title=' + encodeURIComponent(titleData);
-
-            localStorage.setItem('selectedPoemTitle', titleData);
-            localStorage.setItem('selectedPoemAuthor', writerData);
-            localStorage.setItem('selectedPoemContent', contentData);
-            localStorage.setItem('selectedPoemRemark', remarkData);
-            localStorage.setItem('selectedPoemTranslation', translationData);
-            localStorage.setItem('selectedPoemShangxi', shangxiData);
-            localStorage.setItem('selectedPoemDynasty', dynastyData);
-            
-
-            // 跳转到详情页
-            window.location.href = 'poem-details.html';
-        });
-        
-      });
-      callback();
-    }).catch(function(error) {
-      // 处理错误
-      console.error('Error while fetching data:', error);
-      callback();
-    });
-  }
-  function clean() {
-    var dataContainer = document.getElementById('poem-list');
-// 清空容器
-    dataContainer.innerHTML = '';
-  }
-
-  function requestFamousSentences(currentPage,pageSize,keyword,callback) {
-
-    const first = new AV.Query("sentence");
-    first.contains("from", keyword);
-    const second = new AV.Query("sentence");
-    second.contains("name", keyword);
-    const query = AV.Query.or(first,second);
-    query.limit(pageSize);
-    query.skip((currentPage-1)*pageSize);
-    // 查询数据
-    query.find().then(function(results) {
-      // 处理查询结果
-        var poemList = document.getElementById('poem-list');
-      
-        results.forEach(function(object) {
-          // 将数据展示在 HTML 页面上
-          var fromData = object.get('from');
-          var nameData = object.get('name');
-
-          console.log(fromData, nameData);
-
-          var card = document.createElement('div');
-          card.classList.add('poem-card');
-
-          var title = document.createElement('h5');
-          title.classList.add('poem-title');
-          title.textContent = nameData;
-
-          var author = document.createElement('div');
-          author.classList.add('poem-author');
-          author.textContent = fromData;
-
-          card.appendChild(title);
-          card.appendChild(author);
-          poemList.appendChild(card);
-          // 为诗词卡片添加点击事件
-          card.addEventListener('click', function() {
-
-          });
-      });
-      callback();
-    }).catch(function(error) {
-      // 处理错误
-      // console.error('Error while fetching data:', error);
-      callback();
-    });
-  }
-
-  function requestSpringCouplet(currentPage,pageSize,keyword,callback) {
-
-    const first = new AV.Query("SpringCouplets");
-    first.contains("shang", keyword);
-    const second = new AV.Query("SpringCouplets");
-    second.contains("xia", keyword);
-    const query = AV.Query.or(first,second);
-    query.limit(pageSize);
-    query.skip((currentPage-1)*pageSize);
-    // 查询数据
-    query.find().then(function(results) {
-      // 处理查询结果
-        var poemList = document.getElementById('poem-list');
-        console.log('获取到的数据为--==：',results);
-        results.forEach(function(object) {
-          
-          // 将数据展示在 HTML 页面上
-          var shangData = object.get('shang');
-          var xiaData = object.get('xia');
-
-          console.log(shangData, xiaData);
-
-          var card = document.createElement('div');
-          card.classList.add('poem-card');
-
-          var shang = document.createElement('h5');
-          shang.classList.add('poem-title');
-          shang.textContent = shangData;
-
-          var xia = document.createElement('h5');
-          xia.classList.add('poem-title');
-          xia.textContent = xiaData;
-
-          card.appendChild(shang);
-          card.appendChild(xia);
-          poemList.appendChild(card);
-          // 为诗词卡片添加点击事件
-          card.addEventListener('click', function() {
-
-          });
-      });
-      callback();
-    }).catch(function(error) {
-      // 处理错误
-      // console.error('Error while fetching data:', error);
-      callback();
-    });
-  }
-
-  function requestZitie(currentPage,pageSize,keyword,callback) {
-    const first = new AV.Query("zitie_pdf2");
-    first.contains("author", keyword);
-    const second = new AV.Query("zitie_pdf2");
-    second.contains("name", keyword);
-    const query = AV.Query.or(first,second);
-    query.limit(pageSize);
-    query.descending("createdAt");
-    query.skip((currentPage-1)*pageSize);
-    // 查询数据
-    query.find().then(function(results) {
-      var poemList = document.getElementById('poem-list');
-
-      results.forEach(function(object) {
-          var describeData = object.get('describe');
-          // 将数据展示在 HTML 页面上
-          var authorData = object.get('author');
-          var nameData = object.get('name');
-          var describeData = object.get('describe');
-
-          var card = document.createElement('div');
-          card.classList.add('poem-card');
-
-
-          var container = document.createElement('div');
-          container.classList.add('poem-container');
-      
-
-          var wrapper = document.createElement('div');
-          wrapper.classList.add('image-wrapper');
-          
-
-          var imgurl = object.get('cover')
-          var decodedUrl = decodeURIComponent(imgurl);
-          var img = document.createElement('img');
-          img.src = decodedUrl;
-          img.classList.add('poem-cover');
-
-          var name = document.createElement('div');
-          name.classList.add('poem-content');
-          name.textContent = nameData;
-
-          var author = document.createElement('div');
-          author.classList.add('poem-author');
-          author.textContent = authorData;
-
-          card.appendChild(name);
-          card.appendChild(author);
-          container.appendChild(wrapper);
-          wrapper.appendChild(img)
-          container.appendChild(card);
-          poemList.appendChild(container);
-          // 为诗词卡片添加点击事件
-          card.addEventListener('click', function() {
-
-            localStorage.setItem('selectedZitieCover', imgurl);
-            localStorage.setItem('selectedZitieAuthor', authorData);
-            localStorage.setItem('selectedZitieName', nameData);
-            localStorage.setItem('selectedZitieDescribe', describeData);
-
-            window.location.href = 'zitie_detail.html';
-
-            // window.open(object.get('url'), '_blank');
-
-
-
-          });
-      });
-
-      callback(results);
-
-      
-      
-    }).catch(function(error) {
-      // 处理错误
-      // console.error('Error while fetching data:', error);
-      // callback();
-    });
-  }
-
-  
-  function requestZitie_today(currentPage,pageSize,keyword,callback) {
-    const first = new AV.Query("zitie");
-    first.contains("author", keyword);
-    const second = new AV.Query("zitie");
-    second.contains("name", keyword);
-    const query = AV.Query.or(first,second);
-    query.limit(pageSize);
-    query.descending("createdAt");
-    query.skip((currentPage-1)*pageSize);
-    // 查询数据
-    query.find().then(function(results) {
-      callback(results);
-    }).catch(function(error) {
-      // 处理错误
-      // console.error('Error while fetching data:', error);
-      // callback();
-    });
-  }
-  
-  function requestZitie_today_imgs(currentPage,pageSize,zitieId,callback) {
-    const query = new AV.Query("zitieImg");
-    query.equalTo("zitieId", zitieId);
-    query.limit(pageSize);
-    // query.descending("createdAt");
-    query.skip((currentPage-1)*pageSize);
-    // 查询数据
-    query.find().then(function(results) {
-      callback(results);
-    }).catch(function(error) {
-      // 处理错误
-      // console.error('Error while fetching data:', error);
-      // callback();
-    });
-  }
