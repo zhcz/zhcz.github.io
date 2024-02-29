@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-27T05:24:46.321Z</updated>
+  <updated>2024-02-28T05:59:15.827Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在线资源汇总</title>
+    <link href="http://example.com/posts/15710.html"/>
+    <id>http://example.com/posts/15710.html</id>
+    <published>2024-02-28T02:59:10.000Z</published>
+    <updated>2024-02-28T05:59:15.827Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/zhcz/design-resources-for-developers">在线资源汇总</a><br>UI Graphics 用户界面图形<br>Fonts  字体<br>Colors  颜色<br>Icons  图标<br>Logos  标志<br>Favicons  网站图标<br>Icon Fonts 图标字体<br>Stock Photos 库存照片<br>Stock Videos  库存视频<br>Stock Music &amp; Sound Effects<br>库存音乐和音效<br>Vectors &amp; Clip Art<br>矢量和剪贴画<br>Product &amp; Image Mockups<br>产品和图像模型<br>HTML &amp; CSS Templates<br>HTML 和 CSS 模板<br>CSS Frameworks CSS 框架<br>CSS Methodologies  CSS 方法论<br>CSS Animations CSS 动画<br>Javascript Animation Libraries<br>JavaScript 动画库<br>Javascript Chart Libraries<br>JavaScript 图表库<br>UI Components &amp; Kits<br>UI 组件和套件<br>React UI Libraries  React UI 库<br>Vue UI Libraries  Vue 用户界面库<br>Angular UI Libraries  Angular UI 库<br>Svelte UI Libraries  简洁的 UI 库<br>React Native UI Libraries<br>React Native UI 库<br>Design Systems &amp; Style Guides<br>设计系统和风格指南<br>Online Design Tools 在线设计工具<br>Downloadable Design Software<br>可下载的设计软件<br>Design Inspiration 设计灵感<br>Image Compression  图像压缩<br>Chrome Extensions Chrome 扩展程序<br>Firefox Extensions  火狐扩展<br>AI Graphic Design Tools<br>人工智能图形设计工具<br>Others 其他的</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/zhcz/design-resources-for-developers&quot;&gt;在线资源汇总&lt;/a&gt;&lt;br&gt;UI Graphics 用户界面图形&lt;br&gt;Fonts  字体&lt;br&gt;Colors  颜色&lt;br&gt;Icons  图</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>礼物</title>
@@ -161,14 +181,14 @@
     <link href="http://example.com/posts/57655.html"/>
     <id>http://example.com/posts/57655.html</id>
     <published>2024-01-03T01:31:58.000Z</published>
-    <updated>2024-02-27T09:46:57.494Z</updated>
+    <updated>2024-02-28T09:58:15.270Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="2月27日"><a href="#2月27日" class="headerlink" title="2月27日"></a>2月27日</h2><p><a href="https://www.lgppt.cn/article-generate">AI生成PPT</a><br><a href="https://obfuscator.io/#code">js代码混淆</a></p><h2 id="2月26日"><a href="#2月26日" class="headerlink" title="2月26日"></a>2月26日</h2><p><a href="https://webdemo.myscript.com/">手写公式识别</a> 识别手写的数学公式、文本、图表等</p><h2 id="1月31日"><a href="#1月31日" class="headerlink" title="1月31日"></a>1月31日</h2><p><a href="https://github.com/astrofox-io/astrofox?tab=readme-ov-file">Astrofox</a> 是一个动态图形程序，可让您将音频转换为精彩的视频。</p><p><a href="https://imgpilot.com/">imgpilot</a> (<a href="https://imgpilot.lintiebao.cn/">备</a>) 利用实时潜在一致性模型的强大功能将草稿变成令人惊叹的艺术作品</p><p><a href="https://tryemoji.lintiebao.cn/">tryemoji</a> 通过 AI 将表情符号变成令人惊叹的艺术品</p><p><a href="https://pixelate-beta.vercel.app/">Pixelate</a>（<a href="https://pixelate.lintiebao.cn/">备</a>） 是一个图像编辑器，用便签创建令人惊叹的像素艺术壁画</p><h2 id="1月26日"><a href="#1月26日" class="headerlink" title="1月26日"></a>1月26日</h2><p>极简风笔记，所有信息都使用 HTML5 本地存储在本地持久化<br><a href="https://zenpen.lintiebao.cn/">ZenPen</a></p><p>一个简约清爽的打字练习网站<br><a href="https://typing.yasinchan.com/">Typing</a></p><h2 id="1月3日"><a href="#1月3日" class="headerlink" title="1月3日"></a>1月3日</h2><p>Jan 是 ChatGPT 的开源替代品，可在您的计算机上 100% 离线运行<br><a href="https://github.com/janhq/jan">Jan</a></p><p>Pile 是一款用于反思日记的桌面应用程序。它关乎简单性，将数据保持在本地，并通过 AI 增强您的日记体验。<br><a href="https://github.com/UdaraJay/Pile">Pile</a></p><p>阻止 Mac 进入睡眠状态，防止休眠<br><a href="https://github.com/newmarcel/KeepingYouAwake">KeepingYouAwake</a></p><p>开发人员专用的暂存器<br><a href="https://github.com/heyman/heynote">heynote</a></p><p>Olive 是一款适用于 Windows、macOS 和 Linux 的免费非线性视频编辑器<br><a href="https://github.com/olive-editor/olive">olive</a></p><p>消磨时间的小游戏，把球停在有颜色区域<br><a href="https://looptap.veeapp.co/">looptap</a></p><p>搜集了 580 多个 Linux 命令<br><a href="https://linux-command.lintiebao.cn/">linux-command</a></p><p>魔塔是由阿里达摩院开源的 MaaS 平台，它为开发者提供了模型体验、推理、训练、部署和应用的一站式服务，相当于国内版的 Hugging Face<br><a href="https://github.com/modelscope/modelscope">魔塔</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="2月28日"><a href="#2月28日" class="headerlink" title="2月28日"></a>2月28日</h2><p><a href="../_posts/%E5%9C%A8%E7%BA%BF%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB.md">在线资源汇总</a></p><h2 id="2月27日"><a href="#2月27日" class="headerlink" title="2月27日"></a>2月27日</h2><p><a href="https://www.lgppt.cn/article-generate">AI生成PPT</a><br><a href="https://obfuscator.io/#code">js代码混淆</a></p><h2 id="2月26日"><a href="#2月26日" class="headerlink" title="2月26日"></a>2月26日</h2><p><a href="https://webdemo.myscript.com/">手写公式识别</a> 识别手写的数学公式、文本、图表等</p><h2 id="1月31日"><a href="#1月31日" class="headerlink" title="1月31日"></a>1月31日</h2><p><a href="https://github.com/astrofox-io/astrofox?tab=readme-ov-file">Astrofox</a> 是一个动态图形程序，可让您将音频转换为精彩的视频。</p><p><a href="https://imgpilot.com/">imgpilot</a> (<a href="https://imgpilot.lintiebao.cn/">备</a>) 利用实时潜在一致性模型的强大功能将草稿变成令人惊叹的艺术作品</p><p><a href="https://tryemoji.lintiebao.cn/">tryemoji</a> 通过 AI 将表情符号变成令人惊叹的艺术品</p><p><a href="https://pixelate-beta.vercel.app/">Pixelate</a>（<a href="https://pixelate.lintiebao.cn/">备</a>） 是一个图像编辑器，用便签创建令人惊叹的像素艺术壁画</p><h2 id="1月26日"><a href="#1月26日" class="headerlink" title="1月26日"></a>1月26日</h2><p>极简风笔记，所有信息都使用 HTML5 本地存储在本地持久化<br><a href="https://zenpen.lintiebao.cn/">ZenPen</a></p><p>一个简约清爽的打字练习网站<br><a href="https://typing.yasinchan.com/">Typing</a></p><h2 id="1月3日"><a href="#1月3日" class="headerlink" title="1月3日"></a>1月3日</h2><p>Jan 是 ChatGPT 的开源替代品，可在您的计算机上 100% 离线运行<br><a href="https://github.com/janhq/jan">Jan</a></p><p>Pile 是一款用于反思日记的桌面应用程序。它关乎简单性，将数据保持在本地，并通过 AI 增强您的日记体验。<br><a href="https://github.com/UdaraJay/Pile">Pile</a></p><p>阻止 Mac 进入睡眠状态，防止休眠<br><a href="https://github.com/newmarcel/KeepingYouAwake">KeepingYouAwake</a></p><p>开发人员专用的暂存器<br><a href="https://github.com/heyman/heynote">heynote</a></p><p>Olive 是一款适用于 Windows、macOS 和 Linux 的免费非线性视频编辑器<br><a href="https://github.com/olive-editor/olive">olive</a></p><p>消磨时间的小游戏，把球停在有颜色区域<br><a href="https://looptap.veeapp.co/">looptap</a></p><p>搜集了 580 多个 Linux 命令<br><a href="https://linux-command.lintiebao.cn/">linux-command</a></p><p>魔塔是由阿里达摩院开源的 MaaS 平台，它为开发者提供了模型体验、推理、训练、部署和应用的一站式服务，相当于国内版的 Hugging Face<br><a href="https://github.com/modelscope/modelscope">魔塔</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;2月27日&quot;&gt;&lt;a href=&quot;#2月27日&quot; class=&quot;headerlink&quot; title=&quot;2月27日&quot;&gt;&lt;/a&gt;2月27日&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.lgppt.cn/article-generate&quot;&gt;AI生成PPT&lt;/a</summary>
+    <summary type="html">&lt;h2 id=&quot;2月28日&quot;&gt;&lt;a href=&quot;#2月28日&quot; class=&quot;headerlink&quot; title=&quot;2月28日&quot;&gt;&lt;/a&gt;2月28日&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;../_posts/%E5%9C%A8%E7%BA%BF%E8%B5%84%E6%BA%90%E6</summary>
       
     
     
@@ -482,30 +502,6 @@
     
     
     <category term="ChatGPT" scheme="http://example.com/tags/ChatGPT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于苹果CEO蒂姆库克</title>
-    <link href="http://example.com/posts/19618.html"/>
-    <id>http://example.com/posts/19618.html</id>
-    <published>2023-04-11T09:12:52.000Z</published>
-    <updated>2023-04-20T08:52:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="蒂姆库克是如何进入科技行业的？"><a href="#蒂姆库克是如何进入科技行业的？" class="headerlink" title="蒂姆库克是如何进入科技行业的？"></a>蒂姆库克是如何进入科技行业的？</h2><pre><code>蒂姆库克 1960 年出生于阿拉巴马州。他在一个小镇长大，是家里第一个上大学的人。库克就读于奥本大学并获得工业工程学位。蒂姆·库克 (Tim Cook) 于1982年加入IBM，担任制造规划师，开始涉足科技行业。他在IBM的职位上迅速晋升，并于1994年晋升为北美执行副总裁。 1998年，库克离开IBM，加入康柏电脑公司，担任全球物流副总裁，同年，库克被史蒂夫·乔布斯招入苹果公司。 在苹果公司，库克最初负责全球运营，他很快成为乔布斯最信任的副手之一，并于2005年晋升为首席运营官，作为首席运营官，库克负责苹果公司的日常运营，他负责监督公司的制造、供应链和销售。 他还在iPhone和iPad等新产品的开发中发挥了关键作用。2011年，史蒂夫·乔布斯 (Steve Jobs) 去世，库克被任命为苹果公司 CEO，库克继续带领苹果走向成功。公司在他的领导下发布了几款新产品，包括Apple Watch和AirPods，苹果公司也成为了世界上最有价值的公司之一。</code></pre><h2 id="他与史蒂夫·乔布斯的关系如何？"><a href="#他与史蒂夫·乔布斯的关系如何？" class="headerlink" title="他与史蒂夫·乔布斯的关系如何？"></a>他与史蒂夫·乔布斯的关系如何？</h2><p>   蒂姆库克和史蒂夫乔布斯有着密切而富有成效的工作关系。 乔布斯对库克的智慧、职业道德和对细节的关注印象深刻。 他也很欣赏库克愿意挑战他。 就库克而言，他钦佩乔布斯的远见和创造力。他也很尊重乔布斯敢于冒险的精神。两人密切合作多年，彼此产生了深深的尊重。乔布斯曾这样评价库克：“他是我的得力助手，是公司最有才华的高管”，库克曾这样评价乔布斯：“他是一位伟大的导师和好朋友”。2011 年乔布斯去世后，库克成为苹果 CEO，他继续发扬乔布斯的精神，带领公司取得更大的成功。<br>   乔布斯曾说过，库克是“唯一能告诉我鞋子出了什么问题的人”。尽管性格不同，但乔布斯和库克对彼此有着深深的尊重。乔布斯曾说库克是“世界上最好的运营人员”，而库克也曾说乔布斯是“我见过的最聪明的人之一”。乔布斯和库克之间的关系是商业史上最成功CEO-COO 关系之一，这两个人能够共同创建世界上最成功的公司之一。</p><h2 id="他在担任-Apple-CEO-期间取得了哪些重要成就？"><a href="#他在担任-Apple-CEO-期间取得了哪些重要成就？" class="headerlink" title="他在担任 Apple CEO 期间取得了哪些重要成就？"></a>他在担任 Apple CEO 期间取得了哪些重要成就？</h2><pre><code>他见证了Apple产品和服务的持续成功，在库克的领导下，苹果发布了几款新产品，包括iPhone X、iPad Pro和Apple Watch。该公司还继续成为智能手机市场的领导者，并扩大了产品线，包括可穿戴设备和家用电器等新品类。他让Apple变得更加环保，在库克的领导下，苹果成为世界上最环保的公司之一，该公司承诺在其运营中使用100%的可再生能源，并使其产品更加节能。他让 Apple 变得更加多元化和包容，在库克的领导下，苹果在员工队伍多元化以及产品和服务更具包容性方面取得了进展，该公司还公开反对歧视，并努力为所有员工创造一个更加温馨的工作场所。他让苹果变得更加透明，在库克的领导下，苹果在其运营和环境影响方面变得更加透明，公司还发布了更多有关其产品和服务的信息，并使客户更容易回收旧设备。他让苹果公司赚得更多。在库克的领导下，苹果成为全球最赚钱的公司之一，公司收入大幅增长，股价创历史新高。总的来说，蒂姆库克是一位成功的苹果CEO，他监督了公司产品和服务的持续成功，并使Apple变得更加环保、多样化、包容、透明和盈利。</code></pre><h2 id="作为首席执行官，他面临哪些挑战？"><a href="#作为首席执行官，他面临哪些挑战？" class="headerlink" title="作为首席执行官，他面临哪些挑战？"></a>作为首席执行官，他面临哪些挑战？</h2><pre><code>智能手机市场放缓，智能手机市场近年来一直在放缓，这给苹果的销售带来了压力。库克通过多样化苹果产品线和投资可穿戴设备和服务等新的增长领域来应对这一挑战。1、竞争加剧    苹果面临来自三星、华为和小米等竞争对手的日益激烈的竞争。这些公司正在提供具有类似功能的低价设备，并且正在抢占苹果的市场份额。库克通过投资创新和扩大Apple的营销力度来应对这一挑战。2、地缘政治挑战    苹果一直受到地缘政治挑战的影响，例如中美之间的贸易战。 这些挑战使 Apple 更难制造其产品并在某些市场上销售它们。 库克通过多元化 Apple 的制造基地以及与政府合作解决贸易争端来应对这些挑战。3、监管审查    近年来，苹果一直是监管审查的对象，世界各国政府一直在调查Apple违反反垄断法、数据隐私问题和其他问题。库克通过与政府合作解决他们的担忧并提高Apple商业行为的透明度来应对这一挑战。</code></pre><h2 id="他对苹果的未来有何看法？"><a href="#他对苹果的未来有何看法？" class="headerlink" title="他对苹果的未来有何看法？"></a>他对苹果的未来有何看法？</h2><pre><code> 蒂姆库克对苹果的未来持乐观态度，他相信公司拥有坚实的基础，并有能力在未来几年继续发展并取得成功。 库克曾表示，他相信苹果将继续创新，并将继续创造人们喜爱的产品和服务，他还表示，他相信苹果将继续成为科技行业的领导者，并将继续对世界产生积极影响。 以下是库克认为苹果未来增长的一些关键领域：   1、可穿戴设备和健康：Apple 凭借其 Apple Watch 一直是可穿戴设备市场的领导者。 库克认为，苹果将在这一领域不断创新，最终会创造出一款可以监测人的各个方面健康状况的可穿戴设备。   2、服务：Apple 一直在大力投资其服务业务，其中包括 Apple Music、Apple Pay 和 iCloud。 库克相信这项业务将继续增长，最终将成为苹果的主要收入来源。   3、汽车：多年来一直有传言称苹果公司正在研发电动汽车。 库克曾表示，他对这个项目的潜力感到兴奋，他相信苹果可以制造出一款伟大的汽车。   4、AR/VR：库克曾表示，他对增强现实和虚拟现实的潜力感到兴奋。 他相信这些技术有可能彻底改变我们与周围世界互动的方式。 库克相信苹果在未来几年将继续成为一家成功的公司。 他相信公司拥有合适的人才、合适的产品和正确的战略，才能继续发展并取得成功。</code></pre><h2 id="关于他的家庭"><a href="#关于他的家庭" class="headerlink" title="关于他的家庭"></a>关于他的家庭</h2><pre><code>库克的父母是唐纳德和杰拉尔丁库克。 唐纳德是一名造船厂工人，杰拉尔丁在一家药房工作。 库克有两个兄弟，分别叫达伦和格雷格。库克没有结婚，也没有孩子。 他曾表示对结婚生子的想法持开放态度，但目前还没有找到合适的人选。</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;蒂姆库克是如何进入科技行业的？&quot;&gt;&lt;a href=&quot;#蒂姆库克是如何进入科技行业的？&quot; class=&quot;headerlink&quot; title=&quot;蒂姆库克是如何进入科技行业的？&quot;&gt;&lt;/a&gt;蒂姆库克是如何进入科技行业的？&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;蒂姆库克 1960 </summary>
-      
-    
-    
-    
-    <category term="文章" scheme="http://example.com/categories/%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="人物专辑" scheme="http://example.com/tags/%E4%BA%BA%E7%89%A9%E4%B8%93%E8%BE%91/"/>
     
   </entry>
   

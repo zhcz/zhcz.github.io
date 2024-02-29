@@ -38,10 +38,10 @@
     vertical-align: bottom; /* 让h1和h2底部对齐 */
   }
  
-  @keyframes spin {
+  /* @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+  } */
   h1 {
     display: inline-block; /* 使用inline-block让h1和h2在同一行显示 */
     vertical-align: bottom; /* 让h1和h2底部对齐 */
