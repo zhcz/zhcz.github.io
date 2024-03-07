@@ -46,8 +46,8 @@
 <meta property="og:site_name" content="临帖宝">
 <meta property="og:description" content="字帖                     .poem-container {       display: flex;       align-items: center;     }     .image-wrapper {       margin-top: 10px;       width: 70px; &#x2F;* Set the width of the image">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-02-27T05:55:43.804Z">
-<meta property="article:modified_time" content="2024-02-27T05:55:43.804Z">
+<meta property="article:published_time" content="2024-03-07T06:13:09.386Z">
+<meta property="article:modified_time" content="2024-03-07T06:13:09.386Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -105,11 +105,11 @@
                 
                     <a href="/archives/" class="navbar-menu button">归档</a>
                 
+                    <a href="/projects/src/index.html" class="navbar-menu button">项目</a>
+                
                     <a href="/app/" class="navbar-menu button">临帖宝App</a>
                 
-                    <a href="/submission/" class="navbar-menu button">投稿</a>
-                
-                    <a href="/projects/src/" class="navbar-menu button">项目</a>
+                    <a href="/" class="navbar-menu button">投稿</a>
                 
             </div>
         
@@ -141,11 +141,11 @@
                 
                     <a href="/archives/" class="dropdown-menu button">归档</a>
                 
+                    <a href="/projects/src/index.html" class="dropdown-menu button">项目</a>
+                
                     <a href="/app/" class="dropdown-menu button">临帖宝App</a>
                 
-                    <a href="/submission/" class="dropdown-menu button">投稿</a>
-                
-                    <a href="/projects/src/" class="dropdown-menu button">项目</a>
+                    <a href="/" class="dropdown-menu button">投稿</a>
                 
             </div>
         
@@ -161,7 +161,7 @@
         
     </h1>
     <div class="post-title__meta">
-        <a href="/archives/2024/02/" class="post-meta__date button">2024-02-27</a>
+        <a href="/archives/2024/03/" class="post-meta__date button">2024-03-07</a>
         
  
         
@@ -185,7 +185,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            
+            <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#count"><span class="toc-number">1.</span> <span class="toc-text"></span></a></li></ol>
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -195,7 +195,7 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">Article Directory</div>
-        
+        <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#count"><span class="toc-number">1.</span> <span class="toc-text"></span></a></li></ol>
     </div>
 
 
@@ -250,6 +250,7 @@
   </div>
   
     <div class="data">
+      <h6 id="count"></h6>
       <div id="poem-list"></div>
         <div id="pagination">
           <div id="buttonContainer">
@@ -262,11 +263,19 @@
     localStorage.removeItem('searchZitieKeyword', "");
     var elements = document.querySelector('.post-title__text');
     elements.textContent = '字帖'
+
+    
   
-    var currentPage = 1;
+     var currentPage = 1;
     var pageSize = 10; // 每页显示的条目数
     initLeanCloud()
     requestZitie(currentPage,pageSize,'',handleData)
+
+    const query = new AV.Query("pdf");
+    query.count().then((count) => {
+      var elements = document.getElementById('count');
+      elements.textContent = '目前已收录' + count + '本'
+    });
 
     var img = document.getElementById('moreButton');
     img.addEventListener('click', function() {
@@ -319,7 +328,7 @@
 </html>
     </div>
      
-    <div class="post-footer__meta"><p>updated at 2024-02-27</p></div> 
+    <div class="post-footer__meta"><p>updated at 2024-03-07</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 
