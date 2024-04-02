@@ -220,6 +220,20 @@
     <div class="nav">
         <div class="nav__prev">
             
+                <a href="/posts/43766.html" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            开源项目推荐
+                        </div>
+                    </div>
+                </a>
+            
         </div>
         <div class="nav__next">
             
@@ -305,7 +319,7 @@
     
         
         <p class="footer-copyright">
-            Copyright © 2024 <a href="/">临帖宝</a>
+            Copyright © 2022&nbsp;-&nbsp;2024 <a href="/">临帖宝</a>
         </p>
     
     
@@ -313,7 +327,15 @@
 </footer>
 
         </div>
-         
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            threshold: 0
+        };
+    </script>
+ 
 
  
 
@@ -501,7 +523,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
 
     <script>
-        let lazyloadT = Boolean('false'),
+        let lazyloadT = Boolean('true'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
             $(".post__content").find('img').each(function () {
