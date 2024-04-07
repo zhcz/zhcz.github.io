@@ -213,7 +213,7 @@
 <article class="post post__with-toc content-card">
     <div class="post__header"></div>
     <div class="post__content">
-        <p>对不起，刺破你的泡泡并不是我的本意！<br><a target="_blank" rel="noopener" href="https://oimo.io/works/bubbles/">Bubbles</a><br><img src="https://github.com/saharan/works/raw/main/imgs/bubbles.png" class="lazy" data-srcset="https://github.com/saharan/works/raw/main/imgs/bubbles.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg=="></p>
+        <p>对不起，刺破你的泡泡并不是我的本意！<br><a target="_blank" rel="noopener" href="https://oimo.io/works/bubbles/">Bubbles</a><br><img src="https://github.com/saharan/works/raw/main/imgs/bubbles.png"></p>
 <!-- flag of hidden posts -->
     </div>
      
@@ -295,15 +295,7 @@
 </footer>
 
         </div>
-        
-    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
-    <script>
-        window.lazyLoadOptions = {
-            elements_selector: ".lazy",
-            threshold: 0
-        };
-    </script>
- 
+         
 
  
 
@@ -491,7 +483,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
 
     <script>
-        let lazyloadT = Boolean('true'),
+        let lazyloadT = Boolean('false'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
             $(".post__content").find('img').each(function () {
