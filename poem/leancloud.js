@@ -45,3 +45,53 @@
 
     return Math.floor(seconds) + " 秒前";
 }
+
+function requestZidianDictCate(currentPage,pageSize,keyword,callback) {
+  const query = new AV.Query("danzi_cate");
+ 
+  query.limit(pageSize);
+  query.descending("createdAt");
+  query.skip((currentPage-1)*pageSize);
+  // 查询数据
+  query.find().then(function(results) {
+    callback(results);
+  }).catch(function(error) {
+  
+  });
+}
+function requestZidianDict(currentPage,pageSize,keyword,callback) {
+  const query = new AV.Query("danzi");
+  query.contains("name", keyword);
+  query.limit(pageSize);
+  // query.descending("createdAt");
+  query.skip((currentPage-1)*pageSize);
+  // 查询数据
+  query.find().then(function(results) {
+    console.log('results:',results)
+    callback(results);
+  }).catch(function(error) {
+  
+  });
+}
+
+function requestKey(callback) {
+  const query = new AV.Query("privateKey");
+  query.limit(pageSize);
+  // query.descending("createdAt");
+  query.skip((currentPage-1)*pageSize);
+  // 查询数据
+  query.find().then(function(results) {
+    
+    callback(results);
+  }).catch(function(error) {
+  
+  });
+}
+
+function cleanDict() {
+  var dataContainer = document.getElementById('container');
+  console.log(container)
+// 清空容器
+  dataContainer.innerText = '';
+  // dataContainer.children = '';
+}
