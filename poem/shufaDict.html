@@ -46,8 +46,8 @@
 <meta property="og:site_name" content="临帖宝">
 <meta property="og:description" content="字帖                                   html, body { 			margin: 0; 			padding: 0; 		} 		#container {             display: flex;             flex-wrap: wrap;             justify-content: space">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-07-05T06:49:46.693Z">
-<meta property="article:modified_time" content="2024-07-05T06:49:46.693Z">
+<meta property="article:published_time" content="2024-07-05T07:11:46.050Z">
+<meta property="article:modified_time" content="2024-07-05T07:11:46.050Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -194,7 +194,7 @@
         </svg>
     </a>
     <div class="toc-menus" id="toc-menus">
-        <div class="toc-title">Article Directory</div>
+        <div class="toc-title">文章目录</div>
         
     </div>
 
@@ -242,7 +242,7 @@
         .card {
             border-radius: 5px;
             width: 20%; 
-            height: 150px;
+            height: 20%;
             padding: 5px;
             overflow: hidden;
             transition: transform 0.5s;
@@ -345,7 +345,7 @@
         var container = document.getElementById("container");
         data.forEach(function(object) {
             
-          console.log('请求来的图片为：',object.get('img'));
+          // console.log('请求来的图片为：',object.get('img'));
 
             var newDiv = document.createElement("div");
             newDiv.classList.add("card");
@@ -363,19 +363,24 @@
 
             var newImg = document.createElement("img");
             var imgurl = object.get('img')
-            
+            if (imgurl == undefined) {
+              var decodedUrl = decodeURIComponent('https://image.lintiebao.cn/shufa/dic/'+object.get('title')+'.jpg');
+              newImg.src = decodedUrl;
+            }else{
             // 创建一个新的JSEncrypt实例
-            const encrypt = new JSEncrypt();
-            encrypt.setPrivateKey(key);
-            // 使用私钥解密数据
-            const decryptedData = encrypt.decrypt(imgurl);
-            console.log('解密前的数据:', imgurl);
-            console.log('解密后的数据:', decryptedData);
+              const encrypt = new JSEncrypt();
+              encrypt.setPrivateKey(key);
+              // 使用私钥解密数据
+              const decryptedData = encrypt.decrypt(imgurl);
+              var decodedUrl = decodeURIComponent(decryptedData);
+              newImg.src = decodedUrl;
+            }
+            
+            
 
-            var decodedUrl = decodeURIComponent(decryptedData);
-            newImg.src = decodedUrl;
+
             newDiv.appendChild(newImg);
-            // newImg.setAttribute("aria-label", name);
+
 
             newImg.addEventListener('click', function() {
                 
@@ -419,7 +424,7 @@
 </html>
     </div>
      
-    <div class="post-footer__meta"><p>updated at 2024-07-05</p></div> 
+    <div class="post-footer__meta"><p>更新于 2024-07-05</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 
@@ -428,7 +433,7 @@
 
     <div class="post__comments post__with-toc content-card" id="comment">
         
-    <h4>Comments</h4>
+    <h4>评论</h4>
     
     
     
@@ -453,7 +458,7 @@
 
             <footer class="footer">
      
-    <a href="#" class="button" id="b2t" aria-label="Back to Top" title="Back to Top">
+    <a href="#" class="button" id="b2t" aria-label="回到顶部" title="回到顶部">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
             <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
         </svg>
