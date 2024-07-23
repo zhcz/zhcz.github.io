@@ -55,7 +55,7 @@
     color: var(--main-color);
   }
   #moreButton {
-    background-image: url('jiazaigengduo.png');
+    background-image: url('images/jiazaigengduo.png');
     width: 20px;
     height: 20px;
     background-size: cover;

@@ -186,23 +186,8 @@
 </div>
 
 
-    <aside class="post-side">
-        <div class="post-side__toc">
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%90%E6%B8%85%E4%BB%A3%E3%80%91"><span class="toc-number">1.</span> <span class="toc-text">【清代】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%90%E6%B0%91%E5%9B%BD%E3%80%91"><span class="toc-number">2.</span> <span class="toc-text">【民国】</span></a></li></ol>
-        </div>
-    </aside>
-    <a class="btn-toc button" id="btn-toc" tabindex="0">
-        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
-        </svg>
-    </a>
-    <div class="toc-menus" id="toc-menus">
-        <div class="toc-title">文章目录</div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%90%E6%B8%85%E4%BB%A3%E3%80%91"><span class="toc-number">1.</span> <span class="toc-text">【清代】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%90%E6%B0%91%E5%9B%BD%E3%80%91"><span class="toc-number">2.</span> <span class="toc-text">【民国】</span></a></li></ol>
-    </div>
 
-
-<article class="post post__with-toc content-card">
+<article class="post content-card">
     <div class="post__header"></div>
     <div class="post__content">
         <h3 id="【清代】"><a href="#【清代】" class="headerlink" title="【清代】"></a>【清代】</h3><p>甲戌本（脂砚斋甲戌抄阅再评本，抄本）<br>己卯本（脂砚斋凡四阅评过，己卯冬月定本，抄本）<br>庚辰本（脂砚斋凡四阅评过，庚辰秋月定本，抄本）<br>列藏本（苏联列宁格勒抄本《石头记》，抄本）<br>戚张本（张开模旧藏戚蓼生序本，抄本）<br>戚正本（有正书局石刊戚蓼生序本）<br>戚宁本（泽存书库旧藏戚蓼生序本，抄本）<br>王府本（清王府旧藏本，蒙古王府本，抄本）<br>杨藏本（杨继振旧藏本，红楼梦稿本，抄本）<br>舒序本（舒元炜序本，抄本）<br>郑藏本（郑振铎藏本，抄本）<br>梦觉本（梦觉主人序本，甲辰本，抄本）<br>程甲本（乾隆五十六年辛亥萃文书屋活字本）<br>程乙本（乾隆五十七年壬子萃文书屋活字本）</p>
@@ -255,7 +240,7 @@
 
 
 
-    <div class="post__comments post__with-toc content-card" id="comment">
+    <div class="post__comments content-card" id="comment">
         
     <h4>评论</h4>
     
@@ -281,13 +266,7 @@
 </main>
 
             <footer class="footer">
-     
-    <a href="#" class="button" id="b2t" aria-label="回到顶部" title="回到顶部">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
-            <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
-        </svg>
-    </a>
-
+    
     
 
 
@@ -517,15 +496,30 @@
         let lazyloadT = Boolean('false'),
             auto_fancybox = Boolean('true')
         if (auto_fancybox) {
-            $(".post__content").find('img').each(function () {
-                var element = document.createElement("a");
-                $(element).attr("data-fancybox", "gallery");
-                $(element).attr("href", $(this).attr("src"));
-                if (lazyloadT) {
-                    $(element).attr("href", $(this).attr("data-srcset"));
-                }
-                $(this).wrap(element);
-            });
+            if ($('.post__content .individual-images').length > 0) {
+                        console.log('individual-images')
+                        $(".post__content").find('.individual-images').each(function () {
+                        var element = document.createElement("a");
+                        $(element).attr("data-fancybox", "gallery");
+                        $(element).attr("href", $(this).attr("src"));
+                        if (lazyloadT) {
+                            $(element).attr("href", $(this).attr("data-srcset"));
+                        }
+                        $(this).wrap(element);
+                    });
+                }else{
+                    $(".post__content").find('img').each(function () {
+                    var element = document.createElement("a");
+                    $(element).attr("data-fancybox", "gallery");
+                    $(element).attr("href", $(this).attr("src"));
+                    if (lazyloadT) {
+                        $(element).attr("href", $(this).attr("data-srcset"));
+                    }
+                    $(this).wrap(element);
+                });
+            }
+
+            
         } else {
             $(".post__content").find("fancybox").find('img').each(function () {
                 var element = document.createElement("a");
