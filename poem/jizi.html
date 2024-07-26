@@ -39,15 +39,15 @@
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="Document                  #container {         display: flex;         flex-wrap: wrap;         justify-content: flex-start;         &#x2F;* 改为 flex-start *&#x2F;         padding-top: 10px;">
+    <meta name="description" content="Document                                #container {         display: flex;         flex-wrap: wrap;         justify-content: flex-start;         &#x2F;* 改为 flex-start *&#x2F;         padding">
 <meta property="og:type" content="website">
 <meta property="og:title" content="临帖宝">
 <meta property="og:url" content="http://example.com/poem/jizi.html">
 <meta property="og:site_name" content="临帖宝">
-<meta property="og:description" content="Document                  #container {         display: flex;         flex-wrap: wrap;         justify-content: flex-start;         &#x2F;* 改为 flex-start *&#x2F;         padding-top: 10px;">
+<meta property="og:description" content="Document                                #container {         display: flex;         flex-wrap: wrap;         justify-content: flex-start;         &#x2F;* 改为 flex-start *&#x2F;         padding">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-07-26T06:07:35.333Z">
-<meta property="article:modified_time" content="2024-07-26T06:07:35.333Z">
+<meta property="article:published_time" content="2024-07-26T08:34:32.382Z">
+<meta property="article:modified_time" content="2024-07-26T08:34:32.382Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -197,7 +197,9 @@
     <title>Document</title>
     <script src="js/shufaDictJS.js"></script>
     <link rel="stylesheet" href="css/shufaDictCSS.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
 </head>
 <style>
     #container {
@@ -359,8 +361,6 @@
         newDiv.draggable = true;
         newDiv.setAttribute('data-index', index);
 
-        
-
         // 创建一个包装器来容纳图片和删除按钮
         const imageWrapper = document.createElement("div");
         imageWrapper.classList.add("image-wrapper");
@@ -387,25 +387,32 @@
     }
 
     function deleteCard(card, id) {
-    if (confirm('确定要删除这张图片吗?')) {
-        card.remove();
-        updateStoredData(id);
+        Swal.fire({
+            title: '确定要删除这张图片吗?',
+            showCancelButton: true,
+            confirmButtonText: '确定',
+            cancelButtonText: '取消'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                card.remove();
+                updateStoredData(id);
+            }
+        });
     }
-}
     function updateStoredData(idToDelete) {
         // 从 localStorage 获取当前的图片数组
-    let imageUrls = JSON.parse(localStorage.getItem('imageUrls')) || [];
-    
-    // 找到要删除的元素的索引
-    const indexToDelete = imageUrls.findIndex(item => item.dict_id === idToDelete);
-    
-    if (indexToDelete !== -1) {
-        // 从数组中删除该元素
-        imageUrls.splice(indexToDelete, 1);
-        
-        // 更新 localStorage
-        localStorage.setItem('imageUrls', JSON.stringify(imageUrls));
-    }
+        let imageUrls = JSON.parse(localStorage.getItem('imageUrls')) || [];
+
+        // 找到要删除的元素的索引
+        const indexToDelete = imageUrls.findIndex(item => item.dict_id === idToDelete);
+
+        if (indexToDelete !== -1) {
+            // 从数组中删除该元素
+            imageUrls.splice(indexToDelete, 1);
+
+            // 更新 localStorage
+            localStorage.setItem('imageUrls', JSON.stringify(imageUrls));
+        }
     }
 
     function updateCards() {

@@ -46,8 +46,8 @@
 <meta property="og:site_name" content="临帖宝">
 <meta property="og:description" content="Combine Images                        #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashed #007bff;">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-07-26T03:02:08.034Z">
-<meta property="article:modified_time" content="2024-07-26T03:02:08.034Z">
+<meta property="article:published_time" content="2024-07-26T08:44:59.596Z">
+<meta property="article:modified_time" content="2024-07-26T08:44:59.596Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -290,7 +290,7 @@
     <!-- <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div> -->
-    <a id="downloadLink" href="#" style="display:none;">Download Image</a>
+    <a id="downloadLink" href="#" style="display:none;">下载图片</a>
     <br>
     <canvas id="canvas"></canvas>
 
@@ -372,26 +372,26 @@
             }
 
             // Create download link
-            // const downloadLink = document.getElementById('downloadLink');
-            // if (downloadLink.getAttribute("listener") !== "true") {
-            //     downloadLink.addEventListener('click', function (e) {
-            //         var fileName = prompt("请输入要下载的文件名:", "lintiebao.png");
-            //         if (fileName === null) {
-            //             // 如果按下取消,阻止下载
-            //             e.preventDefault();
-            //         } else {
-            //             fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
-            //             this.download = fileName;
-            //             this.href = canvas.toDataURL('image/png');
-            //         }
-            //     });
+            const downloadLink = document.getElementById('downloadLink');
+            if (downloadLink.getAttribute("listener") !== "true") {
+                downloadLink.addEventListener('click', function (e) {
+                    var fileName = "lintiebao.png"
+                    if (fileName === null) {
+                        // 如果按下取消,阻止下载
+                        e.preventDefault();
+                    } else {
+                        fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
+                        this.download = fileName;
+                        this.href = canvas.toDataURL('image/png');
+                    }
+                });
 
-            //     // 标记这个链接已经添加了事件监听器,避免重复添加
-            //     downloadLink.setAttribute("listener", "true");
-            // }
+                // 标记这个链接已经添加了事件监听器,避免重复添加
+                downloadLink.setAttribute("listener", "true");
+            }
 
-            // downloadLink.style.display = 'inline';
-            // downloadLink.innerText = '下载图片';
+            downloadLink.style.display = 'inline';
+            downloadLink.innerText = '下载图片';
         }
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -457,8 +457,8 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             // Hide the download link
-            // var downloadLink = document.getElementById('downloadLink');
-            // downloadLink.style.display = 'none';
+            var downloadLink = document.getElementById('downloadLink');
+            downloadLink.style.display = 'none';
 
             // Optionally, reset other elements on the page as needed
         }
