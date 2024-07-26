@@ -39,15 +39,15 @@
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="字帖                          html, body { 			margin: 0; 			padding: 0; 		} 		#container {             display: flex;             flex-wrap: wrap;             justify-content: space-between;">
+    <meta name="description" content="字帖                            html, body { 			margin: 0; 			padding: 0; 		} 		#container {             display: flex;             flex-wrap: wrap;             justify-content: space-betwee">
 <meta property="og:type" content="website">
 <meta property="og:title" content="临帖宝">
 <meta property="og:url" content="http://example.com/poem/shufaDictCate.html">
 <meta property="og:site_name" content="临帖宝">
-<meta property="og:description" content="字帖                          html, body { 			margin: 0; 			padding: 0; 		} 		#container {             display: flex;             flex-wrap: wrap;             justify-content: space-between;">
+<meta property="og:description" content="字帖                            html, body { 			margin: 0; 			padding: 0; 		} 		#container {             display: flex;             flex-wrap: wrap;             justify-content: space-betwee">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-07-15T01:25:16.873Z">
-<meta property="article:modified_time" content="2024-07-15T01:25:16.873Z">
+<meta property="article:published_time" content="2024-07-26T08:21:23.066Z">
+<meta property="article:modified_time" content="2024-07-26T08:21:23.066Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -161,7 +161,7 @@
         
     </h1>
     <div class="post-title__meta">
-        <a href="/archives/2024/07/" class="post-meta__date button">2024-07-15</a>
+        <a href="/archives/2024/07/" class="post-meta__date button">2024-07-26</a>
         
  
         
@@ -198,7 +198,7 @@
   <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
   <link rel="stylesheet" href="loading.css">
   <link rel="stylesheet" href="leancloud.css">
-
+  <link rel="stylesheet" href="js/shufaDictJS.js">
   <style>
     
     html, body {
@@ -291,6 +291,7 @@
   </div>
   <script>
 
+    hiddenEle()
     localStorage.removeItem('searchZitieKeyword', "");
     var elements = document.querySelector('.post-title__text');
     elements.textContent = '字帖'
@@ -358,9 +359,7 @@
                 var author = object.get('author');
                 var name = object.get('zitieName'); 
                 
-
-                
-                localStorage.setItem('imgArr', JSON.stringify(imgArr));
+               localStorage.setItem('imgArr', JSON.stringify(imgArr));
                 
                 localStorage.setItem('objectId', objectId);
                 localStorage.setItem('imgType', imgType);
@@ -391,7 +390,6 @@
       inputElement.addEventListener('input', function(event) {
         // 实时获取输入框中的内容
         var inputValue = inputElement.value;
-        console.log('输入内容为: ' + inputValue);
         // localStorage.setItem('searchPoemKeyword', inputValue);
         // clean()
         // requestData(currentPage,pageSize,inputValue,handleData);
@@ -399,12 +397,11 @@
       inputElement.addEventListener('keyup', function(event) {
         if (event.key === 'Enter') {
           // 用户按下了回车键，执行相应的操作
-          console.log('用户按下了回车键');
           var inputValue = inputElement.value;
-          console.log('搜索内容为：' + inputValue);
 
           localStorage.setItem('searchZitieKeyword', inputValue);
           clean()
+          currentPage = 1;
           requestZitie(currentPage,pageSize,inputValue,handleData);
           // 在这里添加你想要执行的操作
         }
@@ -415,7 +412,7 @@
 </html>
     </div>
      
-    <div class="post-footer__meta"><p>更新於 2024-07-15</p></div> 
+    <div class="post-footer__meta"><p>updated at 2024-07-26</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 

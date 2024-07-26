@@ -56,8 +56,8 @@
 <meta property="og:image" content="http://example.com/poem/images/mc2.png">
 <meta property="og:image" content="http://example.com/poem/images/mc3.png">
 <meta property="og:image" content="http://example.com/poem/images/mc4.png">
-<meta property="article:published_time" content="2024-07-23T08:50:07.000Z">
-<meta property="article:modified_time" content="2024-07-23T08:50:07.000Z">
+<meta property="article:published_time" content="2024-07-26T06:15:44.641Z">
+<meta property="article:modified_time" content="2024-07-26T06:15:44.641Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/poem/images/m1.png">
@@ -172,7 +172,7 @@
         
     </h1>
     <div class="post-title__meta">
-        <a href="/archives/2024/07/" class="post-meta__date button">2024-07-23</a>
+        <a href="/archives/2024/07/" class="post-meta__date button">2024-07-26</a>
         
  
         
@@ -201,6 +201,7 @@
         
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -209,9 +210,13 @@
     <script src="js/shufaDictJS.js"></script>
     <link rel="stylesheet" href="css/shufaDictCSS.css">
 </head>
+<style>
+
+</style>
+
 <body>
     <div id="buttonContainer">
-        <div id="moreButton"></div>
+        <div id="backButton"></div>
     </div>
     <div id="container">
         <div id="img-wrapper">
@@ -223,12 +228,20 @@
     </div>
     <div class="button-container">
         <img id="button1" src="images/mizige.png" alt="按钮1" width="50" height="50" onclick="return false;">
-        <img id="button2" class="colorize-light-gray"  src="images/remove-background.png" alt="按钮2" width="50" height="50" onclick="toggleUnderline2(this);">
-        <img id="button3" class="colorize-light-gray" src="images/upscale.png" alt="按钮3" width="30" height="30" onclick="toggleUnderline3(this);">
+        <img id="button2" src="images/remove-background.png" alt="按钮2" width="50" height="50"
+            onclick="toggleUnderline2(this);">
+        <img id="button3" src="images/upscale.png" alt="按钮3" width="30" height="30" onclick="toggleUnderline3(this);">
+    </div>
+    <div class="text-button-container">
+        <button class="text-button" onclick="textButtonAction1()">添加到集字</button>
+        <button class="text-button badge-container" onclick="textButtonAction2()">开始集字
+            <span id="imageBadge" class="badge">0</span>
+        </button>
     </div>
     <div id="overlay" class="overlay"></div>
     <div id="modal" class="modal">
-        <img id="closeModalBtn" class="close-btn" src="images/close.png" width="30" height="30" onclick="return false;"></img>
+        <img id="closeModalBtn" class="close-btn" src="images/close.png" width="30" height="30"
+            onclick="return false;"></img>
         <div class="button-container">
             <img id="modalButton1" src="images/mc1.png" alt="按钮1" onclick="return false;">
             <img id="modalButton2" src="images/mc2.png" alt="按钮2" onclick="return false;">
@@ -242,14 +255,65 @@
     </div>
 </body>
 <script>
-    
+
     setupUI();
     setupPopup();
+
+    function textButtonAction1() {
+        saveImageUrl()
+    }
+    function textButtonAction2() {
+        window.location.href = "jizi.html";
+    }
+    // 存储图片 URL
+    function saveImageUrl() {
+        var imgUrl = localStorage.getItem('dict_img')
+        var name = localStorage.getItem('dict_name')
+        var title = localStorage.getItem('dict_title')
+        var id = localStorage.getItem('dict_id')
+
+        var data = { 'dict_img': imgUrl, 'dict_name': name, 'dict_title': title,
+            'dict_id': id};
+
+        let imageUrls = JSON.parse(localStorage.getItem('imageUrls')) || [];
+        imageUrls.push(data);
+        localStorage.setItem('imageUrls', JSON.stringify(imageUrls));
+        updateBadge();
+    }
+    // 获取所有存储的图片 URL
+    function getImageUrls() {
+        return JSON.parse(localStorage.getItem('imageUrls')) || [];
+    }
+    // 更新徽章显示
+    function updateBadge() {
+        const badge = document.getElementById('imageBadge');
+        const count = getImageCount();
+
+        if (count === 0) {
+            badge.style.display = 'none';
+        } else {
+            badge.style.display = 'flex';
+            badge.textContent = count;
+        }
+    }
+
+    // 获取存储的图片数量
+    function getImageCount() {
+        const imageUrls = getImageUrls();
+        return imageUrls.length;
+    }
+    // 页面加载时更新徽章
+    document.addEventListener('DOMContentLoaded', updateBadge);
+    var img = document.getElementById('backButton');
+    img.addEventListener('click', function () {
+        window.history.back()
+    });
 </script>
+
 </html>
     </div>
      
-    <div class="post-footer__meta"><p>更新於 2024-07-23</p></div> 
+    <div class="post-footer__meta"><p>updated at 2024-07-26</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 

@@ -1,39 +1,54 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
+
 #container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    position: relative; /* 使子元素可以使用绝对定位 */
+    position: relative;
+    /* 使子元素可以使用绝对定位 */
 }
+
 #container #img-wrapper {
-    position: relative; /* 使子元素可以使用绝对定位 */
+    position: relative;
+    /* 使子元素可以使用绝对定位 */
     display: inline-block;
     max-width: 80%;
 }
+
 #container #img-wrapper .individual-images {
     width: 100%;
     height: auto;
-    object-fit: cover; 
-    padding: 5px; 
+    object-fit: cover;
+    padding: 5px;
     border-radius: 10px;
     transition: transform 0.5s;
     display: block;
 }
+
 #container #img-wrapper .hidden-img {
-    display: none; /* 默认隐藏 */
-    position: absolute; 
-    top: 5px; /* 与 img-fluid 的 padding 对齐 */
-    left: 5px; /* 与 img-fluid 的 padding 对齐 */
-    width: calc(100% - 10px); /* 减去 padding */
-    height: calc(100% - 10px); /* 减去 padding */
+    display: none;
+    /* 默认隐藏 */
+    position: absolute;
+    top: 5px;
+    /* 与 img-fluid 的 padding 对齐 */
+    left: 5px;
+    /* 与 img-fluid 的 padding 对齐 */
+    width: calc(100% - 10px);
+    /* 减去 padding */
+    height: calc(100% - 10px);
+    /* 减去 padding */
     object-fit: cover;
-    border-radius: 10px; /* 保持圆角 */
-    z-index: 2; /* 设置更高的z-index */
+    border-radius: 10px;
+    /* 保持圆角 */
+    z-index: 2;
+    /* 设置更高的z-index */
 }
+
 #container #img-wrapper #loading_overlay {
     position: absolute;
     top: 0;
@@ -42,40 +57,61 @@ html, body {
     height: 100%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.5);
-    display: none; /* 默认隐藏 */
+    display: none;
+    /* 默认隐藏 */
     justify-content: center;
     align-items: center;
     z-index: 3;
 }
 
 #container #img-wrapper .overlay img {
-    position: absolute; 
+    position: absolute;
     width: 30px;
     height: 30px;
     /* object-fit: cover; */
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-    z-index: 4; /* 设置更高的z-index */
+    z-index: 4;
+    /* 设置更高的z-index */
 }
+
 #name {
     font-weight: bold;
     margin-bottom: 5px;
     text-align: center;
 }
+
 #author {
     color: #666;
     margin-bottom: 5px;
     text-align: center;
 }
+
 img:hover {
     transform: scale(1.05);
 }
-#moreButton {
-    background-image: url('images/back.png');
+
+#buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#backButton {
+    background-image: url('../images/back.png');
     width: 20px;
     height: 20px;
     background-size: cover;
     cursor: pointer;
 }
+
+#clearButton {
+    background-image: url('../images/qingkong.png');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+}
+
 /* 新增的样式 */
 .button-container {
     display: flex;
@@ -85,6 +121,7 @@ img:hover {
     padding: 10px;
     margin-top: 20px;
 }
+
 .button-container img {
     cursor: pointer;
     margin: 0 10px;
@@ -94,8 +131,10 @@ img:hover {
     max-width: none;
     max-height: none;
 }
+
 .modal {
-    display: none; /* 默认隐藏 */
+    display: none;
+    /* 默认隐藏 */
     position: fixed;
     left: 0;
     bottom: 0;
@@ -105,8 +144,10 @@ img:hover {
     padding: 20px;
     text-align: center;
 }
+
 .overlay {
-    display: none; /* 默认隐藏 */
+    display: none;
+    /* 默认隐藏 */
     position: fixed;
     top: 0;
     left: 0;
@@ -114,18 +155,24 @@ img:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .modal .button-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .modal .button-container img {
     cursor: pointer;
     margin: 0 10px;
-    width: 50px;  /* 限制图片宽度 */
-    height: 50px; /* 限制图片高度 */
-    object-fit: contain; /* 保持图片比例 */
+    width: 50px;
+    /* 限制图片宽度 */
+    height: 50px;
+    /* 限制图片高度 */
+    object-fit: contain;
+    /* 保持图片比例 */
 }
+
 .close-btn {
     position: absolute;
     top: 10px;
@@ -141,14 +188,17 @@ img:hover {
     justify-content: center;
 }
 
- /* SwitchButton 样式 */
- .switch {
+/* SwitchButton 样式 */
+.switch {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 40px; /* 缩小大小 */
-    height: 20px; /* 缩小大小 */
+    width: 40px;
+    /* 缩小大小 */
+    height: 20px;
+    /* 缩小大小 */
 }
+
 .slider {
     position: absolute;
     cursor: pointer;
@@ -158,25 +208,116 @@ img:hover {
     bottom: 0;
     background-color: #ccc;
     transition: .4s;
-    border-radius: 20px; /* 调整圆角 */
+    border-radius: 20px;
+    /* 调整圆角 */
 }
+
 .slider:before {
     position: absolute;
     content: "";
-    height: 14px; /* 缩小大小 */
-    width: 14px; /* 缩小大小 */
-    left: 3px; /* 调整居中 */
-    bottom: 3px; /* 调整居中 */
+    height: 14px;
+    /* 缩小大小 */
+    width: 14px;
+    /* 缩小大小 */
+    left: 3px;
+    /* 调整居中 */
+    bottom: 3px;
+    /* 调整居中 */
     background-color: white;
     transition: .4s;
     border-radius: 50%;
 }
-input:checked + .slider {
+
+input:checked+.slider {
     background-color: #2196F3;
 }
-input:checked + .slider:before {
-    transform: translateX(20px); /* 调整滑动距离 */
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+    /* 调整滑动距离 */
 }
-.colorize-light-gray {
-    filter: hue-rotate(0deg) saturate(0%); /* 将图片颜色调整为浅灰色 */
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+#button2 {
+    filter: hue-rotate(0deg) saturate(0%);
+    /* 将图片颜色调整为浅灰色 */
+}
+
+#button3 {
+    filter: hue-rotate(0deg) saturate(0%);
+    /* 将图片颜色调整为浅灰色 */
+}
+
+#button4 {
+    filter: hue-rotate(0deg) saturate(0%);
+    /* 将图片颜色调整为浅灰色 */
+}
+
+.text-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.text-button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 13px;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    color: #2196F3;
+    border-color: var(--bg-color);
+    border-radius: 10px;
+}
+
+button {
+    box-shadow: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.badge-container {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    min-width: 18px;
+    /* 确保徽章有最小宽度 */
+    height: 18px;
+    /* 设置固定高度 */
+    border-radius: 9px;
+    /* 高度的一半，使其成为圆形 */
+    font-weight: bold;
+    display: flex;
+    /* 使用 flex 布局 */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    padding: 0 4px;
+    /* 左右添加一些内边距 */
 }
