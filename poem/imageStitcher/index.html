@@ -46,8 +46,8 @@
 <meta property="og:site_name" content="临帖宝">
 <meta property="og:description" content="Combine Images                        #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashed #007bff;">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-07-26T08:44:59.596Z">
-<meta property="article:modified_time" content="2024-07-26T08:44:59.596Z">
+<meta property="article:published_time" content="2024-07-26T09:55:57.317Z">
+<meta property="article:modified_time" content="2024-07-26T09:55:57.317Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -269,6 +269,7 @@
             cursor: pointer;
             /* Makes the cursor a pointer when hovering over the link*/
         }
+
         #title {
             text-align: center;
         }
@@ -279,7 +280,7 @@
     <div id="buttonContainer">
         <div id="backButton"></div>
     </div>
-    <div id="title">套那地方AD</div>
+    <div id="title"></div>
     <!-- <h1>Image Stitcher</h1> -->
     <!-- <div id="dropArea">
         <p>Drag and drop images here or click to select</p>
@@ -290,7 +291,7 @@
     <!-- <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div> -->
-    <a id="downloadLink" href="#" style="display:none;">下载图片</a>
+    <!-- <a id="downloadLink" href="#" style="display:none;">下载图片</a> -->
     <br>
     <canvas id="canvas"></canvas>
 
@@ -301,16 +302,16 @@
         img.addEventListener('click', function () {
             window.history.back()
         });
-        function combineImages() {
+        async function combineImages() {
             var imageUrls = JSON.parse(localStorage.getItem('imageUrls')) || [];
             const images = [];
             const texts = [];
             imageUrls.forEach(function (dic, index) {
                 images.push(dic.dict_img),
-                texts.push(dic.dict_name)
+                    texts.push(dic.dict_name)
             });
             title.innerHTML = texts.join('');
-            
+
             if (images.length < 1) {
                 alert('图片数组为空。');
                 return;
@@ -352,7 +353,18 @@
                     imagesLoaded++;
                     checkAllImagesLoaded();
                 };
+                const dataUrl = loadImageAsDataUrl(url);
                 img.src = url;
+            });
+        }
+        async function loadImageAsDataUrl(url) {
+            const response = await fetch(url);
+            const blob = await response.blob();
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
             });
         }
 
@@ -372,26 +384,26 @@
             }
 
             // Create download link
-            const downloadLink = document.getElementById('downloadLink');
-            if (downloadLink.getAttribute("listener") !== "true") {
-                downloadLink.addEventListener('click', function (e) {
-                    var fileName = "lintiebao.png"
-                    if (fileName === null) {
-                        // 如果按下取消,阻止下载
-                        e.preventDefault();
-                    } else {
-                        fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
-                        this.download = fileName;
-                        this.href = canvas.toDataURL('image/png');
-                    }
-                });
+            // const downloadLink = document.getElementById('downloadLink');
+            // if (downloadLink.getAttribute("listener") !== "true") {
+            //     downloadLink.addEventListener('click', function (e) {
+            //         var fileName = "lintiebao.png"
+            //         if (fileName === null) {
+            //             // 如果按下取消,阻止下载
+            //             e.preventDefault();
+            //         } else {
+            //             fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
+            //             this.download = fileName;
+            //             this.href = canvas.toDataURL('image/png');
+            //         }
+            //     });
 
-                // 标记这个链接已经添加了事件监听器,避免重复添加
-                downloadLink.setAttribute("listener", "true");
-            }
+            //     // 标记这个链接已经添加了事件监听器,避免重复添加
+            //     downloadLink.setAttribute("listener", "true");
+            // }
 
-            downloadLink.style.display = 'inline';
-            downloadLink.innerText = '下载图片';
+            // downloadLink.style.display = 'inline';
+            // downloadLink.innerText = '下载图片';
         }
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -457,8 +469,8 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             // Hide the download link
-            var downloadLink = document.getElementById('downloadLink');
-            downloadLink.style.display = 'none';
+            // var downloadLink = document.getElementById('downloadLink');
+            // downloadLink.style.display = 'none';
 
             // Optionally, reset other elements on the page as needed
         }
