@@ -46,8 +46,8 @@
 <meta property="og:site_name" content="临帖宝">
 <meta property="og:description" content="Combine Images                        #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashed #007bff;">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-07-29T02:48:47.162Z">
-<meta property="article:modified_time" content="2024-07-29T02:48:47.162Z">
+<meta property="article:published_time" content="2024-07-29T03:01:49.207Z">
+<meta property="article:modified_time" content="2024-07-29T03:01:49.207Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -380,33 +380,35 @@
                 yOffset += newHeight;
             }
 
-            // Create download link
             const downloadLink = document.getElementById('downloadLink');
-            if (downloadLink.getAttribute("listener") !== "true") {
-                downloadLink.addEventListener('click', function (e) {
-                    var fileName = "lintiebao.png"
-                    if (fileName === null) {
-                        // 如果按下取消,阻止下载
-                        e.preventDefault();
-                    } else {
-                        fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
-                        this.download = fileName;
-                        try {
-                            this.href = canvas.toDataURL('image/png');
-                        } catch (error) {
-                            console.error('导出canvas失败：', error);
-                            alert('导出图片失败，请检查控制台获取更多信息。');
-                            e.preventDefault();
-                        }
+    if (downloadLink.getAttribute("listener") !== "true") {
+        downloadLink.addEventListener('click', function (e) {
+            e.preventDefault(); // 阻止默认的下载行为
+            var fileName = "lintiebao.png";
+            fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
+            try {
+                const dataUrl = canvas.toDataURL('image/png');
+                // 发送消息到小程序
+                wx.miniProgram.postMessage({ 
+                    data: {
+                        action: 'downloadImage',
+                        dataUrl: dataUrl,
+                        fileName: fileName
                     }
                 });
-
-                // 标记这个链接已经添加了事件监听器,避免重复添加
-                downloadLink.setAttribute("listener", "true");
+                // 通知用户
+                alert('图片准备完成，请在小程序中点击下载按钮');
+            } catch (error) {
+                console.error('导出canvas失败：', error);
+                alert('导出图片失败，请检查控制台获取更多信息。');
             }
+        });
 
-            downloadLink.style.display = 'inline';
-            downloadLink.innerText = '下载图片';
+        downloadLink.setAttribute("listener", "true");
+    }
+
+    downloadLink.style.display = 'inline';
+    downloadLink.innerText = '准备下载图片';
         }
 
         document.addEventListener('DOMContentLoaded', function () {
