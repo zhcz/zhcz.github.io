@@ -39,15 +39,15 @@
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="Combine Images                             #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashed #007">
+    <meta name="description" content="Combine Images                                   #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashe">
 <meta property="og:type" content="website">
 <meta property="og:title" content="临帖宝">
 <meta property="og:url" content="http://example.com/poem/imageStitcher/index.html">
 <meta property="og:site_name" content="临帖宝">
-<meta property="og:description" content="Combine Images                             #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashed #007">
+<meta property="og:description" content="Combine Images                                   #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashe">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-07-29T06:42:54.936Z">
-<meta property="article:modified_time" content="2024-07-29T06:42:54.936Z">
+<meta property="article:published_time" content="2024-07-29T07:11:32.955Z">
+<meta property="article:modified_time" content="2024-07-29T07:11:32.955Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -195,8 +195,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combine Images</title>
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+    <script src="../leancloud.js"></script>
     <script src="../js/shufaDictJS.js"></script>
-    <script src="http://res2.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+
     <link rel="stylesheet" href="../css/shufaDictCSS.css">
     <style>
         #dropArea {
@@ -298,6 +300,7 @@
 
     <script>
 
+        initLeanCloud()
         var img = document.getElementById('backButton');
         var title = document.getElementById('title');
         img.addEventListener('click', function () {
@@ -317,9 +320,7 @@
                 alert('图片数组为空。');
                 return;
             }
-
             let loadedImages = [];
-
             for (let i = 0; i < images.length; i++) {
                 try {
                     const dataUrl = await loadImageAsDataUrl(images[i]);
@@ -335,7 +336,6 @@
                     alert('加载图片失败：' + images[i]);
                 }
             }
-
             // 继续处理加载好的图片...
             let totalHeight = 0;
             let minWidth = Infinity;
@@ -366,7 +366,7 @@
             });
         }
 
-        function renderImages(images, minWidth, totalHeight) {
+        async function renderImages(images, minWidth, totalHeight) {
             const canvas = document.getElementById('canvas');
             const ctx = canvas.getContext('2d');
             canvas.width = minWidth;
@@ -381,52 +381,114 @@
                 yOffset += newHeight;
             }
 
-            const downloadLink = document.getElementById('downloadLink');
-            if (downloadLink.getAttribute("listener") !== "true") {
-                downloadLink.addEventListener('click', function (e) {
-                    e.preventDefault(); // 阻止默认的下载行为
-                    var fileName = "lintiebao.png";
-                    fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
-                    try {
-                        const dataUrl = canvas.toDataURL('image/png');
+            // 将canvas转换为Blob
+            const blob = await new Promise(resolve => canvas.toBlob(resolve));
 
-                        alert("环境检测:", window.__wxjs_environment);
+            // 上传到LeanCloud
+            const file = new AV.File('combined_image.png', blob);
+            try {
+                const savedFile = await file.save();
+                const imageUrl = savedFile.url();
 
-                        if (window.__wxjs_environment === 'miniprogram') {
-                            alert("尝试发送消息到小程序");
-                            if (window.wx && window.wx.miniProgram) {
-                                window.wx.miniProgram.postMessage({
-                                    data: {
-                                        action: 'downloadImage',
-                                        dataUrl: dataUrl,
-                                        fileName: fileName
-                                    }
-                                });
-                                alert("消息已发送到小程序");
-                                alert('图片准备完成，请在小程序中点击下载按钮');
-                            } else {
-                                throw new Error("wx.miniProgram 对象不可用");
-                            }
-                        } else {
-                            alert("在浏览器中下载图片");
-                            const link = document.createElement('a');
-                            link.download = fileName;
-                            link.href = dataUrl;
-                            link.click();
-                        }
-                    } catch (error) {
-                        alert('导出canvas失败：', error);
-                        alert('导出图片失败：' + error.message + '。请检查控制台获取更多信息。');
-                    }
-                });
+                // 展示图片
+                displayImage(imageUrl);
 
-                downloadLink.setAttribute("listener", "true");
+                // 存储文件对象ID,用于后续删除
+                window.combinedImageId = savedFile.id;
+            } catch (error) {
+                console.error('上传图片失败:', error);
+                alert('上传图片失败');
             }
 
-            downloadLink.style.display = 'inline';
-            downloadLink.innerText = '下载图片';
-        }
 
+            // const downloadLink = document.getElementById('downloadLink');
+            // if (downloadLink.getAttribute("listener") !== "true") {
+            //     downloadLink.addEventListener('click', function (e) {
+            //         e.preventDefault(); // 阻止默认的下载行为
+            //         var fileName = "lintiebao.png";
+            //         fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
+            //         try {
+            //             const dataUrl = canvas.toDataURL('image/png');
+
+            //             alert("环境检测:", window.__wxjs_environment);
+
+            //             if (window.__wxjs_environment === 'miniprogram') {
+            //                 alert("尝试发送消息到小程序");
+            //                 if (window.wx && window.wx.miniProgram) {
+            //                     window.wx.miniProgram.postMessage({
+            //                         data: {
+            //                             action: 'downloadImage',
+            //                             dataUrl: dataUrl,
+            //                             fileName: fileName
+            //                         }
+            //                     });
+            //                     alert("消息已发送到小程序");
+            //                     alert('图片准备完成，请在小程序中点击下载按钮');
+            //                 } else {
+            //                     throw new Error("wx.miniProgram 对象不可用");
+            //                 }
+            //             } else {
+            //                 alert("在浏览器中下载图片");
+            //                 const link = document.createElement('a');
+            //                 link.download = fileName;
+            //                 link.href = dataUrl;
+            //                 link.click();
+            //             }
+            //         } catch (error) {
+            //             alert('导出canvas失败：', error);
+            //             alert('导出图片失败：' + error.message + '。请检查控制台获取更多信息。');
+            //         }
+            //     });
+
+            //     downloadLink.setAttribute("listener", "true");
+            // }
+
+            // downloadLink.style.display = 'inline';
+            // downloadLink.innerText = '下载图片';
+        }
+        async function deleteImage() {
+            if (window.combinedImageId) {
+                try {
+                    const file = AV.File.createWithoutData(window.combinedImageId);
+                    await file.destroy();
+                    console.log('图片已从LeanCloud删除');
+                } catch (error) {
+                    console.error('删除图片失败:', error);
+                }
+            }
+        }
+        window.addEventListener('unload', deleteImage);
+
+        function displayImage(url, width, height) {
+            const canvas = document.getElementById('canvas');
+            if (!canvas) {
+                console.error('Canvas元素不存在');
+                return;
+            }
+
+            // 创建一个新的图片元素
+            const img = new Image();
+            img.onload = function () {
+                // 图片加载完成后,将canvas替换为img元素
+                if (canvas.parentNode) {
+                    const container = canvas.parentNode;
+                    container.replaceChild(img, canvas);
+                } else {
+                    console.error('Canvas的父元素不存在');
+                    document.body.appendChild(img); // 作为备选，将图片添加到body
+                }
+
+                // 设置img的样式以匹配canvas
+                img.style.width = width + 'px';
+                img.style.height = height + 'px';
+                img.style.display = 'block';
+            };
+            img.onerror = function () {
+                console.error('加载图片失败');
+                alert('加载图片失败');
+            };
+            img.src = url;
+        }
         document.addEventListener('DOMContentLoaded', function () {
             var dropArea = document.getElementById('dropArea');
             var fileInput = document.getElementById('fileInput'); // Make sure this matches the ID of your file input
