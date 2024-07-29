@@ -96,6 +96,7 @@ img:hover {
     align-items: center;
     padding: 10px;
 }
+
 #backButton {
     background-image: url('../images/back.png');
     width: 20px;
@@ -320,4 +321,57 @@ button {
     /* 垂直居中 */
     padding: 0 4px;
     /* 左右添加一些内边距 */
+}
+
+.custom-swal-title {
+    font-size: 20px !important;
+    color: #333 !important;
+}
+
+.custom-swal-content {
+    font-size: 15px !important;
+    color: #666 !important;
+}
+
+.custom-swal-confirm-button {
+    background-color: var(--main-color) !important;
+    color: white !important;
+    font-size: 15px !important;
+    padding: 5px 30px !important;
+    border-radius: 10px !important;
+    /* 添加圆角 */
+    border: none !important;
+    cursor: pointer !important;
+    margin: 5px !important;
+}
+
+.custom-swal-cancel-button {
+    background-color: #f44336 !important;
+    color: white !important;
+    font-size: 15px !important;
+    padding: 5px 30px !important;
+    border-radius: 10px !important;
+    /* 添加圆角 */
+    border: none !important;
+    cursor: pointer !important;
+    margin: 5px !important;
+}
+
+/* 悬停效果 */
+.custom-confirm-button:hover,
+.custom-cancel-button:hover {
+    opacity: 0.8 !important;
+}
+
+.custom-swal-container {
+    padding: 0 10%;
+    /* 增加左右边距 */
+}
+
+.custom-swal-popup {
+    width: 80% !important;
+    /* 使弹窗宽度填满容器 */
+    max-width: 80% !important;
+    /* 覆盖默认的最大宽度 */
+    background-color: var(--bg-content-color) !important;
 }
