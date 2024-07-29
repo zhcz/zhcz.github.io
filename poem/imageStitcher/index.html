@@ -46,8 +46,8 @@
 <meta property="og:site_name" content="临帖宝">
 <meta property="og:description" content="Combine Images                        #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashed #007bff;">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-07-26T09:55:57.317Z">
-<meta property="article:modified_time" content="2024-07-26T09:55:57.317Z">
+<meta property="article:published_time" content="2024-07-29T02:48:47.162Z">
+<meta property="article:modified_time" content="2024-07-29T02:48:47.162Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -161,7 +161,7 @@
         
     </h1>
     <div class="post-title__meta">
-        <a href="/archives/2024/07/" class="post-meta__date button">2024-07-26</a>
+        <a href="/archives/2024/07/" class="post-meta__date button">2024-07-29</a>
         
  
         
@@ -291,7 +291,7 @@
     <!-- <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div> -->
-    <!-- <a id="downloadLink" href="#" style="display:none;">下载图片</a> -->
+    <a id="downloadLink" href="#" style="display:none;">下载图片</a>
     <br>
     <canvas id="canvas"></canvas>
 
@@ -318,47 +318,44 @@
             }
 
             let loadedImages = [];
-            let imagesLoaded = 0;
 
-            function checkAllImagesLoaded() {
-                if (imagesLoaded === images.length) {
-                    let totalHeight = 0;
-                    let minWidth = Infinity;
-
-                    // 找出最小宽度
-                    loadedImages.forEach(img => {
-                        minWidth = Math.min(minWidth, img.width);
+            for (let i = 0; i < images.length; i++) {
+                try {
+                    const dataUrl = await loadImageAsDataUrl(images[i]);
+                    const img = new Image();
+                    img.src = dataUrl;
+                    await new Promise((resolve, reject) => {
+                        img.onload = resolve;
+                        img.onerror = reject;
                     });
-
-                    // 计算调整后的总高度
-                    loadedImages.forEach(img => {
-                        let aspectRatio = img.height / img.width;
-                        let newHeight = minWidth * aspectRatio;
-                        totalHeight += newHeight;
-                    });
-
-                    renderImages(loadedImages, minWidth, totalHeight);
+                    loadedImages.push(img);
+                } catch (error) {
+                    console.error('加载图片失败：', error);
+                    alert('加载图片失败：' + images[i]);
                 }
             }
 
-            images.forEach((url, index) => {
-                let img = new Image();
-                img.onload = function () {
-                    loadedImages[index] = img;
-                    imagesLoaded++;
-                    checkAllImagesLoaded();
-                };
-                img.onerror = function () {
-                    alert('加载图片失败：' + url);
-                    imagesLoaded++;
-                    checkAllImagesLoaded();
-                };
-                const dataUrl = loadImageAsDataUrl(url);
-                img.src = url;
+            // 继续处理加载好的图片...
+            let totalHeight = 0;
+            let minWidth = Infinity;
+
+            // 找出最小宽度
+            loadedImages.forEach(img => {
+                minWidth = Math.min(minWidth, img.width);
             });
+
+            // 计算调整后的总高度
+            loadedImages.forEach(img => {
+                let aspectRatio = img.height / img.width;
+                let newHeight = minWidth * aspectRatio;
+                totalHeight += newHeight;
+            });
+
+            renderImages(loadedImages, minWidth, totalHeight);
         }
         async function loadImageAsDataUrl(url) {
-            const response = await fetch(url);
+            const proxyUrl = `https://proxyimage.lintiebao.cn/proxy?url=${encodeURIComponent(url)}`;
+            const response = await fetch(proxyUrl);
             const blob = await response.blob();
             return new Promise((resolve, reject) => {
                 const reader = new FileReader();
@@ -384,26 +381,32 @@
             }
 
             // Create download link
-            // const downloadLink = document.getElementById('downloadLink');
-            // if (downloadLink.getAttribute("listener") !== "true") {
-            //     downloadLink.addEventListener('click', function (e) {
-            //         var fileName = "lintiebao.png"
-            //         if (fileName === null) {
-            //             // 如果按下取消,阻止下载
-            //             e.preventDefault();
-            //         } else {
-            //             fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
-            //             this.download = fileName;
-            //             this.href = canvas.toDataURL('image/png');
-            //         }
-            //     });
+            const downloadLink = document.getElementById('downloadLink');
+            if (downloadLink.getAttribute("listener") !== "true") {
+                downloadLink.addEventListener('click', function (e) {
+                    var fileName = "lintiebao.png"
+                    if (fileName === null) {
+                        // 如果按下取消,阻止下载
+                        e.preventDefault();
+                    } else {
+                        fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
+                        this.download = fileName;
+                        try {
+                            this.href = canvas.toDataURL('image/png');
+                        } catch (error) {
+                            console.error('导出canvas失败：', error);
+                            alert('导出图片失败，请检查控制台获取更多信息。');
+                            e.preventDefault();
+                        }
+                    }
+                });
 
-            //     // 标记这个链接已经添加了事件监听器,避免重复添加
-            //     downloadLink.setAttribute("listener", "true");
-            // }
+                // 标记这个链接已经添加了事件监听器,避免重复添加
+                downloadLink.setAttribute("listener", "true");
+            }
 
-            // downloadLink.style.display = 'inline';
-            // downloadLink.innerText = '下载图片';
+            downloadLink.style.display = 'inline';
+            downloadLink.innerText = '下载图片';
         }
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -469,8 +472,8 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             // Hide the download link
-            // var downloadLink = document.getElementById('downloadLink');
-            // downloadLink.style.display = 'none';
+            var downloadLink = document.getElementById('downloadLink');
+            downloadLink.style.display = 'none';
 
             // Optionally, reset other elements on the page as needed
         }
@@ -484,7 +487,7 @@
 </html>
     </div>
      
-    <div class="post-footer__meta"><p>updated at 2024-07-26</p></div> 
+    <div class="post-footer__meta"><p>updated at 2024-07-29</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 
