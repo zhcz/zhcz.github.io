@@ -46,8 +46,8 @@
 <meta property="og:site_name" content="临帖宝">
 <meta property="og:description" content="Combine Images                        #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashed #007bff;">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-07-29T03:12:10.633Z">
-<meta property="article:modified_time" content="2024-07-29T03:12:10.633Z">
+<meta property="article:published_time" content="2024-07-29T06:15:58.246Z">
+<meta property="article:modified_time" content="2024-07-29T06:15:58.246Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -381,43 +381,49 @@
             }
 
             const downloadLink = document.getElementById('downloadLink');
-    if (downloadLink.getAttribute("listener") !== "true") {
-        downloadLink.addEventListener('click', function (e) {
-            e.preventDefault(); // 阻止默认的下载行为
-            var fileName = "lintiebao.png";
-            fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
-            try {
-                const dataUrl = canvas.toDataURL('image/png');
-                
-                // 检查是否在小程序环境中
-                if (window.__wxjs_environment === 'miniprogram') {
-                    // 在小程序环境中，发送消息
-                    window.wx.miniProgram.postMessage({ 
-                        data: {
-                            action: 'downloadImage',
-                            dataUrl: dataUrl,
-                            fileName: fileName
+            if (downloadLink.getAttribute("listener") !== "true") {
+                downloadLink.addEventListener('click', function (e) {
+                    e.preventDefault(); // 阻止默认的下载行为
+                    var fileName = "lintiebao.png";
+                    fileName = fileName.trim() !== '' ? fileName : 'lintiebao';
+                    try {
+                        const dataUrl = canvas.toDataURL('image/png');
+
+                        alert("环境检测:", window.__wxjs_environment);
+
+                        if (window.__wxjs_environment === 'miniprogram') {
+                            alert("尝试发送消息到小程序");
+                            if (window.wx && window.wx.miniProgram) {
+                                window.wx.miniProgram.postMessage({
+                                    data: {
+                                        action: 'downloadImage',
+                                        dataUrl: dataUrl,
+                                        fileName: fileName
+                                    }
+                                });
+                                alert("消息已发送到小程序");
+                                alert('图片准备完成，请在小程序中点击下载按钮');
+                            } else {
+                                throw new Error("wx.miniProgram 对象不可用");
+                            }
+                        } else {
+                            alert("在浏览器中下载图片");
+                            const link = document.createElement('a');
+                            link.download = fileName;
+                            link.href = dataUrl;
+                            link.click();
                         }
-                    });
-                    alert('图片准备完成，请在小程序中点击下载按钮');
-                } else {
-                    // 在普通浏览器环境中，直接触发下载
-                    const link = document.createElement('a');
-                    link.download = fileName;
-                    link.href = dataUrl;
-                    link.click();
-                }
-            } catch (error) {
-                console.error('导出canvas失败：', error);
-                alert('导出图片失败，请检查控制台获取更多信息。');
+                    } catch (error) {
+                        alert('导出canvas失败：', error);
+                        alert('导出图片失败：' + error.message + '。请检查控制台获取更多信息。');
+                    }
+                });
+
+                downloadLink.setAttribute("listener", "true");
             }
-        });
 
-        downloadLink.setAttribute("listener", "true");
-    }
-
-    downloadLink.style.display = 'inline';
-    downloadLink.innerText = '下载图片';
+            downloadLink.style.display = 'inline';
+            downloadLink.innerText = '下载图片';
         }
 
         document.addEventListener('DOMContentLoaded', function () {
