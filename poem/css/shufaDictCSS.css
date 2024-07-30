@@ -95,6 +95,14 @@ img:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    /* background-color: #f44336; */
+}
+#buttonContainer2 {
+    display: flex;
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    gap: 10px; /* 按钮之间的间距 */
+    
 }
 
 #backButton {
@@ -103,6 +111,7 @@ img:hover {
     height: 20px;
     background-size: cover;
     cursor: pointer;
+    /* background-color: #666; */
 }
 
 #clearButton {
@@ -111,7 +120,40 @@ img:hover {
     height: 20px;
     background-size: cover;
     cursor: pointer;
+    margin-right: 10px;
+    /* background-color: aqua; */
+
+     /* 文本居中显示 */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
 }
+#moveButton {
+    /* background-image: url('../images/tuodong.png'); */
+    width: 40px;
+    height: 20px;
+    font-size: 13px;
+    background-size: cover;
+    cursor: pointer;
+    text-align: center;
+    /* background-color: #666; */
+     /* 文本居中显示 */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+    /* filter : invert(100%) sepia(1) saturate(10) hue-rotate(-50deg); */
+}
+#clearButton span, #moveButton span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* #moveButton:hover {
+    filter: invert(100%)"sepia(1) saturate(10) hue-rotate(-50deg)";
+} */
 
 /* 新增的样式 */
 .button-container {
@@ -263,6 +305,25 @@ input:checked+.slider:before {
     /* 将图片颜色调整为浅灰色 */
 }
 
+.next-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#next-button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 13px;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    color: #2196F3;
+    border-color: var(--bg-color);
+    border-radius: 10px;
+    display: none;
+}
 .text-button-container {
     display: flex;
     flex-direction: column;
