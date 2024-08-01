@@ -39,16 +39,16 @@
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="Combine Images                                  #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashed">
+    <meta name="description" content="Combine Images                                            #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border:">
 <meta property="og:type" content="website">
 <meta property="og:title" content="临帖宝">
 <meta property="og:url" content="http://example.com/poem/imageStitcher/index.html">
 <meta property="og:site_name" content="临帖宝">
-<meta property="og:description" content="Combine Images                                  #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border: 2px dashed">
+<meta property="og:description" content="Combine Images                                            #dropArea {             margin: 20px 0;             padding: 10px;             background-color: #fff;             border:">
 <meta property="og:locale">
 <meta property="og:image" content="http://example.com/poem/images/grid.svg">
-<meta property="article:published_time" content="2024-07-30T07:51:07.731Z">
-<meta property="article:modified_time" content="2024-07-30T07:51:07.731Z">
+<meta property="article:published_time" content="2024-08-01T07:50:09.363Z">
+<meta property="article:modified_time" content="2024-08-01T07:50:09.363Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/poem/images/grid.svg">
@@ -163,7 +163,7 @@
         
     </h1>
     <div class="post-title__meta">
-        <a href="/archives/2024/07/" class="post-meta__date button">2024-07-30</a>
+        <a href="/archives/2024/08/" class="post-meta__date button">2024-08-01</a>
         
  
         
@@ -201,6 +201,8 @@
     <script src="../leancloud.js"></script>
     <script src="../js/shufaDictJS.js"></script>
     <link rel="stylesheet" href="../css/shufaDictCSS.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
     <style>
         #dropArea {
             margin: 20px 0;
@@ -265,18 +267,16 @@
 
         #downloadLink {
             display: block;
-            /* Adjust based on when you want to show it */
-            margin-bottom: 10px;
-            /* Adds space below the Download button */
-            text-decoration: none;
-            color: #007bff;
             cursor: pointer;
-            /* Makes the cursor a pointer when hovering over the link*/
         }
 
         #title {
             text-align: center;
+            flex: 2;
+            text-align: center;
+            font-weight: bold;
         }
+
         #loading_overlay {
             display: flex;
             justify-content: center;
@@ -286,12 +286,24 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 半透明背景 */
         }
 
         #loadingImage {
             max-width: 100%;
             max-height: 100%;
+        }
+        #buttonContainer2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            max-width: 1200px; /* 可以根据需要调整 */
+            margin: 0 auto; /* 水平居中 */
+        }
+        #switchButton {
+            background-color: var(--main-color);
         }
     </style>
 </head>
@@ -299,8 +311,16 @@
 <body>
     <div id="buttonContainer">
         <div id="backButton"></div>
+        <div id="title"></div>
+        <a id="downloadLink" onclick="addDownloadButton()" >下载图片</a>
     </div>
-    <div id="title"></div>
+
+    <div id="buttonContainer2">
+        
+        <button id="switchButton" onclick="addToggleButton()">切换方向</button>
+        
+    </div>
+    
     <!-- <h1>Image Stitcher</h1> -->
     <!-- <div id="dropArea">
         <p>Drag and drop images here or click to select</p>
@@ -321,6 +341,10 @@
     <script>
 
         initLeanCloud()
+        let blob = null;
+        let canvasWidth = 0;
+        let canvasHeight = 0;
+        let isHorizontal = false;
         var loading_overlay = document.getElementById('loading_overlay');
         loading_overlay.style.display = 'flex';
         var img = document.getElementById('backButton');
@@ -328,8 +352,35 @@
         img.addEventListener('click', function () {
             window.history.back()
         });
+        function switchOrientation() {
+            addToggleButton()
+        }
+        // 在页面加载时调用此函数
+        addToggleButton();
+        // 添加切换按钮的函数
+        function addDownloadButton() {
+            if (blob == null) {
+                return
+            }
+            uploadImg(blob)
+        }
+        function addToggleButton() {
+            const button = document.getElementById('switchButton');
+            // button.textContent = '切换拼接方向';
+            button.onclick = function () {
+                isHorizontal = !isHorizontal;
+                combineImages();
+            };
+
+            const canvas = document.getElementById('canvas');
+            if (canvas && canvas.parentNode) {
+                canvas.parentNode.insertBefore(button, canvas);
+            } else {
+                // 如果找不到 canvas 或其父元素，就将按钮添加到 body 的开头
+                document.body.insertBefore(button, document.body.firstChild);
+            }
+        }
         async function combineImages() {
-            
             var imageUrls = JSON.parse(localStorage.getItem('selectedImageUrls')) || [];
             const images = [];
             const texts = [];
@@ -338,7 +389,6 @@
                     texts.push(dic.dict_name)
             });
             title.innerHTML = texts.join('');
-
             if (images.length < 1) {
                 alert('图片数组为空。');
                 return;
@@ -363,19 +413,29 @@
             let totalHeight = 0;
             let minWidth = Infinity;
 
+            let totalWidth = 0;
+            let maxHeight = 0;
             // 找出最小宽度
             loadedImages.forEach(img => {
                 minWidth = Math.min(minWidth, img.width);
             });
 
-            // 计算调整后的总高度
-            loadedImages.forEach(img => {
-                let aspectRatio = img.height / img.width;
-                let newHeight = minWidth * aspectRatio;
-                totalHeight += newHeight;
-            });
+            if (isHorizontal) {
+                // 计算总宽度和最大高度
+                loadedImages.forEach(img => {
+                    totalWidth += img.width;
+                    maxHeight = Math.max(maxHeight, img.height);
+                });
+            } else {
+                // 计算调整后的总高度
+                loadedImages.forEach(img => {
+                    let aspectRatio = img.height / img.width;
+                    let newHeight = minWidth * aspectRatio;
+                    totalHeight += newHeight;
+                });
+            }
 
-            renderImages(loadedImages, minWidth, totalHeight);
+            renderImages(loadedImages, isHorizontal ? totalWidth : minWidth, isHorizontal ? maxHeight : totalHeight);
         }
         async function loadImageAsDataUrl(url) {
             const proxyUrl = `https://proxyimage.lintiebao.cn/proxy?url=${encodeURIComponent(url)}`;
@@ -388,99 +448,156 @@
                 reader.readAsDataURL(blob);
             });
         }
-
-        async function renderImages(images, minWidth, totalHeight) {
+        async function renderImages(images, canvasWidth, canvasHeight) {
             const canvas = document.getElementById('canvas');
-            const ctx = canvas.getContext('2d');
-            canvas.width = minWidth;
-            canvas.height = totalHeight;
-
-            let yOffset = 0;
-            for (let img of images) {
-                let aspectRatio = img.height / img.width;
-                let newHeight = minWidth * aspectRatio;
-
-                ctx.drawImage(img, 0, yOffset, minWidth, newHeight);
-                yOffset += newHeight;
+            if (!canvas) {
+                console.error('找不到 canvas 元素');
+                alert('无法渲染图像：找不到 canvas 元素');
+                return;
             }
+            const ctx = canvas.getContext('2d');
+            if (!ctx) {
+                console.error('无法获取 canvas 2D 上下文');
+                alert('无法渲染图像：canvas 上下文不可用');
+                return;
+            }
+            const maxWidth = 3000; // 设置最大宽度
+            let totalWidth = 0;
+            let totalHeight = 0;
+            let commonWidth = 0;
+            let commonHeight = 0;
 
-            // 将canvas转换为Blob
-            const blob = await new Promise(resolve => canvas.toBlob(resolve));
-
-            // 上传到LeanCloud
+            if (isHorizontal) {
+                // 横向拼接：找出最小高度
+                commonHeight = Math.min(...images.map(img => img.height));
+                images.forEach(img => {
+                    let aspectRatio = img.width / img.height;
+                    totalWidth += commonHeight * aspectRatio;
+                });
+                // 如果总宽度超过最大宽度，进行缩放
+                if (totalWidth > maxWidth) {
+                    let scale = maxWidth / totalWidth;
+                    commonHeight *= scale;
+                    totalWidth = maxWidth;
+                }
+                canvas.width = totalWidth;
+                canvas.height = commonHeight;
+            } else {
+                // 竖直拼接：使用传入的 canvasWidth
+                commonWidth = canvasWidth;
+                images.forEach(img => {
+                    let aspectRatio = img.height / img.width;
+                    totalHeight += commonWidth * aspectRatio;
+                });
+                canvas.width = commonWidth;
+                canvas.height = totalHeight;
+            }
+            let offset = 0;
+            for (let img of images) {
+                if (isHorizontal) {
+                    let imgWidth = (img.width / img.height) * commonHeight;
+                    ctx.drawImage(img, offset, 0, imgWidth, commonHeight);
+                    offset += imgWidth;
+                } else {
+                    let imgHeight = (img.height / img.width) * commonWidth;
+                    ctx.drawImage(img, 0, offset, commonWidth, imgHeight);
+                    offset += imgHeight;
+                }
+            }
+            blob = await new Promise(resolve => canvas.toBlob(resolve));
+            self.canvasWidth = canvasWidth;
+            self.canvasHeight = canvasHeight;
+            if (typeof loading_overlay !== 'undefined' && loading_overlay) {
+                loading_overlay.style.display = 'none';
+            }
+            
+            // uploadImg(blob)
+        }
+        async function uploadImg(blob) {
             const file = new AV.File('combined_image.png', blob);
+
             try {
-                // 设置文件的过期时间（4小时后）
+                // 设置文件的过期时间（10分钟后）
                 const expirationTime = new Date(new Date().getTime() + 10 * 60 * 1000);
                 file.set('expirationTime', expirationTime);
-
                 // 保存文件（只保存一次）
                 const savedFile = await file.save();
                 const imageUrl = savedFile.url();
-
                 // 展示图片
-                displayImage(imageUrl);
-
+                displayImage(imageUrl, canvasWidth, canvasHeight);
                 // 存储文件对象ID,用于后续删除
                 window.combinedImageId = savedFile.id;
-
-                // 设置定时器在客户端删除图片（如果用户还在使用应用）
-                // setTimeout(() => deleteImage(savedFile.id), 1 * 60 * 1000);
-
                 console.log('图片上传成功，URL:', imageUrl);
+
+                
             } catch (error) {
                 console.error('上传图片失败:', error);
                 alert('上传图片失败: ' + error.message);
             }
         }
         // 删除图片的函数
-        async function deleteImage(fileId) {
-            if (fileId) {
-                try {
-                    const file = AV.File.createWithoutData(fileId);
-                    await file.destroy();
-                    console.log('图片已从LeanCloud删除');
-                } catch (error) {
-                    console.error('删除图片失败:', error);
-                }
-            }
-        }
+        // async function deleteImage(fileId) {
+        //     if (fileId) {
+        //         try {
+        //             const file = AV.File.createWithoutData(fileId);
+        //             await file.destroy();
+        //             console.log('图片已从LeanCloud删除');
+        //         } catch (error) {
+        //             console.error('删除图片失败:', error);
+        //         }
+        //     }
+        // }
         function displayImage(url, width, height) {
-            const canvas = document.getElementById('canvas');
-            if (!canvas) {
-                console.error('Canvas元素不存在');
-                return;
-            }
-
-            // 创建一个新的图片元素
             const img = new Image();
             img.onload = function () {
-                // 图片加载完成后,将canvas替换为img元素
-                if (canvas.parentNode) {
+                const canvas = document.getElementById('canvas');
+                if (canvas && canvas.parentNode) {
                     const container = canvas.parentNode;
                     container.replaceChild(img, canvas);
                 } else {
-                    console.error('Canvas的父元素不存在');
-                    document.body.appendChild(img); // 作为备选，将图片添加到body
+                    document.body.appendChild(img);
                 }
 
-                // 设置img的样式以匹配canvas
-                img.style.width = width + 'px';
-                img.style.height = height + 'px';
-                img.style.paddingTop = '15px';
+                // 设置img的样式
+                img.style.maxWidth = '100%';
+                img.style.maxHeight = '80vh';
+                img.style.width = 'auto';
+                img.style.height = 'auto';
                 img.style.display = 'block';
                 img.style.marginLeft = 'auto';
                 img.style.marginRight = 'auto';
-
-                
-
             };
             img.onerror = function () {
-                console.error('加载图片失败');
-                alert('加载图片失败');
+                console.error('图片加载失败');
             };
             img.src = url;
-            loading_overlay.style.display = 'none';
+            if (typeof loading_overlay !== 'undefined' && loading_overlay) {
+                loading_overlay.style.display = 'none';
+            }
+            const button = document.getElementById('switchButton');
+            button.style.display = 'none';
+            Swal.fire({
+                text: '长按图片分享或保存至手机相册！',
+                confirmButtonText: '确定',
+                // cancelButtonText: '取消',
+                // showCancelButton: true, // 显示取消按钮
+                reverseButtons: true,
+                // 自定义样式
+                customClass: {
+                    container: 'custom-swal-container',
+                    popup: 'custom-swal-popup',
+                    // 修改标题样式
+                    title: 'custom-swal-title',
+                    // 修改内容文字样式
+                    content: 'custom-swal-content',
+                    // 修改确认按钮样式
+                    confirmButton: 'custom-swal-confirm-button',
+                    // 修改取消按钮样式（如果有的话）
+                    cancelButton: 'custom-swal-cancel-button'
+                },
+                // 直接应用内联样式
+                buttonsStyling: false, // 禁用默认的按钮样式
+            })
         }
         document.addEventListener('DOMContentLoaded', function () {
             var dropArea = document.getElementById('dropArea');
@@ -518,8 +635,8 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             // Hide the download link
-            var downloadLink = document.getElementById('downloadLink');
-            downloadLink.style.display = 'none';
+            // var downloadLink = document.getElementById('downloadLink');
+            // downloadLink.style.display = 'none';
 
             // Optionally, reset other elements on the page as needed
         }
@@ -533,7 +650,7 @@
 </html>
     </div>
      
-    <div class="post-footer__meta"><p>updated at 2024-07-30</p></div> 
+    <div class="post-footer__meta"><p>updated at 2024-08-01</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 
