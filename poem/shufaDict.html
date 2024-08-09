@@ -46,8 +46,8 @@
 <meta property="og:site_name" content="临帖宝">
 <meta property="og:description" content="字帖                             html,     body {       margin: 0;       padding: 0;     }      #container {       display: flex;       flex-wrap: wrap;       justify-content: space-between">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-08-01T06:33:25.921Z">
-<meta property="article:modified_time" content="2024-08-01T06:33:25.921Z">
+<meta property="article:published_time" content="2024-08-09T07:36:00.117Z">
+<meta property="article:modified_time" content="2024-08-09T07:36:00.117Z">
 <meta property="article:author" content="zhanghao">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -161,7 +161,7 @@
         
     </h1>
     <div class="post-title__meta">
-        <a href="/archives/2024/08/" class="post-meta__date button">2024-08-01</a>
+        <a href="/archives/2024/08/" class="post-meta__date button">2024-08-09</a>
         
  
         
@@ -278,7 +278,6 @@
     }
 
     .item1 {
-      width: 50px;
       /* 或任何你想要的百分比 */
       margin-bottom: -20px;
       margin-right: 15px;
@@ -288,12 +287,27 @@
       flex-grow: 1;
       /* 这将占据剩余的所有空间 */
     }
+
     #buttonContainer {
       justify-content: center;
       align-items: center;
       display: flex;
     }
 
+    #backButton {
+      background-image: url('images/back.png');
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      cursor: pointer;
+      /* background-color: #666; */
+    }
+
+    #footer {
+      text-align: right;
+      color: lightgray;
+      font-size: 10px;
+    }
   </style>
 </head>
 
@@ -323,20 +337,24 @@
   <div id="buttonContainer">
     <div id="moreButton"></div>
   </div>
+  <!-- <div id="footer">书友
+    <a href="">临帖宝</a>
+    整理
+  </div> -->
   <script>
     hiddenEle()
-    // function isWeChat() {
-    //   var ua = window.navigator.userAgent.toLowerCase();
-    //   return ua.indexOf('micromessenger') !== -1;
-    // }
-    // if (!isWeChat()) {
-    //   alert('请关注公众号“临帖宝”，使用“田楷字典”！');
-    //   window.opener = null;
-    //   window.close();
-    //   setTimeout(function () {
-    //     window.history.back();
-    //   }, 100);
-    // }
+    function isWeChat() {
+      var ua = window.navigator.userAgent.toLowerCase();
+      return ua.indexOf('micromessenger') !== -1;
+    }
+    if (!isWeChat()) {
+      alert('请关注公众号“临帖宝”，使用“田楷字典”！');
+      window.opener = null;
+      window.close();
+      setTimeout(function () {
+        window.history.back();
+      }, 100);
+    }
     localStorage.removeItem('searchDictKeyword', "");
     var elements = document.querySelector('.post-title__text');
     elements.textContent = localStorage.getItem('dictMore_name');
@@ -403,7 +421,7 @@
 </html>
     </div>
      
-    <div class="post-footer__meta"><p>updated at 2024-08-01</p></div> 
+    <div class="post-footer__meta"><p>更新于 2024-08-09</p></div> 
     <div class="post-entry__tags"></div> 
 </article>
 
