@@ -1,0 +1,80 @@
+
+  .segment_switch {
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin: -30px 0 0 -75px;
+    /* background: #4cd964; */
+    background: var(--main-color);
+    transition: all 0.2s ease;
+    border-radius: 25px;
+  }
+  .segment_switch span {
+    position: absolute;
+    /* width: 10px;
+    height: 10px; */
+    top: 50%;
+    left: 50%;
+    margin: -4px 0px 0px -7px;
+    background: #fff;
+    display: block;
+    /* transform: rotate(-90deg); */
+    transition: all 0.2s ease;
+    border-radius: 50%;
+
+
+  }
+  .segment_switch span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    /* margin-top: -8px; */
+    background: #fff;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  .segment_switch label {
+    cursor: pointer;
+    color: rgba(0,0,0,0.2);
+    width: 60px;
+    line-height: 50px;
+    transition: all 0.2s ease;
+  }
+  label[for=yes] {
+    position: absolute;
+    left: 0px;
+    height: 20px;
+  }
+  label[for=no] {
+    position: absolute;
+    right: 0px;
+  }
+  #no:checked ~ .segment_switch {
+    background: #ff3b30;
+    background: var(--main-color);
+  }
+  /* #no:checked ~ .switch span {
+    background: #fff;
+    margin-left: -8px;
+  } */
+  /* #no:checked ~ .switch span:after {
+    background: #fff;
+    height: 10px;
+    margin-top: -8px;
+    margin-left: 8px;
+  } */
+  #yes:checked ~ .segment_switch label[for=yes] {
+    color: #fff;
+  }
+  #no:checked ~ .segment_switch label[for=no] {
+    color: #fff;
+  }
+  

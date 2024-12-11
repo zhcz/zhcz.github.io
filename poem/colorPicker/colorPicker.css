@@ -1,0 +1,35 @@
+
+th, td{
+  border: 1px solid white;
+  height: 30px;
+  width: 150px;
+}
+tr{
+  width: 150px;
+}
+
+#cp {
+  border: none;
+  width: 50px; /* 设置宽度 */
+  height: 50px; /* 设置高度 */
+  border-radius: 50%; /* 设置圆角为50% */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* 隐藏默认的颜色选择器图标 */
+#cp::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+#cp::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+#getcolor{
+  background: blue;
+  width: 100px;
+  border: none;
+  color: white;padding: 5px;
+  border-radius: 5px;
+}
