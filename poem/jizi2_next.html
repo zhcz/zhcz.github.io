@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo32x32.png">
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>临帖宝</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="Document                                                                                                                           #bg {             position: relative;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="临帖宝">
+<meta property="og:url" content="http://example.com/poem/jizi2_next.html">
+<meta property="og:site_name" content="临帖宝">
+<meta property="og:description" content="Document                                                                                                                           #bg {             position: relative;">
+<meta property="og:locale">
+<meta property="og:image" content="http://example.com/poem/images/mizige.png">
+<meta property="og:image" content="http://example.com/poem/images/beijingyanse.png">
+<meta property="og:image" content="http://example.com/poem/images/setting.png">
+<meta property="og:image" content="http://example.com/poem/images/close.png">
+<meta property="og:image" content="http://example.com/poem/images/mc1.png">
+<meta property="og:image" content="http://example.com/poem/images/mc2.png">
+<meta property="og:image" content="http://example.com/poem/images/mc3.png">
+<meta property="og:image" content="http://example.com/poem/images/mc4.png">
+<meta property="og:image" content="http://example.com/poem/images/close.png">
+<meta property="og:image" content="http://example.com/poem/images/close.png">
+<meta property="og:image" content="http://example.com/poem/images/close.png">
+<meta property="article:published_time" content="2024-12-11T08:55:29.364Z">
+<meta property="article:modified_time" content="2024-12-11T08:55:29.364Z">
+<meta property="article:author" content="zhanghao">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/poem/images/mizige.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
+        
+    
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="临帖宝" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">临帖宝</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="navbar-menu button">书法</a>
+                
+                    <a href="/discovery/" class="navbar-menu button">发现</a>
+                
+                    <a href="/categories/" class="navbar-menu button">分类</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/app/" class="navbar-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="navbar-menu button">投稿</a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="dropdown-menu button">书法</a>
+                
+                    <a href="/discovery/" class="dropdown-menu button">发现</a>
+                
+                    <a href="/categories/" class="dropdown-menu button">分类</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/app/" class="dropdown-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="dropdown-menu button">投稿</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2024/12/" class="post-meta__date button">2024-12-11</a>
+        
+ 
+        
+     
+    <span id="leancloud_container_page_pv" hidden>
+        <span class="separate-dot"></span>
+        <span></span>
+        <span id="leancloud_value_page_pv"></span>
+        <span>Views</span>
+    </span>
+
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+
+    <script src="leancloud.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0/jsencrypt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+    <script src="jizi2_next.js"></script>
+    <script src="jizi2_next_mi.js"></script>
+    <script src="jizi2_next_color.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="jizi2_switch.js"></script>
+    <script src="jizi2_next_setting.js"></script>
+    <script src="slider/slider.js"></script>
+    <script type="text/javascript" src="colorPicker/colorPicker.js"></script>
+    <script type="module" src="jizi2_slider.js"></script>
+    <script src="jizi2_next_change.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="colorPicker/colorPicker.css" />
+    <link rel="stylesheet" href="css/shufaDictCSS.css">
+    <link rel="stylesheet" href="jizi2_slider.css">
+    <link rel="stylesheet" href="jizi2_switch.css">
+    <link rel="stylesheet" href="slider/slider.css">
+    <link rel="stylesheet" href="jizi2_next_frame.css">
+    <link rel="stylesheet" href="css/select_button.css">
+    
+    <style>
+        #bg {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        #container {
+            position: relative;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        #container2 {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            /* padding-top: 30px; */
+            overflow-y: auto;
+            height: 280px;
+            flex-direction: row;
+            align-content: flex-start;
+
+        }
+
+        .card img {
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+            z-index: 1;
+        }
+
+        .card {
+            border-radius: 5px;
+            width: 20%;
+            height: 25%;
+            padding: 5px;
+            overflow: hidden;
+            transition: transform 0.5s;
+            position: relative;
+        }
+
+        #imageContainer {
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgBg {
+            width: 50px;
+            height: 50px;
+            border-radius: 0px !important;
+            position: absolute;
+        }
+
+        .imgBg img {
+            width: 50px;
+            height: 50px;
+            border-radius: 0px !important;
+            position: absolute;
+        }
+
+        #buttonC {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        #backButton {
+            background-image: url('images/back.png');
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        #saveButton {
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .mizige {
+            position: absolute;
+            display: none;
+        }
+
+        #modal {
+            display: none;
+            /* 默认隐藏 */
+            position: fixed;
+            height: 100px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--bg-content-color);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            height: 150px;
+        }
+
+        .switch_container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            width: 70px;
+            height: 30px;
+            display: flex;
+            /* background-color: brown; */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal2 {
+            display: none;
+            /* 默认隐藏 */
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--bg-content-color);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            height: 350px;
+            transition: opacity 0.5s ease;
+            /* 设置过渡效果 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="buttonC">
+        <div id="backButton"></div>
+        <!-- <div id="saveButton">保存</div> -->
+    </div>
+    <div id="bg">
+        <div id="container">
+            <div id="imageContainer"></div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <img id="button1" src="images/mizige.png" alt="按钮1" width="50" height="50" onclick="return false;">
+        <img id="button2" src="images/beijingyanse.png" alt="按钮2" width="50" height="50" onclick="return false;">
+        <img id="button3" src="images/setting.png" alt="按钮3" width="30" height="30" onclick="return false;">
+    </div>
+    <div class="button-container">
+        <form action="">
+            <input type="radio" name="rdo" id="yes" checked />
+            <input type="radio" name="rdo" id="no" />
+            <div class="segment_switch">
+                <label for="yes">楷书</label>
+                <label for="no">行书</label>
+                <span></span>
+            </div>
+        </form>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+    <!-- 米字格弹窗 -->
+    <div id="modal" class="modal">
+        <img id="closeModalBtn" class="close-btn" src="images/close.png" width="30" height="30"
+            onclick="return false;"></img>
+
+        <div class="button-container">
+            <img id="modalButton1" src="images/mc1.png" alt="按钮1" onclick="return false;">
+            <img id="modalButton2" src="images/mc2.png" alt="按钮2" onclick="return false;">
+            <img id="modalButton3" src="images/mc3.png" alt="按钮3" onclick="return false;">
+            <img id="modalButton4" src="images/mc4.png" alt="按钮3" onclick="return false;">
+        </div>
+
+        <div class="switch_container">
+            <div class="switch">
+                <input id="one" class="input" type="checkbox" />
+                <label for="one" class="slider"></label>
+                <label for="one" class="label"></label>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 颜色设置 -->
+    <div id="color_modal" class="modal">
+        <img id="color_closeModalBtn" class="close-btn" src="images/close.png" width="30" height="30"
+            onclick="return false;"></img>
+        <div style="padding-bottom: 10px;">背景颜色</div>
+        <input type="color" id="cp" value="#F5F5F5">
+
+        </ul>
+    </div>
+
+    <!-- 其他设置 -->
+    <div id="setting_modal" class="modal2">
+
+        <img id="setting_closeModalBtn" class="close-btn" src="images/close.png" width="30" height="30"
+            onclick="return false;"></img>
+
+        <div style="padding-bottom: 10px;">每列图片数量</div>
+        <ul class="pagination">
+            <li class="page-prev">
+                <a class="prev" href="#"><svg t="1580195949197" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="4493" width="20" height="20">
+                        <path
+                            d="M906.78272 588.78976c-0.02048 8.4992-6.88128 15.36-15.38048 15.37024l-443.6992-0.01024 75.70432 191.68256c2.51904 6.42048 0.48128 13.76256-5.03808 17.90976-5.51936 4.16768-13.13792 4.1472-18.61632-0.09216l-376.5248-289.47456c-3.77856-2.89792-6.00064-7.41376-6.00064-12.16512 0-4.78208 2.22208-9.27744 6.00064-12.1856l376.5248-289.47456c2.7648-2.11968 6.06208-3.19488 9.37984-3.19488 3.23584 0 6.5024 1.03424 9.23648 3.10272 5.51936 4.1472 7.5776 11.48928 5.03808 17.90976L447.68256 419.84l443.71968-0.01024c8.4992 0.01024 15.36 6.88128 15.36 15.36L906.78272 588.78976z"
+                            p-id="4494" fill="#777777"></path>
+                    </svg></a>
+            </li>
+
+            <li class="page-number"><a href="#">4</a></li>
+            <li class="page-number active"><a href="#">5</a></li>
+            <li class="page-number"><a href="#">6</a></li>
+            <li class="page-number"><a href="#">7</a></li>
+            <li class="page-number"><a href="#">8</a></li>
+            <li class="page-next">
+                <a class="next" href="#"><svg t="1580195920917" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="4995" width="20" height="20">
+                        <path
+                            d="M906.77248 512c0 4.77184-2.21184 9.2672-5.9904 12.17536l-376.5248 289.4848c-2.7648 2.11968-6.06208 3.18464-9.3696 3.18464-3.25632 0-6.5024-1.03424-9.24672-3.09248-5.50912-4.15744-7.5776-11.48928-5.03808-17.90976l75.71456-191.67232L132.58752 604.17024c-8.48896 0-15.36-6.88128-15.36-15.36l0-153.6c0-8.48896 6.87104-15.36 15.36-15.36l443.72992 0-75.71456-191.68256c-2.53952-6.42048-0.47104-13.75232 5.04832-17.90976 5.50912-4.15744 13.12768-4.13696 18.60608 0.09216l376.5248 289.4848C904.56064 502.7328 906.77248 507.22816 906.77248 512z"
+                            p-id="4996" fill="#777777"></path>
+                    </svg></a>
+            </li>
+        </ul>
+
+        <div class="range-slider">
+            <div class="range-slider__range_margin" style="padding-bottom: 0px;">边距（50）</div>
+            <input class="range-slider__range" type="range" value="50" min="0" max="100">
+            <!-- <span class="range-slider__value">33</span> -->
+        </div>
+
+
+        <div class="range-slider">
+            <div class="range-slider__range_radius" style="padding-bottom: 0px;">圆角（10）</div>
+            <input class="range-slider__range" type="range" value="10" min="0" max="30">
+        </div>
+
+        <div class="range-slider">
+            <div class="range-slider__range_leftright" style="padding-bottom: 0px;">位置（0）</div>
+            <input class="range-slider__range" type="range" value="0" min="-20" max="20">
+        </div>
+
+    </div>
+
+    <!-- 更换字 -->
+    <div id="change_modal" class="modal2">
+        <img id="change_closeModalBtn" class="close-btn" src="images/close.png" width="30" height="30"
+            onclick="return false;"></img>
+        <div id="container2"></div>
+    </div>
+
+    
+</body>
+<script>
+
+    var dataArray = []
+    var number = 5
+    var currentImg = null
+    var currentImgIndex = 0
+    initLeanCloud()
+    setupUI()
+    initData(5)
+    setupSwitch()
+    rangeSlider();
+    // var saveButton = document.getElementById('saveButton');
+    // saveButton.addEventListener('click', function () {
+    //     savaPic()
+    // });
+    var postTitle = document.querySelector('.post-title');
+     postTitle.style.display = 'none';
+
+     var headeRight = document.querySelector('.header__right');
+    headeRight.style.display = 'none';
+
+    var headeLeft = document.querySelector('.header__left');
+    headeLeft.style.display = 'none';
+    
+    // 添加 change 事件监听器
+    document.getElementById('cp').addEventListener('change', function (event) {
+        const selectedColor = event.target.value;
+        const container = document.getElementById('container');
+        container.style.backgroundColor = selectedColor;
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var radioButtons = document.querySelectorAll('input[type="radio"][name="rdo"]');
+
+        radioButtons.forEach(function (radio) {
+            radio.addEventListener('change', function () {
+                if (this.checked) {
+                    if (this.id === 'yes') {
+                        console.log('楷书被选中');
+                        // 在这里添加楷书被选中时的逻辑
+                        localStorage.setItem('dict_className', "danzi");
+                        document.getElementById("imageContainer").innerHTML = "";
+                        initData(number);
+                    } else if (this.id === 'no') {
+                        console.log('行书被选中');
+                        localStorage.setItem('dict_className', "danzi_tianyingzhang_xingshu");
+                        // 在这里添加行书被选中时的逻辑
+                        document.getElementById("imageContainer").innerHTML = "";
+                        initData(number);
+                    }
+                }
+            });
+        });
+    });
+
+    
+
+</script>
+
+</html>
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2024-12-11</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+    
+        <span id="leancloud_container_site_uv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_uv"></span>
+            <span>Viewers</span>
+            
+                <span>|</span>
+            
+        </span>
+    
+    
+        <span id="leancloud_container_site_pv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_pv"></span>
+            <span>Views</span>
+            
+        </span>
+    
+
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022&nbsp;-&nbsp;2025 <a href="/">临帖宝</a>
+        </p>
+    
+    
+    <!-- <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p> -->
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?448902475a10578c4b5236aad9784d9c';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+    <script>
+        (function () {
+            function getRecord(Counter, target) {
+                return new Promise(function (resolve, reject) {
+                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+                        .then(response => response.json())
+                        .then(({results}) => {
+                            if (results && results.length > 0) {
+                                var record = results[0];
+                                resolve(record);
+                            } else {
+                                Counter('post', '/classes/Counter', {
+                                        target, time: 0
+                                    })
+                                    .then(response => response.json())
+                                    .then(record => {
+                                        resolve(record);
+                                    }).catch(error => {
+                                        console.error('Failed to create', error);
+                                        reject(error);
+                                    });
+                            }
+                        }).catch(error => {
+                            console.error('LeanCloud Counter Error', error);
+                            reject(error);
+                        });
+                })
+            }
+        
+            function buildIncrement(objectId) {
+                return {
+                    "method": "PUT",
+                    "path": `/1.1/classes/Counter/${ objectId }`,
+                    "body": {
+                        "time": {
+                            '__op': 'Increment',
+                            'amount': 1
+                        }
+                    }
+                }
+            }
+        
+            function increment(Counter, incrArr) {
+                return new Promise(function (resolve, reject) {
+                    Counter('post', '/batch', {
+                        "requests": incrArr
+                    }).then((res) => {
+                        resolve(res);
+                    }).catch(error => {
+                        console.error('Failed to save visitor count', error);
+                        reject(error);
+                    });
+                });
+            }
+        
+            function validUV() {
+                var key = 'LeanCloud_UV_Flag';
+                var flag = localStorage.getItem(key);
+                if (flag) {
+                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
+                        return false;
+                    }
+                }
+                localStorage.setItem(key, new Date().getTime().toString());
+                return true;
+            }
+        
+            function addCount(Counter) {
+                var enableIncr = 'leancloud' === 'leancloud';
+                var getterArr = [];
+                var incrArr = [];
+                var pvCtn = document.querySelector('#leancloud_container_site_pv');
+                if (pvCtn || enableIncr) {
+                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+                        incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_pv');
+                        if (ele) {
+                            ele.innerText = record.time + 1;
+                            if (pvCtn) {
+                                pvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(pvGetter);
+                }
+                var uvCtn = document.querySelector('#leancloud_container_site_uv');
+                if (uvCtn || enableIncr) {
+                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+                        var vuv = validUV();
+                        vuv && incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_uv');
+                        if (ele) {
+                            ele.innerText = record.time + (vuv ? 1 : 0);
+                            if (uvCtn) {
+                                uvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(uvGetter);
+                }
+                if ('false' === 'true') {
+                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
+                    if (viewCtn || enableIncr) {
+                        var target = decodeURI('/poem/jizi2_next.html');
+                        var viewGetter = getRecord(Counter, target).then((record) => {
+                            incrArr.push(buildIncrement(record.objectId))
+                            if (viewCtn) {
+                                var ele = document.querySelector('#leancloud_value_page_pv');
+                                if (ele) {
+                                    ele.innerText = (record.time || 0) + 1;
+                                    viewCtn.style.display = 'inline';
+                                }
+                            }
+                        });
+                        getterArr.push(viewGetter);
+                    }
+                }
+                if (enableIncr) {
+                    Promise.all(getterArr).then(() => {
+                        incrArr.length > 0 && increment(Counter, incrArr);
+                    })
+                }
+            }
+        
+            var app_id = 'ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz';
+            var app_key = 'bJozAX2UEPCNqmriHhTiceIc';
+            var server_url = 'https://api.lintiebao.cn';
+        
+            function fetchData(api_server) {
+                var Counter = (method, url, data) => {
+                    return fetch(`${ api_server }/1.1${ url }`, {
+                        method,
+                        headers: {
+                                'X-LC-Id': app_id,
+                                'X-LC-Key': app_key,
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data)
+                    });
+                };
+                addCount(Counter);
+            }
+            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+            if (api_server) {
+                fetchData(api_server);
+            } else {
+                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+                    .then(response => response.json())
+                    .then(({api_server}) => {
+                        fetchData('https://' + api_server);
+                    });
+            }
+        })();
+    </script>
+
+ 
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('false'),
+            auto_fancybox = Boolean('true')
+        if (auto_fancybox) {
+            if ($('.post__content .individual-images').length > 0) {
+                        console.log('individual-images')
+                        $(".post__content").find('.individual-images').each(function () {
+                        var element = document.createElement("a");
+                        $(element).attr("data-fancybox", "gallery");
+                        $(element).attr("href", $(this).attr("src"));
+                        if (lazyloadT) {
+                            $(element).attr("href", $(this).attr("data-srcset"));
+                        }
+                        $(this).wrap(element);
+                    });
+                }else{
+                    $(".post__content").find('img').each(function () {
+                    var element = document.createElement("a");
+                    $(element).attr("data-fancybox", "gallery");
+                    $(element).attr("href", $(this).attr("src"));
+                    if (lazyloadT) {
+                        $(element).attr("href", $(this).attr("data-srcset"));
+                    }
+                    $(this).wrap(element);
+                });
+            }
+
+            
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
+ 
+
+ 
+
+ 
+
+
+    <script src='https://cdn.jsdelivr.net/npm/mermaid@8.10.2/dist/mermaid.min.js'></script>
+    <script>
+            mermaid.initialize(JSON.stringify(''));
+    </script>
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo32x32.png">
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>js13kGames参赛优秀作品 | 临帖宝</title>
+
+
+    <meta name="keywords" content="js13kGames">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="1、Space Huggers 太空拥抱者github    2、Space Block Invaders 太空方块入侵者github    3、Q1K3github    4、The Adventures of Captain Callisto 卡利斯托船长的历险记github    5、Hit the space! 击中空间github    6、Black Hole Square 黑洞广场g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js13kGames参赛优秀作品">
+<meta property="og:url" content="http://example.com/posts/31404.html">
+<meta property="og:site_name" content="临帖宝">
+<meta property="og:description" content="1、Space Huggers 太空拥抱者github    2、Space Block Invaders 太空方块入侵者github    3、Q1K3github    4、The Adventures of Captain Callisto 卡利斯托船长的历险记github    5、Hit the space! 击中空间github    6、Black Hole Square 黑洞广场g">
+<meta property="og:locale">
+<meta property="article:published_time" content="2023-10-18T01:06:34.000Z">
+<meta property="article:modified_time" content="2023-10-18T01:44:01.000Z">
+<meta property="article:author" content="zhanghao">
+<meta property="article:tag" content="js13kGames">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
+        
+    
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="临帖宝" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">临帖宝</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="navbar-menu button">书法</a>
+                
+                    <a href="/discovery/" class="navbar-menu button">发现</a>
+                
+                    <a href="/categories/" class="navbar-menu button">分类</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/app/" class="navbar-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="navbar-menu button">投稿</a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="dropdown-menu button">书法</a>
+                
+                    <a href="/discovery/" class="dropdown-menu button">发现</a>
+                
+                    <a href="/categories/" class="dropdown-menu button">分类</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/app/" class="dropdown-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="dropdown-menu button">投稿</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        js13kGames参赛优秀作品
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2023/10/" class="post-meta__date button">2023-10-18</a>
+        
+    <span class="separate-dot"></span><a href="/categories/js13kGames/" class="button">js13kGames</a>
+
+ 
+        
+     
+    <span id="leancloud_container_page_pv" hidden>
+        <span class="separate-dot"></span>
+        <span></span>
+        <span id="leancloud_value_page_pv"></span>
+        <span>Views</span>
+    </span>
+
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h3 id="1、Space-Huggers-太空拥抱者"><a href="#1、Space-Huggers-太空拥抱者" class="headerlink" title="1、Space Huggers 太空拥抱者"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/space-huggers/index.html">1、Space Huggers 太空拥抱者</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/KilledByAPixel/SpaceHuggers">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/space-huggers-2.mp4?_=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="2、Space-Block-Invaders-太空方块入侵者"><a href="#2、Space-Block-Invaders-太空方块入侵者" class="headerlink" title="2、Space Block Invaders 太空方块入侵者"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/space-block-invaders/index.html">2、Space Block Invaders 太空方块入侵者</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/nicklaslof/space-block-invaders">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/space-block-invaders-no-lb.mp4?_=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="3、Q1K3"><a href="#3、Q1K3" class="headerlink" title="3、Q1K3"></a><a target="_blank" rel="noopener" href="https://github.blog/wp-content/uploads/2021/09/q13k-no-lb.mp4?_=3">3、Q1K3</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/phoboslab/q1k3">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/q13k-no-lb.mp4?_=3" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="4、The-Adventures-of-Captain-Callisto-卡利斯托船长的历险记"><a href="#4、The-Adventures-of-Captain-Callisto-卡利斯托船长的历险记" class="headerlink" title="4、The Adventures of Captain Callisto 卡利斯托船长的历险记"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/the-adventures-of-captain-callisto/index.html">4、The Adventures of Captain Callisto 卡利斯托船长的历险记</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/codyebberson/js13k-callisto">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/adventure-of-captain-callisto.mp4?_=4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="5、Hit-the-space-击中空间"><a href="#5、Hit-the-space-击中空间" class="headerlink" title="5、Hit the space! 击中空间"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/hit-the-space/index.html">5、Hit the space! 击中空间</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/Kimbatt/js13k-2021">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/hit-the-space.mp4?_=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="6、Black-Hole-Square-黑洞广场"><a href="#6、Black-Hole-Square-黑洞广场" class="headerlink" title="6、Black Hole Square 黑洞广场"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/black-hole-square/index.html">6、Black Hole Square 黑洞广场</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/Quinten/black-hole-square">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/black-hole-square.mp4?_=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="7、Tenacity-韧性"><a href="#7、Tenacity-韧性" class="headerlink" title="7、Tenacity 韧性"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/tenacity/index.html">7、Tenacity 韧性</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/GregPeck/tenacity">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/tenacity.mp4?_=7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="8、Safe-Space-安全空间"><a href="#8、Safe-Space-安全空间" class="headerlink" title="8、Safe Space 安全空间"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/safe-space/index.html">8、Safe Space 安全空间</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/ericdrowell/SafeSpace">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/safe-space-no-lb.mp4?_=8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="9、Galaxy-Rider-银河骑士"><a href="#9、Galaxy-Rider-银河骑士" class="headerlink" title="9、Galaxy Rider 银河骑士"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/galaxy-rider/index.html">9、Galaxy Rider 银河骑士</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/jaburns/js13k2021">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/galaxy-rider-1.mp4?_=9" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="10、Beat-Rocks-击败岩石"><a href="#10、Beat-Rocks-击败岩石" class="headerlink" title="10、Beat Rocks 击败岩石"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/beat-rocks/index.html">10、Beat Rocks 击败岩石</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/Kos/js13k-2021">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/asteroids-rhythm.mp4?_=10" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="11、PACKABUNCHAS-帕卡本查斯"><a href="#11、PACKABUNCHAS-帕卡本查斯" class="headerlink" title="11、PACKABUNCHAS 帕卡本查斯"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/packabunchas/index.html">11、PACKABUNCHAS 帕卡本查斯</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/MattiaFortunati/packabunchas">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/10/packa-bunchas.mp4?_=11" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="12、Space-Garden-太空花园"><a href="#12、Space-Garden-太空花园" class="headerlink" title="12、Space Garden 太空花园"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/space-garden/index.html">12、Space Garden 太空花园</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/Rybar/JS13k2021">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/space-garden-2.mp4?_=12" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="13、The-Maze-of-Space-Goblins-太空妖精迷宫"><a href="#13、The-Maze-of-Space-Goblins-太空妖精迷宫" class="headerlink" title="13、The Maze of Space Goblins 太空妖精迷宫"></a><a target="_blank" rel="noopener" href="https://js13kgames.com/games/the-maze-of-space-goblins/index.html">13、The Maze of Space Goblins 太空妖精迷宫</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/jani-nykanen/the-maze-of-space-goblins">github</a></p>
+<iframe src="https://github.blog/wp-content/uploads/2021/09/space-goblin.mp4?_=13" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id=""><a href="#" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p>
+<iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="-1"><a href="#-1" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p>
+<iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="-2"><a href="#-2" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p>
+<iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="-3"><a href="#-3" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p>
+<iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<p><a target="_blank" rel="noopener" href="https://js13kgames.com/entries/2023">更多…</a></p>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2023-10-18</p></div> 
+    <div class="post-entry__tags"><a href="/tags/js13kGames/" class="post-tags__link button"># js13kGames</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/posts/60424.html" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            那些有趣有用的网站
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/posts/54091.html" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            JS13K 2022 获奖者 🏆
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+    <div class="post__comments content-card" id="comment">
+        
+    <h4>Comments</h4>
+    
+    
+    
+    <div id="valine_container" class="valine_thread"></div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    </div>
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+    
+        <span id="leancloud_container_site_uv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_uv"></span>
+            <span>Viewers</span>
+            
+                <span>|</span>
+            
+        </span>
+    
+    
+        <span id="leancloud_container_site_pv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_pv"></span>
+            <span>Views</span>
+            
+        </span>
+    
+
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022&nbsp;-&nbsp;2025 <a href="/">临帖宝</a>
+        </p>
+    
+    
+    <!-- <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p> -->
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?448902475a10578c4b5236aad9784d9c';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+    <script>
+        (function () {
+            function getRecord(Counter, target) {
+                return new Promise(function (resolve, reject) {
+                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+                        .then(response => response.json())
+                        .then(({results}) => {
+                            if (results && results.length > 0) {
+                                var record = results[0];
+                                resolve(record);
+                            } else {
+                                Counter('post', '/classes/Counter', {
+                                        target, time: 0
+                                    })
+                                    .then(response => response.json())
+                                    .then(record => {
+                                        resolve(record);
+                                    }).catch(error => {
+                                        console.error('Failed to create', error);
+                                        reject(error);
+                                    });
+                            }
+                        }).catch(error => {
+                            console.error('LeanCloud Counter Error', error);
+                            reject(error);
+                        });
+                })
+            }
+        
+            function buildIncrement(objectId) {
+                return {
+                    "method": "PUT",
+                    "path": `/1.1/classes/Counter/${ objectId }`,
+                    "body": {
+                        "time": {
+                            '__op': 'Increment',
+                            'amount': 1
+                        }
+                    }
+                }
+            }
+        
+            function increment(Counter, incrArr) {
+                return new Promise(function (resolve, reject) {
+                    Counter('post', '/batch', {
+                        "requests": incrArr
+                    }).then((res) => {
+                        resolve(res);
+                    }).catch(error => {
+                        console.error('Failed to save visitor count', error);
+                        reject(error);
+                    });
+                });
+            }
+        
+            function validUV() {
+                var key = 'LeanCloud_UV_Flag';
+                var flag = localStorage.getItem(key);
+                if (flag) {
+                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
+                        return false;
+                    }
+                }
+                localStorage.setItem(key, new Date().getTime().toString());
+                return true;
+            }
+        
+            function addCount(Counter) {
+                var enableIncr = 'leancloud' === 'leancloud';
+                var getterArr = [];
+                var incrArr = [];
+                var pvCtn = document.querySelector('#leancloud_container_site_pv');
+                if (pvCtn || enableIncr) {
+                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+                        incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_pv');
+                        if (ele) {
+                            ele.innerText = record.time + 1;
+                            if (pvCtn) {
+                                pvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(pvGetter);
+                }
+                var uvCtn = document.querySelector('#leancloud_container_site_uv');
+                if (uvCtn || enableIncr) {
+                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+                        var vuv = validUV();
+                        vuv && incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_uv');
+                        if (ele) {
+                            ele.innerText = record.time + (vuv ? 1 : 0);
+                            if (uvCtn) {
+                                uvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(uvGetter);
+                }
+                if ('true' === 'true') {
+                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
+                    if (viewCtn || enableIncr) {
+                        var target = decodeURI('/posts/31404.html');
+                        var viewGetter = getRecord(Counter, target).then((record) => {
+                            incrArr.push(buildIncrement(record.objectId))
+                            if (viewCtn) {
+                                var ele = document.querySelector('#leancloud_value_page_pv');
+                                if (ele) {
+                                    ele.innerText = (record.time || 0) + 1;
+                                    viewCtn.style.display = 'inline';
+                                }
+                            }
+                        });
+                        getterArr.push(viewGetter);
+                    }
+                }
+                if (enableIncr) {
+                    Promise.all(getterArr).then(() => {
+                        incrArr.length > 0 && increment(Counter, incrArr);
+                    })
+                }
+            }
+        
+            var app_id = 'ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz';
+            var app_key = 'bJozAX2UEPCNqmriHhTiceIc';
+            var server_url = 'https://api.lintiebao.cn';
+        
+            function fetchData(api_server) {
+                var Counter = (method, url, data) => {
+                    return fetch(`${ api_server }/1.1${ url }`, {
+                        method,
+                        headers: {
+                                'X-LC-Id': app_id,
+                                'X-LC-Key': app_key,
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data)
+                    });
+                };
+                addCount(Counter);
+            }
+            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+            if (api_server) {
+                fetchData(api_server);
+            } else {
+                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+                    .then(response => response.json())
+                    .then(({api_server}) => {
+                        fetchData('https://' + api_server);
+                    });
+            }
+        })();
+    </script>
+
+ 
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('false'),
+            auto_fancybox = Boolean('true')
+        if (auto_fancybox) {
+            if ($('.post__content .individual-images').length > 0) {
+                        console.log('individual-images')
+                        $(".post__content").find('.individual-images').each(function () {
+                        var element = document.createElement("a");
+                        $(element).attr("data-fancybox", "gallery");
+                        $(element).attr("href", $(this).attr("src"));
+                        if (lazyloadT) {
+                            $(element).attr("href", $(this).attr("data-srcset"));
+                        }
+                        $(this).wrap(element);
+                    });
+                }else{
+                    $(".post__content").find('img').each(function () {
+                    var element = document.createElement("a");
+                    $(element).attr("data-fancybox", "gallery");
+                    $(element).attr("href", $(this).attr("src"));
+                    if (lazyloadT) {
+                        $(element).attr("href", $(this).attr("data-srcset"));
+                    }
+                    $(this).wrap(element);
+                });
+            }
+
+            
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
+ 
+
+ 
+
+ 
+
+
+    <script src='https://cdn.jsdelivr.net/npm/mermaid@8.10.2/dist/mermaid.min.js'></script>
+    <script>
+            mermaid.initialize(JSON.stringify(''));
+    </script>
+ 
+
+ 
+
+
+    
+
+    
+
+    
+    
+    <script>
+        function loadComment() {
+            let e;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+                var valineConfig = {"appId":"ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz","appKey":"bJozAX2UEPCNqmriHhTiceIc","placeholder":"说点什么吧！","path":null,"avatar":null,"meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"highlight":null,"avatarForce":null,"recordIP":true,"serverURLs":"https://api.yuedingdaojia.cn","enableQQ":true,"requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
+                valineConfig.el = '#valine_container';
+                for (var i in valineConfig) {
+                    if (valineConfig[i] === null) delete valineConfig[i];
+                }
+                new Valine(valineConfig);
+            };
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+
+    </body>
+</html>

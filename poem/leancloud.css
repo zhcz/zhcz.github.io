@@ -1,0 +1,69 @@
+.poem-card {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+  }
+  .poem-card:hover {
+    cursor: pointer;
+    /* 其他鼠标状态样式 */
+  }
+  .poem-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .poem-author {
+    color: #666;
+    margin-bottom: 5px;
+  }
+  .poem-content {
+    max-height: 3.6em; /* 2 * line-height * lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .icon {
+    width: 24px; /* 设置图标宽度 */
+    height: 24px; /* 设置图标高度 */
+  }
+  .data {
+    opacity: 0; /* 初始时将数据的透明度设置为0，隐藏数据 */
+    transition: opacity 0.5s ease; /* 添加过渡动画效果 */
+  }
+
+  .title {
+    display: inline-block; /* 使用inline-block让h1和h2在同一行显示 */
+    vertical-align: bottom; /* 让h1和h2底部对齐 */
+  }
+ 
+  /* @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */
+  h1 {
+    display: inline-block; /* 使用inline-block让h1和h2在同一行显示 */
+    vertical-align: bottom; /* 让h1和h2底部对齐 */
+  }
+  .btn-search {
+    align-items: right;
+    color: var(--main-color);
+  }
+  a {
+    text-align: right;
+    color: var(--main-color);
+  }
+  #moreButton {
+    background-image: url('images/jiazaigengduo.png');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+ }
+
+ #buttonContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
