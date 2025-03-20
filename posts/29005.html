@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo32x32.png">
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>解压网站—GraphSynth | 临帖宝</title><meta name="robots" content="noindex">
+
+
+    <meta name="keywords" content="解压网站">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="玩乐会！GraphSynth– 如何使用 通过拖动移动节点。  通过将一个节点拖动到另一个节点来连接节点。  切断电缆并通过斜线移除节点。正斜杠会切断电缆或移除节点。  选择多个节点并移动它们。  点击一个节点两次以打开编辑菜单。  模块化图形的一部分。  进入模块内部和外部。  复制并粘贴图形的一部分。  保存和加载图表。  打开示例，玩得开心！   技巧 在移动设备上，使用两根手指平移和缩放视">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解压网站—GraphSynth">
+<meta property="og:url" content="http://example.com/posts/29005.html">
+<meta property="og:site_name" content="临帖宝">
+<meta property="og:description" content="玩乐会！GraphSynth– 如何使用 通过拖动移动节点。  通过将一个节点拖动到另一个节点来连接节点。  切断电缆并通过斜线移除节点。正斜杠会切断电缆或移除节点。  选择多个节点并移动它们。  点击一个节点两次以打开编辑菜单。  模块化图形的一部分。  进入模块内部和外部。  复制并粘贴图形的一部分。  保存和加载图表。  打开示例，玩得开心！   技巧 在移动设备上，使用两根手指平移和缩放视">
+<meta property="og:locale">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/move.gif">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/connect.gif">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/slash.gif">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/select.gif">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/edit.gif">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/modularize.gif">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/inout.gif">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/copy.gif">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/save.gif">
+<meta property="og:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/examples.gif">
+<meta property="article:published_time" content="2023-08-09T05:51:07.000Z">
+<meta property="article:modified_time" content="2023-08-28T07:42:01.000Z">
+<meta property="article:author" content="zhanghao">
+<meta property="article:tag" content="解压网站">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://github.com/saharan/GraphSynth/raw/master/tutorial/move.gif">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
+        
+    
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="临帖宝" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">临帖宝</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="navbar-menu button">书法</a>
+                
+                    <a href="/discovery/" class="navbar-menu button">发现</a>
+                
+                    <a href="/categories/" class="navbar-menu button">分类</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/app/" class="navbar-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="navbar-menu button">投稿</a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="dropdown-menu button">书法</a>
+                
+                    <a href="/discovery/" class="dropdown-menu button">发现</a>
+                
+                    <a href="/categories/" class="dropdown-menu button">分类</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/app/" class="dropdown-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="dropdown-menu button">投稿</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        解压网站—GraphSynth
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2023/08/" class="post-meta__date button">2023-08-09</a>
+        
+    <span class="separate-dot"></span><a href="/categories/%E8%A7%A3%E5%8E%8B%E7%BD%91%E7%AB%99/" class="button">解压网站</a>
+
+ 
+        
+     
+    <span id="leancloud_container_page_pv" hidden>
+        <span class="separate-dot"></span>
+        <span></span>
+        <span id="leancloud_value_page_pv"></span>
+        <span>Views</span>
+    </span>
+
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <p>玩乐会！<br><a target="_blank" rel="noopener" href="https://saharan.github.io/GraphSynth/">GraphSynth</a><br>–</p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><ol>
+<li><p>通过拖动移动节点。<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/move.gif"></p>
+</li>
+<li><p>通过将一个节点拖动到另一个节点来连接节点。<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/connect.gif"></p>
+</li>
+<li><p>切断电缆并通过斜线移除节点。<br>正斜杠会切断电缆或移除节点。<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/slash.gif"></p>
+</li>
+<li><p>选择多个节点并移动它们。<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/select.gif"></p>
+</li>
+<li><p>点击一个节点两次以打开编辑菜单。<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/edit.gif"></p>
+</li>
+<li><p>模块化图形的一部分。<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/modularize.gif"></p>
+</li>
+<li><p>进入模块内部和外部。<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/inout.gif"></p>
+</li>
+<li><p>复制并粘贴图形的一部分。<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/copy.gif"></p>
+</li>
+<li><p>保存和加载图表。<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/save.gif"></p>
+</li>
+<li><p>打开示例，玩得开心！<br><img src="https://github.com/saharan/GraphSynth/raw/master/tutorial/examples.gif"></p>
+</li>
+</ol>
+<h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><ul>
+<li>在移动设备上，使用两根手指平移和缩放视图。</li>
+<li>在PC上，您可以使用一些常见的快捷键。</li>
+</ul>
+<!-- flag of hidden posts -->
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2023-08-28</p></div> 
+    <div class="post-entry__tags"><a href="/tags/%E8%A7%A3%E5%8E%8B%E7%BD%91%E7%AB%99/" class="post-tags__link button"># 解压网站</a></div> 
+</article>
+
+
+
+
+    <div class="post__comments content-card" id="comment">
+        
+    <h4>Comments</h4>
+    
+    
+    
+    <div id="valine_container" class="valine_thread"></div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    </div>
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+    
+        <span id="leancloud_container_site_uv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_uv"></span>
+            <span>Viewers</span>
+            
+                <span>|</span>
+            
+        </span>
+    
+    
+        <span id="leancloud_container_site_pv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_pv"></span>
+            <span>Views</span>
+            
+        </span>
+    
+
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022&nbsp;-&nbsp;2025 <a href="/">临帖宝</a>
+        </p>
+    
+    
+    <!-- <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p> -->
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?448902475a10578c4b5236aad9784d9c';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+    <script>
+        (function () {
+            function getRecord(Counter, target) {
+                return new Promise(function (resolve, reject) {
+                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+                        .then(response => response.json())
+                        .then(({results}) => {
+                            if (results && results.length > 0) {
+                                var record = results[0];
+                                resolve(record);
+                            } else {
+                                Counter('post', '/classes/Counter', {
+                                        target, time: 0
+                                    })
+                                    .then(response => response.json())
+                                    .then(record => {
+                                        resolve(record);
+                                    }).catch(error => {
+                                        console.error('Failed to create', error);
+                                        reject(error);
+                                    });
+                            }
+                        }).catch(error => {
+                            console.error('LeanCloud Counter Error', error);
+                            reject(error);
+                        });
+                })
+            }
+        
+            function buildIncrement(objectId) {
+                return {
+                    "method": "PUT",
+                    "path": `/1.1/classes/Counter/${ objectId }`,
+                    "body": {
+                        "time": {
+                            '__op': 'Increment',
+                            'amount': 1
+                        }
+                    }
+                }
+            }
+        
+            function increment(Counter, incrArr) {
+                return new Promise(function (resolve, reject) {
+                    Counter('post', '/batch', {
+                        "requests": incrArr
+                    }).then((res) => {
+                        resolve(res);
+                    }).catch(error => {
+                        console.error('Failed to save visitor count', error);
+                        reject(error);
+                    });
+                });
+            }
+        
+            function validUV() {
+                var key = 'LeanCloud_UV_Flag';
+                var flag = localStorage.getItem(key);
+                if (flag) {
+                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
+                        return false;
+                    }
+                }
+                localStorage.setItem(key, new Date().getTime().toString());
+                return true;
+            }
+        
+            function addCount(Counter) {
+                var enableIncr = 'leancloud' === 'leancloud';
+                var getterArr = [];
+                var incrArr = [];
+                var pvCtn = document.querySelector('#leancloud_container_site_pv');
+                if (pvCtn || enableIncr) {
+                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+                        incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_pv');
+                        if (ele) {
+                            ele.innerText = record.time + 1;
+                            if (pvCtn) {
+                                pvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(pvGetter);
+                }
+                var uvCtn = document.querySelector('#leancloud_container_site_uv');
+                if (uvCtn || enableIncr) {
+                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+                        var vuv = validUV();
+                        vuv && incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_uv');
+                        if (ele) {
+                            ele.innerText = record.time + (vuv ? 1 : 0);
+                            if (uvCtn) {
+                                uvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(uvGetter);
+                }
+                if ('true' === 'true') {
+                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
+                    if (viewCtn || enableIncr) {
+                        var target = decodeURI('/posts/29005.html');
+                        var viewGetter = getRecord(Counter, target).then((record) => {
+                            incrArr.push(buildIncrement(record.objectId))
+                            if (viewCtn) {
+                                var ele = document.querySelector('#leancloud_value_page_pv');
+                                if (ele) {
+                                    ele.innerText = (record.time || 0) + 1;
+                                    viewCtn.style.display = 'inline';
+                                }
+                            }
+                        });
+                        getterArr.push(viewGetter);
+                    }
+                }
+                if (enableIncr) {
+                    Promise.all(getterArr).then(() => {
+                        incrArr.length > 0 && increment(Counter, incrArr);
+                    })
+                }
+            }
+        
+            var app_id = 'ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz';
+            var app_key = 'bJozAX2UEPCNqmriHhTiceIc';
+            var server_url = 'https://api.lintiebao.cn';
+        
+            function fetchData(api_server) {
+                var Counter = (method, url, data) => {
+                    return fetch(`${ api_server }/1.1${ url }`, {
+                        method,
+                        headers: {
+                                'X-LC-Id': app_id,
+                                'X-LC-Key': app_key,
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data)
+                    });
+                };
+                addCount(Counter);
+            }
+            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+            if (api_server) {
+                fetchData(api_server);
+            } else {
+                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+                    .then(response => response.json())
+                    .then(({api_server}) => {
+                        fetchData('https://' + api_server);
+                    });
+            }
+        })();
+    </script>
+
+ 
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('false'),
+            auto_fancybox = Boolean('true')
+        if (auto_fancybox) {
+            if ($('.post__content .individual-images').length > 0) {
+                        console.log('individual-images')
+                        $(".post__content").find('.individual-images').each(function () {
+                        var element = document.createElement("a");
+                        $(element).attr("data-fancybox", "gallery");
+                        $(element).attr("href", $(this).attr("src"));
+                        if (lazyloadT) {
+                            $(element).attr("href", $(this).attr("data-srcset"));
+                        }
+                        $(this).wrap(element);
+                    });
+                }else{
+                    $(".post__content").find('img').each(function () {
+                    var element = document.createElement("a");
+                    $(element).attr("data-fancybox", "gallery");
+                    $(element).attr("href", $(this).attr("src"));
+                    if (lazyloadT) {
+                        $(element).attr("href", $(this).attr("data-srcset"));
+                    }
+                    $(this).wrap(element);
+                });
+            }
+
+            
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
+ 
+
+ 
+
+ 
+
+
+    <script src='https://cdn.jsdelivr.net/npm/mermaid@8.10.2/dist/mermaid.min.js'></script>
+    <script>
+            mermaid.initialize(JSON.stringify(''));
+    </script>
+ 
+
+ 
+
+
+    
+
+    
+
+    
+    
+    <script>
+        function loadComment() {
+            let e;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+                var valineConfig = {"appId":"ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz","appKey":"bJozAX2UEPCNqmriHhTiceIc","placeholder":"说点什么吧！","path":null,"avatar":null,"meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"highlight":null,"avatarForce":null,"recordIP":true,"serverURLs":"https://api.yuedingdaojia.cn","enableQQ":true,"requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
+                valineConfig.el = '#valine_container';
+                for (var i in valineConfig) {
+                    if (valineConfig[i] === null) delete valineConfig[i];
+                }
+                new Valine(valineConfig);
+            };
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+
+    </body>
+</html>

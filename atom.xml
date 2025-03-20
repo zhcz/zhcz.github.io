@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>临帖宝</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2025-03-20T03:35:27.287Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>zhanghao</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2025-每日分享</title>
+    <link href="http://example.com/posts/8247.html"/>
+    <id>http://example.com/posts/8247.html</id>
+    <published>2025-01-17T01:28:30.000Z</published>
+    <updated>2025-03-20T03:35:27.287Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="3月20日"><a href="#3月20日" class="headerlink" title="3月20日"></a>3月20日</h2><p><a href="https://aistudio.google.com/prompts/new_chat">aistudio 对话的形式修改图片</a><br><a href="https://md2card.com/zh/editor">md2card，将md文档转为好看的卡片，方便进行分享</a><br><a href="https://aiimagebg.com/zh#feature">AI绘图生成器 - 将文字描述转化为精美图像；2) 智能背景移除 - 一键去除任何图像背景；3) 图像增强 - 提升图片质量、修复模糊照片、增强细节</a><br><a href="https://zipic.5km.tech/">zipic 轻松图像压缩</a></p><h2 id="1月17日"><a href="#1月17日" class="headerlink" title="1月17日"></a>1月17日</h2><p><a href="https://www.unscreen.com/upload">取出视频的背景，导出gif</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;3月20日&quot;&gt;&lt;a href=&quot;#3月20日&quot; class=&quot;headerlink&quot; title=&quot;3月20日&quot;&gt;&lt;/a&gt;3月20日&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://aistudio.google.com/prompts/new_chat&quot;&gt;ais</summary>
+      
+    
+    
+    
+    <category term="素材" scheme="http://example.com/categories/%E7%B4%A0%E6%9D%90/"/>
+    
+    
+    <category term="每日分享" scheme="http://example.com/tags/%E6%AF%8F%E6%97%A5%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开源项目部署</title>
+    <link href="http://example.com/posts/26296.html"/>
+    <id>http://example.com/posts/26296.html</id>
+    <published>2024-10-23T01:49:39.000Z</published>
+    <updated>2024-10-23T02:02:10.681Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://music.lintiebao.cn/">音乐，基于xx云数据接口</a><br><a href="https://exquisite-squirrel-469c32.netlify.app/">二维码生成器</a><br><a href="https://sunny-centaur-80a4d9.netlify.app/">短链接，不是所有东西都是越长越好，比如链接</a><br><a href="https://taupe-eclair-708ca4.netlify.app/">大白画板</a><br><a href="https://illustrious-halva-47831c.netlify.app/">小黑画板</a><br><a href="https://beautiful-mermaid-de4bae.netlify.app/">汉字游戏</a><br><a href="https://pixelate.lintiebao.cn/">使用马赛克作画？</a><br><a href="https://imgpilot.lintiebao.cn/">你画草图，让AI帮你生成生成艺术品</a><br><a href="https://tryemoji.lintiebao.cn/">通过AI将表情符号变成令人惊叹的艺术品</a><br><a href="https://linux-command.lintiebao.cn/">搜集了601个Linux命令</a><br><a href="https://incredibox.lintiebao.cn/">Incredibox破解版</a><br><a href="https://novel.lintiebao.com/">一个概念风格的所见即所得编辑器，具有AI驱动的自动完成功能</a><br><a href="https://tldraw.lintiebao.com/">无限画布</a><br><a href="https://excalidraw.lintiebao.com/">虚拟白板，用于绘制手绘图表等草图</a><br><a href="https://minimator.app/">极简图形编辑器，虚拟白板，用于绘制手绘图表等草图</a><br><a href="https://watermark.lintiebao.cn/">图片添加水印</a><br><a href="https://gemini.lintiebao.cn/">Gemini</a><br><a href="https://removebg.lintiebao.cn/">图片移除背景，本地运行</a><br><a href="https://tinyimage.lintiebao.cn/">图片压缩，本地运行</a><br><a href="https://bigpng.lintiebao.cn/">图片放大变高清，本地运行</a><br><a href="https://poem.lintiebao.cn/">诗词文</a>   </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://music.lintiebao.cn/&quot;&gt;音乐，基于xx云数据接口&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://exquisite-squirrel-469c32.netlify.app/&quot;&gt;二维码生成器&lt;/a&gt;&lt;br&gt;&lt;a href=</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>更新记录</title>
+    <link href="http://example.com/posts/950.html"/>
+    <id>http://example.com/posts/950.html</id>
+    <published>2024-06-20T01:09:08.000Z</published>
+    <updated>2024-09-18T05:46:54.829Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="2024-9-15"><a href="#2024-9-15" class="headerlink" title="2024.9.15"></a>2024.9.15</h2><pre><code>web端更新集字功能，可一次输入多次，常用名句一键集字；</code></pre><h2 id="2024-9-9"><a href="#2024-9-9" class="headerlink" title="2024.9.9"></a>2024.9.9</h2><pre><code>行书已更新至3200字，基本覆盖常用字；名句增加2800条数据。</code></pre><h2 id="2024-9-4"><a href="#2024-9-4" class="headerlink" title="2024.9.4"></a>2024.9.4</h2><pre><code>更新集字功能，可一次输入多次，常用名句一键集字更新装裱功能    更换相框、添加背景、添加场景等更新上墙功能    AR上墙，将装裱好的作品直接订到墙上看看效果</code></pre><h2 id="2024-7-3"><a href="#2024-7-3" class="headerlink" title="2024.7.3"></a>2024.7.3</h2><h4 id="更新字帖："><a href="#更新字帖：" class="headerlink" title="更新字帖："></a>更新字帖：</h4><pre><code>田英章楷书作品合集   田英章集字《将进酒》   张即之《楷书度人经帖》   赵孟𫖯《仇锷墓志铭》   宋拓欧阳询书九成宫礼泉铭高清   唐代欧阳询《心经》楷书原拓高清   卢中南楷书《题卫夫人笔阵图后》   卢中南楷书《白居易长恨歌》   卢中南楷书《白居易琵琶行》   唐寅自书词   </code></pre><h2 id="2024-6-30"><a href="#2024-6-30" class="headerlink" title="2024.6.30"></a>2024.6.30</h2><h4 id="更新字帖：-1"><a href="#更新字帖：-1" class="headerlink" title="更新字帖："></a>更新字帖：</h4><pre><code>田英章楷书作品合集  善才寺碑［唐_魏栖梧／楷书／宋拓孤本］    欧阳询仲尼梦奠帖   田英章楷书集联   田英章楷书《林则徐十无益格言》   田英章楷书《大楷九成宫》   田英章楷书《醉翁亭记》   沈尹默楷书《禁经永字八法》   田蕴章《田氏藏本九成宫碑》   田英章《三国演义开篇词》   田英章《兰亭序（米字格版）》   田英章毛笔楷书入门教程_间架结构   田英章毛笔楷书入门教程_章法解析   </code></pre><h2 id="2024-6-29"><a href="#2024-6-29" class="headerlink" title="2024.6.29"></a>2024.6.29</h2><h4 id="更新字帖：-2"><a href="#更新字帖：-2" class="headerlink" title="更新字帖："></a>更新字帖：</h4><pre><code>田英章毛笔楷书笔法教程   田英章化度寺碑技法精解   田英章九成宫碑技法精解   田英章皇甫君碑技法精解   田英章虞恭公碑技法精解   田英章最新书法专业教程   田英章《九成宫醴泉铭》   田英章集字《将进酒》   田英章楷书《百家姓》   田英章楷书《岳阳楼记》   赵孟𫖯玄妙观重修三门记》超清扫描   雁塔圣圣序.李世民序.李治记记褚遂良书书万万韶刻   前赤壁赋.苏轼撰.民国拓本   宋黄庭坚诸上座帖   柳公权玄秘塔碑高清字帖   明唐寅自书词曲   </code></pre><h2 id="2024-6-27"><a href="#2024-6-27" class="headerlink" title="2024.6.27"></a>2024.6.27</h2><h4 id="更新字帖：-3"><a href="#更新字帖：-3" class="headerlink" title="更新字帖："></a>更新字帖：</h4><pre><code>田英章集字励志名句          田英章集字古诗20首   田英章欧楷《化度寺》   田英章欧楷《水调歌头》   田英章欧楷《沁园春雪》   田英章欧楷《桃花源记》   田英章集字帖《七律·人民解放军占领南京》   田英章欧楷《赤壁怀古》   田英章欧楷《颜氏家训》   </code></pre><h4 id="修复"><a href="#修复" class="headerlink" title="修复"></a>修复</h4><pre><code>单字详情左滑右滑切换添加回字格、米回字格、田字格等解决iOS17以下版本，图片url中文特殊符号转义问题</code></pre><h2 id="2024-6-24"><a href="#2024-6-24" class="headerlink" title="2024.6.24"></a>2024.6.24</h2><h4 id="更新字帖：-4"><a href="#更新字帖：-4" class="headerlink" title="更新字帖："></a>更新字帖：</h4><pre><code>田楷字典更新单字975个田英章《兰亭序》单字340个田英章《千字文》全尺寸图田蕴章《千字文》田蕴章《书道泽世延（行书）》田蕴章《书道泽世延（草书）》田蕴章《书道泽世延（楷书大字版）》田蕴章《书道泽世延（楷书彩色版）》田英章毛笔楷书教程_基本笔法田英章毛笔楷书教程_偏旁部首田英章毛笔楷书字汇田英章行书书法常用词语</code></pre><h3 id="2024-6-21"><a href="#2024-6-21" class="headerlink" title="2024.6.21"></a>2024.6.21</h3><h4 id="更新字帖：-5"><a href="#更新字帖：-5" class="headerlink" title="更新字帖："></a>更新字帖：</h4><pre><code>田英章落款唐人十二月朋友相闻书/唐人月仪帖嵇叔夜与山巨源绝交书 三希堂法帖（十九册）.元 赵孟𫖯纸本.台北故宫嵇叔夜与山巨源绝交书 卷.元 赵孟�𫖯 25x273cm.台北故宫宋高宗赐岳飞手敕 卷.纸本 36.7x61.5cm.台北故宫金刚经墨迹 册册册 赵赵赵 𫖯书.纸本.台北故宫宋朱熹尺牍宋元墨宝赵赵𫖯𫖯尚尺牍牍牍 牍 宋元四家书册宋四家法书卷宋人法书册四宋人法书册三宋人法书册二宋人法书册一宋眉山苏氏三世翰墨册苏氏一门法书宋诸名家墨宝</code></pre><h3 id="2024-6-20"><a href="#2024-6-20" class="headerlink" title="2024.6.20"></a>2024.6.20</h3><h4 id="更新单字帖："><a href="#更新单字帖：" class="headerlink" title="更新单字帖："></a>更新单字帖：</h4><pre><code>赵孟𫖯《寿春堂记》     赵孟𫖯《三门记》     赵孟𫖯《前后赤壁赋》     赵孟𫖯《虎丘字碑》     赵孟𫖯《归去来兮辞》   赵孟𫖯《胆巴碑》赵佶《小楷千字文》   虞世南《孔子庙堂碑》   姚孟起《临九成宫》   杨凝式《韭花帖》   颜真卿《自告身帖》   颜真卿《勤礼碑》   颜真卿《李玄靖碑》   颜真卿《多宝塔碑》   文征明《楷书明妃曲》  文征明《行草千字文》   王珣《伯远帖》    王羲之《心经》   王羲之《草诀百韵歌》   王敞《曹全碑》   苏轼《获见帖》   苏轼《寒食帖》   苏轼《归安丘园帖》   苏轼《次韵秦太虚见戏耳聋诗帖》   欧阳询《行书千字文》   欧阳询《心经》   欧阳询《九成宫_李祺本》   欧阳询《皇甫诞碑》   米芾《竹前槐后诗帖》   米芾《行书三帖卷》   米芾《蜀素帖》   米芾《苕溪诗》   米芾《论草书帖》   米芾《离骚经》   米芾《伯充帖》   柳公权《玄秘塔》   柳公权《神策军碑_北宋拓本》   黄养正《大成至圣文宣王追封碑（原刻清末拓本）》   黄庭坚《辱教帖》   黄庭坚《苦笋赋》   黄庭坚《荆州帖》   何绍基《西园雅集图记》   何绍基《临张迁碑》   汉《张迁碑》   董其昌《临苏东坡书（杭州营籍帖）》   董其昌《草书千字文墨迹本》   褚遂良《大字阴符经》   曾巩《局事贴》   蔡襄《思咏帖》   蔡襄《脚气帖》   蔡襄《安道帖》   北魏《元倪墓志》   《张玄墓志》 </code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;2024-9-15&quot;&gt;&lt;a href=&quot;#2024-9-15&quot; class=&quot;headerlink&quot; title=&quot;2024.9.15&quot;&gt;&lt;/a&gt;2024.9.15&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;web端更新集字功能，可一次输入多次，常用名句一键集字；
+&lt;/cod</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>故宫博物院数字文物库拼接图如何下载</title>
+    <link href="http://example.com/posts/13473.html"/>
+    <id>http://example.com/posts/13473.html</id>
+    <published>2024-05-07T06:36:40.000Z</published>
+    <updated>2024-05-08T01:31:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://digicol.dpm.org.cn/">故宫博物院数字文物库</a>的拼接图可使用<a href="https://github.com/lovasoa/dezoomify-rs">dezoomify-rs</a>下载：</p><p>1、下载安装<a href="https://github.com/lovasoa/dezoomify-rs">dezoomify-rs</a><br>2、chrome浏览器打开书签管理，添加书签，书签名称：显示故宫参数，网址：javascript:document.getElementsByTagName(“body”).innerHTML &#x3D; JSON.stringify(viewer.source.Image);<br>3、打开图片详情页，点击书签：显示故宫参数，会自动回去相应的参数，例如：{“xmlns”:”<a href="http://schemas.microsoft.com/deepzoom/2009&quot;,&quot;Url&quot;:&quot;https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/8243affd624b42eeb019b82565a95cd5/image-bundle/&quot;,&quot;Overlap&quot;:&quot;1&quot;,&quot;TileSize&quot;:&quot;510&quot;,&quot;Format&quot;:&quot;png&quot;,&quot;Size&quot;:%7B&quot;Width&quot;:&quot;1742.0&quot;,&quot;Height&quot;:&quot;4800.0&quot;%7D%7D">http://schemas.microsoft.com/deepzoom/2009&quot;,&quot;Url&quot;:&quot;https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/8243affd624b42eeb019b82565a95cd5/image-bundle/&quot;,&quot;Overlap&quot;:&quot;1&quot;,&quot;TileSize&quot;:&quot;510&quot;,&quot;Format&quot;:&quot;png&quot;,&quot;Size&quot;:{&quot;Width&quot;:&quot;1742.0&quot;,&quot;Height&quot;:&quot;4800.0&quot;}}</a><br>4、根据获取的参数新建一个，例如，tu.dzi，按以下代码填入参数大致如下</p><?xml version="1.0" encoding="UTF-8"?><p><Image TileSize="254" Overlap="1" Format="png"       xmlns="http://schemas.microsoft.com/deepzoom/2008" Url="https://minghuaji-1259446244.cos.ap-beijing.myqcloud.com/bundle/beaf8b7a0a7443dab867c1396d6a9612/"><br>       <Size Width="139414" Height="6231"/><br></Image><br>替换相应的参数，如：width、height、url</p><p>如果图片宽度&#x2F;高度超过65500，可更改保存的文件为xxx.png</p><p>dezoomify-rs -r 10 –accept-invalid-certs -H “User-Agent: Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;78.0.3904.97 Safari&#x2F;537.36” -H “referer: <a href="https://www.dpm.org.cn&quot;/">https://www.dpm.org.cn&quot;</a> –dezoomer deepzoom “tu.dzi” “datu”%random%”.png”<br>一般情况，如果图片宽度&#x2F;高度不超过65500</p><p>dezoomify-rs -r 10 –accept-invalid-certs -H “User-Agent: Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;78.0.3904.97 Safari&#x2F;537.36” -H “referer: <a href="https://www.dpm.org.cn&quot;/">https://www.dpm.org.cn&quot;</a> –dezoomer deepzoom “tu.dzi”<br>回车后，会显示需要获取的图片大小。一般选择0 获取最大缩放级别</p><p>将tu.dzi放到dezoomify-rs所在的文件目录，终端运行上面命令</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://digicol.dpm.org.cn/&quot;&gt;故宫博物院数字文物库&lt;/a&gt;的拼接图可使用&lt;a href=&quot;https://github.com/lovasoa/dezoomify-rs&quot;&gt;dezoomify-rs&lt;/a&gt;下载：&lt;/p&gt;
+&lt;p&gt;1</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>白日梦</title>
+    <link href="http://example.com/posts/786.html"/>
+    <id>http://example.com/posts/786.html</id>
+    <published>2024-04-19T07:13:17.000Z</published>
+    <updated>2024-04-19T07:23:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果命运中意了我蓬乱的头发<br>失意的眼神<br>以及，嘴角扬起的假笑<br>那么我恨死了如果<br>如果命运执意要摧残我的意志<br>虔诚的追求<br>以及，无处安放的灵魂<br>那么我情愿继续做白日梦    </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;如果命运中意了我蓬乱的头发&lt;br&gt;失意的眼神&lt;br&gt;以及，嘴角扬起的假笑&lt;br&gt;那么我恨死了如果&lt;br&gt;如果命运执意要摧残我的意志&lt;br&gt;虔诚的追求&lt;br&gt;以及，无处安放的灵魂&lt;br&gt;那么我情愿继续做白日梦    &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="我的诗" scheme="http://example.com/categories/%E6%88%91%E7%9A%84%E8%AF%97/"/>
+    
+    
+    <category term="我的诗" scheme="http://example.com/tags/%E6%88%91%E7%9A%84%E8%AF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开源项目推荐</title>
+    <link href="http://example.com/posts/43766.html"/>
+    <id>http://example.com/posts/43766.html</id>
+    <published>2024-04-02T03:21:14.000Z</published>
+    <updated>2024-04-29T03:21:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>用 Rust 编写的闪电般快速且功能强大的代码编辑器<br><a href="https://github.com/lapce/lapce">Lapce</a></p><p>Vue3 + Pinia + Vite5 仿抖音，douyin-vue 是一个模仿 抖音|TikTok 的移动端短视频项目，Vue 在移动端的”最佳实践”，媲美原生 App 丝滑流畅的使用体验。<br><a href="https://github.com/zyronon/douyin">douyin</a></p><p>由 SOTA AI 模型提供支持的图像修复工具。从照片中删除任何不需要的物体、缺陷、人物，或擦除并替换（由稳定扩散驱动）照片上的任何东西。<br><a href="https://github.com/Sanster/IOPaint">IOPaint</a></p><p>一个免费的开源修复和图像放大工具，由浏览器上的webgpu和wasm提供支持。<br>基于 Webgpu 技术和 wasm 技术的免费开源 inpainting &amp; image-upscaling 工具, 纯浏览器端实现。<br><a href="https://github.com/lxfater/inpaint-web">Inpaint-web</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;用 Rust 编写的闪电般快速且功能强大的代码编辑器&lt;br&gt;&lt;a href=&quot;https://github.com/lapce/lapce&quot;&gt;Lapce&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vue3 + Pinia + Vite5 仿抖音，douyin-vue 是一个模仿 抖音|TikT</summary>
+      
+    
+    
+    
+    <category term="开源项目" scheme="http://example.com/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>火车站</title>
+    <link href="http://example.com/posts/17514.html"/>
+    <id>http://example.com/posts/17514.html</id>
+    <published>2024-04-01T03:38:04.000Z</published>
+    <updated>2024-04-19T07:14:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>以前不管去哪儿坐火车<br>总能有那种故乡感<br>通常来自两个熟悉的声音<br>一个来自男性：哥们儿，打车吗？<br>一个来自女性：小伙纸，住店吗？   </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;以前不管去哪儿坐火车&lt;br&gt;总能有那种故乡感&lt;br&gt;通常来自两个熟悉的声音&lt;br&gt;一个来自男性：哥们儿，打车吗？&lt;br&gt;一个来自女性：小伙纸，住店吗？   &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="我的诗" scheme="http://example.com/categories/%E6%88%91%E7%9A%84%E8%AF%97/"/>
+    
+    
+    <category term="我的诗" scheme="http://example.com/tags/%E6%88%91%E7%9A%84%E8%AF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>红楼梦版本介绍</title>
+    <link href="http://example.com/posts/35890.html"/>
+    <id>http://example.com/posts/35890.html</id>
+    <published>2024-03-19T02:59:51.000Z</published>
+    <updated>2024-03-20T09:18:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="【清代】"><a href="#【清代】" class="headerlink" title="【清代】"></a>【清代】</h3><p>甲戌本（脂砚斋甲戌抄阅再评本，抄本）<br>己卯本（脂砚斋凡四阅评过，己卯冬月定本，抄本）<br>庚辰本（脂砚斋凡四阅评过，庚辰秋月定本，抄本）<br>列藏本（苏联列宁格勒抄本《石头记》，抄本）<br>戚张本（张开模旧藏戚蓼生序本，抄本）<br>戚正本（有正书局石刊戚蓼生序本）<br>戚宁本（泽存书库旧藏戚蓼生序本，抄本）<br>王府本（清王府旧藏本，蒙古王府本，抄本）<br>杨藏本（杨继振旧藏本，红楼梦稿本，抄本）<br>舒序本（舒元炜序本，抄本）<br>郑藏本（郑振铎藏本，抄本）<br>梦觉本（梦觉主人序本，甲辰本，抄本）<br>程甲本（乾隆五十六年辛亥萃文书屋活字本）<br>程乙本（乾隆五十七年壬子萃文书屋活字本）</p><p>东观阁刊本（新镌全部绣像红楼梦）<br>善因楼刊本（批评新奇，绣像红楼梦，善因楼梓）<br>宝文堂刊本（同治壬戌重镌，宝文堂藏板）<br>抱青阁刊本（嘉庆己未年镌，绣像红楼梦，抱青阁梓）<br>本衙藏板本（新镌全部绣像红楼梦，本衙藏板）<br>藤花榭刊本（嘉庆庚辰镌，绣像红楼梦，藤花榭藏板）<br>宝兴堂刊本（嘉庆丙寅新刻全部绣像红楼梦，宝兴堂藏板凝萃草堂刊本（道光辛卯孟冬，绣像红楼梦，凝萃草堂监印）<br>三让堂刊本（绣像批点红楼梦，三让堂藏板）<br>五云楼刊本（咸丰己未新镌绣像红楼梦，五云楼藏板，光华堂发兑）<br>耘香阁刊本（绣像红楼梦，藤花榭原板，耘香阁重梓）<br>聚和堂刊本（绣像红楼梦，济南聚和堂藏板）<br>同文堂刊本（曹雪芹原本，右文堂发兑，同文堂藏板）<br>纬文堂刊本（绣像批点红楼梦，纬文堂藏板）<br>翰选楼刊本（绣像红楼梦，翰选楼藏板）<br>文元堂刊本（绣像批点红楼梦，文元堂藏板）<br>忠信堂刊本（绣像批点红楼梦，忠信堂藏板）<br>经纶堂刊本（绣像批点红楼梦，经纶堂藏板）<br>务本堂刊本（绣像批点红楼梦，务本堂藏板）<br>经元升记刊本（绣像批点红楼梦，经元升记梓）<br>登秀堂刊本（绣像批点红楼梦，登秀堂藏板）<br>连元阁刊本（曹雪芹原本，新增批点绣像红楼梦，佛山连元阁藏板）<br>三元堂刊本（东观阁梓行，三元堂藏板，新增批评绣像红楼梦）<br>双清仙馆评本（洞庭王希廉雪香评）<br>妙复轩评本（张新之评）<br>聚珍堂评本（王希廉评）<br>翰苑楼评本（王希廉评）<br>芸居楼评本（王希廉评）<br>卧云山馆评本（张新之评）<br>同文书局评本（增评补像全图金玉缘，王希廉、张新之、姚燮评）<br>大观琐录评本（增评绘图大观琐录，王希廉、姚燮评）<br>增评补像全图本（增评补像全图金玉缘，王希廉、张新之、姚燮评）<br>诵芬阁评本（古越诵芬阁藏板，王希廉、姚燮评）<br>增评补图本（王希廉、姚燮评）<br>上海书局石印评本（王希廉、张新之、姚燮评）<br>绣像全图增批评本（王希廉、姚燮评）<br>桐荫轩石印评本（王希廉、蝶芗仙史评）<br>求不负斋石印评本（王希廉、张新之、姚燮评）<br>广百宋斋铅印评本（王希廉、姚燮评）<br>阜记书局评本（王希廉、蝶芗仙史评）   </p><h3 id="【民国】"><a href="#【民国】" class="headerlink" title="【民国】"></a>【民国】</h3><p>增评加批图说本（王希廉、蝶芗仙史评）1914年上海石印本<br>增评加注全图本（王希廉、张新之、姚燮评）1925年上海石印本<br>文明书局评本（王希廉、张新之、姚燮评）1927年上海文明书局铅印本<br>江东书局石印评本（王希廉、张新之、姚燮评）<br>铸记书局评本（王希廉、姚燮评）<br>万有文库评本（1930年商务印书馆铅印）<br>许啸天句读本（1923年上海群学社铅印本）<br>汪原放句读本（1921年上海亚东图书馆铅印本）<br>大达图书本（1929年上海大达图书供应社铅印本）<br>广益书局本（1934年上海广益书局铅印本）<br>新文化书社本（1929年上海新文化书社铅印本）<br>通俗小说库本（1937年上海中央书店铅印本）<br>亚东初排本（1921年上海亚东图书馆铅印本）<br>亚东重排本（1927年上海亚东图书馆铅印本）<br>中华索隐本（1916年上海中华书局铅印本）<br>世界书局本（1934年上海世界书局铅印本）<br>开明书店洁本（1935年上海开明书店铅印本）   </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;【清代】&quot;&gt;&lt;a href=&quot;#【清代】&quot; class=&quot;headerlink&quot; title=&quot;【清代】&quot;&gt;&lt;/a&gt;【清代】&lt;/h3&gt;&lt;p&gt;甲戌本（脂砚斋甲戌抄阅再评本，抄本）&lt;br&gt;己卯本（脂砚斋凡四阅评过，己卯冬月定本，抄本）&lt;br&gt;庚辰本（脂砚斋凡四阅评过，</summary>
+      
+    
+    
+    
+    
+    <category term="红楼梦" scheme="http://example.com/tags/%E7%BA%A2%E6%A5%BC%E6%A2%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在线抠图工具</title>
+    <link href="http://example.com/posts/31056.html"/>
+    <id>http://example.com/posts/31056.html</id>
+    <published>2024-03-13T01:55:07.000Z</published>
+    <updated>2024-09-20T08:20:17.585Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、<a href="https://www.wipebg.app/zh-cn/remove">wipebg</a><br>2、<a href="https://www.remove.bg/zh">RemoveBg</a><br>3、<a href="https://cutout.aiwave.cc/">AI抠图</a><br>4、<a href="https://arc.tencent.com/zh/ai-demos/faceRestoration">ARC 腾讯抠图工具</a><br>5、<a href="https://zh.clippingmagic.com/">一键抠图</a><br>6、<a href="https://removebg.lintiebao.cn/">本地运行</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1、&lt;a href=&quot;https://www.wipebg.app/zh-cn/remove&quot;&gt;wipebg&lt;/a&gt;&lt;br&gt;2、&lt;a href=&quot;https://www.remove.bg/zh&quot;&gt;RemoveBg&lt;/a&gt;&lt;br&gt;3、&lt;a href=&quot;https://cut</summary>
+      
+    
+    
+    
+    <category term="抠图" scheme="http://example.com/categories/%E6%8A%A0%E5%9B%BE/"/>
+    
+    
+    <category term="抠图" scheme="http://example.com/tags/%E6%8A%A0%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在线资源汇总</title>
+    <link href="http://example.com/posts/15710.html"/>
+    <id>http://example.com/posts/15710.html</id>
+    <published>2024-02-28T02:59:10.000Z</published>
+    <updated>2024-02-28T05:59:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/zhcz/design-resources-for-developers">在线资源汇总</a><br>UI Graphics 用户界面图形<br>Fonts  字体<br>Colors  颜色<br>Icons  图标<br>Logos  标志<br>Favicons  网站图标<br>Icon Fonts 图标字体<br>Stock Photos 库存照片<br>Stock Videos  库存视频<br>Stock Music &amp; Sound Effects<br>库存音乐和音效<br>Vectors &amp; Clip Art<br>矢量和剪贴画<br>Product &amp; Image Mockups<br>产品和图像模型<br>HTML &amp; CSS Templates<br>HTML 和 CSS 模板<br>CSS Frameworks CSS 框架<br>CSS Methodologies  CSS 方法论<br>CSS Animations CSS 动画<br>Javascript Animation Libraries<br>JavaScript 动画库<br>Javascript Chart Libraries<br>JavaScript 图表库<br>UI Components &amp; Kits<br>UI 组件和套件<br>React UI Libraries  React UI 库<br>Vue UI Libraries  Vue 用户界面库<br>Angular UI Libraries  Angular UI 库<br>Svelte UI Libraries  简洁的 UI 库<br>React Native UI Libraries<br>React Native UI 库<br>Design Systems &amp; Style Guides<br>设计系统和风格指南<br>Online Design Tools 在线设计工具<br>Downloadable Design Software<br>可下载的设计软件<br>Design Inspiration 设计灵感<br>Image Compression  图像压缩<br>Chrome Extensions Chrome 扩展程序<br>Firefox Extensions  火狐扩展<br>AI Graphic Design Tools<br>人工智能图形设计工具<br>Others 其他的</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/zhcz/design-resources-for-developers&quot;&gt;在线资源汇总&lt;/a&gt;&lt;br&gt;UI Graphics 用户界面图形&lt;br&gt;Fonts  字体&lt;br&gt;Colors  颜色&lt;br&gt;Icons  图</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>礼物</title>
+    <link href="http://example.com/posts/18260.html"/>
+    <id>http://example.com/posts/18260.html</id>
+    <published>2024-02-27T01:35:55.000Z</published>
+    <updated>2024-02-27T05:24:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="ed0cfbea524f7786353ab5e7bfd7961434b97652c10deb143685ba78c3a006cd">75ea93c751a7322ab9ec575d6aaf42f8d2025332f6fa24ac5e3c63bd562f443fef5a36505c9231cc0fe6cd7ff1a7a6e973c7b949534e45ed598d02a9b8ad8e768a3e52c02b0226db3a171d0de5909a95a6b6f9c016a61b68d09d1d567a0fe5d92efcc259c5e759afcc0ca2390675575fc44fd52c7812028b82712b97836d09ade938528118919950fd248afcdc02e4b70bd08d5a7e1123abc37d9dc84f69c80d2bbe8f52ab6395497875276a3f51e67dc215553e1fc34e63bc224023767b619a865d002ebb9f7dacae42e167933f29c1739b6f687c966cdf286eb042069384264228085ce0ca362770d56c40b10c6dbb800d6a020d3c858cd27b0ec0031d47f5671857fc70460b2c3f5aa0bdf99387c0d7290a82afdb528ba808d2e12ae5ad88ca1b8050085d95e198205ec06486fe57878765a7e09aad237baf4f0bf3585aa90e72ab3c5c3f5242fc5b28d47acd1b43da8b06b260a75df82d992f552961438b</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">请输入密码查看.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">请输入密码查看.</summary>
+    
+    
+    
+    <category term="我的诗" scheme="http://example.com/categories/%E6%88%91%E7%9A%84%E8%AF%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>字帖</title>
+    <link href="http://example.com/posts/116.html"/>
+    <id>http://example.com/posts/116.html</id>
+    <published>2024-02-08T01:37:59.000Z</published>
+    <updated>2024-03-01T01:19:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="../poem/zitie_today/zitie_today.html">今日字帖</a><br><a href="../poem/zitie.html">名家字帖</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;../poem/zitie_today/zitie_today.html&quot;&gt;今日字帖&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;../poem/zitie.html&quot;&gt;名家字帖&lt;/a&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="书法" scheme="http://example.com/categories/%E4%B9%A6%E6%B3%95/"/>
+    
+    
+    <category term="书法" scheme="http://example.com/tags/%E4%B9%A6%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗词文</title>
+    <link href="http://example.com/posts/39972.html"/>
+    <id>http://example.com/posts/39972.html</id>
+    <published>2024-02-06T07:25:30.000Z</published>
+    <updated>2024-02-07T09:35:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="../poem/index.html">10万+首诗词文</a><br><a href="../poem/famousSentences.html">名句</a><br><a href="../poem/springCouplet.html">7000+春联</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;../poem/index.html&quot;&gt;10万+首诗词文&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;../poem/famousSentences.html&quot;&gt;名句&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;../poem/springCouplet.html&quot;&gt;7000+春</summary>
+      
+    
+    
+    
+    <category term="诗词文" scheme="http://example.com/categories/%E8%AF%97%E8%AF%8D%E6%96%87/"/>
+    
+    
+    <category term="诗词文" scheme="http://example.com/tags/%E8%AF%97%E8%AF%8D%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的2023</title>
+    <link href="http://example.com/posts/50955.html"/>
+    <id>http://example.com/posts/50955.html</id>
+    <published>2024-02-02T08:35:18.000Z</published>
+    <updated>2024-02-04T03:04:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这一年大概是我前半生收获最多的一年<br>真实、平凡、普通、琐碎……</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这一年大概是我前半生收获最多的一年&lt;br&gt;真实、平凡、普通、琐碎……&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="文章" scheme="http://example.com/categories/%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="文章" scheme="http://example.com/tags/%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SwiftUI学习笔记—点击View事件</title>
+    <link href="http://example.com/posts/17440.html"/>
+    <id>http://example.com/posts/17440.html</id>
+    <published>2024-01-11T06:58:21.000Z</published>
+    <updated>2024-01-18T07:01:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">struct ContentView: View &#123;</span><br><span class="line">    var body: some View &#123;</span><br><span class="line">        VStack &#123;</span><br><span class="line">            Text(&quot;Hello, World!&quot;)</span><br><span class="line">            Text(&quot;Second Text&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">        .onTapGesture &#123;</span><br><span class="line">            print(&quot;Tapped on the view&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>上面这个代码，View上面有两个Text，我想要添加一个点击View的事件，按上面的写法，onTapGesture只有点击Text的时候有效，Text并没有充满View，想要点击View的其他空白区域也有效，将可点击区域扩大到整个VStack的矩形区域即可，如下👇</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">struct ContentView: View &#123;</span><br><span class="line">    var body: some View &#123;</span><br><span class="line">        VStack &#123;</span><br><span class="line">            Text(&quot;Hello, World!&quot;)</span><br><span class="line">            Text(&quot;Second Text&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">         .contentShape(Rectangle()) // 将可点击区域扩大到整个VStack的矩形区域</span><br><span class="line">        .onTapGesture &#123;</span><br><span class="line">            // 在这里处理点击事件</span><br><span class="line">            print(&quot;Tapped on the view&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span c</summary>
+      
+    
+    
+    
+    <category term="SwiftUI" scheme="http://example.com/categories/SwiftUI/"/>
+    
+    
+    <category term="SwiftUI" scheme="http://example.com/tags/SwiftUI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在线小游戏</title>
+    <link href="http://example.com/posts/61638.html"/>
+    <id>http://example.com/posts/61638.html</id>
+    <published>2024-01-03T08:39:50.000Z</published>
+    <updated>2024-01-03T09:15:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>消磨时间的小游戏，把球停在有颜色区域<br><a href="https://looptap.veeapp.co/">looptap</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;消磨时间的小游戏，把球停在有颜色区域&lt;br&gt;&lt;a href=&quot;https://looptap.veeapp.co/&quot;&gt;looptap&lt;/a&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="游戏" scheme="http://example.com/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="游戏" scheme="http://example.com/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2024-每日分享</title>
+    <link href="http://example.com/posts/57655.html"/>
+    <id>http://example.com/posts/57655.html</id>
+    <published>2024-01-03T01:31:58.000Z</published>
+    <updated>2024-10-10T06:54:50.590Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="10月10日"><a href="#10月10日" class="headerlink" title="10月10日"></a>10月10日</h2><p><a href="https://temp.now/zh/">临时邮箱</a></p><h2 id="10月9日"><a href="#10月9日" class="headerlink" title="10月9日"></a>10月9日</h2><p><a href="https://photokit.com/tools/clarity/?lang=zh">在线图片编辑器，AI抠图、画质增强，批量处理等</a></p><h2 id="8月29日"><a href="#8月29日" class="headerlink" title="8月29日"></a>8月29日</h2><p><a href="../projects/removeBg/index.html">去除背景，本地运行</a></p><h2 id="8月20日"><a href="#8月20日" class="headerlink" title="8月20日"></a>8月20日</h2><p><a href="https://app.haikei.app/">在线背景生成器，可以用作 PPT 背景、文章封面的在线背景生成神器</a></p><h2 id="8月19日"><a href="#8月19日" class="headerlink" title="8月19日"></a>8月19日</h2><p><a href="https://zh-cn.aiseesoft.com/image-upscaler/">全功能 AI 图像放大器，一键提高图像分辨率</a><br><a href="https://saerasoft.com/caesium#downloads">Caesium 是一款免费软件，专为简单性和有效性而开发,将您的图片压缩高达 90%，而不会造成明显的质量损失</a></p><h2 id="8月5日"><a href="#8月5日" class="headerlink" title="8月5日"></a>8月5日</h2><p><a href="https://kt.94xy.com/">批量去除图片背景，本地处理无需联网，支持Windows、Mac</a><br><a href="https://0v0.ai/rmbg/">去除图片背景，需联网上传图片，效果不错，不能批量处理</a><br><a href="https://webrename.cn/">文件批量重命名，本地处理速度快</a></p><p><a href="https://html.zone/background-remover">图片去除背景</a><br><a href="https://www.cooltool.app/tools/image/background-remover">图片去除背景</a></p><h2 id="8月2日"><a href="#8月2日" class="headerlink" title="8月2日"></a>8月2日</h2><p><a href="https://webrename.cn/">文件批量重命名工具在线版</a></p><h2 id="7月31日"><a href="#7月31日" class="headerlink" title="7月31日"></a>7月31日</h2><p><a href="https://pixian.ai/">AI图片去除背景，效果不错，可批量处理，需科学</a></p><h2 id="6月7日"><a href="#6月7日" class="headerlink" title="6月7日"></a>6月7日</h2><p>今日高考第一天，希望每个人都有一个好的前程！<br><a href="https://forum.freemdict.com/">词典资源</a></p><h2 id="5月31日"><a href="#5月31日" class="headerlink" title="5月31日"></a>5月31日</h2><p><a href="https://www.loom.com/">好用的录屏工具loom，可将自己的头像录进去</a><br><a href="https://bigesj.com/division.html">图片分割</a></p><h2 id="5月30日"><a href="#5月30日" class="headerlink" title="5月30日"></a>5月30日</h2><p><a href="https://tikvideo.app/zh-tw/download-douyin-video">抖音无水印下载</a><br><a href="https://github.com/Johnserf-Seed/TikTokDownload">抖音下载github</a></p><h2 id="5月29日"><a href="#5月29日" class="headerlink" title="5月29日"></a>5月29日</h2><p><a href="https://imagestool.com/zh_CN/">转换图片、拼接图片、图片加水印、图片调整尺寸、裁剪图片、压缩图片、分隔图片等在线工具</a></p><h2 id="5月8日"><a href="#5月8日" class="headerlink" title="5月8日"></a>5月8日</h2><p><a href="https://rachelcao277.github.io/LabelImage/">LabelImage 是一款用于深度学习分割模型训练的图像标注工具（生成.json文件），可以对你将要训练的模型提供帮助</a></p><h2 id="5月7日"><a href="#5月7日" class="headerlink" title="5月7日"></a>5月7日</h2><p><a href="https://github.com/lovasoa/dezoomify-rs">Dezoomify-RS 是一个平铺图像下载器。某些网页显示高分辨率可缩放图像，但无法下载它们。这些图像通常是平铺的：原始大图像已被拆分为更小的单个图像文件，称为平铺。下载此类图像的唯一方法是分别下载所有图块，然后将它们拼接在一起。此过程可以通过平铺图像下载器自动执行。</a></p><h2 id="5月6日"><a href="#5月6日" class="headerlink" title="5月6日"></a>5月6日</h2><p><a href="https://openui.fly.dev/">上传你的UI设计图，并通过自然语言描述你想要的内容，自动生成代码</a></p><h2 id="4月29日"><a href="#4月29日" class="headerlink" title="4月29日"></a>4月29日</h2><p><a href="https://inpaintweb.lxfater.com/">图片放大、图片修复</a><br><a href="https://github.com/lxfater/inpaint-web">github</a></p><h2 id="4月23日"><a href="#4月23日" class="headerlink" title="4月23日"></a>4月23日</h2><p><a href="https://brickify-lab.web.app/">将图片转为马赛克图片</a><br><a href="https://sergiss.github.io/photo-mosaic/">将多张图片组合为马赛克图片</a><br><img src="https://github.com/sergiss/photo-mosaic/raw/master/photo-mosaic.gif?raw=true"></p><h2 id="4月22日"><a href="#4月22日" class="headerlink" title="4月22日"></a>4月22日</h2><p><a href="https://www.logosc.cn/design/">名片生成器</a></p><h2 id="4月17日"><a href="#4月17日" class="headerlink" title="4月17日"></a>4月17日</h2><p><a href="https://earth.fm/?ref=producthunt">聆听大自然的声音，爱上地球</a><br><a href="https://handwrite.paperai.life/">将文本转为模拟手写文字</a></p><h2 id="4月16日"><a href="#4月16日" class="headerlink" title="4月16日"></a>4月16日</h2><p><a href="https://ppt.lintiebao.cn/">一个基于 Vue3.x + TypeScript 的在线演示文稿（幻灯片）应用，还原了大部分 Office PowerPoint 常用功能，支持 文字、图片、形状、线条、图表、表格、视频、音频、公式 几种最常用的元素类型，每一种元素都拥有高度可编辑能力，同时支持丰富的快捷键和右键菜单，力求还原桌面应用级体验。支持导出本地 PPTX 文件，支持移动端基础编辑和预览。您可以在此基础上搭建自己的在线幻灯片应用</a><br><a href="https://drawdb.vercel.app/">免费、简单、直观的数据库设计工具和 SQL 生成器</a></p><h2 id="4月8日"><a href="#4月8日" class="headerlink" title="4月8日"></a>4月8日</h2><p><a href="https://kidtype.lintiebao.cn/">一款适合儿童的打字游戏</a></p><h2 id="4月2日"><a href="#4月2日" class="headerlink" title="4月2日"></a>4月2日</h2><p><a href="https://songlh.top/paint-board/">一个画板</a></p><h2 id="3月22日"><a href="#3月22日" class="headerlink" title="3月22日"></a>3月22日</h2><p><a href="https://vmail.dev/">临时邮箱📮</a></p><h2 id="3月18日"><a href="#3月18日" class="headerlink" title="3月18日"></a>3月18日</h2><p><a href="https://ittools.lintiebao.cn/">开发者工具箱</a></p><h2 id="3月14日"><a href="#3月14日" class="headerlink" title="3月14日"></a>3月14日</h2><p><a href="https://ok.daoing.com/iiif/">IIIF下载器</a><br><a href="https://imageonline.co/cn/combine-png-images-to-single-pdf.php">png转pdf工具</a></p><h2 id="3月13日"><a href="#3月13日" class="headerlink" title="3月13日"></a>3月13日</h2><p>抖音短视频去水印小程序<br><img src="https://file.lintiebao.cn/MSL1mvzUDWlMrnEoqi0Ro1y6VNindHEE/gh_c8c248210dee_258.jpg"></p><p>壁纸小程序<br><img src="https://file.lintiebao.cn/LdjMUHmbz8cRhrbchjgBPTrsUjxDWWug/gh_9ae3355ae1a1_258.jpg"></p><p>图片去水印小程序<br><img src="https://file.lintiebao.cn/zqdIvAd1yginKlgQC4EwJgYBi3lstDQ5/gh_2bf13d355d81_258.jpg"></p><h2 id="3月12日"><a href="#3月12日" class="headerlink" title="3月12日"></a>3月12日</h2><p><a href="https://watermark.lintiebao.cn/">图片水印打码工具</a></p><h2 id="3月11日"><a href="#3月11日" class="headerlink" title="3月11日"></a>3月11日</h2><p><a href="https://bizihu.com/">壁纸湖，好看的壁纸</a></p><h2 id="3月7日"><a href="#3月7日" class="headerlink" title="3月7日"></a>3月7日</h2><p><a href="https://www.duelpeak.com/pages/poster">通过裁剪、合并和贴纸以简单的方式美化您的照片</a></p><h2 id="2月28日"><a href="#2月28日" class="headerlink" title="2月28日"></a>2月28日</h2><p><a href="../_posts/%E5%9C%A8%E7%BA%BF%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB.md">在线资源汇总</a></p><h2 id="2月27日"><a href="#2月27日" class="headerlink" title="2月27日"></a>2月27日</h2><p><a href="https://www.lgppt.cn/article-generate">AI生成PPT</a><br><a href="https://obfuscator.io/#code">js代码混淆</a></p><h2 id="2月26日"><a href="#2月26日" class="headerlink" title="2月26日"></a>2月26日</h2><p><a href="https://webdemo.myscript.com/">手写公式识别</a> 识别手写的数学公式、文本、图表等</p><h2 id="1月31日"><a href="#1月31日" class="headerlink" title="1月31日"></a>1月31日</h2><p><a href="https://github.com/astrofox-io/astrofox?tab=readme-ov-file">Astrofox</a> 是一个动态图形程序，可让您将音频转换为精彩的视频。</p><p><a href="https://imgpilot.com/">imgpilot</a> (<a href="https://imgpilot.lintiebao.cn/">备</a>) 利用实时潜在一致性模型的强大功能将草稿变成令人惊叹的艺术作品</p><p><a href="https://tryemoji.lintiebao.cn/">tryemoji</a> 通过 AI 将表情符号变成令人惊叹的艺术品</p><p><a href="https://pixelate-beta.vercel.app/">Pixelate</a>（<a href="https://pixelate.lintiebao.cn/">备</a>） 是一个图像编辑器，用便签创建令人惊叹的像素艺术壁画</p><h2 id="1月26日"><a href="#1月26日" class="headerlink" title="1月26日"></a>1月26日</h2><p>极简风笔记，所有信息都使用 HTML5 本地存储在本地持久化<br><a href="https://zenpen.lintiebao.cn/">ZenPen</a></p><p>一个简约清爽的打字练习网站<br><a href="https://typing.yasinchan.com/">Typing</a></p><h2 id="1月3日"><a href="#1月3日" class="headerlink" title="1月3日"></a>1月3日</h2><p>Jan 是 ChatGPT 的开源替代品，可在您的计算机上 100% 离线运行<br><a href="https://github.com/janhq/jan">Jan</a></p><p>Pile 是一款用于反思日记的桌面应用程序。它关乎简单性，将数据保持在本地，并通过 AI 增强您的日记体验。<br><a href="https://github.com/UdaraJay/Pile">Pile</a></p><p>阻止 Mac 进入睡眠状态，防止休眠<br><a href="https://github.com/newmarcel/KeepingYouAwake">KeepingYouAwake</a></p><p>开发人员专用的暂存器<br><a href="https://github.com/heyman/heynote">heynote</a></p><p>Olive 是一款适用于 Windows、macOS 和 Linux 的免费非线性视频编辑器<br><a href="https://github.com/olive-editor/olive">olive</a></p><p>消磨时间的小游戏，把球停在有颜色区域<br><a href="https://looptap.veeapp.co/">looptap</a></p><p>搜集了 580 多个 Linux 命令<br><a href="https://linux-command.lintiebao.cn/">linux-command</a></p><p>魔塔是由阿里达摩院开源的 MaaS 平台，它为开发者提供了模型体验、推理、训练、部署和应用的一站式服务，相当于国内版的 Hugging Face<br><a href="https://github.com/modelscope/modelscope">魔塔</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;10月10日&quot;&gt;&lt;a href=&quot;#10月10日&quot; class=&quot;headerlink&quot; title=&quot;10月10日&quot;&gt;&lt;/a&gt;10月10日&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://temp.now/zh/&quot;&gt;临时邮箱&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;10</summary>
+      
+    
+    
+    
+    <category term="素材" scheme="http://example.com/categories/%E7%B4%A0%E6%9D%90/"/>
+    
+    
+    <category term="每日分享" scheme="http://example.com/tags/%E6%AF%8F%E6%97%A5%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年歌单</title>
+    <link href="http://example.com/posts/48622.html"/>
+    <id>http://example.com/posts/48622.html</id>
+    <published>2023-12-20T08:51:37.000Z</published>
+    <updated>2023-12-26T06:28:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://file.lintiebao.cn/Okak4qgCfMx470x8N0hneJXNViJu1VUG/2023_songs.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://file.lintiebao.cn/Okak4qgCfMx470x8N0hneJXNViJu1VUG/2023_songs.jpg&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="歌单" scheme="http://example.com/categories/%E6%AD%8C%E5%8D%95/"/>
+    
+    
+    <category term="歌单" scheme="http://example.com/tags/%E6%AD%8C%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>那些有趣有用的网站</title>
+    <link href="http://example.com/posts/60424.html"/>
+    <id>http://example.com/posts/60424.html</id>
+    <published>2023-10-23T09:33:40.000Z</published>
+    <updated>2024-02-26T03:24:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、<code>网站</code> <code>IP</code> 查找任何IPv4地址、IPv6地址、网站、域或子域<br><a href="https://www.ipaddress.com/">Ipaddress</a></p><p>2、<code>emoji</code> <code>图标</code> 轻松浏览并保存超过30,000个独特的表情符号混搭<br><a href="https://emojikitchen.dev/">Emojikitchen</a></p><p>3、<code>emoji</code> <code>图标</code> Fluent Emoji<br><a href="https://fluentemoji.com/">Fluent Emoji</a></p><p>4、<code>emoji</code> <code>图标</code> 该网站允许自动和快速地创建：wow：表情符号，在Slack上经常愉快地使用<br><a href="https://wowemoji.dev/">Wowemoji</a></p><p>5、<code>emoji</code> <code>图标</code> 下载png&#x2F;jpeg&#x2F;svg格式的emoji表情<br><a href="https://downloademoji.dev/">Downloademoji</a></p><p>6、<code>CSS</code> CSS阴影调色板生成器<br><a href="https://www.joshwcomeau.com/shadow-palette/">Joshwcomeau</a></p><p>7、<code>CSS</code> 让设计师和开发人员更容易导出漂亮的SVG<br><a href="https://www.shapedivider.app/">Shapedivider</a></p><p>8、<code>CSS</code> Animista 是一个CSS动画库，您可以在其中使用一系列现成的CSS动画并仅下载您将使用的动画<br><a href="https://animista.net/play/basic/rotate-scale">Animista</a></p><p>9、<code>CSS</code> 借助CSS3 border-radius属性构建有机外观形状的视觉生成器<br><a href="https://9elements.github.io/fancy-border-radius/">FANCY-BORDER-RADIUS</a></p><p>10、<code>CSS</code> 使用CSS剪辑路径塑造您的网站<br><a href="https://bennettfeely.com/clippy/">CSS clip-path maker</a></p><p>11、<code>图像生成</code> 使用此工具可以创建线性、径向和圆锥形渐变背景。 导出为CSS、SVG、PNG和JPEG，以便在您的网站、社交媒体或壁纸上使用<br><a href="https://doodad.dev/gradient-generator/">渐变生成器 — 创建 CSS、SVG 和 PNG 颜色渐变</a></p><p>12、<code>图像生成</code> 字符生成字符字工具<br><a href="https://magiconch.com/fontfont/">字符字生成器</a></p><p>13、<code>图像生成</code> <code>CSS</code> CSS精灵生成器<br><a href="https://www.toptal.com/developers/css/sprite-generator/">CSS精灵生成器</a></p><p>14、<code>图像生成</code> <code>SVG</code> 波浪生成器<br><a href="https://getwaves.io/">Make some waves</a></p><p>15、<code>图像生成</code> <code>SVG</code> 生成各种好看的背景图，导出SVG、PNG格式 ⭐️⭐️⭐️⭐️⭐️<br><a href="https://app.haikei.app/">Haikei</a></p><p>16、<code>图像生成</code> ColorFu是人们可以使用文字、颜色、图案和图像制作独特的壁纸来表达他们的感受或想法的地方 ⭐️⭐️⭐️⭐️<br><a href="https://pearmini.github.io/colorfu/#/">ColorFu</a></p><p>17、<code>图像生成</code> 生成手写体，只支持英文<br><a href="https://www.calligrapher.ai/">Calligrapher</a></p><p>18、<code>图像生成</code> Trianglify.io 是一种生成低多边形三角形图案的工具，可用作壁纸和网站资源。<br><a href="https://trianglify.io/">Trianglify</a></p><p>19、<code>图像生成</code> 所见即所得的梗图生成器<br><a href="https://x.magiconch.com/">梗图生成器</a></p><p>20、<code>图像生成</code> 将你的代码变成好看的图像。 从一系列语法颜色中进行选择，隐藏或显示背景，以及在深色和浅色窗口之间切换 ⭐️⭐️⭐️⭐️⭐️<br><a href="https://www.ray.so/">代码生成好看的背景</a></p><p>21、<code>图像生成</code> 九宫格切图工具 ⭐️⭐️⭐️<br><a href="https://v.magiconch.com/sns-image">九宫格切图</a></p><p>22、<code>图片处理</code> 美图秀秀线上图片美化工具、人像美容、添加文字、抠图软件、拼图、批量处理图片大小、证件照换底色、图片压缩等好用的功能，还有海报设计、平面设计、广告设计、贴纸素材、边框等丰富的内容 ⭐️⭐️⭐️⭐️⭐️<br><a href="https://pc.meitu.com/">美图秀秀</a></p><p>23、<code>图片处理</code> 图片做旧工具，图片爆浆工具，让图片看起来就是上古时代的东西<br><a href="https://magiconch.com/patina/">图片做旧工具</a></p><p>24、<code>图片处理</code><br><a href="https://lab.magiconch.com/one-last-image/">One Last Image</a></p><p>25、<code>图片格式</code> 将您的文件转换成任意格式<br><a href="https://convertio.co/zh/">文件转换器</a></p><p>26、<code>图片格式</code> icon生成器，png转ico<br><a href="https://www.aconvert.com/cn/icon/png-to-ico/">icon生成器</a></p><p>27、<code>图片压缩</code> 智能WebP、PNG和JPEG压缩 ⭐️⭐️⭐️⭐️⭐️<br><a href="https://tinypng.com/">Tinypng</a></p><p>28、<code>抠图</code> 让图片背景消除<br><a href="https://www.remove.bg/zh">RemoveBg</a></p><p>29、<code>图片放大</code> 使用AI图像放大器放大和增强图像<br><a href="https://imglarger.com/zh-tw">Imglarger</a></p><p>30、<code>图片处理</code> Squoosh是终极图像优化器，可让您在浏览器中使用不同的编解码器压缩和比较图像。<br><a href="https://squoosh.app/">Squoosh</a></p><p>31、<code>图片处理</code> 将图片转为Base64<br><a href="https://image-to-base64.gutianhuang.red/">图片Base64</a></p><p>32、<code>图片资源</code> 网站404页面无版权插图<br><a href="https://error404.fun/">无版权插图</a></p><p>33、<code>图片资源</code> 一个极简的百度图片搜索工具！<br><a href="https://lab.magiconch.com/baidu-images/">百度图像搜索极简版</a></p><p>34、<code>格式转换</code> 支持几乎所有的音频、视频、文档、电子书、档案、图像、电子表格和演示格式。此外，您无需下载任何软件即可使用我们的在线工具<br><a href="https://cloudconvert.com/">Cloudconvert</a></p><p>35、<code>英语</code> 为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件<br><a href="https://qwerty.kaiyi.cool/">Qwerty Learner</a></p><p>36、<code>图表</code> 在线白板，让写作变得简单<br><a href="https://excalidraw.com/">Excalidraw</a></p><p>37、<code>图表</code> 绘制线条和形状、编写文本、预览并导出为PowerPoint格式。<br><a href="https://webdemo.myscript.com/views/diagram/">Diagram</a></p><p>38、<code>编程</code> 简单的函数绘图。<br><a href="https://graphtoy.com/">Graphtoy</a></p><p>39、<code>3D</code> glTF模型预览工具<br><a href="https://gltf-viewer.donmccurdy.com/">gltf-viewer</a></p><p>40、<code>3D</code> 一个免费的开源 Web 解决方案，可直接在浏览器中可视化和探索 3D 模型。 支持的文件格式：obj、3ds、stl、ply、gltf、glb、off、3dm、fbx、dae、wrl、3mf、brep、step、iges、fcstd、ifc、bim<br><a href="https://3dviewer.net/">3dviewer</a></p><p>41、<code>音乐</code> 自由钢琴(AutoPiano)是利用HTML5技术开发的在线钢琴应用，致力于为钢琴爱好者、音乐爱好者提供一个优雅、简洁的平台，在学习工作之余可以在线弹钢琴，享受音乐、生活的美好。自由钢琴支持自动演奏和手动演奏，简单易学，快来试试吧~<br><a href="https://www.autopiano.cn/">AutoPiano</a></p><p>42、<code>游戏</code> 俄罗斯方块似的消除游戏<br><a href="https://magiconch.com/mix-eupho/">合成北宇治</a></p><p>43、<code>游戏</code> 多人在线你画我猜<br><a href="https://enazo.cn/">绘谜</a></p><p>44、<code>游戏</code> 在浏览器中体验无尽的驾驶禅意<br><a href="https://slowroads.io/">Slowroads</a></p><p>45、<code>游戏</code> 一款简单的消除游戏<br><a href="https://sheep-fucking-sheep.gutianhuang.red/">sheep-fucking-sheep</a></p><p>46、<code>游戏</code> 高品质的斯诺克游戏<br><a href="http://www.heyzxz.me/pcol/">斯诺克</a></p><p>47、<code>网站</code> 设计和测试虚拟 3D 键盘。<br><a href="https://keyboardsimulator.xyz/">按键模拟</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1、&lt;code&gt;网站&lt;/code&gt; &lt;code&gt;IP&lt;/code&gt; 查找任何IPv4地址、IPv6地址、网站、域或子域&lt;br&gt;&lt;a href=&quot;https://www.ipaddress.com/&quot;&gt;Ipaddress&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2、&lt;code&gt;emoji&lt;/c</summary>
+      
+    
+    
+    
+    <category term="网站" scheme="http://example.com/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="网站" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js13kGames参赛优秀作品</title>
+    <link href="http://example.com/posts/31404.html"/>
+    <id>http://example.com/posts/31404.html</id>
+    <published>2023-10-18T01:06:34.000Z</published>
+    <updated>2023-10-18T01:44:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、Space-Huggers-太空拥抱者"><a href="#1、Space-Huggers-太空拥抱者" class="headerlink" title="1、Space Huggers 太空拥抱者"></a><a href="https://js13kgames.com/games/space-huggers/index.html">1、Space Huggers 太空拥抱者</a></h3><p><a href="https://github.com/KilledByAPixel/SpaceHuggers">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-huggers-2.mp4?_=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="2、Space-Block-Invaders-太空方块入侵者"><a href="#2、Space-Block-Invaders-太空方块入侵者" class="headerlink" title="2、Space Block Invaders 太空方块入侵者"></a><a href="https://js13kgames.com/games/space-block-invaders/index.html">2、Space Block Invaders 太空方块入侵者</a></h3><p><a href="https://github.com/nicklaslof/space-block-invaders">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-block-invaders-no-lb.mp4?_=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="3、Q1K3"><a href="#3、Q1K3" class="headerlink" title="3、Q1K3"></a><a href="https://github.blog/wp-content/uploads/2021/09/q13k-no-lb.mp4?_=3">3、Q1K3</a></h3><p><a href="https://github.com/phoboslab/q1k3">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/q13k-no-lb.mp4?_=3" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="4、The-Adventures-of-Captain-Callisto-卡利斯托船长的历险记"><a href="#4、The-Adventures-of-Captain-Callisto-卡利斯托船长的历险记" class="headerlink" title="4、The Adventures of Captain Callisto 卡利斯托船长的历险记"></a><a href="https://js13kgames.com/games/the-adventures-of-captain-callisto/index.html">4、The Adventures of Captain Callisto 卡利斯托船长的历险记</a></h3><p><a href="https://github.com/codyebberson/js13k-callisto">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/adventure-of-captain-callisto.mp4?_=4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="5、Hit-the-space-击中空间"><a href="#5、Hit-the-space-击中空间" class="headerlink" title="5、Hit the space! 击中空间"></a><a href="https://js13kgames.com/games/hit-the-space/index.html">5、Hit the space! 击中空间</a></h3><p><a href="https://github.com/Kimbatt/js13k-2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/hit-the-space.mp4?_=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="6、Black-Hole-Square-黑洞广场"><a href="#6、Black-Hole-Square-黑洞广场" class="headerlink" title="6、Black Hole Square 黑洞广场"></a><a href="https://js13kgames.com/games/black-hole-square/index.html">6、Black Hole Square 黑洞广场</a></h3><p><a href="https://github.com/Quinten/black-hole-square">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/black-hole-square.mp4?_=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="7、Tenacity-韧性"><a href="#7、Tenacity-韧性" class="headerlink" title="7、Tenacity 韧性"></a><a href="https://js13kgames.com/games/tenacity/index.html">7、Tenacity 韧性</a></h3><p><a href="https://github.com/GregPeck/tenacity">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/tenacity.mp4?_=7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="8、Safe-Space-安全空间"><a href="#8、Safe-Space-安全空间" class="headerlink" title="8、Safe Space 安全空间"></a><a href="https://js13kgames.com/games/safe-space/index.html">8、Safe Space 安全空间</a></h3><p><a href="https://github.com/ericdrowell/SafeSpace">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/safe-space-no-lb.mp4?_=8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="9、Galaxy-Rider-银河骑士"><a href="#9、Galaxy-Rider-银河骑士" class="headerlink" title="9、Galaxy Rider 银河骑士"></a><a href="https://js13kgames.com/games/galaxy-rider/index.html">9、Galaxy Rider 银河骑士</a></h3><p><a href="https://github.com/jaburns/js13k2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/galaxy-rider-1.mp4?_=9" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="10、Beat-Rocks-击败岩石"><a href="#10、Beat-Rocks-击败岩石" class="headerlink" title="10、Beat Rocks 击败岩石"></a><a href="https://js13kgames.com/games/beat-rocks/index.html">10、Beat Rocks 击败岩石</a></h3><p><a href="https://github.com/Kos/js13k-2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/asteroids-rhythm.mp4?_=10" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="11、PACKABUNCHAS-帕卡本查斯"><a href="#11、PACKABUNCHAS-帕卡本查斯" class="headerlink" title="11、PACKABUNCHAS 帕卡本查斯"></a><a href="https://js13kgames.com/games/packabunchas/index.html">11、PACKABUNCHAS 帕卡本查斯</a></h3><p><a href="https://github.com/MattiaFortunati/packabunchas">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/10/packa-bunchas.mp4?_=11" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="12、Space-Garden-太空花园"><a href="#12、Space-Garden-太空花园" class="headerlink" title="12、Space Garden 太空花园"></a><a href="https://js13kgames.com/games/space-garden/index.html">12、Space Garden 太空花园</a></h3><p><a href="https://github.com/Rybar/JS13k2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-garden-2.mp4?_=12" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="13、The-Maze-of-Space-Goblins-太空妖精迷宫"><a href="#13、The-Maze-of-Space-Goblins-太空妖精迷宫" class="headerlink" title="13、The Maze of Space Goblins 太空妖精迷宫"></a><a href="https://js13kgames.com/games/the-maze-of-space-goblins/index.html">13、The Maze of Space Goblins 太空妖精迷宫</a></h3><p><a href="https://github.com/jani-nykanen/the-maze-of-space-goblins">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-goblin.mp4?_=13" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id=""><a href="#" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="-1"><a href="#-1" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="-2"><a href="#-2" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="-3"><a href="#-3" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p><a href="https://js13kgames.com/entries/2023">更多…</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;1、Space-Huggers-太空拥抱者&quot;&gt;&lt;a href=&quot;#1、Space-Huggers-太空拥抱者&quot; class=&quot;headerlink&quot; title=&quot;1、Space Huggers 太空拥抱者&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://js13kg</summary>
+      
+    
+    
+    
+    <category term="js13kGames" scheme="http://example.com/categories/js13kGames/"/>
+    
+    
+    <category term="js13kGames" scheme="http://example.com/tags/js13kGames/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo32x32.png">
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>临帖宝</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="字帖                     html,     body {       margin: 0;       padding: 0;     }      #container {       display: flex;       flex-wrap: wrap;       justify-content: space-between;      }">
+<meta property="og:type" content="website">
+<meta property="og:title" content="临帖宝">
+<meta property="og:url" content="http://example.com/poem/shufaDictCate.html">
+<meta property="og:site_name" content="临帖宝">
+<meta property="og:description" content="字帖                     html,     body {       margin: 0;       padding: 0;     }      #container {       display: flex;       flex-wrap: wrap;       justify-content: space-between;      }">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-10-28T06:57:16.191Z">
+<meta property="article:modified_time" content="2024-10-28T06:57:16.191Z">
+<meta property="article:author" content="zhanghao">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
+        
+    
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="临帖宝" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">临帖宝</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="navbar-menu button">书法</a>
+                
+                    <a href="/discovery/" class="navbar-menu button">发现</a>
+                
+                    <a href="/categories/" class="navbar-menu button">分类</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/app/" class="navbar-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="navbar-menu button">投稿</a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="dropdown-menu button">书法</a>
+                
+                    <a href="/discovery/" class="dropdown-menu button">发现</a>
+                
+                    <a href="/categories/" class="dropdown-menu button">分类</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/app/" class="dropdown-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="dropdown-menu button">投稿</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2024/10/" class="post-meta__date button">2024-10-28</a>
+        
+ 
+        
+     
+    <span id="leancloud_container_page_pv" hidden>
+        <span class="separate-dot"></span>
+        <span></span>
+        <span id="leancloud_value_page_pv"></span>
+        <span>Views</span>
+    </span>
+
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字帖</title>
+  <script src="leancloud.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <link rel="stylesheet" href="loading.css">
+  <link rel="stylesheet" href="leancloud.css">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+
+    .card img {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* padding: 5px;  */
+      display: block;
+      transition: transform 0.5s;
+      /* position: relative; */
+      z-index: 1;
+
+    }
+
+    .card {
+      border-radius: 5px;
+      width: 20%;
+      height: 100px;
+      padding: 5px;
+      /* object-fit: cover;  */
+      overflow: hidden;
+      /* border-radius: 10px; */
+      transition: transform 0.5s;
+      /* position: relative; */
+    }
+
+    .text {
+      /* width: 100%; 
+            height: 100%; */
+      position: absolute;
+      z-index: 2;
+      padding: 3px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 3px;
+      /* top: 50%; */
+      background-color: var(--main-color);
+      display: none;
+      transition: transform 0.5s;
+    }
+
+    .name {
+      font-size: 10px;
+      color: lightgray;
+    }
+
+    .author {
+      font-size: 10px;
+      color: lightgray;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    .card:hover .text {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="main">
+    <div id="search">
+      <form class="search-form" action="javascript:return true" autocomplete="off" onsubmit="return false;">
+        <div class="search-input">
+          <input maxlength="80" type="search" class="search-input" id="search-input" placeholder="请输入关键字..."
+            required="">
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- 加载动画 -->
+  <div class="loading">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div id="container"></div>
+  <div id="buttonContainer">
+    <div id="moreButton"></div>
+  </div>
+  <script>
+
+
+
+    hiddenEle()
+    localStorage.removeItem('searchZitieKeyword', "");
+    var elements = document.querySelector('.post-title__text');
+    elements.textContent = '字帖'
+
+    var headeRight = document.querySelector('.header__right');
+    headeRight.style.display = 'none';
+
+    var headeLeft = document.querySelector('.header__left');
+    headeLeft.style.display = 'none';
+
+   
+    const btnSearch = document.getElementById(' btn-search');
+    btnSearch.style.display = 'none';
+    
+
+    var currentPage = 1;
+    var pageSize = 10; // 每页显示的条目数
+    initLeanCloud()
+    requestZitie(currentPage, pageSize, '', handleData)
+
+    const query = new AV.Query("zitie_pdf2");
+    query.count().then((count) => {
+      var elements = document.getElementById('count');
+      elements.textContent = '目前已收录' + count + '本'
+    });
+
+    var img = document.getElementById('moreButton');
+    img.addEventListener('click', function () {
+      currentPage++;
+      var keyword = localStorage.getItem('searchZitieKeyword');
+      if (keyword == null) {
+        keyword = ""
+      }
+      console.log('keyword:', keyword);
+      requestZitie(currentPage, pageSize, keyword, handleData)
+    });
+
+
+    function handleData(data) {
+      //   console.log('获取到的数据为：',data);
+      var container = document.getElementById("container");
+      data.forEach(function (object) {
+
+        console.log(object.get('cover'));
+        console.log(object.get('author'));
+
+        var newDiv = document.createElement("div");
+        newDiv.classList.add("card");
+        container.appendChild(newDiv);
+
+        var textDiv = document.createElement("div");
+        textDiv.classList.add("text");
+        newDiv.appendChild(textDiv);
+
+        var nameData = object.get('zitieName');
+        var authorData = object.get('author');
+        var name = document.createElement("div");
+        name.classList.add("name");
+        name.textContent = authorData + "·" + nameData;
+        textDiv.appendChild(name);
+
+
+        var newImg = document.createElement("img");
+        var imgurl = object.get('cover')
+        var decodedUrl = decodeURIComponent(imgurl);
+        newImg.src = decodedUrl;
+        newDiv.appendChild(newImg);
+
+        newImg.addEventListener('click', function () {
+          var imgArr = object.get('imgArr');
+
+          var objectId = object.get('objectId');
+          var isLoop = object.get('isLoop');
+          var imgType = object.get('imgType');
+          var loopNum = object.get('loopNum');
+          var author = object.get('author');
+          var name = object.get('zitieName');
+
+          localStorage.setItem('imgArr', JSON.stringify(imgArr));
+
+          localStorage.setItem('objectId', objectId);
+          localStorage.setItem('imgType', imgType);
+          localStorage.setItem('isLoop', isLoop);
+          localStorage.setItem('loopNum', loopNum);
+          localStorage.setItem('name', name);
+          localStorage.setItem('author', author);
+
+
+          // 跳转到详情页
+          window.location.href = 'zitie_today_detail.html';
+        });
+
+
+      });
+
+      // var data = document.querySelector('.data');
+      var loading = document.querySelector('.loading');
+      loading.style.display = 'none'; // 隐藏loading动画
+      // data.style.opacity = 0.8; // 显示数据
+    }
+
+
+    // 监听搜索输入框
+    document.addEventListener('DOMContentLoaded', function () {
+      var inputElement = document.getElementById('search-input');
+      inputElement.value = '';
+      inputElement.addEventListener('input', function (event) {
+        // 实时获取输入框中的内容
+        var inputValue = inputElement.value;
+        // localStorage.setItem('searchPoemKeyword', inputValue);
+        // clean()
+        // requestData(currentPage,pageSize,inputValue,handleData);
+      });
+      inputElement.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+          // 用户按下了回车键，执行相应的操作
+          var inputValue = inputElement.value;
+
+          localStorage.setItem('searchZitieKeyword', inputValue);
+          clean()
+          currentPage = 1;
+          requestZitie(currentPage, pageSize, inputValue, handleData);
+          // 在这里添加你想要执行的操作
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2024-10-28</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+    
+        <span id="leancloud_container_site_uv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_uv"></span>
+            <span>Viewers</span>
+            
+                <span>|</span>
+            
+        </span>
+    
+    
+        <span id="leancloud_container_site_pv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_pv"></span>
+            <span>Views</span>
+            
+        </span>
+    
+
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022&nbsp;-&nbsp;2025 <a href="/">临帖宝</a>
+        </p>
+    
+    
+    <!-- <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p> -->
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?448902475a10578c4b5236aad9784d9c';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+    <script>
+        (function () {
+            function getRecord(Counter, target) {
+                return new Promise(function (resolve, reject) {
+                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+                        .then(response => response.json())
+                        .then(({results}) => {
+                            if (results && results.length > 0) {
+                                var record = results[0];
+                                resolve(record);
+                            } else {
+                                Counter('post', '/classes/Counter', {
+                                        target, time: 0
+                                    })
+                                    .then(response => response.json())
+                                    .then(record => {
+                                        resolve(record);
+                                    }).catch(error => {
+                                        console.error('Failed to create', error);
+                                        reject(error);
+                                    });
+                            }
+                        }).catch(error => {
+                            console.error('LeanCloud Counter Error', error);
+                            reject(error);
+                        });
+                })
+            }
+        
+            function buildIncrement(objectId) {
+                return {
+                    "method": "PUT",
+                    "path": `/1.1/classes/Counter/${ objectId }`,
+                    "body": {
+                        "time": {
+                            '__op': 'Increment',
+                            'amount': 1
+                        }
+                    }
+                }
+            }
+        
+            function increment(Counter, incrArr) {
+                return new Promise(function (resolve, reject) {
+                    Counter('post', '/batch', {
+                        "requests": incrArr
+                    }).then((res) => {
+                        resolve(res);
+                    }).catch(error => {
+                        console.error('Failed to save visitor count', error);
+                        reject(error);
+                    });
+                });
+            }
+        
+            function validUV() {
+                var key = 'LeanCloud_UV_Flag';
+                var flag = localStorage.getItem(key);
+                if (flag) {
+                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
+                        return false;
+                    }
+                }
+                localStorage.setItem(key, new Date().getTime().toString());
+                return true;
+            }
+        
+            function addCount(Counter) {
+                var enableIncr = 'leancloud' === 'leancloud';
+                var getterArr = [];
+                var incrArr = [];
+                var pvCtn = document.querySelector('#leancloud_container_site_pv');
+                if (pvCtn || enableIncr) {
+                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+                        incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_pv');
+                        if (ele) {
+                            ele.innerText = record.time + 1;
+                            if (pvCtn) {
+                                pvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(pvGetter);
+                }
+                var uvCtn = document.querySelector('#leancloud_container_site_uv');
+                if (uvCtn || enableIncr) {
+                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+                        var vuv = validUV();
+                        vuv && incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_uv');
+                        if (ele) {
+                            ele.innerText = record.time + (vuv ? 1 : 0);
+                            if (uvCtn) {
+                                uvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(uvGetter);
+                }
+                if ('false' === 'true') {
+                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
+                    if (viewCtn || enableIncr) {
+                        var target = decodeURI('/poem/shufaDictCate.html');
+                        var viewGetter = getRecord(Counter, target).then((record) => {
+                            incrArr.push(buildIncrement(record.objectId))
+                            if (viewCtn) {
+                                var ele = document.querySelector('#leancloud_value_page_pv');
+                                if (ele) {
+                                    ele.innerText = (record.time || 0) + 1;
+                                    viewCtn.style.display = 'inline';
+                                }
+                            }
+                        });
+                        getterArr.push(viewGetter);
+                    }
+                }
+                if (enableIncr) {
+                    Promise.all(getterArr).then(() => {
+                        incrArr.length > 0 && increment(Counter, incrArr);
+                    })
+                }
+            }
+        
+            var app_id = 'ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz';
+            var app_key = 'bJozAX2UEPCNqmriHhTiceIc';
+            var server_url = 'https://api.lintiebao.cn';
+        
+            function fetchData(api_server) {
+                var Counter = (method, url, data) => {
+                    return fetch(`${ api_server }/1.1${ url }`, {
+                        method,
+                        headers: {
+                                'X-LC-Id': app_id,
+                                'X-LC-Key': app_key,
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data)
+                    });
+                };
+                addCount(Counter);
+            }
+            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+            if (api_server) {
+                fetchData(api_server);
+            } else {
+                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+                    .then(response => response.json())
+                    .then(({api_server}) => {
+                        fetchData('https://' + api_server);
+                    });
+            }
+        })();
+    </script>
+
+ 
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('false'),
+            auto_fancybox = Boolean('true')
+        if (auto_fancybox) {
+            if ($('.post__content .individual-images').length > 0) {
+                        console.log('individual-images')
+                        $(".post__content").find('.individual-images').each(function () {
+                        var element = document.createElement("a");
+                        $(element).attr("data-fancybox", "gallery");
+                        $(element).attr("href", $(this).attr("src"));
+                        if (lazyloadT) {
+                            $(element).attr("href", $(this).attr("data-srcset"));
+                        }
+                        $(this).wrap(element);
+                    });
+                }else{
+                    $(".post__content").find('img').each(function () {
+                    var element = document.createElement("a");
+                    $(element).attr("data-fancybox", "gallery");
+                    $(element).attr("href", $(this).attr("src"));
+                    if (lazyloadT) {
+                        $(element).attr("href", $(this).attr("data-srcset"));
+                    }
+                    $(this).wrap(element);
+                });
+            }
+
+            
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
+ 
+
+ 
+
+ 
+
+
+    <script src='https://cdn.jsdelivr.net/npm/mermaid@8.10.2/dist/mermaid.min.js'></script>
+    <script>
+            mermaid.initialize(JSON.stringify(''));
+    </script>
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

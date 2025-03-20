@@ -1,0 +1,63 @@
+#frame_border {
+    box-sizing: border-box;
+    position: relative;
+    background: black;
+    background-image: linear-gradient(to top right, #5d5d5b, #383838);
+    padding: 7px;
+    width: 220px;
+    display: none;
+    box-shadow: -1px 1px var(--blur) 1px rgba(0, 0, 0, 0.1),
+      -2px 2px var(--blur) 1px rgba(0, 0, 0, 0.09),
+      -3px 3px var(--blur) 1px rgba(0, 0, 0, 0.08),
+      -4px 4px var(--blur) 1px rgba(0, 0, 0, 0.07),
+      -5px 5px var(--blur) 1px rgba(0, 0, 0, 0.06),
+      -6px 6px var(--blur) 1px rgba(0, 0, 0, 0.05),
+      -7px 7px var(--blur) 1px rgba(0, 0, 0, 0.04),
+      -8px 8px var(--blur) 1px rgba(0, 0, 0, 0.03),
+      -9px 9px var(--blur) 1px rgba(0, 0, 0, 0.03),
+      -10px 10px var(--blur) 1px rgba(0, 0, 0, 0.03),
+      -11px 11px var(--blur) 1px rgba(0, 0, 0, 0.03),
+      -12px 12px var(--blur) 1px rgba(0, 0, 0, 0.02),
+      -13px 13px var(--blur) 1px rgba(0, 0, 0, 0.02),
+      -14px 14px var(--blur) 1px rgba(0, 0, 0, 0.01),
+      -15px 15px var(--blur) 1px rgba(0, 0, 0, 0.01),
+      -16px 16px var(--blur) 1px rgba(0, 0, 0, 0.01);
+    &:before {
+      content: " ";
+      display: block;
+      padding-bottom: 140%;
+    }
+  }
+  
+  .frame1 {
+    left: 3%;
+    top: 2.5%;
+    box-shadow: inset -1px 1px 6px 1px rgba(0, 0, 0, 0.24);
+    width: 94%;
+    height: 95%;
+    background: white;
+    align-items: center;
+    display: flex;
+    padding: 18px;
+    box-sizing: border-box;
+    position: absolute;
+
+  }
+  
+  #frame_image {
+    box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    height: 100%; /* 确保高度为100% */
+    width: 100%; /* 确保宽度为100% */
+    background-image: url(https://img0.baidu.com/it/u=2702166526,4183416255&fm=253&fmt=auto&app=120&f=JPEG?w=949&h=633); /* 设置背景图片 */
+    background-size: contain; /* 确保图片缩放以适应容器 */
+    background-position: center center; /* 背景图像居中 */
+    background-repeat: no-repeat; /* 不重复背景图片 */
+}
+  #frame_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    /* background-color: rebeccapurple; */
+  }

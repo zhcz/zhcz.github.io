@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo32x32.png">
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>投稿 | 临帖宝</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="Document                              body {       font-family: Arial, sans-serif;     }     label {       cursor: default;       color: #808080;       font-size: 15px;     }">
+<meta property="og:type" content="website">
+<meta property="og:title" content="投稿">
+<meta property="og:url" content="http://example.com/submission/index.html">
+<meta property="og:site_name" content="临帖宝">
+<meta property="og:description" content="Document                              body {       font-family: Arial, sans-serif;     }     label {       cursor: default;       color: #808080;       font-size: 15px;     }">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-01-31T07:31:28.000Z">
+<meta property="article:modified_time" content="2024-07-26T08:40:10.955Z">
+<meta property="article:author" content="zhanghao">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
+        
+    
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="临帖宝" type="application/atom+xml">
+</head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">临帖宝</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="navbar-menu button">书法</a>
+                
+                    <a href="/discovery/" class="navbar-menu button">发现</a>
+                
+                    <a href="/categories/" class="navbar-menu button">分类</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/app/" class="navbar-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="navbar-menu button">投稿</a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/shufa/index.html" class="dropdown-menu button">书法</a>
+                
+                    <a href="/discovery/" class="dropdown-menu button">发现</a>
+                
+                    <a href="/categories/" class="dropdown-menu button">分类</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/app/" class="dropdown-menu button">临帖宝App</a>
+                
+                    <a href="/submission/" class="dropdown-menu button">投稿</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        投稿
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2024/01/" class="post-meta__date button">2024-01-31</a>
+        
+ 
+        
+     
+    <span id="leancloud_container_page_pv" hidden>
+        <span class="separate-dot"></span>
+        <span></span>
+        <span id="leancloud_value_page_pv"></span>
+        <span>Views</span>
+    </span>
+
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        
+<div style="text-align: center;">
+<span id="element"></span>
+</div>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//code.bdstatic.com/npm/leancloud-storage@4.13.2/dist/av-min.js"></script>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <!-- <script src="sparticles.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+<!-- <script src="../vue-components/myComponent.vue"></script> -->
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    label {
+      cursor: default;
+      color: #808080;
+      font-size: 15px;
+    }
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 0px solid #ccc;
+      border-radius: 5px;
+      background-color: var(--bg-content-color);
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      display: inline-block;
+      border: 0px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background: var(--bg-color);
+      color: var(--text-color);
+      resize: none;
+    }
+    input[type="submit"] {
+      background-color: #2b8786;
+      color: white;
+      /* padding: 15px 20px; */
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      float: right;
+      width:100px;
+      height:50px;
+    }
+    input[type="submit"]:hover {
+      background-color: #3FAEAD;
+    }
+    button {
+       background-color: #2b8786;
+      color: white;
+      /* padding: 15px 20px; */
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      float: right;
+      width:100px;
+      height:50px;
+    }
+    .btn {
+      position: relative;
+      background-color: #2b8786;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      animation: spin 2s linear infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -8px;
+      margin-left: -8px;
+      z-index: 1;
+      display: none;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    #tip {
+      padding: 10px;
+      opacity: 0.8; /* 初始时将数据的透明度设置为0，隐藏数据 */
+      /* transition: opacity 0.5s ease; 添加过渡动画效果 */
+      text-align: center;
+    }
+
+  </style>
+<body>
+
+  <div id="app">
+    <my-component></my-component>
+  </div>
+
+    <div id="tip">将好用和好玩的任何东西分享给大家！</div>
+    <div id="tip">你的投稿如若被采纳，将被发布在“每日分享”中！</div>
+    <form id="myForm">
+            <div class="mb-3">
+              <label for="nickname" class="form-label">昵称</label>
+              <input type="text" class="form-control" id="nickname" oninput="validateForm()">
+            </div>
+            
+            <div class="mb-3">
+              <label for="contact" class="form-label">联系方式</label>
+              <input type="text" class="form-control" id="contact" oninput="validateForm()">
+            </div>
+
+            <div class="mb-3">
+              <label for="submission" class="form-label">提交内容</label>
+              <textarea class="form-control" id="submission" rows="3" oninput="validateForm()"></textarea>
+            </div>
+
+          <button type="button" class="btn btn-primary" onclick="submitForm()" disabled>
+          <span class="btn-text">提交</span>
+          <span class="loader"></span>
+          </button>
+     </form>
+    
+
+  <script>
+
+        new Vue({
+         el: '#app',
+         components: {
+           'my-component': myComponent
+         }
+       });
+
+    function validateForm() {
+      const nickname = document.getElementById('nickname').value;
+      const contact = document.getElementById('contact').value;
+      const submission = document.getElementById('submission').value;
+      const submitButton = document.querySelector('.btn');
+      if (nickname.trim() !== '' && contact.trim() !== '' && submission.trim() !== '') {
+        submitButton.removeAttribute('disabled');
+      } else {
+        submitButton.setAttribute('disabled', 'disabled');
+      }
+    }
+    
+    function submitForm() {
+      const formData = {
+        nickname: document.getElementById('nickname').value,
+        contact: document.getElementById('contact').value,
+        submission: document.getElementById('submission').value
+      };
+        // 隐藏提交按钮的文字
+        document.querySelector('.btn-text').style.display = 'none';
+       // 显示loading动画
+         const loader = document.querySelector('.loader');
+         loader.style.display = 'inline-block';
+
+      fetch('https://api.lintiebao.cn/1.1/classes/submission', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-LC-Id': 'ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz',
+          'X-LC-Key': 'bJozAX2UEPCNqmriHhTiceIc'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('数据提交成功:', data);
+            // 清空输入框数据
+        document.getElementById('nickname').value = '';
+        document.getElementById('contact').value = '';
+        document.getElementById('submission').value = '';
+        // 隐藏loading动画
+        loader.style.display = 'none';
+        // 显示提交按钮的文字
+        document.querySelector('.btn-text').style.display = 'inline';
+        // 添加弹窗提示
+        // alert('提交成功！');
+        
+         
+        
+        Swal.fire({
+          title: '提交成功!',
+          text: '你的投稿如若被采纳，将被发布在“每日分享”中！',
+          icon: 'success',
+          confirmButtonColor: '#2b8786',
+          confirmButtonText: '确定'
+        });
+
+        const submitButton = document.querySelector('.btn');
+        submitButton.setAttribute('disabled', 'disabled');
+      })
+      .catch(error => {
+        console.error('数据提交失败:', error);
+      });
+    }
+  </script>
+ </body>
+
+</html>
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2024-07-26</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+
+
+    <div class="post__comments content-card" id="comment">
+        
+    <h4>Comments</h4>
+    
+    
+    
+    <div id="valine_container" class="valine_thread"></div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    </div>
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+    
+        <span id="leancloud_container_site_uv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_uv"></span>
+            <span>Viewers</span>
+            
+                <span>|</span>
+            
+        </span>
+    
+    
+        <span id="leancloud_container_site_pv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_pv"></span>
+            <span>Views</span>
+            
+        </span>
+    
+
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022&nbsp;-&nbsp;2025 <a href="/">临帖宝</a>
+        </p>
+    
+    
+    <!-- <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p> -->
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?448902475a10578c4b5236aad9784d9c';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+    <script>
+        (function () {
+            function getRecord(Counter, target) {
+                return new Promise(function (resolve, reject) {
+                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+                        .then(response => response.json())
+                        .then(({results}) => {
+                            if (results && results.length > 0) {
+                                var record = results[0];
+                                resolve(record);
+                            } else {
+                                Counter('post', '/classes/Counter', {
+                                        target, time: 0
+                                    })
+                                    .then(response => response.json())
+                                    .then(record => {
+                                        resolve(record);
+                                    }).catch(error => {
+                                        console.error('Failed to create', error);
+                                        reject(error);
+                                    });
+                            }
+                        }).catch(error => {
+                            console.error('LeanCloud Counter Error', error);
+                            reject(error);
+                        });
+                })
+            }
+        
+            function buildIncrement(objectId) {
+                return {
+                    "method": "PUT",
+                    "path": `/1.1/classes/Counter/${ objectId }`,
+                    "body": {
+                        "time": {
+                            '__op': 'Increment',
+                            'amount': 1
+                        }
+                    }
+                }
+            }
+        
+            function increment(Counter, incrArr) {
+                return new Promise(function (resolve, reject) {
+                    Counter('post', '/batch', {
+                        "requests": incrArr
+                    }).then((res) => {
+                        resolve(res);
+                    }).catch(error => {
+                        console.error('Failed to save visitor count', error);
+                        reject(error);
+                    });
+                });
+            }
+        
+            function validUV() {
+                var key = 'LeanCloud_UV_Flag';
+                var flag = localStorage.getItem(key);
+                if (flag) {
+                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
+                        return false;
+                    }
+                }
+                localStorage.setItem(key, new Date().getTime().toString());
+                return true;
+            }
+        
+            function addCount(Counter) {
+                var enableIncr = 'leancloud' === 'leancloud';
+                var getterArr = [];
+                var incrArr = [];
+                var pvCtn = document.querySelector('#leancloud_container_site_pv');
+                if (pvCtn || enableIncr) {
+                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+                        incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_pv');
+                        if (ele) {
+                            ele.innerText = record.time + 1;
+                            if (pvCtn) {
+                                pvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(pvGetter);
+                }
+                var uvCtn = document.querySelector('#leancloud_container_site_uv');
+                if (uvCtn || enableIncr) {
+                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+                        var vuv = validUV();
+                        vuv && incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_uv');
+                        if (ele) {
+                            ele.innerText = record.time + (vuv ? 1 : 0);
+                            if (uvCtn) {
+                                uvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(uvGetter);
+                }
+                if ('false' === 'true') {
+                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
+                    if (viewCtn || enableIncr) {
+                        var target = decodeURI('/submission/index.html');
+                        var viewGetter = getRecord(Counter, target).then((record) => {
+                            incrArr.push(buildIncrement(record.objectId))
+                            if (viewCtn) {
+                                var ele = document.querySelector('#leancloud_value_page_pv');
+                                if (ele) {
+                                    ele.innerText = (record.time || 0) + 1;
+                                    viewCtn.style.display = 'inline';
+                                }
+                            }
+                        });
+                        getterArr.push(viewGetter);
+                    }
+                }
+                if (enableIncr) {
+                    Promise.all(getterArr).then(() => {
+                        incrArr.length > 0 && increment(Counter, incrArr);
+                    })
+                }
+            }
+        
+            var app_id = 'ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz';
+            var app_key = 'bJozAX2UEPCNqmriHhTiceIc';
+            var server_url = 'https://api.lintiebao.cn';
+        
+            function fetchData(api_server) {
+                var Counter = (method, url, data) => {
+                    return fetch(`${ api_server }/1.1${ url }`, {
+                        method,
+                        headers: {
+                                'X-LC-Id': app_id,
+                                'X-LC-Key': app_key,
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data)
+                    });
+                };
+                addCount(Counter);
+            }
+            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+            if (api_server) {
+                fetchData(api_server);
+            } else {
+                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+                    .then(response => response.json())
+                    .then(({api_server}) => {
+                        fetchData('https://' + api_server);
+                    });
+            }
+        })();
+    </script>
+
+ 
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('false'),
+            auto_fancybox = Boolean('true')
+        if (auto_fancybox) {
+            if ($('.post__content .individual-images').length > 0) {
+                        console.log('individual-images')
+                        $(".post__content").find('.individual-images').each(function () {
+                        var element = document.createElement("a");
+                        $(element).attr("data-fancybox", "gallery");
+                        $(element).attr("href", $(this).attr("src"));
+                        if (lazyloadT) {
+                            $(element).attr("href", $(this).attr("data-srcset"));
+                        }
+                        $(this).wrap(element);
+                    });
+                }else{
+                    $(".post__content").find('img').each(function () {
+                    var element = document.createElement("a");
+                    $(element).attr("data-fancybox", "gallery");
+                    $(element).attr("href", $(this).attr("src"));
+                    if (lazyloadT) {
+                        $(element).attr("href", $(this).attr("data-srcset"));
+                    }
+                    $(this).wrap(element);
+                });
+            }
+
+            
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
+ 
+
+ 
+
+ 
+
+
+    <script src='https://cdn.jsdelivr.net/npm/mermaid@8.10.2/dist/mermaid.min.js'></script>
+    <script>
+            mermaid.initialize(JSON.stringify(''));
+    </script>
+ 
+
+ 
+
+
+    
+
+    
+
+    
+    
+    <script>
+        function loadComment() {
+            let e;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+                var valineConfig = {"appId":"ynMAn7XOvvxivG61hKnibx0P-gzGzoHsz","appKey":"bJozAX2UEPCNqmriHhTiceIc","placeholder":"说点什么吧！","path":null,"avatar":null,"meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"highlight":null,"avatarForce":null,"recordIP":true,"serverURLs":"https://api.yuedingdaojia.cn","enableQQ":true,"requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
+                valineConfig.el = '#valine_container';
+                for (var i in valineConfig) {
+                    if (valineConfig[i] === null) delete valineConfig[i];
+                }
+                new Valine(valineConfig);
+            };
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+
+    </body>
+</html>
