@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-11-05T08:01:14.489Z</updated>
+  <updated>2025-11-21T09:19:54.640Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>书法字提取专业版 (Calligraphy Extractor Pro) - 使用说明书</title>
+    <link href="http://example.com/posts/5144.html"/>
+    <id>http://example.com/posts/5144.html</id>
+    <published>2025-11-21T09:19:34.000Z</published>
+    <updated>2025-11-21T09:19:54.640Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="书法字提取专业版-Calligraphy-Extractor-Pro-使用说明书"><a href="#书法字提取专业版-Calligraphy-Extractor-Pro-使用说明书" class="headerlink" title="书法字提取专业版 (Calligraphy Extractor Pro) - 使用说明书"></a>书法字提取专业版 (Calligraphy Extractor Pro) - 使用说明书</h1><p>感谢您购买&#x2F;试用本软件！本工具专为书法爱好者和专业人士设计，能从复杂的图片中批量提取、去噪并整理书法字体。</p><h2 id="1-安装与运行"><a href="#1-安装与运行" class="headerlink" title="1. 安装与运行"></a>1. 安装与运行</h2><p>本软件为<strong>绿色免安装版</strong>。</p><h3 id="Windows-用户"><a href="#Windows-用户" class="headerlink" title="Windows 用户"></a>Windows 用户</h3><ol><li>解压您收到的压缩包。</li><li>进入文件夹，找到 <code>CalligraphyExtractor.exe</code>。</li><li>双击即可运行。</li></ol><h3 id="macOS-用户"><a href="#macOS-用户" class="headerlink" title="macOS 用户"></a>macOS 用户</h3><ol><li>解压您收到的压缩包。</li><li>找到 <code>CalligraphyExtractor.app</code>。</li><li><strong>重要提示</strong>：首次运行时，如果提示“无法打开”或“未识别的开发者”：<ul><li>请<strong>右键点击</strong>图标，选择 **“打开” (Open)**。</li><li>在弹出的对话框中再次点击 <strong>“打开”</strong>。</li><li>（这是因为软件未上架 App Store，只需操作一次，以后双击即可）。</li></ul></li></ol><hr><h2 id="2-试用版-vs-专业版"><a href="#2-试用版-vs-专业版" class="headerlink" title="2. 试用版 vs 专业版"></a>2. 试用版 vs 专业版</h2><p>软件默认以<strong>试用模式</strong>运行，您可以免费体验核心功能。</p><table><thead><tr><th align="left">功能</th><th align="left">试用版 (Trial)</th><th align="left">专业版 (Pro)</th></tr></thead><tbody><tr><td align="left"><strong>基础提取</strong></td><td align="left">✅ 支持</td><td align="left">✅ 支持</td></tr><tr><td align="left"><strong>实时预览</strong></td><td align="left">✅ 支持</td><td align="left">✅ 支持</td></tr><tr><td align="left"><strong>批量处理</strong></td><td align="left">⚠️ 每次仅限前 5 张</td><td align="left">✅ <strong>无限制</strong></td></tr><tr><td align="left"><strong>高级参数</strong></td><td align="left">❌ 锁定不可用</td><td align="left">✅ <strong>完全开放</strong> (膨胀、合并距离等)</td></tr><tr><td align="left"><strong>去噪微调</strong></td><td align="left">❌ 默认设置</td><td align="left">✅ <strong>可自定义</strong></td></tr></tbody></table><hr><h2 id="3-如何注册激活"><a href="#3-如何注册激活" class="headerlink" title="3. 如何注册激活"></a>3. 如何注册激活</h2><p>如果您已购买专业版，请按照以下步骤激活：</p><ol><li>打开软件，点击菜单栏的 <strong>Settings (设置)</strong> -&gt; **Register Pro Version (注册专业版)**。</li><li>在弹出的窗口中输入：<ul><li><strong>User Info (用户信息)<strong>：输入您购买时提供的</strong>邮箱</strong>或<strong>手机号</strong>。</li><li>**License Key (激活密钥)**：输入卖家发给您的长字符串。</li></ul></li><li>点击 <strong>OK</strong>。</li><li>提示注册成功后，<strong>重启软件</strong>即可解锁所有功能。</li></ol><blockquote><p><strong>提示</strong>：激活码永久绑定您的账号，支持在不同电脑上使用（需输入相同的账号和密钥）。</p></blockquote><hr><h2 id="4-快速开始"><a href="#4-快速开始" class="headerlink" title="4. 快速开始"></a>4. 快速开始</h2><ol><li><strong>选择输入</strong>：点击 “Select Input Folder” 选择包含书法图片的文件夹。</li><li><strong>设置输出</strong>：默认输出在软件目录下的 <code>output</code> 文件夹，您也可以点击 “Select Output Folder” 修改。</li><li><strong>预览</strong>：点击左侧文件列表中的任意文件名，右侧会实时显示提取效果预览。</li><li><strong>调整参数</strong> (仅限专业版)：<ul><li>如果字断开了，增加 **Dilation (膨胀)**。</li><li>如果字连在一起了，减小 **Merge Dist (合并距离)**。</li><li>如果噪点太多，增加 **Min Area (最小面积)**。</li></ul></li><li><strong>开始处理</strong>：点击 <strong>Start Processing</strong> 按钮，软件将自动处理文件夹内的所有图片。</li></ol><h2 id="5-常见问题"><a href="#5-常见问题" class="headerlink" title="5. 常见问题"></a>5. 常见问题</h2><p><strong>Q: 处理出来的字是白色的？</strong><br>A: 软件默认处理“白纸黑字”。如果是黑底白字（碑帖），软件会自动尝试反转。如果效果不好，请确保图片对比度足够高。</p><p><strong>Q: 大图片处理很慢？</strong><br>A: 高分辨率图片（如 10000px 以上）处理时间较长是正常的。软件会自动优化参数以防止内存溢出。</p><p><strong>Q: 遇到 Bug 怎么办？</strong><br>A: 请截图报错信息或异常效果，联系开发者获取技术支持。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;书法字提取专业版-Calligraphy-Extractor-Pro-使用说明书&quot;&gt;&lt;a href=&quot;#书法字提取专业版-Calligraphy-Extractor-Pro-使用说明书&quot; class=&quot;headerlink&quot; title=&quot;书法字提取专业版 (Ca</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>2025-每日分享</title>
@@ -459,30 +479,6 @@
     <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
     <category term="网站" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>js13kGames参赛优秀作品</title>
-    <link href="http://example.com/posts/31404.html"/>
-    <id>http://example.com/posts/31404.html</id>
-    <published>2023-10-18T01:06:34.000Z</published>
-    <updated>2023-10-18T01:44:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="1、Space-Huggers-太空拥抱者"><a href="#1、Space-Huggers-太空拥抱者" class="headerlink" title="1、Space Huggers 太空拥抱者"></a><a href="https://js13kgames.com/games/space-huggers/index.html">1、Space Huggers 太空拥抱者</a></h3><p><a href="https://github.com/KilledByAPixel/SpaceHuggers">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-huggers-2.mp4?_=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="2、Space-Block-Invaders-太空方块入侵者"><a href="#2、Space-Block-Invaders-太空方块入侵者" class="headerlink" title="2、Space Block Invaders 太空方块入侵者"></a><a href="https://js13kgames.com/games/space-block-invaders/index.html">2、Space Block Invaders 太空方块入侵者</a></h3><p><a href="https://github.com/nicklaslof/space-block-invaders">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-block-invaders-no-lb.mp4?_=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="3、Q1K3"><a href="#3、Q1K3" class="headerlink" title="3、Q1K3"></a><a href="https://github.blog/wp-content/uploads/2021/09/q13k-no-lb.mp4?_=3">3、Q1K3</a></h3><p><a href="https://github.com/phoboslab/q1k3">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/q13k-no-lb.mp4?_=3" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="4、The-Adventures-of-Captain-Callisto-卡利斯托船长的历险记"><a href="#4、The-Adventures-of-Captain-Callisto-卡利斯托船长的历险记" class="headerlink" title="4、The Adventures of Captain Callisto 卡利斯托船长的历险记"></a><a href="https://js13kgames.com/games/the-adventures-of-captain-callisto/index.html">4、The Adventures of Captain Callisto 卡利斯托船长的历险记</a></h3><p><a href="https://github.com/codyebberson/js13k-callisto">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/adventure-of-captain-callisto.mp4?_=4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="5、Hit-the-space-击中空间"><a href="#5、Hit-the-space-击中空间" class="headerlink" title="5、Hit the space! 击中空间"></a><a href="https://js13kgames.com/games/hit-the-space/index.html">5、Hit the space! 击中空间</a></h3><p><a href="https://github.com/Kimbatt/js13k-2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/hit-the-space.mp4?_=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="6、Black-Hole-Square-黑洞广场"><a href="#6、Black-Hole-Square-黑洞广场" class="headerlink" title="6、Black Hole Square 黑洞广场"></a><a href="https://js13kgames.com/games/black-hole-square/index.html">6、Black Hole Square 黑洞广场</a></h3><p><a href="https://github.com/Quinten/black-hole-square">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/black-hole-square.mp4?_=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="7、Tenacity-韧性"><a href="#7、Tenacity-韧性" class="headerlink" title="7、Tenacity 韧性"></a><a href="https://js13kgames.com/games/tenacity/index.html">7、Tenacity 韧性</a></h3><p><a href="https://github.com/GregPeck/tenacity">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/tenacity.mp4?_=7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="8、Safe-Space-安全空间"><a href="#8、Safe-Space-安全空间" class="headerlink" title="8、Safe Space 安全空间"></a><a href="https://js13kgames.com/games/safe-space/index.html">8、Safe Space 安全空间</a></h3><p><a href="https://github.com/ericdrowell/SafeSpace">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/safe-space-no-lb.mp4?_=8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="9、Galaxy-Rider-银河骑士"><a href="#9、Galaxy-Rider-银河骑士" class="headerlink" title="9、Galaxy Rider 银河骑士"></a><a href="https://js13kgames.com/games/galaxy-rider/index.html">9、Galaxy Rider 银河骑士</a></h3><p><a href="https://github.com/jaburns/js13k2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/galaxy-rider-1.mp4?_=9" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="10、Beat-Rocks-击败岩石"><a href="#10、Beat-Rocks-击败岩石" class="headerlink" title="10、Beat Rocks 击败岩石"></a><a href="https://js13kgames.com/games/beat-rocks/index.html">10、Beat Rocks 击败岩石</a></h3><p><a href="https://github.com/Kos/js13k-2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/asteroids-rhythm.mp4?_=10" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="11、PACKABUNCHAS-帕卡本查斯"><a href="#11、PACKABUNCHAS-帕卡本查斯" class="headerlink" title="11、PACKABUNCHAS 帕卡本查斯"></a><a href="https://js13kgames.com/games/packabunchas/index.html">11、PACKABUNCHAS 帕卡本查斯</a></h3><p><a href="https://github.com/MattiaFortunati/packabunchas">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/10/packa-bunchas.mp4?_=11" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="12、Space-Garden-太空花园"><a href="#12、Space-Garden-太空花园" class="headerlink" title="12、Space Garden 太空花园"></a><a href="https://js13kgames.com/games/space-garden/index.html">12、Space Garden 太空花园</a></h3><p><a href="https://github.com/Rybar/JS13k2021">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-garden-2.mp4?_=12" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="13、The-Maze-of-Space-Goblins-太空妖精迷宫"><a href="#13、The-Maze-of-Space-Goblins-太空妖精迷宫" class="headerlink" title="13、The Maze of Space Goblins 太空妖精迷宫"></a><a href="https://js13kgames.com/games/the-maze-of-space-goblins/index.html">13、The Maze of Space Goblins 太空妖精迷宫</a></h3><p><a href="https://github.com/jani-nykanen/the-maze-of-space-goblins">github</a></p><iframe src="https://github.blog/wp-content/uploads/2021/09/space-goblin.mp4?_=13" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id=""><a href="#" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="-1"><a href="#-1" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="-2"><a href="#-2" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h3 id="-3"><a href="#-3" class="headerlink" title=""></a><a href=""></a></h3><p><a href="">github</a></p><iframe src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p><a href="https://js13kgames.com/entries/2023">更多…</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;1、Space-Huggers-太空拥抱者&quot;&gt;&lt;a href=&quot;#1、Space-Huggers-太空拥抱者&quot; class=&quot;headerlink&quot; title=&quot;1、Space Huggers 太空拥抱者&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://js13kg</summary>
-      
-    
-    
-    
-    <category term="js13kGames" scheme="http://example.com/categories/js13kGames/"/>
-    
-    
-    <category term="js13kGames" scheme="http://example.com/tags/js13kGames/"/>
     
   </entry>
   
