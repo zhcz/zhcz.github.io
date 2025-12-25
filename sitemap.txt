@@ -1,3 +1,4 @@
+http://example.com/posts/26296.html
 http://example.com/posts/23837.html
 http://example.com/posts/5144.html
 http://example.com/posts/8247.html
@@ -20,7 +21,6 @@ http://example.com/poem/yitizi.html
 http://example.com/poem/famousSentences.html
 http://example.com/poem/shufaDictDetail.html
 http://example.com/poem/shufaDictCate.html
-http://example.com/posts/26296.html
 http://example.com/projects/src/deploymentProjects.html
 http://example.com/posts/57655.html
 http://example.com/projects/src/index.html
